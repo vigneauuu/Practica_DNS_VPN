@@ -12,7 +12,7 @@ def generar_dataset_casinos():
         "jugabet.cl", "marathonbet.com", "betwarrior.bet"
     ]
     
-    dominios_finales = set(casinos_chile) # Usamos set para que no se repitan
+    dominios_finales = set(casinos_chile)
     
     #lista negra internacional en tiempo real (StevenBlack hosts)
     url_gambling = "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts"
