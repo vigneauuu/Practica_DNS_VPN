@@ -1,27 +1,22 @@
-<div align="center">
-  
-  <h1>🛡️ Evaluación Comparativa de Filtrado DNS</h1>
-  <p><i>Análisis de consistencia en la categorización de dominios mediante métricas de acuerdo inter-juez.</i></p>
+# 🛡️ Evaluación Comparativa de Filtrado DNS
 
-  <!-- Badges -->
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Status-Ejecuci%C3%B3n_de_Pruebas-success?style=for-the-badge" alt="Status" />
-  
-</div>
+*Análisis de consistencia en la categorización de dominios mediante métricas de acuerdo inter-juez.*
 
-<br>
+![Python](https://img.shields.io/badge/PYTHON-3.10+-3776AB?logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLITE-DATABASE-003B57?logo=sqlite&logoColor=white)
+![Status](https://img.shields.io/badge/STATUS-EJECUCIÓN%20DE%20PRUEBAS-brightgreen)
 
 > **Nota:** Proyecto desarrollado en el marco de la **Práctica I** para la carrera de Ingeniería Civil Informática. La herramienta automatizada mide el nivel de consistencia y divergencia en resolutores DNS, servicios VPN y proxies.
 
 ---
 
-## 📋 Tabla de Contenidos
-1. [🎯 Objetivo del Proyecto](#-objetivo-del-proyecto)
-2. [📂 Arquitectura del Repositorio](#-arquitectura-del-repositorio)
-3. [📊 Dataset y Fuentes](#-dataset-y-fuentes)
-4. [🚀 Instrucciones de Uso](#-instrucciones-de-uso)
-5. [🎓 Contexto Académico](#-contexto-académico)
+## 📑 Tabla de Contenidos
+
+1. [🎯 Objetivo del Proyecto](#objetivo-del-proyecto)
+2. [📁 Arquitectura del Repositorio](#arquitectura-del-repositorio)
+3. [📊 Dataset y Fuentes](#dataset-y-fuentes)
+4. [🚀 Instrucciones de Uso](#instrucciones-de-uso)
+5. [🎓 Contexto Académico](#contexto-académico)
 
 ---
 
@@ -29,23 +24,22 @@
 
 El ecosistema actual de bloqueo de dominios (aplicado por ISPs, controles parentales y redes corporativas) carece de estándares unificados. El objetivo principal es **medir empíricamente el nivel de acuerdo técnico** frente a diversas categorías de contenido utilizando el **coeficiente Kappa de Cohen**, para determinar si depender de un único servicio garantiza un filtrado efectivo.
 
----
-
-## 📂 Arquitectura del Repositorio
+## 📁 Arquitectura del Repositorio
 
 El proyecto sigue un patrón de diseño limpio, separando la ingesta de datos, la lógica de red y la documentación:
 
-```bash
-📦 Practica_DNS_VPN
- ┣ 📂 dataset/           # CSVs depurados (2000 dominios en total)
- ┣ 📂 docs/              # Informe técnico en LaTeX y recursos visuales
- ┣ 📂 scripts/           # Core del proyecto
- ┃ ┣ 📜 motor_evaluacion.py   # Script principal de consultas automatizadas
- ┃ ┗ 📜 procesar_*.py         # Scripts de extracción y limpieza de fuentes
- ┣ 📜 .gitignore         # Reglas de exclusión (protección de la DB local)
- ┗ 📜 README.md          # Documentación del repositorio
- 
- ## 📁 Dataset y Fuentes
+```
+Practica_DNS_VPN
+├── dataset/         # CSVs depurados (2000 dominios en total)
+├── docs/            # Informe técnico en LaTeX y recursos visuales
+├── scripts/         # Core del proyecto
+│   ├── motor_evaluacion.py   # Script principal de consultas automatizadas
+│   └── procesar_*.py         # Scripts de extracción y limpieza de fuentes
+├── .gitignore       # Reglas de exclusión (protección de la DB local)
+└── README.md        # Documentación del repositorio
+```
+
+## 📊 Dataset y Fuentes
 
 Para asegurar rigor y garantizar la vigencia de las pruebas, se construyó un dataset propio estructurado en 5 categorías críticas (400 dominios cada una), extraídas de repositorios internacionales y gubernamentales.
 
@@ -57,7 +51,7 @@ Para asegurar rigor y garantizar la vigencia de las pruebas, se construyó un da
 | Armas/Violencia | UT1 Capitole Blacklists | Venta de armamento y contenido explícito. |
 | Phishing/Malware | Phishing.Database | Amenazas volátiles y dominios recientes. |
 
-## 🛠️ Instrucciones de Uso
+## 🚀 Instrucciones de Uso
 
 ### 1. Clonar e Instalar
 
