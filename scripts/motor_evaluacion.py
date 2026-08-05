@@ -62,7 +62,7 @@ def procesar_datasets_masivos():
     
     # Iteramos sobre cada archivo CSV del dataset para evaluar los dominios
     for archivo in os.listdir(ruta_datasets):
-        if archivo.endswith(".csv"):
+        if archivo.endswith("_top400.csv"):
             categoria = archivo.split('_')[0].capitalize()
             ruta_csv = os.path.join(ruta_datasets, archivo)
             
