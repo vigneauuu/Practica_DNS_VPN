@@ -1,37 +1,41 @@
 import csv
 import urllib.request
+import os
 
 def generar_dataset_recientes():
-    archivo_salida = '../dataset/recientes_top400.csv'
-    
-    # Base de datos pública de dominios maliciosos/phishing activos.
+    ruta_script = os.path.dirname(__file__)
+    archivo_salida = os.path.join(ruta_script, '..', 'dataset', 'recientes_top400.csv')
     url_nrd = "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt"
     
-    print("Conectando a la fuente pública de dominios recientes/maliciosos...")
+    print("Descargando dominios de phishing...")
     
     try:
         respuesta = urllib.request.urlopen(url_nrd)
         lineas = respuesta.read().decode('utf-8').splitlines()
         
         dominios_limpios = []
+        dominios_vistos = set()
         
         for linea in lineas:
             if linea and not linea.startswith("#"):
                 dominio = linea.strip()
-                dominios_limpios.append(dominio)
                 
+                if dominio not in dominios_vistos:
+                    dominios_vistos.add(dominio)
+                    dominios_limpios.append(dominio)
+                    
             if len(dominios_limpios) == 400:
                 break
                 
-        # Guardar en CSV
         with open(archivo_salida, 'w', encoding='utf-8', newline='') as f_out:
             escritor = csv.writer(f_out)
             for dom in dominios_limpios:
                 escritor.writerow([dom])
                 
-        print(f" Se guardaron 400 dominios recientemente registrados/maliciosos en {archivo_salida}")
+        print(f"Listo. Se guardaron {len(dominios_limpios)} dominios en {archivo_salida}.")
         
     except Exception as e:
-        print(f"Error de conexión: {e}")
+        print(f"Error: {e}")
 
-generar_dataset_recientes()
+if __name__ == '__main__':
+    generar_dataset_recientes()
