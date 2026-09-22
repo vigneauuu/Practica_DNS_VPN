@@ -7,21 +7,18 @@ def ejecutar_analisis():
     df = pd.read_sql_query("SELECT * FROM evaluaciones;", conexion)
     conexion.close()
 
-    # Ajuste de nombre de categoría según informe
     df['categoria'] = df['categoria'].replace('Tranco', 'Benigno')
 
-    # Codificación binaria (Sección 6.1 del informe)
     def clasificar_estado(estado):
         if "Bloqueado" in estado:
             return 1
         elif estado == "Permitido":
             return 0
         else:
-            return None # Los Timeout/Errores se excluyen del Kappa
+            return None
 
     df['bloqueo_binario'] = df['estado'].apply(clasificar_estado)
 
-    # 1. Tabla de Tasas de Bloqueo
     print("\n==================================================")
     print("--- TASAS DE BLOQUEO POR DNS Y CATEGORÍA (%) ---")
     print("==================================================")
@@ -29,14 +26,11 @@ def ejecutar_analisis():
     tasas = df_validos.groupby(['resolutor', 'categoria'])['bloqueo_binario'].mean() * 100
     print(tasas.unstack().round(2).fillna(0))
 
-    # 2. Coeficiente Kappa de Cohen
     print("\n==================================================")
     print("--- KAPPA DE COHEN (ACUERDO INTER-JUEZ) ---")
     print("==================================================")
-    # Pivotear tabla: Dominios en filas, Resolutores en columnas
     pivot = df_validos.drop_duplicates(subset=['dominio', 'resolutor']).pivot(index='dominio', columns='resolutor', values='bloqueo_binario')
     
-    # Evaluar Kappa solo en dominios donde AMBOS respondieron (excluye si uno dio Timeout)
     pivot = pivot.dropna()
     
     resolutores = pivot.columns
