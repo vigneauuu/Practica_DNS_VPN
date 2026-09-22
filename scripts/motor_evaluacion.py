@@ -35,9 +35,18 @@ def evaluar_dominio(dominio, ip_resolutor, nombre_resolutor, categoria):
     try:
         respuesta = resolver.resolve(dominio, 'A')
         ip_resuelta = respuesta[0].to_text()
-        estado = "Permitido"
+        
+        # Validación de Sinkhole (IPs no enrutables)
+        if ip_resuelta in ['0.0.0.0', '127.0.0.1']:
+            estado = "Bloqueado (Sinkhole)"
+        else:
+            estado = "Permitido"
+            
     except dns.resolver.NXDOMAIN:
         estado = "Bloqueado (NXDOMAIN)"
+    except (dns.resolver.NoNameservers, dns.resolver.NoAnswer):
+        # (REFUSED) o no entrega IP
+        estado = "Bloqueado (REFUSED/NoAnswer)"
     except Exception:
         estado = "Error/Timeout"
         
@@ -57,7 +66,9 @@ def procesar_datasets_masivos():
     
     resolutores = [
         {'nombre': 'Cloudflare_Families', 'ip': '1.1.1.3'},
-        {'nombre': 'Quad9_Security', 'ip': '9.9.9.9'}
+        {'nombre': 'Quad9_Security', 'ip': '9.9.9.9'},
+        {'nombre': 'Cisco_Umbrella', 'ip': '208.67.222.123'},
+        {'nombre': 'Google_DNS', 'ip': '8.8.8.8'}
     ]
     
     # Iteramos sobre cada archivo CSV del dataset para evaluar los dominios
