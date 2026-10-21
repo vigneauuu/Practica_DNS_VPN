@@ -23,7 +23,6 @@ def inicializar_bd():
     print("[+] Base de datos SQLite lista para ingesta masiva.")
 
 def evaluar_dominio(dominio, ip_resolutor, nombre_resolutor, categoria):
-    # Forzamos la consulta al DNS saltando el del ISP local
     resolver = dns.resolver.Resolver(configure=False)
     resolver.nameservers = [ip_resolutor]
     resolver.timeout = 3
@@ -36,7 +35,6 @@ def evaluar_dominio(dominio, ip_resolutor, nombre_resolutor, categoria):
         respuesta = resolver.resolve(dominio, 'A')
         ip_resuelta = respuesta[0].to_text()
         
-        # Validación de Sinkhole (IPs no enrutables)
         if ip_resuelta in ['0.0.0.0', '127.0.0.1']:
             estado = "Bloqueado (Sinkhole)"
         else:
@@ -45,7 +43,6 @@ def evaluar_dominio(dominio, ip_resolutor, nombre_resolutor, categoria):
     except dns.resolver.NXDOMAIN:
         estado = "Bloqueado (NXDOMAIN)"
     except (dns.resolver.NoNameservers, dns.resolver.NoAnswer):
-        # (REFUSED) o no entrega IP
         estado = "Bloqueado (REFUSED/NoAnswer)"
     except Exception:
         estado = "Error/Timeout"
@@ -65,13 +62,9 @@ def procesar_datasets_masivos():
     ruta_datasets = os.path.join(os.path.dirname(__file__), '..', 'dataset')
     
     resolutores = [
-        {'nombre': 'Cloudflare_Families', 'ip': '1.1.1.3'},
-        {'nombre': 'Quad9_Security', 'ip': '9.9.9.9'},
-        {'nombre': 'Cisco_Umbrella', 'ip': '208.67.222.123'},
-        {'nombre': 'Google_DNS', 'ip': '8.8.8.8'}
+        {'nombre': 'HideMe_Free', 'ip': '10.34.196.1'}
     ]
     
-    # Iteramos sobre cada archivo CSV del dataset para evaluar los dominios
     for archivo in os.listdir(ruta_datasets):
         if archivo.endswith("_top400.csv"):
             categoria = archivo.split('_')[0].capitalize()
