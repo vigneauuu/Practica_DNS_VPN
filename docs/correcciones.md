@@ -75,3 +75,11 @@ Se reaplicó la observación de Audio3 27:26–28:29 sobre subcapítulos demasia
 Se conservan las ocho secciones principales, las citas, las tablas y los diagramas, el apartado de Resultados Esperados, el cronograma relativo y las conclusiones vacías. La reducción no cambia el método, los datos ni el estado de los pendientes. El criterio permanente aclara que el profesor pidió desarrollar los temas; la elección concreta de agrupación es una decisión editorial, no una cuota prescrita en la reunión.
 
 La segunda pasada de control distingue la incorporación de una observación de su cumplimiento experimental. El informe describe avances, sin dar por cerrados la validación de categorías, el inventario de políticas y servicios, la calibración de conexiones o el contraste OONI. Se refuerza también el uso preciso de «servicio evaluado» frente a «herramienta de medición», según Audio2 00:49–00:58.
+
+## Relación concreta entre antecedentes y práctica (28-10-2026)
+
+Se aclaró el aporte del artículo de Rojas y colaboradores: evalúa funciones de aplicaciones parentales y sirve como antecedente de comprobación de la protección ofrecida; la práctica observa políticas y respuestas de filtrado de dominios con un diseño propio. Se precisó el aporte de Plonka (procedencia y objetivos de listas), Liu (formatos de respuesta PDNS) y FINSIN (posible contraste del inventario histórico de amenazas, fuera del corpus parental). La tabla de antecedentes describe los límites por objeto y tipo de medición.
+
+Se simplificó la justificación de Python y la formulación de la meta operativa de 2.000, cuya procedencia como preferencia de Matías permanece registrada en los criterios y el contexto. Se conservan las ocho secciones y once subapartados, las referencias y los pendientes de validación y medición. No se añadieron resultados ni se modificó el diseño experimental.
+
+La tabla de fuentes distingue las destinadas al corpus parental de las utilizadas o consideradas para revisar el inventario histórico de phishing; FINSIN y Phishing.Database no se presentan como incorporaciones al corpus parental definitivo.

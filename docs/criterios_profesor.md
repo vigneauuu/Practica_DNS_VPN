@@ -5,7 +5,7 @@ Actualización: 28 de octubre de 2026. Base: observaciones de Nicolás Boettcher
 ## Referencias y antecedentes
 
 1. **La referencia debe respaldar la frase concreta.** Identificar autor o institución, documento, fecha y enlace al documento original. Un portal institucional genérico no acredita un decreto, una cifra o una nómina. Audio 2, 05:02–05:46; audio 3, 01:44–02:43.
-2. **Explicar la pertinencia del antecedente.** Cuando se mencione una norma, plan o estudio, precisar qué propone o mide y cómo se relaciona con la práctica. Audio 2, 00:06–00:44; audio 3, 00:03.
+2. **Explicar la pertinencia del antecedente.** Cuando se mencione una norma, plan o estudio, precisar qué propone o mide y cómo se relaciona con la práctica. Audio 2, 00:06–00:44; audio 3, 00:03. Aplicación reafirmada por Matías el 28-10-2026: no basta con llamar a una publicación «antecedente relacionado»; explicar su objeto, el aporte concreto al diseño y las diferencias que impiden trasladar automáticamente datos o métricas. Esta precisión es editorial, no una nueva cita del profesor.
 3. **No convertir una búsqueda incompleta en una afirmación universal.** Distinguir «no se encontró en las fuentes revisadas» de «no existe» o «ningún proveedor lo publica». Audio 2, 01:03–02:12.
 4. **Usar fechas y contextos identificables.** Evitar antecedentes atemporales y fuentes secundarias cuando exista el documento primario. No completar datos bibliográficos por suposición.
 
