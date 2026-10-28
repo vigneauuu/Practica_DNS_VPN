@@ -1,0 +1,608 @@
+{
+  "input_rows": 1960,
+  "unique_valid_domains": 1852,
+  "invalid_rows": [
+    {
+      "file": "armas_top400.csv",
+      "line": 1,
+      "value": "118.123.4.224",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 2,
+      "value": "128.121.249.189",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 4,
+      "value": "163.177.220.59",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 5,
+      "value": "183.61.166.187",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 6,
+      "value": "192.67.198.4",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 7,
+      "value": "192.67.198.49",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 8,
+      "value": "193.96.188.143",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 9,
+      "value": "195.4.52.48",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 10,
+      "value": "195.63.211.202",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 11,
+      "value": "199.93.70.2",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 12,
+      "value": "203.2.124.18",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 13,
+      "value": "204.181.176.53",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 14,
+      "value": "204.50.24.185",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 15,
+      "value": "205.160.14.21",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 16,
+      "value": "205.160.14.22",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 17,
+      "value": "205.167.142.107",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 18,
+      "value": "205.167.142.6",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 19,
+      "value": "205.241.44.90",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 20,
+      "value": "206.113.230.2",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 21,
+      "value": "206.160.0.11",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 22,
+      "value": "206.160.0.248",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 23,
+      "value": "206.160.0.252",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 24,
+      "value": "206.168.114.50",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 25,
+      "value": "206.168.114.52",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 26,
+      "value": "206.244.69.51",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 27,
+      "value": "206.31.204.150",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 28,
+      "value": "207.201.162.40",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 29,
+      "value": "207.231.72.88",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 30,
+      "value": "207.36.45.220",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 31,
+      "value": "207.70.7.168",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 32,
+      "value": "207.71.8.68",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 33,
+      "value": "208.185.127.162",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 34,
+      "value": "208.185.127.163",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 35,
+      "value": "208.48.246.80",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 36,
+      "value": "208.55.206.181",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 37,
+      "value": "209.103.172.199",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 38,
+      "value": "209.123.16.9",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 39,
+      "value": "209.126.159.27",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 40,
+      "value": "209.15.74.4",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 41,
+      "value": "209.15.84.106",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 42,
+      "value": "209.161.0.32",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 43,
+      "value": "209.189.198.102",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 44,
+      "value": "209.195.130.178",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 45,
+      "value": "209.196.188.172",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 46,
+      "value": "209.197.123.166",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 47,
+      "value": "209.204.200.140",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 48,
+      "value": "209.204.217.45",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 49,
+      "value": "209.240.128.4",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 50,
+      "value": "209.250.128.7",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 51,
+      "value": "209.35.194.183",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 52,
+      "value": "209.61.200.137",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 53,
+      "value": "212.114.150.187",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 54,
+      "value": "212.227.118.69",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 55,
+      "value": "212.227.174.218",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 56,
+      "value": "212.38.173.23",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 57,
+      "value": "213.130.63.232",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 58,
+      "value": "216.100.98.13",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 59,
+      "value": "216.100.98.17",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 60,
+      "value": "216.100.98.24",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 61,
+      "value": "216.100.99.13",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 62,
+      "value": "216.110.132.232",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 63,
+      "value": "216.110.143.153",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 64,
+      "value": "216.126.73.71",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 65,
+      "value": "216.127.68.84",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 66,
+      "value": "216.131.71.161",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 67,
+      "value": "216.150.67.66",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 68,
+      "value": "216.169.106.11",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 69,
+      "value": "216.218.248.244",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 70,
+      "value": "216.219.253.193",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 71,
+      "value": "216.40.195.47",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 72,
+      "value": "216.40.213.201",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 73,
+      "value": "216.43.175.114",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 74,
+      "value": "62.116.137.145",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 75,
+      "value": "62.116.137.155",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 76,
+      "value": "62.116.138.132",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 77,
+      "value": "62.116.138.135",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 78,
+      "value": "62.116.138.140",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 79,
+      "value": "62.116.138.142",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 80,
+      "value": "62.116.140.196",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 81,
+      "value": "63.218.152.42",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 82,
+      "value": "63.236.214.203",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 83,
+      "value": "63.249.227.174",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 84,
+      "value": "64.156.139.229",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 85,
+      "value": "64.239.80.146",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 86,
+      "value": "64.239.87.165",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 87,
+      "value": "64.70.225.193",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 88,
+      "value": "64.82.99.102",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 89,
+      "value": "66.175.2.27",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 90,
+      "value": "66.255.14.41",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 91,
+      "value": "66.28.60.94",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 92,
+      "value": "66.78.36.83",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 94,
+      "value": "81.88.35.41",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 95,
+      "value": "81.88.35.42",
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "file": "armas_top400.csv",
+      "line": 96,
+      "value": "_video-bagarre.com",
+      "reason": "Etiqueta DNS inválida o URL en lugar de dominio"
+    }
+  ],
+  "multilabel_domains": 14,
+  "category_memberships": {
+    "adultos": 400,
+    "apuestas": 400,
+    "armas": 266,
+    "control_tecnico": 0,
+    "phishing": 400,
+    "popular": 400
+  },
+  "inputs": [
+    {
+      "file": "adultos_top400.csv",
+      "sha256": "326b03b1be19d4b90b081baca5a2508e95cb4f05d17bd54f75e40588d8c4a8b3",
+      "rows": 400
+    },
+    {
+      "file": "armas_top400.csv",
+      "sha256": "d89c12bc7854628a71ad59257a1fe58cdab75cf137727aec161eea2eddfd3fd1",
+      "rows": 360
+    },
+    {
+      "file": "casinos_top400.csv",
+      "sha256": "faa2de714d2292e8076fc9183dbc4db8065a2e930fef80e0991dfbd73721172a",
+      "rows": 400
+    },
+    {
+      "file": "recientes_top400.csv",
+      "sha256": "02973761c9c7e7796f3225ccc35938c2540be02ed6500d560ad66207778c4e49",
+      "rows": 400
+    },
+    {
+      "file": "tranco_top400.csv",
+      "sha256": "b7fa1991f6ec0628c8bdd8e0e2b5f3c9df42d552d6263e7c9f43460798f02ce1",
+      "rows": 400
+    }
+  ],
+  "corpus_sha256": "0332496c91956bd0b6aede0610eb243029192d80338ba454c37d026844d88ea6",
+  "validation": "pending; no revisión semántica automática"
+}

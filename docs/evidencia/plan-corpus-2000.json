@@ -1,0 +1,26 @@
+{
+  "study": "control_parental_2000",
+  "target_unique_domains": 2000,
+  "target_origin": "Preferencia de Matías del 27 de octubre de 2026; meta operativa, no cuota ni aprobación atribuida al profesor",
+  "input_domains": 2000,
+  "in_scope_candidates": 2000,
+  "in_scope_validated": 0,
+  "additional_candidates_needed": 0,
+  "validation_gap": 2000,
+  "ready_for_selection": false,
+  "candidate_memberships": {
+    "adultos": 400,
+    "apuestas": 400,
+    "armas": 266,
+    "educativo": 0,
+    "popular": 400,
+    "referencia_biblioteca": 534
+  },
+  "excluded_categories": [
+    "phishing",
+    "control_tecnico"
+  ],
+  "corpus_sha256": "7c88702279954ed3875d818ad53e544a0f887f89d927c549b8b631dd2bbaba9c",
+  "study_sha256": "c7fc0686af2060eeda43410f98276b0b34f18c796169b929a13abb09d4f09535",
+  "note": "La meta no acredita datos obtenidos, balance de categorías ni representatividad estadística."
+}

@@ -1,0 +1,5 @@
+domain,categories,sources,validation_status,validation_evidence,reviewer,reviewed_at
+example.com,control_tecnico,IANA,validated,https://www.iana.org/help/example-domains,documentacion_tecnica,2026-10-27
+malware.testcategory.com,control_tecnico,Cloudflare,validated,https://developers.cloudflare.com/1.1.1.1/setup/,documentacion_tecnica,2026-10-27
+nudity.testcategory.com,control_tecnico,Cloudflare,validated,https://developers.cloudflare.com/1.1.1.1/setup/,documentacion_tecnica,2026-10-27
+no-existe-pdns-lab.invalid,control_tecnico,RFC2606,validated,https://www.rfc-editor.org/rfc/rfc2606.html,documentacion_tecnica,2026-10-27

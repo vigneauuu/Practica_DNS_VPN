@@ -1,0 +1,12 @@
+{
+  "profiles": [
+    {
+      "id": "vpn_proveedor_perfil_real", "kind": "vpn", "enabled": false,
+      "endpoint": "REEMPLAZAR_POR_IP_RESOLUTOR_ASIGNADO",
+      "reference": "1.1.1.1",
+      "source_ip": null,
+      "policy": "REEMPLAZAR_POR_PROTECCION_DOCUMENTADA",
+      "source": "REEMPLAZAR_POR_URL_OFICIAL"
+    }
+  ]
+}

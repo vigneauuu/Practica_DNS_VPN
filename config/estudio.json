@@ -1,0 +1,28 @@
+{
+  "id": "control_parental_2000",
+  "target_unique_domains": 2000,
+  "target_origin": "Preferencia de Matías del 27 de octubre de 2026; meta operativa, no cuota ni aprobación atribuida al profesor",
+  "seed": 20261027,
+  "included_categories": [
+    "adultos",
+    "apuestas",
+    "armas",
+    "educativo",
+    "popular",
+    "referencia_biblioteca"
+  ],
+  "excluded_categories": [
+    "phishing",
+    "control_tecnico"
+  ],
+  "scope": "Caracterización de servicios PDNS para control parental. Popularidad es procedencia de candidatos, no benignidad. Educación permite investigar bloqueo indebido con evidencia revisada.",
+  "acceptance_requirements": [
+    "2000 nombres únicos con categoría, evidencia, responsable y fecha de revisión",
+    "Composición por categoría publicada, sin asumir exclusividad ni cuotas heredadas",
+    "Política esperada por perfil documentada antes de estimar aciertos o errores",
+    "Comprobar el origen y significado de la lista heredada llamada armas",
+    "Calibración, controles y conectividad verificadas",
+    "Conservar errores e indeterminados; no darles una decisión binaria"
+  ],
+  "candidate_corpus": "dataset/corpus-parental-candidatos.csv"
+}

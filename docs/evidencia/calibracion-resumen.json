@@ -1,0 +1,71 @@
+{
+  "run_id": "3d7874db-6f2a-49ba-b9c6-0dfcecfb990b",
+  "completed_samples": 8,
+  "expected_samples": 8,
+  "complete": true,
+  "interpretation": "Señales de bloqueo y resolución DNS observada; no exactitud de clasificación ni acceso web garantizado.",
+  "counts": [
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "ALL",
+      "total": 4,
+      "states": {
+        "error_red": 4
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": null,
+      "decisive_coverage": 0.0
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "control_tecnico",
+      "total": 4,
+      "states": {
+        "error_red": 4
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": null,
+      "decisive_coverage": 0.0
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "ALL",
+      "total": 4,
+      "states": {
+        "resolucion_observada": 3,
+        "indeterminado": 1
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.75
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "control_tecnico",
+      "total": 4,
+      "states": {
+        "resolucion_observada": 3,
+        "indeterminado": 1
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.75
+    }
+  ],
+  "conditions": {
+    "date": "2026-10-27",
+    "qtypes": [
+      "A"
+    ],
+    "rounds": 1,
+    "timeout_seconds": 1,
+    "retries": 0,
+    "domains": "dataset/calibracion.csv",
+    "purpose": "Comprobación del registro; no comparación de eficacia",
+    "context": "Conectividad DNS desde el equipo local; no se atribuyen las causas de timeout a un proveedor"
+  }
+}

@@ -1,11 +1,6 @@
-import sqlite3
+"""Entrada compatible para la herramienta actual; requiere el entorno del proyecto."""
+import sys
+from pdns_lab.cli import main
 
-try:
-    conexion = sqlite3.connect('resultados.db')
-    cursor = conexion.cursor()
-    cursor.execute("SELECT COUNT(*) FROM evaluaciones")
-    total = cursor.fetchone()[0]
-    print(f"Total registros: {total}")
-    conexion.close()
-except Exception as e:
-    print(f"Error: {e}")
+if __name__ == "__main__":
+    main(["corpus-audit", *sys.argv[1:]])

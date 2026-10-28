@@ -1,0 +1,84 @@
+{
+  "input_sha256": "0332496c91956bd0b6aede0610eb243029192d80338ba454c37d026844d88ea6",
+  "study_sha256": "c7fc0686af2060eeda43410f98276b0b34f18c796169b929a13abb09d4f09535",
+  "reference_source_sha256": "7b6e2d131ce7ef48d75c459a00965abcb85f0ce7fc705372225160022b43a74f",
+  "source_url": "https://dsi.ut-capitole.fr/blacklists/download/liste_bu.tar.gz",
+  "source_description_url": "https://dsi.ut-capitole.fr/blacklists/",
+  "seed": 20261027,
+  "inherited_in_scope": 1466,
+  "added_reference_candidates": 534,
+  "reference_available_nonoverlapping": 2775,
+  "rejected_reference_lines": [
+    {
+      "line": 2,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 3,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 4,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 5,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 6,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 7,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 8,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 9,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 10,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 11,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 12,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 13,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 15,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 19,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 20,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 21,
+      "reason": "Una IP no es un nombre de dominio"
+    },
+    {
+      "line": 22,
+      "reason": "Una IP no es un nombre de dominio"
+    }
+  ],
+  "unique_candidates": 2000,
+  "candidate_corpus_sha256": "7c88702279954ed3875d818ad53e544a0f887f89d927c549b8b631dd2bbaba9c",
+  "validation": "No se valida automáticamente ninguna entrada nueva; se conserva la revisión de las heredadas"
+}

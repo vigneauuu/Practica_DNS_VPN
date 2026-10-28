@@ -1,0 +1,11 @@
+{
+  "kind": "vpn",
+  "interface": "REEMPLAZAR_POR_INTERFAZ_REAL",
+  "provider": "REEMPLAZAR",
+  "plan": "REEMPLAZAR",
+  "client_version": "REEMPLAZAR",
+  "filter_setting": "REEMPLAZAR_POR_ESTADO_OBSERVADO_Y_NOMBRE_DE_LA_FUNCION",
+  "server_location": "REEMPLAZAR",
+  "dns_configuration_evidence": "REEMPLAZAR_POR_DOCUMENTACION_Y_COMPROBACION_LOCAL",
+  "note": "Copiar a results/ y completar. No guardar credenciales. El programa comprueba interfaz y ruta al resolutor, no acredita la política interna del proveedor."
+}
