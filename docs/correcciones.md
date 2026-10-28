@@ -55,3 +55,9 @@ Construcción final del inventario parental: `dataset/corpus-parental-candidatos
 Se recuperó la presentación base de la plantilla: portada con reglas horizontales, márgenes de 2 cm, letra de 10 puntos, encabezados y bibliografía IEEE. El informe vuelve a ocho apartados, con Resultados Esperados separado de Desarrollo. Las decisiones metodológicas y los controles se mantienen; el cronograma utiliza etapas relativas y redacción transversal, sin atribuir fechas nuevas a una aprobación del profesor. Este ajuste responde a la solicitud de Matías y a la plantilla conservada; no corresponde a una reunión nueva.
 
 Se comprobaron mediante consultas de solo lectura 13.720 registros históricos, distribuidos en 1.960 por cada uno de cuatro resolutores públicos y tres condiciones VPN gratuitas (ProtonVPN, Windscribe y hide.me). Los recuentos se incorporan como antecedentes exploratorios. Las etiquetas y respuestas antiguas no se consideran validación del contenido ni pruebas de eficacia; faltan controles y evidencia de configuración comparables con el diseño actual. No se ejecutaron nuevas mediciones al realizar este ajuste documental.
+
+## Claridad de redacción y continuidad del entorno
+
+Se simplificaron el objetivo general, algunos títulos y las explicaciones de preparación y análisis. «Configuraciones intermediadas» pasa a «conexiones mediante VPN o proxy»; el diagrama utiliza «lista de dominios» y «copias de las fuentes». Se definen perfil y cobertura, y se explica qué significa registrar los resúmenes SHA-256. Se conservan las ocho secciones, las citas y las reglas de medición.
+
+Los archivos recuperados de Windows se conservan como antecedentes. Las mediciones en Linux se registrarán como ejecuciones nuevas, tras comprobar la configuración, el resolutor y la ruta de la VPN. La recuperación conserva los registros anteriores sin validarlos de nuevo. Esta aclaración no cambia los datos ni constituye una ejecución nueva.
