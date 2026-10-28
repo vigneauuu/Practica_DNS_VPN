@@ -36,7 +36,7 @@ Ocho observaciones A, una ronda, cuatro dominios técnicos, dos perfiles de Clou
 4. Incorporar VPN y proxies que cumplan el protocolo de documentación y calibración.
 5. Ejecutar las rondas del corpus revisado, evaluar cobertura y estabilidad y recién entonces interpretar los resultados respecto de cada política.
 
-Las correcciones documentadas de los audios 2 y 3 están incorporadas en este avance; nuevas indicaciones se registrarán como una revisión posterior.
+Los cambios de redacción, diseño e implementación derivados de los audios 2 y 3 se describen en esta matriz. La revisión documental no cierra los pendientes experimentales señalados; las nuevas indicaciones se registrarán como una revisión posterior.
 
 ## Ajustes adicionales solicitados por Matías
 
@@ -67,3 +67,11 @@ Los archivos recuperados de Windows se conservan como antecedentes. Las medicion
 Se contrastaron las observaciones de Audio3 y las nueve páginas del informe anotado con la versión actual. Se adelantó a antecedentes la razón de incluir VPN y proxies; se añadieron referencias de HTTP/SOCKS y de las fuentes StevenBlack y Phishing.Database. Se explicitó que la herramienta actual consulta DNS por UDP/TCP en el puerto 53 y no mide DoH/DoT; se definieron TTL, RD, RA, TC, DO y AD en su contexto. No se incorporaron resultados ni fechas de término nuevas.
 
 Permanecen pendientes la validación de categorías, la selección final de servicios con sus políticas, la calibración de VPN/proxies, las mediciones comparativas y el contraste OONI. La meta de 2.000 es operativa, no un tamaño estadístico acreditado por la literatura. El cronograma del informe sigue siendo relativo, sin fechas administrativas confirmadas. La revisión documental no constituye aprobación del diseño por el profesor.
+
+## Desarrollo continuo y reducción de subapartados (28-10-2026)
+
+Se reaplicó la observación de Audio3 27:26–28:29 sobre subcapítulos demasiado breves, conforme a la solicitud de Matías. El informe pasa de 23 a 11 subapartados numerados: Antecedentes y Alcances se desarrollan sin divisiones internas; Objetivos conserva general/específicos; Estado del Arte reúne cinco bloques en tres; Metodología reúne siete en cuatro; Desarrollo reúne cuatro en dos. Las comprobaciones iniciales se explican junto a la implementación y los registros históricos junto a su auditoría. Se añadieron transiciones entre los bloques unidos.
+
+Se conservan las ocho secciones principales, las citas, las tablas y los diagramas, el apartado de Resultados Esperados, el cronograma relativo y las conclusiones vacías. La reducción no cambia el método, los datos ni el estado de los pendientes. El criterio permanente aclara que el profesor pidió desarrollar los temas; la elección concreta de agrupación es una decisión editorial, no una cuota prescrita en la reunión.
+
+La segunda pasada de control distingue la incorporación de una observación de su cumplimiento experimental. El informe describe avances, sin dar por cerrados la validación de categorías, el inventario de políticas y servicios, la calibración de conexiones o el contraste OONI. Se refuerza también el uso preciso de «servicio evaluado» frente a «herramienta de medición», según Audio2 00:49–00:58.

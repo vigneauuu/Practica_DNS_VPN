@@ -1,6 +1,6 @@
 # Criterios permanentes de revisión
 
-Actualización: 27 de octubre de 2026. Base: observaciones de Nicolás Boettcher en los audios 2 y 3 y en el informe impreso. Las marcas de tiempo son aproximadas. Estos criterios resumen las observaciones; no son citas textuales ni una rúbrica institucional inventada.
+Actualización: 28 de octubre de 2026. Base: observaciones de Nicolás Boettcher en los audios 2 y 3 y en el informe impreso. Las marcas de tiempo son aproximadas. Estos criterios resumen las observaciones; no son citas textuales ni una rúbrica institucional inventada.
 
 ## Referencias y antecedentes
 
@@ -19,7 +19,7 @@ Actualización: 27 de octubre de 2026. Base: observaciones de Nicolás Boettcher
 ## Escritura y estructura
 
 9. **El estado del arte explica lo existente.** Los procedimientos nuevos se desarrollan en metodología; lo efectivamente implementado y observado, en desarrollo y resultados. Audio 3, 29:55–31:35.
-10. **Desarrollar los apartados.** Evitar capítulos o subcapítulos de unas pocas líneas sin análisis. La extensión debe responder al contenido, sin rellenar por una cuota de páginas. Audio 3, 27:26–28:29.
+10. **Desarrollar los apartados y evitar fragmentación innecesaria.** Audio 3, 27:26–28:29: el profesor cuestiona los subcapítulos de unas cinco líneas y espera varios párrafos con desarrollo. No establece una prohibición de numerar ni una cantidad máxima de subapartados. Aplicación editorial, reafirmada por Matías el 28-10-2026: reunir puntos breves y relacionados en un relato continuo; conservar subtítulos solo para temas con función propia y desarrollo suficiente. No sustituir cada número por un título sin numeración ni añadir relleno para cumplir una cuota de páginas.
 11. **Usar lenguaje técnico preciso y formal.** Definir reescritura de respuestas, campos DNS, TTL, banderas y direcciones especiales. No sustituir una explicación por una sigla. Audio 3, 00:41–01:44, 14:07–16:33 y 32:35–33:10.
 12. **Representar el recorrido cuando haya varias capas.** El diagrama debe mostrar cliente, ámbito del navegador o sistema, túnel o proxy y lugar de resolución. Audio 3, 28:29–29:55.
 
@@ -47,6 +47,14 @@ Estas reglas operativas responden a las observaciones, pero no se atribuyen como
 - Solicitud de Matías del 28 de octubre de 2026: conservar la presentación base de la plantilla compartida y la estructura del informe, incluido Resultados Esperados como apartado separado. Las correcciones de contenido no requieren rediseñar la portada, los márgenes ni la bibliografía. Esta regla se registra como decisión de presentación, no como una observación de una reunión nueva.
 - Redacción, solicitud de Matías del 28 de octubre de 2026: preferir expresiones directas, como «conexiones mediante VPN o proxy», cuando no se pierde precisión. Definir los términos técnicos necesarios y evitar títulos o frases que añadan complejidad sin explicar una operación, evidencia o límite concreto. Conservar el vocabulario propio de protocolos y métricas cuando sea necesario para describirlos correctamente.
 
+## Seguimiento de nuevas indicaciones (28 de octubre de 2026)
+
+- Solicitud de Matías: revisar en cada intercambio si hay una indicación duradera que incorporar. Registrar fuente y fecha; no convertir consultas, comentarios de estado o decisiones temporales en reglas del profesor.
+- Mantener diferenciadas las observaciones docentes, las preferencias del estudiante y las decisiones de implementación. Una síntesis o una interpretación no equivale a una instrucción literal ni a aprobación del informe.
+- Antes de una entrega, volver a contrastar texto, referencias y diagramas con las correcciones originales; comprobar que los cambios no introducen conceptos sin antecedentes ni describen funciones o resultados aún pendientes como terminados. Mantener una matriz que relacione observación, lugar del informe, comprobación y estado (aplicado, parcial o pendiente); registrar una regla no basta para darla por cumplida. Revisar también la estructura del índice y la extensión real de cada bloque en el PDF.
+- El traslado desde Windows a Linux conserva archivos y registros históricos; las nuevas mediciones deben identificar su entorno y configuración. No mezclar ejecuciones ni presentar la recuperación como validación experimental.
+- El cronograma debe separar etapas previstas de avance comprobado y fechas confirmadas. Una prórroga informada o propuesta no acredita por sí sola una nueva fecha de cierre aprobada.
+
 ## Actualización después de cada reunión
 
 1. Crear una entrada en `docs/reuniones/` usando la plantilla.
@@ -69,3 +77,5 @@ Estas grabaciones son anteriores a Audio2 y Audio3, según Matías. Ver `que_qui
 Las conclusiones permanecen vacías. Los audios antiguos no se presentan como una nueva aprobación del diseño actual.
 
 22. **Describir el alcance de la búsqueda.** Primer audio 27:08: no afirmar revisión exhaustiva sin bases, términos, fechas, criterios de inclusión y exclusión documentados. Segundo 07:12–08:03: distinguir planes y ampliar el inventario y los datos con justificación, sin transformar sus ejemplos en cuotas.
+
+23. **Distinguir el servicio evaluado de la herramienta de medición.** Audio2 00:49–00:58 y primer audio del anteproyecto 12:10–12:37: el servicio de resolución o protección es el objeto evaluado; el programa Python es la herramienta utilizada para observarlo. No atribuir al proveedor características del programa ni presentar el desarrollo del programa como toda la comparación.
