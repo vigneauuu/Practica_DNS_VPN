@@ -10,6 +10,7 @@
 \usepackage{enumitem}
 \usepackage[section]{placeins}
 \usepackage{float}
+\usepackage{needspace}
 \usepackage{fancyhdr}
 \usepackage{microtype}
 \usepackage{cite}
@@ -76,6 +77,8 @@ El Sistema de Nombres de Dominio permite consultar información asociada a nombr
 En este trabajo se utiliza el término \emph{DNS protector} o PDNS para los servicios que aplican políticas destinadas a impedir la resolución ordinaria de ciertos dominios. El estudio de Liu y colaboradores describe proveedores con distintas formas de modificación de respuestas y distintas fuentes de información sobre amenazas \cite{liu2024}. Por ello, el nombre comercial de un servicio no basta para describir el tratamiento aplicado a cada consulta: también importan el perfil, la dirección consultada y la política activa.
 
 Se llama \emph{perfil} a una configuración concreta de un servicio, con una dirección y una política de filtrado identificadas. Un ejemplo es Cloudflare, que documenta un perfil de seguridad y otro que agrega contenido adulto, con direcciones diferentes. Quad9 publica tanto una variante con protección contra amenazas como otra sin ese bloqueo \cite{cloudflare,quad9}. Para compararlas hay que conocer qué pretende bloquear cada perfil y qué información permite obtener su respuesta. Que un servicio de seguridad resuelva un sitio de una categoría ajena a su política no demuestra por sí solo una falla.
+
+Las VPN y los proxies se consideran condiciones de conexión que pueden cambiar el recorrido de las solicitudes y el lugar de resolución. No ofrecen filtrado por el solo hecho de transportar tráfico. Quad9 advierte que un cliente VPN puede utilizar un resolutor distinto del configurado en el sistema \cite{quad9faq}. HTTP y SOCKS permiten distintas formas de intermediación \cite{rfc9110,rfc1928}. Por ello, su inclusión en la comparación requiere identificar una función de protección y comprobar qué tráfico utiliza esa conexión; una extensión del navegador no permite asumir el mismo recorrido para un programa de consola.
 
 El foco es la clasificación por contenido para control parental: contrastar la política ofrecida con las respuestas que recibe el usuario, incluyendo el bloqueo indebido de contenido que debería permanecer disponible. El trabajo de Rojas, Boettcher, Palacios Játiva y Gutiérrez Gaitán propone evaluar funcionalidades de herramientas parentales en el contexto chileno \cite{rojas2025}. Es un antecedente relacionado con la línea de trabajo, sin afirmar que sus aplicaciones, corpus o métricas sean directamente equivalentes a los de un servicio DNS.
 
@@ -147,6 +150,8 @@ En proxies se registrarán el tipo de intermediario, resolución local o remota,
 \subsection{Limitaciones}
 El corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. No se promete un margen de error del 5\% por tener aproximadamente 400 filas por lista. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
 
+La herramienta actual envía consultas DNS mediante UDP o TCP al puerto 53. No implementa mediciones DNS sobre HTTPS (DoH) ni DNS sobre TLS (DoT); por tanto, no compara su comportamiento de filtrado con el del transporte convencional. Las diferencias entre protección DNSSEC y cifrado del transporte se explican en el estado del arte \cite{rfc4033,rfc8484,rfc7858}. Una prueba bajo VPN deberá verificar si estas consultas siguen el túnel, sin asumir que reproducen el DNS utilizado por el navegador.
+
 El experimento describe una ubicación y ventanas temporales concretas. La configuración del equipo, el ISP, el enrutamiento y la caché pueden influir. No se controla la base interna del proveedor ni se demuestra el algoritmo que produjo una decisión. La fase DNS no garantiza acceso HTTP, seguridad del contenido, cumplimiento judicial ni protección integral del usuario. Estas preguntas requerirían evidencia adicional y un diseño específico.
 
 \section{Resultados Esperados}
@@ -162,13 +167,13 @@ Los entregables no presuponen que un servicio será mejor que otro ni que una co
 
 \section{Estado del Arte}
 \subsection{Respuestas DNS, caché y protección del transporte}
-Una consulta contiene, entre otros campos, el nombre, tipo y clase solicitados. La respuesta incluye un código de resultado, banderas y secciones de respuesta, autoridad e información adicional. Se diferencia el código de respuesta de las banderas: una decisión de permitir o bloquear no es una bandera del protocolo. El significado de esas banderas se interpreta según la especificación del mensaje \cite{rfc1035}.
+Una consulta contiene, entre otros campos, el nombre, tipo y clase solicitados. La respuesta incluye un código de resultado, banderas y secciones de respuesta, autoridad e información adicional. Se diferencia el código de respuesta de las banderas: una decisión de permitir o bloquear no es una bandera del protocolo. Por ejemplo, RD solicita recursión, RA indica que el servidor la ofrece y TC indica truncamiento del mensaje \cite{rfc1035}. Se registran para describir cómo se obtuvo la respuesta; TC puede requerir repetir la consulta por TCP. No se utilizan como etiquetas de contenido.
 
 Una respuesta NXDOMAIN expresa que el nombre consultado no existe; la ausencia de un registro del tipo solicitado tampoco equivale necesariamente a inexistencia del nombre. El RFC 2308 especifica las respuestas negativas y su almacenamiento en caché \cite{rfc2308}. En consecuencia, convertir cualquier NXDOMAIN o ausencia de respuesta A en un bloqueo produciría falsos indicios, especialmente en listas antiguas o volátiles. Un tiempo de espera agotado describe una consulta sin respuesta dentro del límite fijado; no revela la intención del proveedor.
 
-El TTL limita la reutilización de un registro, pero una observación aislada no demuestra que la respuesta provenga de caché ni permite reconstruir su edad original. Consultar una dirección explícita permite elegir el resolutor sin controlar por ello su caché. El TTL se conserva como contexto de la observación y no como certificado de ausencia de caché. Ni TTL ni latencia son indicadores principales de calidad de categorización; el objeto de evaluación es la respuesta respecto del contenido y de la política, no un ranking de rapidez.
+El tiempo de vida (TTL) limita la reutilización de un registro, pero una observación aislada no demuestra que la respuesta provenga de caché ni permite reconstruir su edad original. Consultar una dirección explícita permite elegir el resolutor sin controlar por ello su caché. El TTL se conserva como contexto de la observación y no como certificado de ausencia de caché. Ni TTL ni latencia son indicadores principales de calidad de categorización; el objeto de evaluación es la respuesta respecto del contenido y de la política, no un ranking de rapidez.
 
-DNSSEC proporciona autenticación del origen de los datos e integridad; no cifra el contenido de las consultas \cite{rfc4033}. DoH y DoT protegen el transporte mediante HTTPS y TLS, respectivamente \cite{rfc8484,rfc7858}. Son propiedades distintas, por lo que no se presentan como mecanismos equivalentes. Solicitar el bit DO o recibir AD no sustituye a una validación independiente realizada por el cliente. Esta distinción permite delimitar qué observa cada medición, independientemente del transporte empleado.
+DNSSEC proporciona autenticación del origen de los datos e integridad; no cifra el contenido de las consultas \cite{rfc4033}. DoH y DoT protegen el transporte mediante HTTPS y TLS, respectivamente \cite{rfc8484,rfc7858}. Son propiedades distintas, por lo que no se presentan como mecanismos equivalentes. Solicitar registros DNSSEC mediante el bit DO o recibir la bandera AD, que declara datos autenticados por el resolutor, no sustituye a una validación independiente realizada por el cliente \cite{rfc4033}. Esta distinción permite delimitar qué observa cada medición, independientemente del transporte empleado.
 
 \subsection{Políticas de filtrado y respuestas DNS}
 La modificación de una respuesta DNS puede consistir, por ejemplo, en sustituir la dirección habitual por una dirección destinada a impedir el acceso. Este es el significado de \emph{reescritura de la respuesta} en este informe. No se refiere a modificar el protocolo ni el nombre del servicio. Para relacionar una respuesta con una política deben distinguirse los siguientes niveles:
@@ -213,6 +218,7 @@ Un intermediario limitado al navegador puede afectar solamente a las solicitudes
 \label{fig:recorrido}
 \end{figure}
 
+\Needspace{8\baselineskip}
 \subsection{Medidas de acuerdo y evaluación por política}
 Cohen formuló una medida de acuerdo para clasificaciones nominales que compara la coincidencia observada con la coincidencia esperada a partir de las proporciones de cada categoría en ambos evaluadores \cite{cohen1960}. El acuerdo observado y Kappa responden a una pregunta de coincidencia entre secuencias de decisiones, no a si esas decisiones son correctas. Dos servicios pueden coincidir al resolver un dominio o al emitir una señal de bloqueo sin que ello identifique sus bases de datos, su proveedor ascendente o su algoritmo interno.
 
@@ -252,8 +258,8 @@ Fuente candidata & Utilidad & Comprobación necesaria\\
 \midrule
 Tranco & Nombres populares y referencia reproducible \cite{tranco} & ID de lista, fecha, política de selección; no equiparar a benignidad\\
 UT1 & Categorías de contenido declaradas por la fuente \cite{ut1} & Copia fechada, documentación y revisión de etiquetas; fuente histórica incompleta\\
-StevenBlack y selección manual & Candidatos relacionados con apuestas & Procedencia de cada subconjunto y contraste con otra evidencia\\
-Phishing.Database & Candidatos señalados por una lista de phishing & Estado, fecha y pertinencia de la señal; no inferir antigüedad\\
+StevenBlack y selección manual & Candidatos relacionados con apuestas \cite{stevenblack} & Procedencia de cada subconjunto y contraste con otra evidencia\\
+Phishing.Database & Candidatos señalados por una lista de phishing \cite{phishingdatabase} & Estado, fecha y pertinencia de la señal; no inferir antigüedad\\
 FINSIN & Alternativa local documentada \cite{finsin2022} & Disponibilidad, condiciones de acceso y actualidad\\
 \bottomrule
 \end{tabularx}

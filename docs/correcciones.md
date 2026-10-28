@@ -11,7 +11,7 @@ Actualización: 28 de octubre de 2026. Esta matriz distingue cambios de diseño 
 | Referencias genéricas y afirmaciones universales | Documentos identificables; eliminadas cifras y aseveraciones judiciales sin documento primario verificado | Las referencias no localizadas no se presentan como respaldo |
 | DNSSEC confundido con cifrado | Distinción entre autenticidad/integridad y DoH/DoT | RFC 4033, RFC 8484 y RFC 7858 |
 | Tamaño de muestra y exclusividad incorrectos | Auditoría de 1.960 filas, 94 rechazos y 14 solapamientos; 1.852 candidatos únicos | `dataset/corpus.audit.json`; categorías múltiples y procedencia por fila |
-| Automatización presentada como validación | Estados pending/validated/excluded y evidencia con responsable y fecha | **Pendiente:** revisión semántica de 1.852 candidatos |
+| Automatización presentada como validación | Estados pending/validated/excluded y evidencia con responsable y fecha | **Pendiente:** revisión semántica del conjunto parental de 2.000 candidatos; inventario histórico de 1.852 conservado |
 | Phishing equiparado a dominio reciente | Etiqueta conceptual phishing; fecha y actividad son evidencias diferentes | El nombre del CSV original se conserva únicamente por procedencia |
 | NXDOMAIN y errores tratados como bloqueo | Estados de evidencia y controles antes/después; huellas documentadas y EDE | Pruebas sobre NXDOMAIN, controles, sinkholes, EDE y errores |
 | Registro incompleto y falta de reintentos | Mensajes completos, direcciones, TTL, banderas, intentos, tiempos y contexto | Pruebas de múltiples respuestas y reintentos; esquema nuevo por ejecución |
@@ -61,3 +61,9 @@ Se comprobaron mediante consultas de solo lectura 13.720 registros históricos, 
 Se simplificaron el objetivo general, algunos títulos y las explicaciones de preparación y análisis. «Configuraciones intermediadas» pasa a «conexiones mediante VPN o proxy»; el diagrama utiliza «lista de dominios» y «copias de las fuentes». Se definen perfil y cobertura, y se explica qué significa registrar los resúmenes SHA-256. Se conservan las ocho secciones, las citas y las reglas de medición.
 
 Los archivos recuperados de Windows se conservan como antecedentes. Las mediciones en Linux se registrarán como ejecuciones nuevas, tras comprobar la configuración, el resolutor y la ruta de la VPN. La recuperación conserva los registros anteriores sin validarlos de nuevo. Esta aclaración no cambia los datos ni constituye una ejecución nueva.
+
+## Comprobación previa a revisión del profesor (28-10-2026)
+
+Se contrastaron las observaciones de Audio3 y las nueve páginas del informe anotado con la versión actual. Se adelantó a antecedentes la razón de incluir VPN y proxies; se añadieron referencias de HTTP/SOCKS y de las fuentes StevenBlack y Phishing.Database. Se explicitó que la herramienta actual consulta DNS por UDP/TCP en el puerto 53 y no mide DoH/DoT; se definieron TTL, RD, RA, TC, DO y AD en su contexto. No se incorporaron resultados ni fechas de término nuevas.
+
+Permanecen pendientes la validación de categorías, la selección final de servicios con sus políticas, la calibración de VPN/proxies, las mediciones comparativas y el contraste OONI. La meta de 2.000 es operativa, no un tamaño estadístico acreditado por la literatura. El cronograma del informe sigue siendo relativo, sin fechas administrativas confirmadas. La revisión documental no constituye aprobación del diseño por el profesor.
