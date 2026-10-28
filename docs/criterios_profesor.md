@@ -44,6 +44,7 @@ Estas reglas operativas responden a las observaciones, pero no se atribuyen como
 
 - Mantener el apartado de conclusiones vacío mientras la práctica esté en curso. Los resultados parciales se describen como avance en desarrollo, sin adelantar conclusiones finales.
 - Explicar en antecedentes y motivación de dónde surgen categorías, cantidad de perfiles, tamaño del corpus y métricas, antes de encontrarlos en objetivos o método. Las cantidades actuales son auditadas o decisiones justificadas, no cuotas atribuidas al profesor.
+- Solicitud de Matías del 28 de octubre de 2026: conservar la presentación base de la plantilla compartida y la estructura del informe, incluido Resultados Esperados como apartado separado. Las correcciones de contenido no requieren rediseñar la portada, los márgenes ni la bibliografía. Esta regla se registra como decisión de presentación, no como una observación de una reunión nueva.
 
 ## Actualización después de cada reunión
 

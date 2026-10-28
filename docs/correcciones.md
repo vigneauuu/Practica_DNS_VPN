@@ -1,6 +1,6 @@
 # Correcciones aplicadas y trabajo experimental pendiente
 
-Actualización: 27 de octubre de 2026. Esta matriz distingue cambios de diseño e implementación de evidencia que todavía debe obtenerse. Las observaciones de las reuniones se resumen en [criterios_profesor.md](criterios_profesor.md).
+Actualización: 28 de octubre de 2026. Esta matriz distingue cambios de diseño e implementación de evidencia que todavía debe obtenerse. Las observaciones de las reuniones se resumen en [criterios_profesor.md](criterios_profesor.md).
 
 | Observación | Cambio aplicado | Comprobación / estado |
 |---|---|---|
@@ -49,3 +49,9 @@ Se añadió el foco parental y la separación de phishing, el contraste de conte
 Meta de 2.000 únicos revisados en `config/estudio.json`, planificador y selector reproducible con bloqueo ante datos insuficientes. El inventario histórico conserva 1.852 candidatos. Se construyó un conjunto parental separado de 2.000: 1.466 heredados y 534 referencias universitarias UT1. Revisados: cero. La lista llamada armas requiere revisión de su significado; también las referencias de biblioteca requieren comprobar contenido y política esperada. Ver `diseno_estudio.md`.
 
 Construcción final del inventario parental: `dataset/corpus-parental-candidatos.csv` contiene 2.000 únicos sin phishing; 534 son `referencia_biblioteca`, etiqueta de procedencia que no acredita benignidad ni educación. El corpus definitivo validado sigue pendiente. Ver `diseno_estudio.md`.
+
+## Presentación del informe y registros exploratorios (28-10-2026)
+
+Se recuperó la presentación base de la plantilla: portada con reglas horizontales, márgenes de 2 cm, letra de 10 puntos, encabezados y bibliografía IEEE. El informe vuelve a ocho apartados, con Resultados Esperados separado de Desarrollo. Las decisiones metodológicas y los controles se mantienen; el cronograma utiliza etapas relativas y redacción transversal, sin atribuir fechas nuevas a una aprobación del profesor. Este ajuste responde a la solicitud de Matías y a la plantilla conservada; no corresponde a una reunión nueva.
+
+Se comprobaron mediante consultas de solo lectura 13.720 registros históricos, distribuidos en 1.960 por cada uno de cuatro resolutores públicos y tres condiciones VPN gratuitas (ProtonVPN, Windscribe y hide.me). Los recuentos se incorporan como antecedentes exploratorios. Las etiquetas y respuestas antiguas no se consideran validación del contenido ni pruebas de eficacia; faltan controles y evidencia de configuración comparables con el diseño actual. No se ejecutaron nuevas mediciones al realizar este ajuste documental.

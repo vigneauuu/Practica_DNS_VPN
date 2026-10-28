@@ -6,13 +6,14 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 
 ## Estado del avance
 
-- Informe y objetivos reformulados, con dos diagramas, antecedentes verificables y alcance por perfiles.
+- Informe con la presentación de la plantilla y ocho apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo y conclusiones. Dos diagramas de recorridos y evidencia; conclusiones pendientes hasta finalizar.
 - Corpus heredado auditado: **1.960 filas**, 94 entradas inválidas, 14 solapamientos y **1.852 candidatos únicos**. Las categorías están pendientes de revisión semántica.
 - Meta operativa: **2.000 dominios únicos revisados**; no se atribuye esta cantidad al profesor. El conjunto parental tiene **2.000 candidatos únicos**, incluidos 534 de contraste de la lista universitaria UT1 `liste_bu`; todos siguen pendientes de revisión. El inventario original de 1.852 se conserva por separado. Ver [diseño del estudio](docs/diseno_estudio.md).
 - Motor nuevo con mensajes DNS completos, A/AAAA, EDE, controles temporales, reintentos registrados y ejecuciones independientes.
 - Seis perfiles públicos configurados. Su configuración no acredita que se hayan completado pruebas de todos ellos.
 - Importación local y exportación de listas para OONI; prueba HTTP opcional para proxies. No se han ejecutado ni publicado mediciones OONI.
 - Calibración limitada registrada; no hay todavía una evaluación final de eficacia. Ver [correcciones y pendientes](docs/correcciones.md).
+- Base exploratoria histórica: 13.720 registros, 1.960 por cada uno de cuatro resolutores y tres condiciones VPN gratuitas. Se conserva como antecedente; no se incorpora a las mediciones del diseño actual sin comprobar sus condiciones.
 
 ## Trabajar en Linux
 
