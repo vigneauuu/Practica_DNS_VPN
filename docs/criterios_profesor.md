@@ -44,7 +44,6 @@ Estas reglas operativas responden a las observaciones, pero no se atribuyen como
 
 - Mantener el apartado de conclusiones vacío mientras la práctica esté en curso. Los resultados parciales se describen como avance en desarrollo, sin adelantar conclusiones finales.
 - Explicar en antecedentes y motivación de dónde surgen categorías, cantidad de perfiles, tamaño del corpus y métricas, antes de encontrarlos en objetivos o método. Las cantidades actuales son auditadas o decisiones justificadas, no cuotas atribuidas al profesor.
-- Conservar un traspaso de contexto legible desde Antigravity y Gemini, independiente de la memoria del chat.
 
 ## Actualización después de cada reunión
 

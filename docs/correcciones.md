@@ -21,8 +21,8 @@ Actualización: 27 de octubre de 2026. Esta matriz distingue cambios de diseño 
 | Configuración VPN asumida | Plantillas locales; comprobación de interfaz activa y ruta al resolutor | **Pendiente:** perfiles reales y estado de protección verificable |
 | Proxy tratado como respuesta DNS | Componente HTTP separado, TLS verificado, límites de lectura y huellas explícitas | Prueba de HTTP 403; **pendiente:** calibración de proxies reales |
 | Fechas y resultados presentados como definitivos | Informe fechado como avance; auditoría, calibración y resultados finales diferenciados | Sin cuotas artificiales ni cronograma de entrega vencido |
-| Entorno de desarrollo y continuidad | `.venv`, paquete instalable, pruebas, versiones y guía Linux | Editor opcional; Antigravity detectado en el equipo |
-| Preferencias de reuniones que deben recordarse | Reglas en `AGENTS.md`, criterios y plantilla de reunión | Actualizar después de cada revisión |
+| Entorno de desarrollo | `.venv`, paquete instalable, pruebas, versiones y guía Linux | Entorno Python documentado |
+| Seguimiento de correcciones | Criterios y plantilla de reunión | Actualizar después de cada revisión |
 
 ## Calibración realizada
 
@@ -36,11 +36,11 @@ Ocho observaciones A, una ronda, cuatro dominios técnicos, dos perfiles de Clou
 4. Incorporar VPN y proxies que cumplan el protocolo de documentación y calibración.
 5. Ejecutar las rondas del corpus revisado, evaluar cobertura y estabilidad y recién entonces interpretar los resultados respecto de cada política.
 
-Falta recibir la grabación correcta que reemplaza al archivo inicialmente llamado Audio1 y recuperar el contenido del historial de Gemini. Las correcciones ya documentadas de los audios 2 y 3 están incorporadas en este avance; nuevas indicaciones se registrarán como una revisión posterior.
+Las correcciones documentadas de los audios 2 y 3 están incorporadas en este avance; nuevas indicaciones se registrarán como una revisión posterior.
 
 ## Ajustes adicionales solicitados por Matías
 
-Se desarrolló en antecedentes la razón de categorías, cantidades, perfiles y métricas antes de objetivos. Conclusiones queda vacío hasta finalizar la práctica. La continuidad entre herramientas está en `docs/CONTINUIDAD.md` y, localmente, en `../EMPEZAR_AQUI.md` desde la raíz del repositorio. No hay una cuota de páginas ni un tamaño final de corpus acreditado por los audios revisados.
+Se desarrolló en antecedentes la razón de categorías, cantidades, perfiles y métricas antes de objetivos. Conclusiones queda vacío hasta finalizar la práctica. No hay una cuota de páginas ni un tamaño final de corpus acreditado por los audios revisados.
 
 ## Revisión de los audios antiguos del anteproyecto
 

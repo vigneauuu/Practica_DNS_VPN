@@ -16,7 +16,7 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 
 ## Trabajar en Linux
 
-La carpeta del repositorio es el espacio de trabajo. El entorno virtual contiene las dependencias; el editor es opcional. Puedes abrir esta misma carpeta con Antigravity o VS Code y seleccionar `.venv/bin/python` como intérprete.
+La carpeta del repositorio es el espacio de trabajo. El entorno virtual contiene las dependencias; el editor es opcional. El intérprete del proyecto es `.venv/bin/python`.
 
 ```bash
 cd /home/matias/Practica_Laboral/Practica_DNS_VPN
@@ -106,7 +106,3 @@ La prueba HTTP verifica TLS, limita la lectura, no sigue redirecciones ni ejecut
 - [Auditoría del corpus](dataset/corpus.audit.json) y [calibración limitada](docs/evidencia/calibracion-resumen.json).
 
 `src/pdns_lab/` contiene la implementación actual; `tests/`, sus pruebas; `config/`, los perfiles públicos; `dataset/`, los candidatos y controles. `legacy/` conserva los scripts anteriores. `resultados.db` es la base histórica ya versionada: no se modifica ni se interpreta con las reglas nuevas. Los resultados detallados nuevos, el entorno virtual, credenciales y archivos privados quedan fuera de Git.
-
-## Continuidad entre herramientas
-
-La guía [docs/CONTINUIDAD.md](docs/CONTINUIDAD.md) describe el estado y el siguiente trabajo. Para Antigravity y Gemini en este equipo, abrir la carpeta superior `Practica_Laboral` y leer `EMPEZAR_AQUI.md`; allí se ubican también las fuentes privadas y el mensaje de traspaso. No subir esa carpeta completa a GitHub.

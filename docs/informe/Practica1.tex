@@ -324,7 +324,7 @@ Las mediciones OONI se contrastarán solo cuando coincidan dominio, período y c
 
 \section{Desarrollo e implementación actual}
 \subsection{Entorno de trabajo en Linux}
-El repositorio es el espacio de trabajo del proyecto y un entorno virtual \texttt{.venv} contiene sus dependencias Python. La interfaz \texttt{pdns-lab} permite auditar el corpus, registrar revisiones, simular el plan, medir y analizar. Un editor como VS Code o Antigravity puede abrir la misma carpeta y usar ese intérprete; no determina los resultados ni sustituye a las dependencias del proyecto. El informe LaTeX se mantiene junto al código y se actualiza en el proyecto de Overleaf.
+El repositorio es el espacio de trabajo del proyecto y un entorno virtual \texttt{.venv} contiene sus dependencias Python. La interfaz \texttt{pdns-lab} permite auditar el corpus, registrar revisiones, simular el plan, medir y analizar. El informe LaTeX se mantiene junto al código y se actualiza en el proyecto de Overleaf.
 
 El módulo de planificación separa el inventario histórico, los candidatos en alcance y la selección final; exige la cantidad y validación declaradas en \texttt{config/estudio.json}. La estructura nueva separa \texttt{src/pdns\_lab/}, \texttt{config/}, \texttt{dataset/}, \texttt{tests/} y \texttt{docs/informe/}. Las mediciones nuevas se almacenan en \texttt{results/}, con un esquema que identifica cada ejecución. La base histórica \texttt{resultados.db} se conserva como antecedente exploratorio; sus etiquetas previas no se migran como decisiones válidas. El código anterior queda en \texttt{legacy/} para trazabilidad.
 

@@ -1,4 +1,4 @@
-# Revisión de materiales y decisiones de continuidad
+# Revisión de materiales y decisiones de trabajo
 
 Fecha de revisión: 27 de octubre de 2026. No corresponde a una nueva reunión celebrada en esta fecha: sintetiza los audios 2 y 3 y el PDF recibidos. La fecha original de esas conversaciones no está confirmada.
 
@@ -15,8 +15,8 @@ Consultar `../criterios_profesor.md` para el detalle y las marcas de tiempo: fun
 
 ## Indicaciones de Matías en esta revisión
 
-Cambiar estructura, arquitectura y nombres cuando lo requiera la coherencia. Dejar conclusiones vacías mientras la práctica no termine. Mantener autoría de Matías sin coautores. Preparar continuidad local entre herramientas, incluidos Gemini y Antigravity.
+Cambiar estructura, arquitectura y nombres cuando lo requiera la coherencia. Dejar conclusiones vacías mientras la práctica no termine.
 
 ## Verificación y pendientes
 
-21 pruebas automatizadas aprobadas. Calibración limitada de ocho observaciones: cuatro errores de red del perfil familiar, sin inferir bloqueo. Faltan validación semántica, conectividad de todos los perfiles, VPN/proxies reales y contraste OONI. Falta reemplazo de Audio1 y recuperar el chat compartido de Gemini. La publicación remota requiere autenticación; Matías indicó que lo hará cuando esté en el computador.
+21 pruebas automatizadas aprobadas. Calibración limitada de ocho observaciones: cuatro errores de red del perfil familiar, sin inferir bloqueo. Faltan validación semántica, conectividad de todos los perfiles, VPN/proxies reales y contraste OONI.
