@@ -1,6 +1,6 @@
 # Correcciones aplicadas y trabajo experimental pendiente
 
-Actualización: 28 de octubre de 2026. Esta matriz distingue cambios de diseño e implementación de evidencia que todavía debe obtenerse. Las observaciones de las reuniones se resumen en [criterios_profesor.md](criterios_profesor.md).
+Actualización: 29 de octubre de 2026. Esta matriz distingue cambios de diseño e implementación de evidencia que todavía debe obtenerse. Las observaciones de las reuniones se resumen en [criterios_profesor.md](criterios_profesor.md).
 
 | Observación | Cambio aplicado | Comprobación / estado |
 |---|---|---|
@@ -83,3 +83,11 @@ Se aclaró el aporte del artículo de Rojas y colaboradores: evalúa funciones d
 Se simplificó la justificación de Python y la formulación de la meta operativa de 2.000, cuya procedencia como preferencia de Matías permanece registrada en los criterios y el contexto. Se conservan las ocho secciones y once subapartados, las referencias y los pendientes de validación y medición. No se añadieron resultados ni se modificó el diseño experimental.
 
 La tabla de fuentes distingue las destinadas al corpus parental de las utilizadas o consideradas para revisar el inventario histórico de phishing; FINSIN y Phishing.Database no se presentan como incorporaciones al corpus parental definitivo.
+
+## Revisión conjunta del último audio y del informe anotado (29-10-2026)
+
+Se contrastó la transcripción completa de Audio3 con las nueve páginas anotadas. Se detectó que la similitud de conjuntos ya utilizada carecía de nombre y referencia explícitos en el informe: se identifica como Jaccard, con fuente, denominador y distinción entre la convención matemática para conjuntos vacíos y el valor no definido informado por este estudio cuando no hay señales positivas. No se cambia su implementación ni se añade un índice propio.
+
+Se concretó el procedimiento pendiente de revisión de categorías: método publicado de cada fuente, actualización, dependencia entre listas, evidencia por dominio y tratamiento de discrepancias. El diagrama distingue resolución local o remota del destino y deja de asociar el filtro al túnel VPN. Se simplificó la explicación del intercambio OONI y se retiró del documento de criterios operativos un estado obsoleto de autenticación de GitHub.
+
+Se mantienen la estructura de ocho secciones y once subapartados, las conclusiones vacías y la distinción entre avance documental y trabajo experimental. La validación semántica, inventario definitivo, configuración de VPN/proxies, mediciones y contraste OONI siguen pendientes.

@@ -62,7 +62,7 @@
 {\bfseries\fontsize{14}{17}\selectfont Profesor Guía: }{\fontsize{12}{15}\selectfont Nicolás Boettcher}\\[0.3cm]
 {\bfseries\fontsize{14}{17}\selectfont Alumno: }{\fontsize{12}{15}\selectfont Matías Vigneau Andrades}\\[0.3cm]
 \vspace{0.8cm}
-{\fontsize{10}{12}\selectfont 28 de octubre de 2026\par}
+{\fontsize{10}{12}\selectfont 29 de octubre de 2026\par}
 \end{center}
 \end{titlepage}
 \tableofcontents
@@ -99,7 +99,7 @@ La selección de fuentes también requiere distinguir su finalidad. Tranco ofrec
 
 Se utiliza Python porque la biblioteca dnspython permite enviar consultas y acceder a los mensajes, registros y campos DNS \cite{dnspython}. Esa capacidad permite automatizar las consultas y conservar la evidencia requerida. La herramienta registra y compara respuestas; no implementa un clasificador nuevo ni reconstruye el algoritmo interno de un proveedor.
 
-La distinción entre respuestas modificadas, anomalías y fallas descrita por los trabajos de PDNS y OONI fundamenta informar frecuencias y cobertura antes de comparar servicios \cite{liu2024,ooni}. Las repeticiones permitirán describir estabilidad temporal. Para comparar decisiones interpretables se utilizarán tablas de contingencia y acuerdo observado; Kappa se utiliza como medida adicional que tiene en cuenta la proporción de bloqueos de cada perfil \cite{cohen1960}, sin convertir el acuerdo en acierto. También se calculará qué proporción de los dominios señalados por al menos un perfil es señalada por ambos. Sus definiciones, denominadores y casos no interpretables se desarrollan en metodología. Estas medidas responden a preguntas descriptivas diferentes y no se combinan en un índice de eficacia sin fundamento.
+La distinción entre respuestas modificadas, anomalías y fallas descrita por los trabajos de PDNS y OONI fundamenta informar frecuencias y cobertura antes de comparar servicios \cite{liu2024,ooni}. Las repeticiones permitirán describir estabilidad temporal. Para comparar decisiones interpretables se utilizarán tablas de contingencia y acuerdo observado; Kappa se utiliza como medida adicional que tiene en cuenta la proporción de bloqueos de cada perfil \cite{cohen1960}, sin convertir el acuerdo en acierto. También se utilizará la similitud de Jaccard: la proporción de dominios señalados por ambos perfiles entre los señalados por al menos uno \cite{kosub2016}. Sus definiciones, denominadores y casos no interpretables se desarrollan en metodología. Estas medidas responden a preguntas descriptivas diferentes y no se combinan en un índice de eficacia sin fundamento.
 
 \textbf{¿Qué diferencias y qué estabilidad presentan las respuestas de perfiles de protección ante un corpus de contenido documentado para control parental, y qué evidencia permite distinguir señales de filtrado de fallas o respuestas negativas legítimas?}
 
@@ -184,7 +184,7 @@ Los códigos de error extendido DNS (EDE) agregan información sobre causas de r
 \subsection{Recorrido de una consulta: DNS, VPN y proxy}
 Una VPN transporta tráfico mediante un túnel y puede asignar un resolutor o incorporar protección adicional. Ello depende del cliente y su configuración. La documentación de Quad9 explica que los clientes VPN pueden utilizar resolutores distintos de los configurados en el sistema \cite{quad9faq}. El experimento debe comprobar qué dirección recibe la consulta y qué ruta utiliza el equipo.
 
-Un intermediario limitado al navegador puede afectar solamente a las solicitudes de ese navegador. Una consulta enviada por un programa de consola puede seguir otro recorrido. También debe diferenciarse un proxy HTTP de uno SOCKS y verificarse dónde se resuelve el nombre. Las observaciones de accesibilidad HTTP deben distinguirse de las respuestas DNS y de las decisiones del intermediario. Un estado HTTP 403 o una falla TLS no identifica por sí solo una política del intermediario.
+Un intermediario limitado al navegador puede afectar solamente a las solicitudes de ese navegador. Una consulta enviada por un programa de consola puede seguir otro recorrido. También debe diferenciarse un proxy HTTP de uno SOCKS. Si el cliente entrega el nombre del destino al proxy, este puede resolverlo; si entrega una dirección que ya resolvió, la consulta DNS precedió a esa solicitud \cite{rfc9110,rfc1928}. La figura \ref{fig:recorrido} distingue estas alternativas, que deben verificarse en cada cliente. Las observaciones de accesibilidad HTTP deben distinguirse de las respuestas DNS y de las decisiones del intermediario. Un estado HTTP 403 o una falla TLS no identifica por sí solo una política del intermediario.
 
 \begin{figure}[H]
 \centering
@@ -197,13 +197,13 @@ Un intermediario limitado al navegador puede afectar solamente a las solicitudes
 \draw[->] (a)--(b);
 \draw[->] (b)--(c);
 \node[box] (d) at (0,-2.2) {Programa Python\\prueba bajo VPN};
-\node[box,fill=softorange] (e) at (4.9,-2.2) {Interfaz del túnel\\ruta y filtro};
+\node[box,fill=softorange] (e) at (4.9,-2.2) {Interfaz del túnel\\ruta comprobada};
 \node[box] (f) at (9.8,-2.2) {Resolutor asignado\\o explícito};
 \draw[->] (d)--(e); \draw[->] (e)--(f);
-\node[box] (g) at (0,-4.4) {Navegador o cliente HTTP\\proxy explícito};
-\node[box,fill=softorange] (h) at (4.9,-4.4) {Proxy HTTP / SOCKS\\ámbito de aplicación};
+\node[box] (g) at (0,-4.4) {Cliente HTTP / navegador\\DNS local (opcional)};
+\node[box,fill=softorange] (h) at (4.9,-4.4) {Proxy HTTP / SOCKS\\DNS remoto si recibe nombre};
 \node[box] (i) at (9.8,-4.4) {Destino web\\o respuesta del proxy};
-\draw[->] (g)--(h); \draw[->] (h)--(i);
+\draw[->] (g)--node[above,font=\footnotesize]{IP / nombre}(h); \draw[->] (h)--(i);
 \node[note] at (0,-5.4) {La consola puede seguir\\una ruta distinta\\del navegador.};
 \node[note] at (4.9,-5.4) {Comprobar dónde se resuelve\\el nombre y qué tráfico\\se transporta.};
 \node[note] at (9.8,-5.4) {Distinguir la resolución DNS\\de la accesibilidad HTTP.};
@@ -214,7 +214,7 @@ Un intermediario limitado al navegador puede afectar solamente a las solicitudes
 
 \Needspace{8\baselineskip}
 \subsection{Estudios previos y criterios de comparación}
-Cohen formuló una medida de acuerdo para clasificaciones nominales que compara la coincidencia observada con la coincidencia esperada a partir de las proporciones de cada categoría en ambos evaluadores \cite{cohen1960}. El acuerdo observado y Kappa responden a una pregunta de coincidencia entre secuencias de decisiones, no a si esas decisiones son correctas. Dos servicios pueden coincidir al resolver un dominio o al emitir una señal de bloqueo sin que ello identifique sus bases de datos, su proveedor ascendente o su algoritmo interno.
+Cohen formuló una medida de acuerdo para clasificaciones nominales que compara la coincidencia observada con la coincidencia esperada a partir de las proporciones de cada categoría en ambos evaluadores \cite{cohen1960}. La similitud de Jaccard compara la intersección y la unión de dos conjuntos \cite{kosub2016}; aquí permite describir la coincidencia de señales de bloqueo sin sumar como coincidencias los dominios que ambos perfiles resuelven. El acuerdo observado y Kappa responden a una pregunta de coincidencia entre secuencias de decisiones, no a si esas decisiones son correctas. Dos servicios pueden coincidir al resolver un dominio o al emitir una señal de bloqueo sin que ello identifique sus bases de datos, su proveedor ascendente o su algoritmo interno.
 
 Para evaluar una política parental hace falta una referencia independiente: qué contenido tiene el dominio y qué decisión debería aplicar el perfil según su política declarada. Los contrastes de contenido permitido y restringido permiten distinguir coincidencia de acierto. Una lista de popularidad no aporta por sí sola esa clasificación de referencia comprobada. Estas diferencias fundamentan conservar errores e incertidumbre y presentar los denominadores, en lugar de interpretar todas las respuestas como una clasificación binaria válida.
 
@@ -261,7 +261,9 @@ FINSIN & Posible contraste del inventario histórico \cite{finsin2022} & Disponi
 
 El conjunto candidato parental se guarda en \texttt{dataset/corpus-parental-candidatos.csv}: 400 adultos, 400 apuestas, 266 armas, 400 populares y 534 referencias de biblioteca, sin solapamientos entre estos grupos tras retirar la etiqueta phishing. La composición es una base de trabajo, no una cuota óptima ni una clasificación ya comprobada. Las entradas heredadas y las nuevas referencias comienzan en estado \texttt{pending}. Para pasar a \texttt{validated} se requiere justificar la etiqueta mediante evidencia identificable y revisión con responsable y fecha; las entradas descartadas quedan como \texttt{excluded}. El programa exige esos campos y conserva la decisión, pero no puede verificar por sí solo la calidad de la revisión humana. La categoría de cada dominio se revisa con evidencias independientes de las respuestas DNS y del acuerdo entre proveedores.
 
-Se verificará la vigencia de las fuentes y se contrastarán categorías cuando exista evidencia alternativa. La revisión de contenido o de reportes deberá realizarse con un procedimiento de trabajo adecuado, sin convertir la visita a sitios potencialmente maliciosos en un requisito automático del script. La evidencia de categoría y la evidencia de actividad se documentarán por separado. Una discrepancia entre fuentes se conservará como tal hasta resolverla o excluir el dominio de los análisis que requieran una etiqueta única.
+Para cada fuente se documentarán las definiciones de sus categorías, la fecha de la copia y el método publicado de asignación y actualización de etiquetas: revisión manual, procedimiento automático o combinación de ambos. Si la fuente no explica ese método, se registrará como información no disponible. Se comprobará además si dos listas reutilizan los mismos datos, para no tratar su coincidencia como evidencia independiente. Esta revisión de fuentes aún está pendiente.
+
+La revisión de cada dominio conservará la URL o el documento consultado, fecha, una descripción breve de la evidencia y la razón de inclusión o exclusión. Se contrastará el contenido descrito con la definición de la categoría, sin deducirlo del nombre del dominio o de la respuesta DNS. Las discrepancias quedarán pendientes hasta resolverlas; si no hay evidencia suficiente, la entrada no pasará al corpus revisado. La actividad del sitio se registrará aparte de su categoría, sin exigir visitas automáticas a los sitios. Antes de medir se revisará la composición resultante y se reemplazarán los descartados conservando su historial.
 
 La meta final es 2.000 dominios únicos que cumplan los criterios documentados. Si no se reúnen, se informará la brecha y no se presentará un corpus incompleto como terminado. La automatización sirve para normalizar, auditar y reproducir la selección, no para reemplazar esa validación. Cuando se limite una ejecución, la herramienta selecciona sin reemplazo mediante una semilla registrada; ello hace reproducible la selección dentro del corpus, pero no la transforma en una muestra aleatoria de toda la web.
 
@@ -318,7 +320,7 @@ Las huellas deben comprobarse durante la calibración. Los mensajes DNS convenci
 
 A partir de estos estados se informa, por perfil, categoría y tipo DNS, el total de observaciones y la cantidad en cada estado. La proporción de señales sobre el total es distinta de la proporción entre observaciones interpretables. Ambas se acompañan de la cobertura: la proporción de observaciones que pueden interpretarse como señal de bloqueo o resolución. Los errores no se rellenan como permisos ni bloqueos. Los dominios con varias etiquetas pueden contribuir a varios desgloses, pero solo una vez al resumen global. No se suman desgloses solapados para reconstruir el total.
 
-Para comparar perfiles se exige estabilidad del estado interpretable en las rondas previstas para cada dominio y tipo. Se informa cuántos dominios quedan fuera por cambio, error o cobertura incompleta. Cada pareja se compara con sus propios casos disponibles; la falta de datos de un tercer perfil no elimina esos casos. Se presenta la tabla de contingencia, el acuerdo observado y la intersección relativa de señales de bloqueo. Si ninguno de los dos perfiles señala bloqueos en los casos comparados, la similitud de sus conjuntos de bloqueo se informa como no definida.
+Para comparar perfiles se exige estabilidad del estado interpretable en las rondas previstas para cada dominio y tipo. Se informa cuántos dominios quedan fuera por cambio, error o cobertura incompleta. Cada pareja se compara con sus propios casos disponibles; la falta de datos de un tercer perfil no elimina esos casos. Se presenta la tabla de contingencia, el acuerdo observado y la similitud de Jaccard, $J=|B_1\cap B_2|/|B_1\cup B_2|$, donde $B_1$ y $B_2$ son los conjuntos señalados por cada perfil dentro de los mismos casos comparables \cite{kosub2016}. Si ninguno señala bloqueos, este informe registra la medida como no definida por falta de casos positivos; es una decisión de presentación del estudio, en lugar de adoptar la convención de similitud igual a uno para dos conjuntos vacíos.
 
 El Kappa de Cohen se utiliza como medida adicional de acuerdo entre dos series de resultados codificados como 0 o 1 \cite{cohen1960}:
 \[
@@ -329,7 +331,7 @@ Aquí $p_o$ es la fracción de coincidencias y $p_A,p_B$ las proporciones de se�
 
 La evaluación de acierto respecto de una política requerirá categorías validadas y criterios de decisión esperada por perfil, definidos antes del análisis. Se distinguirá bloqueo de contenido restringido, paso de contenido restringido, bloqueo indebido de contenido permitido y resolución de contenido permitido. Los errores e indeterminados se informarán aparte. La comparación incluirá candidatos educativos revisados cuando la política los permita, sin declarar benigno todo dominio popular. Solo en ese subconjunto corresponderá estimar medidas de acierto o errores de política, con sus denominadores. La versión actual produce descripciones de evidencia y acuerdo, no una clasificación global de proveedores de mejor a peor ni una estimación de falsos positivos a partir de popularidad.
 
-Para el contraste con OONI se exportan a una lista de URL únicamente dominios con revisión documentada. La ejecución de OONI, si se realiza, debe conservar versión, hora, red, perfil y configuración, y tener en cuenta que sus resultados pueden publicarse según la configuración utilizada \cite{ooni}. Esta herramienta no ejecuta ni publica pruebas OONI automáticamente. Su importador local conserva los campos de accesibilidad y bloqueo sin convertir cadenas o valores falsos en un indicador booleano propio.
+Para el contraste con OONI se exportan a una lista de URL únicamente dominios con revisión documentada. La ejecución de OONI, si se realiza, debe conservar versión, hora, red, perfil y configuración, y tener en cuenta que sus resultados pueden publicarse según la configuración utilizada \cite{ooni}. Esta herramienta no ejecuta ni publica pruebas OONI automáticamente. El importador local conserva los valores originales de accesibilidad y bloqueo para revisarlos junto con el contexto de la medición.
 
 Las mediciones OONI se contrastarán solo cuando coincidan dominio, período y condición de red de manera suficientemente documentada. Una diferencia puede originarse en capa, hora o punto de observación. Se registrará y analizará esa diferencia; no se impondrá la conclusión de una herramienta sobre la otra. Git mantiene código, fuentes del informe, configuración pública y auditorías; las mediciones detalladas se guardan por ejecución y se comparten mediante extractos revisados cuando corresponda.
 
@@ -402,11 +404,9 @@ Total & 1.960 & 94 & 1.866\\
 
 Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Todas las entradas admitidas continúan pendientes de revisión semántica. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
 
-Además de la auditoría de listas, los archivos y la base de datos recuperados de Windows se conservan para consultar el trabajo anterior. Las mediciones que se realicen en Linux se guardarán como ejecuciones nuevas, con su propia configuración de red. Antes de comparar sus resultados se comprobará qué resolutor recibe las consultas y si la ruta utiliza la VPN indicada.
-
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
-Los registros conservan nombres de condición, dominio, categoría, estado, dirección y hora. No aportan por sí solos la evidencia de ruta, política activa y controles temporales exigida por el diseño actual. Por ello se conservan como antecedentes exploratorios y no se integran en una evaluación final de eficacia. La comparación de VPN en Linux requerirá calibrar nuevamente la condición y documentar cliente, plan, servidor, resolutor e interfaz antes de consultar el corpus. La coincidencia entre resultados históricos no demuestra que dos servicios compartan infraestructura o algoritmo.
+Los archivos recuperados de Windows conservan condición, dominio, categoría, estado, dirección y hora, pero no acreditan la ruta, política activa ni controles del diseño actual. Se mantienen como antecedentes exploratorios. Las mediciones en Linux se guardarán como ejecuciones nuevas, tras calibrar y documentar cliente, plan, servidor, resolutor e interfaz. La coincidencia entre registros históricos no demuestra que los servicios compartan infraestructura o algoritmo.
 
 \clearpage
 \section{Conclusiones}

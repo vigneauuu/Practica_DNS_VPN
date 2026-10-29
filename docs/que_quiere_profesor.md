@@ -24,7 +24,7 @@ Primero y segundo audio son antecedentes anteriores a iniciar la práctica, seg�
 
 ## Pendientes de evidencia
 
-Recuperar la tesis/corpus exactos de Nicolás Rojas si es posible y comparar su diseño. Se identificó un artículo relacionado del mismo equipo en el registro institucional UDP, que se cita en el informe; no se afirma haber recuperado la tesis o sus datos. La autenticación de GitHub sigue pendiente por bloqueo de la integración, pese a la autorización del usuario.
+Recuperar la tesis/corpus exactos de Nicolás Rojas si es posible y comparar su diseño. Se identificó un artículo relacionado del mismo equipo en el registro institucional UDP, que se cita en el informe; no se afirma haber recuperado la tesis o sus datos.
 
 ## Precisiones del cierre de los audios
 

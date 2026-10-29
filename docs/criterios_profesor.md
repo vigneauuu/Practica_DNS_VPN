@@ -1,6 +1,6 @@
 # Criterios permanentes de revisión
 
-Actualización: 28 de octubre de 2026. Base: observaciones de Nicolás Boettcher en los audios 2 y 3 y en el informe impreso. Las marcas de tiempo son aproximadas. Estos criterios resumen las observaciones; no son citas textuales ni una rúbrica institucional inventada.
+Actualización: 29 de octubre de 2026. Base: observaciones de Nicolás Boettcher en los audios 2 y 3 y en el informe impreso. Las marcas de tiempo son aproximadas. Estos criterios resumen las observaciones; no son citas textuales ni una rúbrica institucional inventada.
 
 ## Referencias y antecedentes
 
@@ -25,7 +25,7 @@ Actualización: 28 de octubre de 2026. Base: observaciones de Nicolás Boettcher
 
 ## Datos y herramientas
 
-13. **Validar y justificar el corpus.** La extracción automatizada no acredita que cada sitio pertenezca a la categoría declarada. Conservar evidencia, supervisión y alternativas de fuentes. Audio 3, 24:39–26:31 y 33:38–35:24.
+13. **Validar y justificar el corpus.** La extracción automatizada no acredita que cada sitio pertenezca a la categoría declarada. Conservar evidencia, supervisión y alternativas de fuentes. Audio 3, 24:39–26:31 y 33:38–35:24. Precisar también cómo las fuentes asignan y actualizan sus categorías, conforme a la pregunta de Audio3 11:15–11:44; si el método no está publicado, declararlo. La forma concreta de registrar y contrastar esa información es una decisión de implementación.
 14. **Examinar herramientas y trabajos existentes.** Revisar OONI para mediciones y contraste, y la fuente chilena de phishing mencionada en la reunión. Audio 3, 23:32–25:03 y 34:20. Se identificó probablemente como FINSIN y Ricardo Monreal Llop; esta identificación se documenta con la fuente, sin afirmar una disponibilidad actual de dataset que aún no se comprobó.
 15. **Verificar la configuración, no asumirla.** Una VPN limitada al navegador no garantiza que un programa de consola use ese túnel o resolutor. Audio 3, 28:29–29:28.
 
@@ -79,3 +79,7 @@ Las conclusiones permanecen vacías. Los audios antiguos no se presentan como un
 22. **Describir el alcance de la búsqueda.** Primer audio 27:08: no afirmar revisión exhaustiva sin bases, términos, fechas, criterios de inclusión y exclusión documentados. Segundo 07:12–08:03: distinguir planes y ampliar el inventario y los datos con justificación, sin transformar sus ejemplos en cuotas.
 
 23. **Distinguir el servicio evaluado de la herramienta de medición.** Audio2 00:49–00:58 y primer audio del anteproyecto 12:10–12:37: el servicio de resolución o protección es el objeto evaluado; el programa Python es la herramienta utilizada para observarlo. No atribuir al proveedor características del programa ni presentar el desarrollo del programa como toda la comparación.
+
+## Precisiones de la comprobación del 29-10-2026
+
+Matías reiteró la revisión conjunta de Audio3 y del PDF anotado, sin lenguaje innecesario ni notas privadas en la entrega. Se aplica el criterio de referencias a todas las medidas utilizadas, incluida Jaccard: identificar nombre, fuente, finalidad, denominador y tratamiento de casos vacíos. Es una comprobación editorial del criterio existente, no una instrucción literal nueva del profesor. En los diagramas, indicar el lugar de resolución y no atribuir una función de filtro al túnel por sí mismo.
