@@ -88,3 +88,8 @@ Matías reiteró la revisión conjunta de Audio3 y del PDF anotado, sin lenguaje
 ## Precisión de redacción solicitada por Matías (29-10-2026)
 
 Aplicar el lenguaje directo también a pies de figuras, tablas y planificación: explicar la acción concreta en lugar de expresiones como «redacción transversal» o «programación relativa». Conservar los términos técnicos necesarios, definidos en su contexto. No sustituirlos mecánicamente ni quitar límites que evitan interpretar etapas como semanas o tareas previstas como ejecutadas. Esta precisión es una preferencia de Matías, no una nueva cita del profesor.
+
+
+## Precisión técnica surgida del piloto (30-10-2026)
+
+Decisión de implementación, sin atribuir una nueva instrucción al profesor: EDE 18 no basta para clasificar filtrado de contenido. Puede indicar un cliente no autorizado y aparecer junto con una respuesta positiva; conservar código, mensaje y contexto conforme al RFC 8914, apartados 3 y 4.19. Si cambia una regla después de medir, conservar evidencia y clasificación originales y producir una interpretación derivada con procedencia y pruebas de regresión.

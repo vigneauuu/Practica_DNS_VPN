@@ -1,0 +1,692 @@
+{
+  "date": "2026-10-30",
+  "udp_run_id": "2ee03ae3-b846-4edf-abc0-407555e23e64",
+  "udp_samples": 48,
+  "udp_counts": [
+    {
+      "profile": "cloudflare_family",
+      "status": "error_red",
+      "count": 8
+    },
+    {
+      "profile": "cloudflare_security",
+      "status": "error_red",
+      "count": 8
+    },
+    {
+      "profile": "cloudflare_standard",
+      "status": "indeterminado",
+      "count": 2
+    },
+    {
+      "profile": "cloudflare_standard",
+      "status": "resolucion_observada",
+      "count": 6
+    },
+    {
+      "profile": "google_public",
+      "status": "indeterminado",
+      "count": 2
+    },
+    {
+      "profile": "google_public",
+      "status": "resolucion_observada",
+      "count": 6
+    },
+    {
+      "profile": "quad9_reference",
+      "status": "error_red",
+      "count": 8
+    },
+    {
+      "profile": "quad9_secure",
+      "status": "error_red",
+      "count": 4
+    },
+    {
+      "profile": "quad9_secure",
+      "status": "resolucion_observada",
+      "count": 4
+    }
+  ],
+  "udp_timeout_seconds": 1.5,
+  "tcp_checks": 48,
+  "tcp_timeout_seconds": 2.5,
+  "tcp_results": [
+    {
+      "profile": "cloudflare_standard",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_standard",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "google_public",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "0.0.0.0"
+      ],
+      "ede": [
+        {
+          "code": 16,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "::"
+      ],
+      "ede": [
+        {
+          "code": 16,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_security",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "0.0.0.0"
+      ],
+      "ede": [
+        {
+          "code": 17,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "::"
+      ],
+      "ede": [
+        {
+          "code": 17,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "0.0.0.0"
+      ],
+      "ede": [
+        {
+          "code": 16,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "::"
+      ],
+      "ede": [
+        {
+          "code": 16,
+          "text": ""
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "cloudflare_family",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [
+        {
+          "code": 29,
+          "text": "Result synthesized by root-nx-trust"
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_secure",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [
+        {
+          "code": 29,
+          "text": "Result synthesized by root-nx-trust"
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "example.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.20.23.154",
+        "172.66.147.243"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "example.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700:10::6814:179a",
+        "2606:4700:10::ac42:93f3"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "nudity.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "nudity.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "malware.testcategory.com",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "104.18.4.35",
+        "104.18.5.35"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "malware.testcategory.com",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NOERROR",
+      "addresses": [
+        "2606:4700::6812:423",
+        "2606:4700::6812:523"
+      ],
+      "ede": [],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "A",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [
+        {
+          "code": 29,
+          "text": "Result synthesized by root-nx-trust"
+        }
+      ],
+      "transport": "tcp"
+    },
+    {
+      "profile": "quad9_reference",
+      "domain": "no-existe-pdns-lab.invalid",
+      "qtype": "AAAA",
+      "error": null,
+      "rcode": "NXDOMAIN",
+      "addresses": [],
+      "ede": [
+        {
+          "code": 29,
+          "text": "Result synthesized by root-nx-trust"
+        }
+      ],
+      "transport": "tcp"
+    }
+  ],
+  "ipv6_fingerprint_note": ":: se registra como huella empírica de esta calibración para Cloudflare Families: aparece en ambos controles de categoría, mientras el perfil estándar responde con direcciones. No se aplica universalmente a otros proveedores.",
+  "limits": "Comparación descriptiva, no prueba causal del fallo UDP: transporte y timeout cambian. No se autentica DNS mediante TCP ni se atribuye la causa al ISP. Los controles de Cloudflare no prueban la protección de Quad9.",
+  "decision": "Piloto con Cloudflare estándar y familiar por TCP/53; categorías preliminares. Sin VPN, proxy o cambio del DNS del sistema."
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "direct",
+  "note": "Ruta local por wlan0; TCP/53 a direcciones explícitas. Sin VPN/proxy activado por el experimento. La ruta local no autentica el resolutor remoto.",
+  "interface": "wlan0",
+  "transport": "tcp",
+  "scope": "piloto_exploratorio_50; categorias_documentales_preliminares; sin_revision_humana_final",
+  "date": "2026-10-30"
+}

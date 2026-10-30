@@ -1,0 +1,375 @@
+{
+  "run_id": "4208c208-7dd2-49c2-a52e-9ef4999bf3dc",
+  "source_run_id": "7e6ba1cd-8ec9-413c-9b28-90e37d655868",
+  "samples": 600,
+  "changed": 36,
+  "changes": [
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 3,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "round": 2,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    },
+    {
+      "domain": "unistra.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "round": 1,
+      "previous_status": "bloqueo_senalizado",
+      "status": "resolucion_observada",
+      "previous_reason": "ede_politica",
+      "reason": "respuesta_con_direcciones"
+    }
+  ],
+  "provenance": {
+    "source_run_id": "7e6ba1cd-8ec9-413c-9b28-90e37d655868",
+    "source_db_sha256": "1c5ce9b1fcc6fb83e047d115dd48c7640f10ea59bca8fe1819545e31ed73104d",
+    "classifier_sha256": "ba229e679fec7a1d0cea18ef726a317b02f7e04f77983bea66776d11bb8e6cb8",
+    "reason": "EDE 18 no acredita por sí solo filtrado de contenido; RFC 8914, 4.19",
+    "network_repeated": false
+  }
+}

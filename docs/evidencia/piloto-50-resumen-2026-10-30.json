@@ -1,0 +1,2466 @@
+{
+  "run_id": "4208c208-7dd2-49c2-a52e-9ef4999bf3dc",
+  "completed_samples": 600,
+  "expected_samples": 600,
+  "complete": true,
+  "interpretation": "Señales de bloqueo y resolución DNS observada; no exactitud de clasificación ni acceso web garantizado.",
+  "counts": [
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "category": "ALL",
+      "total": 150,
+      "states": {
+        "resolucion_observada": 138,
+        "bloqueo_senalizado": 12
+      },
+      "signal_fraction_total": 0.08,
+      "signal_fraction_decisive": 0.08,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "category": "adultos",
+      "total": 12,
+      "states": {
+        "bloqueo_senalizado": 12
+      },
+      "signal_fraction_total": 1.0,
+      "signal_fraction_decisive": 1.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "category": "apuestas",
+      "total": 12,
+      "states": {
+        "resolucion_observada": 12
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "category": "armas",
+      "total": 9,
+      "states": {
+        "resolucion_observada": 9
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "category": "educativo",
+      "total": 117,
+      "states": {
+        "resolucion_observada": 117
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "category": "ALL",
+      "total": 150,
+      "states": {
+        "indeterminado": 111,
+        "resolucion_observada": 27,
+        "bloqueo_senalizado": 12
+      },
+      "signal_fraction_total": 0.08,
+      "signal_fraction_decisive": 0.3076923076923077,
+      "decisive_coverage": 0.26
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "total": 12,
+      "states": {
+        "bloqueo_senalizado": 12
+      },
+      "signal_fraction_total": 1.0,
+      "signal_fraction_decisive": 1.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "total": 12,
+      "states": {
+        "indeterminado": 12
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": null,
+      "decisive_coverage": 0.0
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "category": "armas",
+      "total": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.3333333333333333
+    },
+    {
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "total": 117,
+      "states": {
+        "resolucion_observada": 24,
+        "indeterminado": 93
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.20512820512820512
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "ALL",
+      "total": 150,
+      "states": {
+        "resolucion_observada": 150
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "adultos",
+      "total": 12,
+      "states": {
+        "resolucion_observada": 12
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "apuestas",
+      "total": 12,
+      "states": {
+        "resolucion_observada": 12
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "armas",
+      "total": 9,
+      "states": {
+        "resolucion_observada": 9
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "educativo",
+      "total": 117,
+      "states": {
+        "resolucion_observada": 117
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 1.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "ALL",
+      "total": 150,
+      "states": {
+        "indeterminado": 120,
+        "resolucion_observada": 30
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.2
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "total": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.25
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "total": 12,
+      "states": {
+        "indeterminado": 12
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": null,
+      "decisive_coverage": 0.0
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "armas",
+      "total": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.3333333333333333
+    },
+    {
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "total": 117,
+      "states": {
+        "resolucion_observada": 24,
+        "indeterminado": 93
+      },
+      "signal_fraction_total": 0.0,
+      "signal_fraction_decisive": 0.0,
+      "decisive_coverage": 0.20512820512820512
+    }
+  ],
+  "pairwise": [
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "ALL",
+      "eligible_domains": 50,
+      "excluded_domains": 0,
+      "paired_coverage": 1.0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "adultos",
+      "eligible_domains": 4,
+      "excluded_domains": 0,
+      "paired_coverage": 1.0,
+      "n": 4,
+      "agreement": 0.0,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 1.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 0,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "apuestas",
+      "eligible_domains": 4,
+      "excluded_domains": 0,
+      "paired_coverage": 1.0,
+      "n": 4,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 4,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "armas",
+      "eligible_domains": 3,
+      "excluded_domains": 0,
+      "paired_coverage": 1.0,
+      "n": 3,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 3,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "category": "educativo",
+      "eligible_domains": 39,
+      "excluded_domains": 0,
+      "paired_coverage": 1.0,
+      "n": 39,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 39,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "ALL",
+      "eligible_domains": 50,
+      "excluded_domains": 40,
+      "paired_coverage": 0.2,
+      "n": 10,
+      "agreement": 0.9,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.1,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 9,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "eligible_domains": 4,
+      "excluded_domains": 3,
+      "paired_coverage": 0.25,
+      "n": 1,
+      "agreement": 0.0,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 1.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 0,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "eligible_domains": 4,
+      "excluded_domains": 4,
+      "paired_coverage": 0.0,
+      "n": 0,
+      "agreement": null,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": null,
+      "b_block_fraction": null
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "armas",
+      "eligible_domains": 3,
+      "excluded_domains": 2,
+      "paired_coverage": 0.3333333333333333,
+      "n": 1,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 1,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family_tcp",
+      "b": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "eligible_domains": 39,
+      "excluded_domains": 31,
+      "paired_coverage": 0.20512820512820512,
+      "n": 8,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 8,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    }
+  ],
+  "temporal_stability": [
+    {
+      "domain": "betfair.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "betfair.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "betfair.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "betfair.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "bwin.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "bwin.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "bwin.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "bwin.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "cam.ac.uk",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cam.ac.uk",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cam.ac.uk",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cam.ac.uk",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cambridgeenglish.org",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cambridgeenglish.org",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "cambridgeenglish.org",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "cambridgeenglish.org",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "ehess.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "ehess.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "ehess.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "ehess.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "em-lyon.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "em-lyon.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "em-lyon.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "em-lyon.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "harvard.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "harvard.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "harvard.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "harvard.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "helsinki.fi",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "helsinki.fi",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "helsinki.fi",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "helsinki.fi",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "icp.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "icp.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "icp.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "icp.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "insa-rouen.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "insa-rouen.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "insa-rouen.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "insa-rouen.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "iut-rodez.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "iut-tarbes.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "iut-tarbes.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "iut-tarbes.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "iut-tarbes.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "mit.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "mit.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "mit.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "mit.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "nber.org",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "nber.org",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "nber.org",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "nber.org",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pokerstars.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pokerstars.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "pokerstars.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pokerstars.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "pornhub.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pornhub.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pornhub.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "pornhub.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "rsu.lv",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "rsu.lv",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "rsu.lv",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "rsu.lv",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "ruger.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "ruger.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "ruger.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "ruger.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "sfu.ca",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "sfu.ca",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "sfu.ca",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "sfu.ca",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "sigsauer.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "sigsauer.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "sigsauer.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "sigsauer.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "smith-wesson.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "solvay.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "solvay.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "solvay.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "solvay.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "stanford.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stanford.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stanford.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stanford.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stripchat.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stripchat.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stripchat.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "stripchat.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "u-bourgogne.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "u-bourgogne.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "u-bourgogne.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "u-bourgogne.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uc.cl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uc.cl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uc.cl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uc.cl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "udg.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "udg.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "udg.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "udg.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uibk.ac.at",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uibk.ac.at",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uibk.ac.at",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uibk.ac.at",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uit.no",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uit.no",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uit.no",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uit.no",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unal.edu.co",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unal.edu.co",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unal.edu.co",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unal.edu.co",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-bonn.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-giessen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-goettingen.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uni-magdeburg.de",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unistra.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unistra.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unistra.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unistra.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unistrapg.it",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unistrapg.it",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unistrapg.it",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unistrapg.it",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-brest.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-brest.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-brest.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-brest.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-lille.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-lille.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-lille.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-lille.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-lyon1.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-lyon1.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-lyon1.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-lyon1.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-paris1.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris1.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris1.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris1.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris8.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris8.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-paris8.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-paris8.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-tours.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-tours.fr",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "univ-tours.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "univ-tours.fr",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unizar.es",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unizar.es",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "unizar.es",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "unizar.es",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "uu.nl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uu.nl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uu.nl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "uu.nl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "vu.nl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "vu.nl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "vu.nl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "vu.nl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "williamhill.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "williamhill.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "williamhill.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "williamhill.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "www.udp.cl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "www.udp.cl",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "www.udp.cl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "www.udp.cl",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xnxx.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xnxx.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xnxx.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xnxx.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "xvideos.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xvideos.com",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "bloqueo_senalizado"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xvideos.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "xvideos.com",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "indeterminado"
+      ],
+      "stable_decisive": false
+    },
+    {
+      "domain": "yale.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "yale.edu",
+      "profile": "cloudflare_family_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "yale.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "A",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    },
+    {
+      "domain": "yale.edu",
+      "profile": "cloudflare_standard_tcp",
+      "qtype": "AAAA",
+      "rounds_observed": 3,
+      "states": [
+        "resolucion_observada"
+      ],
+      "stable_decisive": true
+    }
+  ]
+}

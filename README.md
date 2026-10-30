@@ -12,7 +12,8 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 - Motor nuevo con mensajes DNS completos, A/AAAA, EDE, controles temporales, reintentos registrados y ejecuciones independientes.
 - Seis perfiles públicos configurados. Su configuración no acredita que se hayan completado pruebas de todos ellos.
 - Importación local y exportación de listas para OONI; prueba HTTP opcional para proxies. No se han ejecutado ni publicado mediciones OONI.
-- Calibración limitada registrada; no hay todavía una evaluación final de eficacia. Ver [correcciones y pendientes](docs/correcciones.md).
+- Piloto exploratorio de 50 dominios con categorías documentales preliminares y comparación por TCP de Cloudflare estándar y familiar. Ver [procedimiento, evidencia y resultados](docs/piloto_2026-10-30.md).
+- Calibración registrada; no hay todavía una evaluación final de eficacia. Ver [correcciones y pendientes](docs/correcciones.md).
 - Base exploratoria histórica: 13.720 registros, 1.960 por cada uno de cuatro resolutores y tres condiciones VPN gratuitas. Se conserva como antecedente; no se incorpora a las mediciones del diseño actual sin comprobar sus condiciones.
 
 ## Trabajar en Linux

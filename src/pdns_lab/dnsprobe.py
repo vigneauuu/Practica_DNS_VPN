@@ -11,7 +11,9 @@ import dns.query
 import dns.rcode
 import dns.rdatatype
 
-BLOCK_EDE = {15, 16, 17, 18}
+# RFC 8914 §4.19: 18 (Prohibited) puede describir clientes no autorizados,
+# incluso un fallo de un servidor autoritativo previo a una respuesta positiva.
+BLOCK_EDE = {15, 16, 17}
 
 
 def utcnow():

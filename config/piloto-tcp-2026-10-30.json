@@ -1,0 +1,30 @@
+{
+  "reviewed_on": "2026-10-30",
+  "profiles": [
+    {
+      "id": "cloudflare_standard_tcp",
+      "kind": "dns",
+      "enabled": true,
+      "endpoint": "1.1.1.1",
+      "reference": null,
+      "policy": "Resolución de referencia, sin perfil Families",
+      "source": "https://developers.cloudflare.com/1.1.1.1/setup/",
+      "transport": "tcp"
+    },
+    {
+      "id": "cloudflare_family_tcp",
+      "kind": "dns",
+      "enabled": true,
+      "endpoint": "1.1.1.3",
+      "reference": "1.1.1.1",
+      "policy": "Perfil de seguridad y contenido adulto de Families",
+      "fingerprint_ips": [
+        "0.0.0.0",
+        "::"
+      ],
+      "fingerprint_source": "docs/evidencia/calibracion-piloto-2026-10-30.json; https://developers.cloudflare.com/1.1.1.1/setup/",
+      "source": "https://developers.cloudflare.com/1.1.1.1/setup/",
+      "transport": "tcp"
+    }
+  ]
+}

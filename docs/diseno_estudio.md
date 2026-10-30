@@ -54,3 +54,8 @@ Se descargó el archivo oficial `https://dsi.ut-capitole.fr/blacklists/download/
 Precisión del procedimiento, 29-10-2026; todavía pendiente de ejecución. Para cada fuente registrar definiciones de categoría, copia y fecha, método publicado de asignación y actualización de etiquetas, y fuentes que reutiliza. Si no hay descripción del método, señalar información no disponible. Dos listas derivadas de una misma fuente no constituyen confirmaciones independientes.
 
 En la evidencia de cada revisión conservar URL o documento, fecha, descripción del contenido observado o reportado y razón de la decisión; acompañarla de responsable y fecha en los campos del corpus. No inferir contenido por el nombre del dominio, popularidad, resolución o acuerdo entre servicios. Conservar discrepancias como pendientes y excluir de la selección final las entradas sin evidencia suficiente. Actividad y categoría se registran por separado. Antes de medir, comprobar composición por categoría y reemplazar descartados manteniendo su historial. Esto concreta la revisión prevista; no convierte los 2.000 candidatos en dominios validados.
+
+
+## Piloto del 30 de octubre de 2026
+
+Se preparó una selección separada de 50 dominios con evidencia documental preliminar para probar el proceso de medición y análisis. Las filas permanecen pendientes de validación final y se utiliza explícitamente el modo exploratorio. El piloto no utiliza el selector de 2.000 revisados ni acredita el cierre de esa meta. Su composición intencional y límites están en `piloto_2026-10-30.md`; no constituye una muestra representativa. Los conjuntos de 2.000 candidatos y de 1.852 históricos permanecen intactos.

@@ -269,3 +269,44 @@ def test_parental_candidates_preserve_provenance_and_do_not_validate(tmp_path):
             provenance=json.loads(row['sources'])[0]
             assert source.read_text().splitlines()[provenance['line']-1]==row['domain']
             assert provenance['sha256']==result['reference_source_sha256']
+
+
+def test_ede18_with_positive_answer_is_not_a_content_block():
+    target = response(addresses=["93.184.216.34"], ede=[{"code": 18}, {"code": 23}])
+    assert classify(target, None, None, {})[0] == "resolucion_observada"
+
+
+def test_ede18_refused_without_controls_does_not_prove_filtering():
+    assert classify(response("REFUSED", ede=[{"code": 18}]), None, None, {})[0] == "indeterminado"
+
+
+def test_ede18_preserves_independent_documented_sinkhole_signal():
+    profile = {"fingerprint_ips": ["0.0.0.0"], "fingerprint_source": "calibracion_documentada"}
+    assert classify(response(addresses=["0.0.0.0"], ede=[{"code": 18}]), None, None, profile)[0] == "bloqueo_senalizado"
+
+
+def test_reclassification_preserves_raw_evidence_and_original_database(tmp_path):
+    import importlib.util
+    import sqlite3
+    script = Path(__file__).parents[1] / "scripts/reclasificar_evidencia.py"
+    spec = importlib.util.spec_from_file_location("reclassify_test", script)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    source, output = tmp_path / "raw.sqlite3", tmp_path / "derived.sqlite3"
+    row = {"domain": "example.com", "categories": "educativo", "validation_status": "pending"}
+    evidence = {"target": {"final": response(addresses=["93.184.216.34"], ede=[{"code": 18}])},
+                "control_before": None, "control_after": None}
+    store = Store(source)
+    store.start("raw", "2026-10-30T00:00:00Z", {"profiles": [{"id": "ref"}],
+                "corpus_rows": [row], "expected_samples": 1})
+    store.save("raw", row, "ref", "A", 1, "bloqueo_senalizado", "ede_politica", evidence)
+    store.close()
+    original = source.read_bytes()
+    report = module.reclassify(source, "raw", output)
+    assert source.read_bytes() == original
+    assert report["changed"] == 1 and report["run_id"] != "raw"
+    with sqlite3.connect(output) as con:
+        status, saved = con.execute("SELECT status,evidence_json FROM samples").fetchone()
+    assert status == "resolucion_observada" and json.loads(saved) == evidence
+    with pytest.raises(ValueError):
+        module.reclassify(source, "raw", output)
