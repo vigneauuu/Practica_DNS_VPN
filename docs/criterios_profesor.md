@@ -83,3 +83,8 @@ Las conclusiones permanecen vacías. Los audios antiguos no se presentan como un
 ## Precisiones de la comprobación del 29-10-2026
 
 Matías reiteró la revisión conjunta de Audio3 y del PDF anotado, sin lenguaje innecesario ni notas privadas en la entrega. Se aplica el criterio de referencias a todas las medidas utilizadas, incluida Jaccard: identificar nombre, fuente, finalidad, denominador y tratamiento de casos vacíos. Es una comprobación editorial del criterio existente, no una instrucción literal nueva del profesor. En los diagramas, indicar el lugar de resolución y no atribuir una función de filtro al túnel por sí mismo.
+
+
+## Precisión de redacción solicitada por Matías (29-10-2026)
+
+Aplicar el lenguaje directo también a pies de figuras, tablas y planificación: explicar la acción concreta en lugar de expresiones como «redacción transversal» o «programación relativa». Conservar los términos técnicos necesarios, definidos en su contexto. No sustituirlos mecánicamente ni quitar límites que evitan interpretar etapas como semanas o tareas previstas como ejecutadas. Esta precisión es una preferencia de Matías, no una nueva cita del profesor.

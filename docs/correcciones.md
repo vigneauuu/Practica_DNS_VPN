@@ -91,3 +91,8 @@ Se contrastó la transcripción completa de Audio3 con las nueve páginas anotad
 Se concretó el procedimiento pendiente de revisión de categorías: método publicado de cada fuente, actualización, dependencia entre listas, evidencia por dominio y tratamiento de discrepancias. El diagrama distingue resolución local o remota del destino y deja de asociar el filtro al túnel VPN. Se simplificó la explicación del intercambio OONI y se retiró del documento de criterios operativos un estado obsoleto de autenticación de GitHub.
 
 Se mantienen la estructura de ocho secciones y once subapartados, las conclusiones vacías y la distinción entre avance documental y trabajo experimental. La validación semántica, inventario definitivo, configuración de VPN/proxies, mediciones y contraste OONI siguen pendientes.
+
+
+## Redacción directa — 29-10-2026
+
+Se simplificaron el pie de la figura 3, la explicación del plan, la revisión de categorías y varias frases sobre comparación y registro de respuestas. Se reemplazaron expresiones abstractas por acciones concretas, conservando las fuentes, las definiciones técnicas, la estructura y la separación entre lo previsto y lo ejecutado. No se modificaron datos, métodos de cálculo ni resultados.

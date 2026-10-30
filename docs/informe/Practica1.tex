@@ -81,7 +81,7 @@ Las VPN y los proxies se consideran condiciones de conexión que pueden cambiar 
 
 El foco es el filtrado de dominios para control parental: contrastar la política ofrecida con las respuestas que recibe el usuario, incluyendo el bloqueo indebido de contenido permitido. En el contexto chileno, Rojas, Boettcher, Palacios Játiva y Gutiérrez Gaitán proponen una métrica para evaluar las funciones de aplicaciones de control parental \cite{rojas2025}. Este trabajo aporta un antecedente de comprobación de las funciones ofrecidas por esas aplicaciones. La presente práctica aborda esa necesidad de evaluación desde las políticas y respuestas de filtrado de dominios. Por ello, utiliza un diseño de medición específico para los servicios DNS, sin trasladar directamente los datos o la métrica de las aplicaciones.
 
-Se distinguen contenido adulto, apuestas y armas de la detección de phishing o malware. Son criterios distintos: una página legítima puede pertenecer a una categoría que una política parental restringe. Los datos históricos de phishing se conservan para auditoría y no forman parte del corpus parental definitivo en este diseño. El conjunto educativo se plantea como contraste para estudiar bloqueos indebidos, previa validación de contenido y política esperada; tampoco la popularidad sustituye esa revisión.
+Se distinguen contenido adulto, apuestas y armas de la detección de phishing o malware. Son criterios distintos: una página legítima puede pertenecer a una categoría que una política parental restringe. Los datos históricos de phishing se conservan para auditoría y no forman parte del corpus parental definitivo en este diseño. Se incluirán sitios educativos para estudiar bloqueos indebidos, después de revisar su contenido y comprobar que la política del servicio los permite. Que un sitio sea popular no sustituye esa revisión.
 
 Para comparar los servicios también es necesario conocer la procedencia de las listas y el significado de sus categorías. Plonka, Palacio y Perouli estudian listas de amenazas frente a consultas observadas en una red de investigación y educación \cite{plonka2025}. Las diferencias de objetivos y procedencia que describen motivan documentar esas características en el corpus de esta práctica. Su estudio utiliza tráfico observado y listas de amenazas; la comparación parental requiere seleccionar y revisar dominios según su contenido.
 
@@ -93,7 +93,7 @@ Se compararán perfiles con políticas diferentes, cuya selección se justifica 
 
 Las etiquetas heredadas describen popularidad, contenido adulto, apuestas, armas y reportes de phishing. Se conserva el inventario original para auditar su procedencia, pero el alcance parental separa las amenazas de las categorías de contenido. La etiqueta heredada de armas requiere especial revisión: el archivo contiene indicios de sitios de odio y violencia que no acreditan pertenencia a armas. La revisión debe establecer la categoría aplicable a cada entrada antes de utilizarla en una comparación.
 
-Se adopta como meta de trabajo reunir \textbf{2.000 dominios únicos revisados} para delimitar la construcción y comparación del corpus. Es una decisión de planificación, no un tamaño que los antecedentes establezcan como suficiente. No se infiere representatividad de Internet ni un margen de error; tampoco se prescriben cinco cuotas de 400. La composición deberá publicar cantidad, procedencia, solapamientos y revisión por categoría. La incorporación de candidatos adicionales debe responder a su papel en el contraste y conservar sus evidencias, sin completar filas con duplicados ni dar por revisada una etiqueta de origen.
+Se adopta como meta de trabajo reunir \textbf{2.000 dominios únicos revisados} para delimitar la construcción y comparación del corpus. Es una decisión de planificación, no un tamaño que los antecedentes establezcan como suficiente. No se infiere representatividad de Internet ni un margen de error; tampoco se prescriben cinco cuotas de 400. Se informará cuántos dominios hay por categoría, de dónde provienen, cuáles aparecen en varias categorías y cuáles están revisados. Cada dominio añadido debe tener una función justificada en la comparación y conservar la evidencia de su selección. No se completará la cantidad con duplicados ni se dará por correcta una categoría sin revisarla.
 
 La selección de fuentes también requiere distinguir su finalidad. Tranco ofrece un ranking de popularidad, útil para obtener candidatos reproducibles, pero no una clasificación de contenido permitido \cite{tranco}. UT1 publica listas por categorías de contenido y una lista de referencias de bibliotecas universitarias \cite{ut1}. Esas etiquetas de origen constituyen puntos de partida que deben contrastarse con evidencia de contenido y con la política del perfil. La cantidad de entradas de una lista no acredita por sí sola su calidad ni su pertinencia para el contexto evaluado.
 
@@ -141,7 +141,7 @@ Quad9 sin bloqueo & 9.9.9.10 & Referencia dentro del mismo proveedor\\
 
 Las VPN se incorporarán cuando se pueda identificar el resolutor, el cliente, plan, función de protección, ubicación del servidor y ruta efectiva. No se fija de antemano una comparación de tres planes gratuitos contra tres de pago: una prueba temporal o un plan distinto puede cambiar varias funciones simultáneamente. Cada condición debe describirse y justificarse antes de compararla. No se requiere contratar servicios para realizar las pruebas con los perfiles públicos iniciales.
 
-En proxies se registrarán el tipo de intermediario, resolución local o remota, protocolo del destino, verificación TLS y huellas de bloqueo disponibles. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. OONI se utiliza como contraste metodológico y formato de intercambio; una ejecución real requiere documentar su configuración y destino de los resultados. En este avance no se han generado ni publicado mediciones de OONI.
+En proxies se registrarán el tipo de intermediario, resolución local o remota, protocolo del destino, verificación TLS y huellas de bloqueo disponibles. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. La documentación de OONI sirve para comparar métodos de medición, y sus formatos permiten intercambiar datos. Para ejecutar sus pruebas habrá que registrar la configuración y dónde se guardarán o publicarán los resultados. En este avance no se han generado ni publicado mediciones de OONI.
 
 El alcance anterior tiene límites: el corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. No se promete un margen de error del 5\% por tener aproximadamente 400 filas por lista. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
 
@@ -153,10 +153,10 @@ El experimento describe una ubicación y ventanas temporales concretas. La confi
 El resultado principal será una comparación documentada de perfiles de protección para control parental, con las condiciones necesarias para interpretar sus respuestas. Se entregarán los siguientes productos:
 \begin{enumerate}
 \item Un inventario de servicios y perfiles con fuentes, categorías declaradas, plan, configuración y criterios de inclusión. Las configuraciones bajo VPN y proxy se describirán según su recorrido efectivo y su función de protección.
-\item Un corpus de 2.000 dominios únicos revisados, con evidencia de categoría, procedencia y decisiones de inclusión o exclusión. La entrega distinguirá ese corpus final de los candidatos y de los archivos históricos, e informará la brecha si no se alcanza la meta.
+\item Un corpus de 2.000 dominios únicos revisados, con evidencia de categoría, procedencia y decisiones de inclusión o exclusión. La entrega distinguirá ese corpus final de los candidatos y de los archivos históricos, e indicará cuántos faltan si no se alcanza la meta.
 \item Una herramienta reproducible de medición, con configuración versionada, registro de mensajes y errores, controles de resolución y documentación de ejecución.
 \item Tablas por perfil, categoría y condición de red con estados observados, cobertura y estabilidad; matrices de acuerdo calculadas sobre casos comparables. Cuando exista una decisión de referencia validada por política, se informarán también aciertos y bloqueos indebidos con sus denominadores.
-\item Un informe que relacione los antecedentes, las decisiones del diseño y los resultados obtenidos, y un conjunto de listas y registros aptos para contrastes documentados con OONI.
+\item Un informe que relacione los antecedentes, las decisiones del diseño y los resultados obtenidos, y un conjunto de listas y registros que puedan compararse con mediciones de OONI bajo condiciones documentadas.
 \end{enumerate}
 Los entregables no presuponen que un servicio será mejor que otro ni que una comparación entre planes gratuitos y de pago producirá diferencias. El resultado podrá incluir coincidencias, discrepancias o condiciones sin evidencia suficiente, siempre identificadas como tales.
 
@@ -216,7 +216,7 @@ Un intermediario limitado al navegador puede afectar solamente a las solicitudes
 \subsection{Estudios previos y criterios de comparación}
 Cohen formuló una medida de acuerdo para clasificaciones nominales que compara la coincidencia observada con la coincidencia esperada a partir de las proporciones de cada categoría en ambos evaluadores \cite{cohen1960}. La similitud de Jaccard compara la intersección y la unión de dos conjuntos \cite{kosub2016}; aquí permite describir la coincidencia de señales de bloqueo sin sumar como coincidencias los dominios que ambos perfiles resuelven. El acuerdo observado y Kappa responden a una pregunta de coincidencia entre secuencias de decisiones, no a si esas decisiones son correctas. Dos servicios pueden coincidir al resolver un dominio o al emitir una señal de bloqueo sin que ello identifique sus bases de datos, su proveedor ascendente o su algoritmo interno.
 
-Para evaluar una política parental hace falta una referencia independiente: qué contenido tiene el dominio y qué decisión debería aplicar el perfil según su política declarada. Los contrastes de contenido permitido y restringido permiten distinguir coincidencia de acierto. Una lista de popularidad no aporta por sí sola esa clasificación de referencia comprobada. Estas diferencias fundamentan conservar errores e incertidumbre y presentar los denominadores, en lugar de interpretar todas las respuestas como una clasificación binaria válida.
+Para evaluar una política parental hace falta una referencia independiente: qué contenido tiene el dominio y qué decisión debería aplicar el perfil según su política declarada. Los contrastes de contenido permitido y restringido permiten distinguir coincidencia de acierto. Una lista de popularidad no aporta por sí sola esa clasificación de referencia comprobada. Por eso se conservarán los errores y los casos dudosos, y se indicará cuántos casos se usaron para calcular cada proporción. No todas las respuestas permiten decidir entre bloqueo y permiso.
 
 Liu y colaboradores estudian el despliegue y las respuestas de PDNS mediante mediciones activas \cite{liu2024}. Su análisis de los formatos de respuesta orienta el registro de mensajes y la comprobación de señales de filtrado en esta práctica. Plonka y colaboradores estudian listas con diferentes objetivos mediante mediciones pasivas \cite{plonka2025}; su aporte es examinar la procedencia de las listas y las diferencias que dificultan compararlas. Ambos trabajos proporcionan antecedentes para el diseño, pero sus objetos de estudio y condiciones de medición difieren de la comparación parental propuesta.
 
@@ -265,14 +265,14 @@ Para cada fuente se documentarán las definiciones de sus categorías, la fecha 
 
 La revisión de cada dominio conservará la URL o el documento consultado, fecha, una descripción breve de la evidencia y la razón de inclusión o exclusión. Se contrastará el contenido descrito con la definición de la categoría, sin deducirlo del nombre del dominio o de la respuesta DNS. Las discrepancias quedarán pendientes hasta resolverlas; si no hay evidencia suficiente, la entrada no pasará al corpus revisado. La actividad del sitio se registrará aparte de su categoría, sin exigir visitas automáticas a los sitios. Antes de medir se revisará la composición resultante y se reemplazarán los descartados conservando su historial.
 
-La meta final es 2.000 dominios únicos que cumplan los criterios documentados. Si no se reúnen, se informará la brecha y no se presentará un corpus incompleto como terminado. La automatización sirve para normalizar, auditar y reproducir la selección, no para reemplazar esa validación. Cuando se limite una ejecución, la herramienta selecciona sin reemplazo mediante una semilla registrada; ello hace reproducible la selección dentro del corpus, pero no la transforma en una muestra aleatoria de toda la web.
+La meta final es 2.000 dominios únicos que cumplan los criterios documentados. Si no se reúnen, se indicará cuántos faltan y el conjunto no se presentará como terminado. La automatización sirve para normalizar, auditar y reproducir la selección, no para reemplazar esa validación. Cuando se limite una ejecución, la herramienta selecciona sin reemplazo mediante una semilla registrada; ello hace reproducible la selección dentro del corpus, pero no la transforma en una muestra aleatoria de toda la web.
 
 \subsection{Configuración y medición}
 Antes del experimento se verifican casos técnicos conocidos: un dominio de ejemplo, los dominios de prueba publicados por Cloudflare y un nombre bajo el TLD reservado \texttt{.invalid} \cite{cloudflare,rfc2606,iana}. Se comprueba que el programa conserva respuestas y errores y que una respuesta negativa legítima no se etiqueta automáticamente como bloqueo. Estas pruebas no validan las categorías de los candidatos ni estiman el rendimiento general de un servicio.
 
 Cada ejecución recibe un identificador único, copia de la configuración y del corpus seleccionado, versiones, parámetros y huellas de los archivos de entrada. Para una VPN se exige una descripción local de la condición y se comprueba que la interfaz esté activa y que la ruta al resolutor declarado la utilice. Esa comprobación no demuestra por sí sola que la política protectora esté habilitada: su estado y evidencia de configuración se documentan aparte. Una extensión de navegador se prueba dentro de su ámbito; no se equipara a un túnel del sistema.
 
-Una vez comprobadas esas condiciones, la medición utiliza como unidad primaria \emph{dominio, perfil, tipo DNS, ronda y condición de red}. Se planifican tres rondas por ejecución, como comprobación operativa de estabilidad, no como garantía estadística. En cada ronda se alterna el orden de perfiles mediante una semilla registrada. Los perfiles con referencia realizan una consulta de control, una al perfil y una segunda de control. Esta proximidad temporal permite detectar cambios o fallas que harían ambiguo el contraste.
+Una vez comprobadas esas condiciones, cada observación se identifica por \emph{dominio, perfil, tipo DNS, ronda y condición de red}. Se planifican tres rondas por ejecución para comprobar si las respuestas se mantienen. Ese número de repeticiones no garantiza por sí solo resultados estadísticamente representativos. En cada ronda se alterna el orden de perfiles mediante una semilla registrada. Los perfiles con referencia realizan una consulta de control, una al perfil y una segunda de control. Realizar estas consultas en momentos cercanos permite detectar cambios o fallas que dificultarían la comparación.
 
 Se consultan A y AAAA por separado, solicitando información DNSSEC disponible. Se conserva el mensaje enviado y recibido, hora UTC, direcciones y CNAME, códigos de respuesta y EDE, TTL, banderas, transporte y duración. UDP utiliza respaldo TCP ante truncamiento. Los errores de red pueden reintentarse una vez por defecto y cada intento queda registrado. Una respuesta negativa no se reemplaza por reintentos hasta obtener el resultado deseado. El intervalo configurable entre consultas comienza en 0,2 segundos; es una decisión operativa revisable, no una garantía contra límites de consulta del proveedor.
 
@@ -299,7 +299,7 @@ Para $N$ dominios, $S$ perfiles, $T$ tipos y $R$ rondas, el número de observaci
 \end{figure}
 
 \subsection{Interpretación y análisis de resultados}
-La clasificación operativa se aplica después de conservar la evidencia. Se utiliza el término \emph{señalizado} para precisar que se observa una señal declarada o documentada, no una prueba absoluta sobre la intención ni una validación del contenido.
+Las respuestas se clasifican después de guardar la evidencia. Se utiliza el término \emph{señalizado} para precisar que se observa una señal declarada o documentada, no una prueba absoluta sobre la intención ni una validación del contenido.
 \begin{table}[H]
 \centering\small
 \begin{tabularx}{\textwidth}{p{3cm}Y}
@@ -336,7 +336,7 @@ Para el contraste con OONI se exportan a una lista de URL únicamente dominios c
 Las mediciones OONI se contrastarán solo cuando coincidan dominio, período y condición de red de manera suficientemente documentada. Una diferencia puede originarse en capa, hora o punto de observación. Se registrará y analizará esa diferencia; no se impondrá la conclusión de una herramienta sobre la otra. Git mantiene código, fuentes del informe, configuración pública y auditorías; las mediciones detalladas se guardan por ejecución y se comparten mediante extractos revisados cuando corresponda.
 
 \subsection{Plan de trabajo y criterios de cierre}
-La ejecución se organiza en etapas dependientes: la selección final requiere revisar categorías; la medición comparativa requiere calibrar los perfiles y documentar las rutas. La tabla \ref{tab:plan} presenta una programación relativa de cinco etapas. No corresponde a fechas de término aprobadas ni acredita horas ya cumplidas. La duración se ajustará según la validación del corpus y las próximas revisiones.
+El trabajo se organiza en cinco etapas, descritas en la tabla \ref{tab:plan}. Para seleccionar los dominios definitivos hay que revisar sus categorías; antes de medir, hay que comprobar los perfiles y las rutas de las consultas. El plan muestra las tareas pendientes, sin asignar fechas ni contabilizar horas trabajadas. Su duración se ajustará según la revisión de los dominios y las próximas reuniones.
 
 \begin{table}[H]
 \centering\small
@@ -344,14 +344,14 @@ La ejecución se organiza en etapas dependientes: la selección final requiere r
 \toprule
 Etapa & Criterio de cierre\\
 \midrule
-Fuentes y corpus & Revisar las etiquetas, incorporar el contraste permitido y documentar los 2.000 únicos o la brecha pendiente.\\
-Configuración y calibración & Verificar conectividad, huellas de política y rutas; cerrar un inventario justificado de perfiles.\\
+Fuentes y corpus & Revisar las categorías, incluir sitios de contenido permitido y documentar los 2.000 dominios únicos o cuántos faltan.\\
+Configuración y calibración & Verificar conectividad, huellas de política y rutas; completar y justificar la selección de perfiles.\\
 Medición & Completar las rondas previstas bajo condiciones registradas, conservando controles e incidencias.\\
 Análisis y contraste & Publicar cobertura, estabilidad y acuerdo; contrastar políticas y OONI donde exista evidencia comparable.\\
 Informe y revisión & Integrar fuentes, métodos y avances durante todas las etapas; redactar conclusiones al finalizar el análisis.\\
 \bottomrule
 \end{tabularx}
-\caption{Etapas pendientes y criterios de cierre.}
+\caption{Tareas pendientes y requisitos para completarlas.}
 \label{tab:plan}
 \end{table}
 
@@ -367,7 +367,7 @@ Informe y revisión & Integrar fuentes, métodos y avances durante todas las eta
 \ganttbar{Análisis y contraste}{4}{4}\\
 \ganttbar{Redacción y revisión}{1}{5}
 \end{ganttchart}
-\caption{Secuencia de trabajo pendiente con redacción transversal. Las etapas no representan semanas ni plazos aprobados.}
+\caption{Orden previsto de las tareas. El informe se redactará durante todo el proceso. Los números identifican etapas, no semanas ni plazos aprobados.}
 \end{figure}
 
 \section{Desarrollo}
@@ -402,7 +402,7 @@ Total & 1.960 & 94 & 1.866\\
 \label{tab:auditoria}
 \end{table}
 
-Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Todas las entradas admitidas continúan pendientes de revisión semántica. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
+Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Aún falta revisar el contenido y la categoría de todas las entradas admitidas. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
 
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
