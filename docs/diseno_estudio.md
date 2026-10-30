@@ -59,3 +59,7 @@ En la evidencia de cada revisión conservar URL o documento, fecha, descripción
 ## Piloto del 30 de octubre de 2026
 
 Se preparó una selección separada de 50 dominios con evidencia documental preliminar para probar el proceso de medición y análisis. Las filas permanecen pendientes de validación final y se utiliza explícitamente el modo exploratorio. El piloto no utiliza el selector de 2.000 revisados ni acredita el cierre de esa meta. Su composición intencional y límites están en `piloto_2026-10-30.md`; no constituye una muestra representativa. Los conjuntos de 2.000 candidatos y de 1.852 históricos permanecen intactos.
+
+## Requisito de cobertura por categoría (30-10-2026)
+
+Antes de medir acierto de adulto, apuestas o armas, registrar un perfil que declare tratar esa categoría, su plan y configuración activa, evidencia de la categoría del dominio y calibración de controles. La configuración actual solo incluye una política de contenido adulto. Apuestas y armas siguen pendientes de perfiles comparables; las respuestas del piloto para esas categorías son observaciones de resolución. Ver `inventario_servicios.md` para el candidato CleanBrowsing configurable y sus límites de acceso. No reducir el alcance parental por conveniencia de los seis perfiles iniciales ni presentar al candidato como implementado.

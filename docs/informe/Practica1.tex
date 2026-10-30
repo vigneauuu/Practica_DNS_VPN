@@ -73,6 +73,8 @@
 \hypersetup{pageanchor=true}
 
 \section{Antecedentes y Motivación}
+Este avance presenta la preparación del estudio y un piloto de consultas DNS a dos perfiles de Cloudflare. Las mediciones bajo VPN o proxy y la comparación completa de categorías forman parte del trabajo pendiente.
+
 El Sistema de Nombres de Dominio permite consultar información asociada a nombres, por ejemplo las direcciones IPv4 e IPv6 mediante registros A y AAAA. La resolución recursiva obtiene respuestas de servidores autoritativos o reutiliza información almacenada temporalmente. Su funcionamiento se especifica en los RFC 1034 y 1035 \cite{rfc1034,rfc1035}. La finalidad básica de un resolutor es resolver nombres; la protección por categorías constituye una función adicional que debe identificarse en cada servicio.
 
 En este trabajo se utiliza el término \emph{DNS protector} o PDNS para los servicios que aplican políticas destinadas a impedir la resolución ordinaria de ciertos dominios. El estudio de Liu y colaboradores describe proveedores con distintas formas de modificación de respuestas y distintas fuentes de información sobre amenazas \cite{liu2024}. Por ello, el nombre comercial de un servicio no basta para describir el tratamiento aplicado a cada consulta: también importan el perfil, la dirección consultada y la política activa.
@@ -83,11 +85,11 @@ Las VPN y los proxies se consideran condiciones de conexión que pueden cambiar 
 
 El foco es el filtrado de dominios para control parental: contrastar la política ofrecida con las respuestas que recibe el usuario, incluyendo el bloqueo indebido de contenido permitido. En el contexto chileno, Rojas, Boettcher, Palacios Játiva y Gutiérrez Gaitán proponen una métrica para evaluar las funciones de aplicaciones de control parental \cite{rojas2025}. Este trabajo aporta un antecedente de comprobación de las funciones ofrecidas por esas aplicaciones. La presente práctica aborda esa necesidad de evaluación desde las políticas y respuestas de filtrado de dominios. Por ello, utiliza un diseño de medición específico para los servicios DNS, sin trasladar directamente los datos o la métrica de las aplicaciones.
 
+\textbf{¿Qué diferencias y qué estabilidad presentan las respuestas de perfiles de protección ante un corpus de contenido documentado para control parental, y qué evidencia permite distinguir señales de filtrado de fallas o respuestas negativas legítimas?}
+
 Se distinguen contenido adulto, apuestas y armas de la detección de phishing o malware. Son criterios distintos: una página legítima puede pertenecer a una categoría que una política parental restringe. Los datos históricos de phishing se conservan para auditoría y no forman parte del corpus parental definitivo en este diseño. Se incluirán sitios educativos para estudiar bloqueos indebidos, después de revisar su contenido y comprobar que la política del servicio los permite. Que un sitio sea popular no sustituye esa revisión.
 
 Para comparar los servicios también es necesario conocer la procedencia de las listas y el significado de sus categorías. Plonka, Palacio y Perouli estudian listas de amenazas frente a consultas observadas en una red de investigación y educación \cite{plonka2025}. Las diferencias de objetivos y procedencia que describen motivan documentar esas características en el corpus de esta práctica. Su estudio utiliza tráfico observado y listas de amenazas; la comparación parental requiere seleccionar y revisar dominios según su contenido.
-
-Como posible fuente de contraste para el inventario histórico de amenazas, se revisó el reporte de FINSIN de agosto de 2022. Este describe una plataforma de clasificación de sitios de phishing que afectan a Chile y Latinoamérica, y distingue sus detecciones del total real de casos \cite{finsin2022}. Su interés aquí es aportar una fuente alternativa para revisar esos antecedentes históricos. Phishing permanece fuera del corpus parental; el reporte no acredita la disponibilidad actual de sus datos ni la actividad vigente de los dominios.
 
 La práctica reúne y compara respuestas de servicios de protección, prepara un corpus (conjunto de dominios de prueba) con fuentes y revisiones registradas y documenta cómo repetir las mediciones. El trabajo incluye revisar estudios previos, comprobar las categorías, configurar las conexiones, desarrollar el programa y analizar los resultados y sus límites.
 
@@ -95,17 +97,15 @@ Se compararán perfiles con políticas diferentes, cuya selección se justifica 
 
 Las etiquetas heredadas describen popularidad, contenido adulto, apuestas, armas y reportes de phishing. Se conserva el inventario original para auditar su procedencia, pero el alcance parental separa las amenazas de las categorías de contenido. La etiqueta heredada de armas requiere especial revisión: el archivo contiene indicios de sitios de odio y violencia que no acreditan pertenencia a armas. La revisión debe establecer la categoría aplicable a cada entrada antes de utilizarla en una comparación.
 
-Se adopta como meta de trabajo reunir \textbf{2.000 dominios únicos revisados} para delimitar la construcción y comparación del corpus. Es una decisión de planificación, no un tamaño que los antecedentes establezcan como suficiente. No se infiere representatividad de Internet ni un margen de error; tampoco se prescriben cinco cuotas de 400. Se informará cuántos dominios hay por categoría, de dónde provienen, cuáles aparecen en varias categorías y cuáles están revisados. Cada dominio añadido debe tener una función justificada en la comparación y conservar la evidencia de su selección. No se completará la cantidad con duplicados ni se dará por correcta una categoría sin revisarla.
+Se adopta como meta de trabajo reunir \textbf{2.000 dominios únicos revisados} para delimitar la construcción y comparación del corpus. Es una decisión de planificación, no un tamaño que los antecedentes establezcan como suficiente. La selección es intencional y su composición se justificará por las categorías y políticas evaluadas. Se informará cuántos dominios hay por categoría, de dónde provienen, cuáles aparecen en varias categorías y cuáles están revisados. Cada dominio añadido debe tener una función justificada en la comparación y conservar la evidencia de su selección. No se completará la cantidad con duplicados ni se dará por correcta una categoría sin revisarla.
 
 La selección de fuentes también requiere distinguir su finalidad. Tranco ofrece un ranking de popularidad, útil para obtener candidatos reproducibles, pero no una clasificación de contenido permitido \cite{tranco}. UT1 publica listas por categorías de contenido y una lista de referencias de bibliotecas universitarias \cite{ut1}. Esas etiquetas de origen constituyen puntos de partida que deben contrastarse con evidencia de contenido y con la política del perfil. La cantidad de entradas de una lista no acredita por sí sola su calidad ni su pertinencia para el contexto evaluado.
 
 Se utiliza Python porque la biblioteca dnspython permite enviar consultas y acceder a los mensajes, registros y campos DNS \cite{dnspython}. Esa capacidad permite automatizar las consultas y conservar la evidencia requerida. La herramienta registra y compara respuestas; no implementa un clasificador nuevo ni reconstruye el algoritmo interno de un proveedor.
 
-La distinción entre respuestas modificadas, anomalías y fallas descrita por los trabajos de PDNS y OONI fundamenta informar frecuencias y cobertura antes de comparar servicios \cite{liu2024,ooni}. Las repeticiones permitirán describir estabilidad temporal. Para comparar decisiones interpretables se utilizarán tablas de contingencia y acuerdo observado; Kappa se utiliza como medida adicional que tiene en cuenta la proporción de bloqueos de cada perfil \cite{cohen1960}, sin convertir el acuerdo en acierto. También se utilizará la similitud de Jaccard: la proporción de dominios señalados por ambos perfiles entre los señalados por al menos uno \cite{kosub2016}. Sus definiciones, denominadores y casos no interpretables se desarrollan en metodología. Estas medidas responden a preguntas descriptivas diferentes y no se combinan en un índice de eficacia sin fundamento.
+Los trabajos de PDNS y OONI fundamentan distinguir respuestas modificadas, anomalías y fallas, e informar frecuencias y cobertura \cite{liu2024,ooni}. Las tablas de contingencia y el acuerdo observado describen las coincidencias entre perfiles; Kappa y Jaccard ofrecen descriptores adicionales con límites que se desarrollan en metodología \cite{cohen1960,kosub2016}. Su elección se apoya en esos antecedentes, pero el acuerdo entre servicios no equivale a acierto respecto del contenido.
 
-Antes de ampliar la medición se realizará un piloto de 50 dominios para comprobar la selección, los controles, el registro y el análisis. La cantidad permite recorrer el procedimiento a pequeña escala; no acredita representatividad ni sustituye la meta de 2.000 revisados. Si las categorías solo cuentan con evidencia preliminar, el piloto se identificará como exploratorio y no se utilizará para estimar acierto del filtrado.
-
-\textbf{¿Qué diferencias y qué estabilidad presentan las respuestas de perfiles de protección ante un corpus de contenido documentado para control parental, y qué evidencia permite distinguir señales de filtrado de fallas o respuestas negativas legítimas?}
+Como primera comprobación del procedimiento se definió un piloto de 50 dominios para comprobar la selección, los controles, el registro y el análisis. La cantidad permite recorrer el procedimiento a pequeña escala; no acredita representatividad ni sustituye la meta de 2.000 revisados. Si las categorías solo cuentan con evidencia preliminar, el piloto se identificará como exploratorio y no se utilizará para estimar acierto del filtrado.
 
 La comparación responderá tres preguntas: (i) qué protege cada perfil según su política declarada; (ii) qué respuestas entrega bajo condiciones reproducibles; y (iii) en qué casos sus resultados pueden compararse con los de otros perfiles o con mediciones de conectividad. Se adopta un estudio descriptivo y comparativo. El acuerdo entre perfiles y el acierto respecto de una política se analizan por separado; una discrepancia no demuestra por sí sola ineficacia.
 
@@ -125,6 +125,8 @@ Comparar las respuestas de servicios de DNS protector para control parental y de
 
 \section{Alcances y Limitaciones}
 La configuración inicial incluye seis perfiles para comparar resolución sin bloqueo, protección contra amenazas y filtrado de contenido adulto. Son un punto de partida. Se debe ampliar y justificar el inventario según las categorías y funciones efectivamente disponibles. El archivo \texttt{config/profiles.json} conserva dirección, política, referencia y fuente. Un perfil de amenazas no se evalúa como si prometiera bloquear apuestas o armas. Para evaluar acierto parental, se requiere una política que declare las categorías correspondientes; la lista actual no acredita todavía esa cobertura completa. Las políticas se revisaron documentalmente el 27 de octubre de 2026 \cite{cloudflare,quad9,google}.
+
+La cobertura se comprobará por categoría antes de ampliar las mediciones. Entre los perfiles activos, solo Cloudflare familiar declara tratar contenido adulto; apuestas y armas quedan pendientes de un perfil que declare esas categorías y cuya configuración pueda comprobarse. CleanBrowsing documenta categorías configurables de adulto, apuestas y armas en sus planes de pago \cite{cleanbrowsingapi,cleanbrowsingcategories}. Se incorpora como candidato documental, todavía sin cuenta configurada ni calibración. El estudio de esas categorías exigirá registrar el plan, activar el filtro correspondiente y verificar su recorrido y controles. Mientras falte ese paso, las consultas de apuestas y armas describen respuestas DNS, pero no evalúan acierto parental. El piloto no sustituye esta ampliación.
 
 \begin{table}[H]
 \centering\small
@@ -147,7 +149,7 @@ Las VPN se incorporarán cuando se pueda identificar el resolutor, el cliente, p
 
 En proxies se registrarán el tipo de intermediario, resolución local o remota, protocolo del destino, verificación TLS y huellas de bloqueo disponibles. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. La documentación de OONI sirve para comparar métodos de medición, y sus formatos permiten intercambiar datos. Para ejecutar sus pruebas habrá que registrar la configuración y dónde se guardarán o publicarán los resultados. En este avance no se han generado ni publicado mediciones de OONI.
 
-El alcance anterior tiene límites: el corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. No se promete un margen de error del 5\% por tener aproximadamente 400 filas por lista. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
+El alcance anterior tiene límites: el corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
 
 La herramienta actual envía consultas DNS mediante UDP o TCP al puerto 53. No implementa mediciones DNS sobre HTTPS (DoH) ni DNS sobre TLS (DoT); por tanto, no compara su comportamiento de filtrado con el del transporte convencional. Las diferencias entre protección DNSSEC y cifrado del transporte se explican en el estado del arte \cite{rfc4033,rfc8484,rfc7858}. Una prueba bajo VPN deberá verificar si estas consultas siguen el túnel, sin asumir que reproducen el DNS utilizado por el navegador.
 
@@ -183,7 +185,7 @@ La modificación de una respuesta DNS puede consistir, por ejemplo, en sustituir
 \end{enumerate}
 Estos niveles se relacionan, pero ninguno sustituye automáticamente a los demás. Una decisión binaria no basta para reconstruir un algoritmo propietario.
 
-Los códigos de error extendido DNS (EDE) agregan información sobre causas de respuesta, incluidas decisiones de política \cite{rfc8914}. Los códigos 15, 16 y 17 describen bloqueo, censura o filtrado. El código 18 puede describir una consulta de un cliente no autorizado y no basta para atribuir filtrado de contenido; los EDE también pueden acompañar respuestas con direcciones válidas. Su ausencia tampoco acredita que no exista filtrado. Las direcciones sumidero se reconocen únicamente cuando existe una huella documentada del perfil. Por ejemplo, Cloudflare documenta la respuesta IPv4 0.0.0.0 para los dominios que bloquea \cite{cloudflare}. Las direcciones loopback, como 127.0.0.1, y las direcciones no especificadas tienen funciones distintas y deben registrarse por separado.
+Los códigos de error extendido DNS (EDE) agregan información sobre causas de respuesta, incluidas decisiones de política \cite{rfc8914}. Los códigos 15, 16 y 17 describen bloqueo, censura o filtrado. El código 18 puede describir una consulta de un cliente no autorizado y no basta para atribuir filtrado de contenido; los EDE también pueden acompañar respuestas con direcciones válidas. Su ausencia tampoco acredita que no exista filtrado. Las direcciones sumidero se reconocen con evidencia documentada y acotada al perfil: una especificación del proveedor o una calibración reproducible con controles conocidos. Se registra cuál de estas fuentes sustenta cada huella; una observación local no equivale a una garantía del proveedor. Por ejemplo, Cloudflare documenta la respuesta IPv4 0.0.0.0 para los dominios que bloquea \cite{cloudflare}. Las direcciones loopback, como 127.0.0.1, y las direcciones no especificadas tienen funciones distintas y deben registrarse por separado.
 
 \subsection{Recorrido de una consulta: DNS, VPN y proxy}
 Una VPN transporta tráfico mediante un túnel y puede asignar un resolutor o incorporar protección adicional. Ello depende del cliente y su configuración. La documentación de Quad9 explica que los clientes VPN pueden utilizar resolutores distintos de los configurados en el sistema \cite{quad9faq}. El experimento debe comprobar qué dirección recibe la consulta y qué ruta utiliza el equipo.
@@ -207,7 +209,7 @@ Un intermediario limitado al navegador puede afectar solamente a las solicitudes
 \node[box] (g) at (0,-4.4) {Cliente HTTP / navegador\\DNS local (opcional)};
 \node[box,fill=softorange] (h) at (4.9,-4.4) {Proxy HTTP / SOCKS\\DNS remoto si recibe nombre};
 \node[box] (i) at (9.8,-4.4) {Destino web\\o respuesta del proxy};
-\draw[->] (g)--node[above,font=\footnotesize]{IP / nombre}(h); \draw[->] (h)--(i);
+\draw[->] (g)--node[midway,above,font=\scriptsize,fill=white,inner sep=1pt]{IP o nombre}(h); \draw[->] (h)--(i);
 \node[note] at (0,-5.4) {La consola puede seguir\\una ruta distinta\\del navegador.};
 \node[note] at (4.9,-5.4) {Comprobar dónde se resuelve\\el nombre y qué tráfico\\se transporta.};
 \node[note] at (9.8,-5.4) {Distinguir la resolución DNS\\de la accesibilidad HTTP.};
@@ -274,11 +276,11 @@ La meta final es 2.000 dominios únicos que cumplan los criterios documentados. 
 \subsection{Configuración y medición}
 DNS admite TCP además de UDP; el RFC 7766 especifica los requisitos de su utilización \cite{rfc7766}. Antes de medir se comprobarán ambos transportes cuando la conectividad lo requiera. Cada ejecución registrará cuál utiliza, su tiempo de espera y sus controles, sin atribuir automáticamente una diferencia de respuesta al proveedor.
 
-Antes del experimento se verifican casos técnicos conocidos: un dominio de ejemplo, los dominios de prueba publicados por Cloudflare y un nombre bajo el TLD reservado \texttt{.invalid} \cite{cloudflare,rfc2606,iana}. Se comprueba que el programa conserva respuestas y errores y que una respuesta negativa legítima no se etiqueta automáticamente como bloqueo. Estas pruebas no validan las categorías de los candidatos ni estiman el rendimiento general de un servicio.
+Antes del experimento se verifican casos técnicos conocidos: un dominio de ejemplo, los dominios de prueba publicados por Cloudflare y un nombre bajo el TLD reservado \texttt{.invalid} \cite{cloudflare,rfc2606,iana}. Se comprueba que el programa conserva respuestas y errores y que una respuesta negativa legítima no se etiqueta automáticamente como bloqueo. Se utilizaron \texttt{example.com} como control de resolución, \texttt{no-existe-pdns-lab.invalid} como respuesta negativa legítima, y \texttt{malware.testcategory.com} y \texttt{nudity.testcategory.com} como controles de las funciones publicadas por Cloudflare. Son distintos de los controles temporales antes y después de cada consulta; prueban el funcionamiento técnico y las señales de categoría, no la validación del corpus.
 
 Cada ejecución recibe un identificador único, copia de la configuración y del corpus seleccionado, versiones, parámetros y huellas de los archivos de entrada. Para una VPN se exige una descripción local de la condición y se comprueba que la interfaz esté activa y que la ruta al resolutor declarado la utilice. Esa comprobación no demuestra por sí sola que la política protectora esté habilitada: su estado y evidencia de configuración se documentan aparte. Una extensión de navegador se prueba dentro de su ámbito; no se equipara a un túnel del sistema.
 
-Una vez comprobadas esas condiciones, cada observación se identifica por \emph{dominio, perfil, tipo DNS, ronda y condición de red}. Se planifican tres rondas por ejecución para comprobar si las respuestas se mantienen. Ese número de repeticiones no garantiza por sí solo resultados estadísticamente representativos. En cada ronda se alterna el orden de perfiles mediante una semilla registrada. Los perfiles con referencia realizan una consulta de control, una al perfil y una segunda de control. Realizar estas consultas en momentos cercanos permite detectar cambios o fallas que dificultarían la comparación.
+Una vez comprobadas esas condiciones, cada observación se identifica por \emph{dominio, perfil, tipo DNS, ronda y condición de red}. Se planifican tres rondas por ejecución para comprobar si las respuestas se mantienen. Ese número de repeticiones no garantiza por sí solo resultados estadísticamente representativos. En cada ronda se alterna el orden de perfiles mediante una semilla registrada. Los controles anterior y posterior consultan el mismo dominio y tipo al resolutor de referencia, antes y después de la consulta al perfil evaluado. En la configuración de seis perfiles, Google Public DNS, Cloudflare seguridad y Cloudflare familiar usan 1.1.1.1; Quad9 seguro usa 9.9.9.10. Cloudflare estándar y Quad9 sin bloqueo se consultan sin esos controles. En el piloto de dos perfiles solo Cloudflare familiar utiliza controles, con 1.1.1.1 como referencia. Realizar estas consultas en momentos cercanos permite detectar cambios o fallas que dificultarían la comparación.
 
 Se consultan A y AAAA por separado, solicitando información DNSSEC disponible. Se conserva el mensaje enviado y recibido, hora UTC, direcciones y CNAME, códigos de respuesta y EDE, TTL, banderas, transporte y duración. UDP utiliza respaldo TCP ante truncamiento. Los errores de red pueden reintentarse una vez por defecto y cada intento queda registrado. Una respuesta negativa no se reemplaza por reintentos hasta obtener el resultado deseado. El intervalo configurable entre consultas comienza en 0,2 segundos; es una decisión operativa revisable, no una garantía contra límites de consulta del proveedor.
 
@@ -312,7 +314,7 @@ Las respuestas se clasifican después de guardar la evidencia. Se utiliza el té
 \toprule
 Estado & Criterio operativo\\
 \midrule
-Bloqueo señalizado & EDE de bloqueo (15--17) o dirección sumidero con huella y fuente documentadas para ese perfil.\\
+Bloqueo señalizado & EDE de bloqueo (15--17) o sumidero con evidencia del proveedor o de calibración reproducible, identificada para ese perfil y configuración.\\
 Resolución observada & NOERROR con direcciones de respuesta que no coinciden con una huella reconocida ni con direcciones loopback o no especificadas. No garantiza accesibilidad web.\\
 Anomalía & Respuesta negativa con controles anterior y posterior que resuelven, o dirección especial sin huella que permita atribuirla. Requiere investigación adicional.\\
 Error de red & Falla de transporte o tiempo agotado; se conservan sus intentos.\\
@@ -333,7 +335,7 @@ El Kappa de Cohen se utiliza como medida adicional de acuerdo entre dos series d
 \kappa=\frac{p_o-p_e}{1-p_e},\qquad
 p_e=p_Ap_B+(1-p_A)(1-p_B).
 \]
-Aquí $p_o$ es la fracción de coincidencias y $p_A,p_B$ las proporciones de señales de bloqueo de cada perfil en los mismos casos. Se publican esas proporciones y el número de casos comparados. Cuando $p_e=1$, el valor se informa como no definido. No se usa una escala universal para aceptar o rechazar la eficacia de un servicio.
+Aquí $p_o$ es la fracción de coincidencias y $p_A,p_B$ las proporciones de señales de bloqueo de cada perfil en los mismos casos. Se publican esas proporciones y el número de casos comparados. Cuando $p_e=1$, el valor se informa como no definido. Si un perfil nunca señala bloqueos y el otro sí, $p_o=p_e$ y Kappa es cero por construcción. Del mismo modo, Jaccard es cero si un conjunto de bloqueos está vacío y el otro no. En esos casos se conservan los valores por reproducibilidad, se advierte su falta de capacidad para distinguir comportamientos y se interpreta la tabla de contingencia. No se usa una escala universal para aceptar o rechazar la eficacia de un servicio.
 
 La evaluación de acierto respecto de una política requerirá categorías validadas y criterios de decisión esperada por perfil, definidos antes del análisis. Se distinguirá bloqueo de contenido restringido, paso de contenido restringido, bloqueo indebido de contenido permitido y resolución de contenido permitido. Los errores e indeterminados se informarán aparte. La comparación incluirá candidatos educativos revisados cuando la política los permita, sin declarar benigno todo dominio popular. Solo en ese subconjunto corresponderá estimar medidas de acierto o errores de política, con sus denominadores. La versión actual produce descripciones de evidencia y acuerdo, no una clasificación global de proveedores de mejor a peor ni una estimación de falsos positivos a partir de popularidad.
 
@@ -342,7 +344,7 @@ Para el contraste con OONI se exportan a una lista de URL únicamente dominios c
 Las mediciones OONI se contrastarán solo cuando coincidan dominio, período y condición de red de manera suficientemente documentada. Una diferencia puede originarse en capa, hora o punto de observación. Se registrará y analizará esa diferencia; no se impondrá la conclusión de una herramienta sobre la otra. Git mantiene código, fuentes del informe, configuración pública y auditorías; las mediciones detalladas se guardan por ejecución y se comparten mediante extractos revisados cuando corresponda.
 
 \subsection{Plan de trabajo y criterios de cierre}
-El trabajo se organiza en cinco etapas, descritas en la tabla \ref{tab:plan}. Para seleccionar los dominios definitivos hay que revisar sus categorías; antes de medir, hay que comprobar los perfiles y las rutas de las consultas. El plan organiza el trabajo completo, sin asignar fechas ni contabilizar horas trabajadas. El piloto descrito en desarrollo inicia la medición y el análisis a pequeña escala; la evaluación completa y la validación final de categorías siguen pendientes. Su duración se ajustará según la revisión de los dominios y las próximas reuniones.
+El trabajo se organiza en cinco etapas, descritas en la tabla \ref{tab:plan}. Para seleccionar los dominios definitivos hay que revisar sus categorías; antes de medir, hay que comprobar los perfiles y las rutas de las consultas. El plan organiza el trabajo completo, sin asignar fechas ni contabilizar horas trabajadas. El piloto descrito en desarrollo inicia la medición y el análisis a pequeña escala; la evaluación completa y la validación final de categorías siguen pendientes. Las fechas de ejecución y cierre quedan pendientes de confirmar; este esquema muestra dependencias, no una carta Gantt calendarizada.
 
 \begin{table}[H]
 \centering\small
@@ -365,15 +367,15 @@ Informe y revisión & Integrar fuentes, métodos y avances durante todas las eta
 \centering
 \begin{ganttchart}[hgrid,vgrid,x unit=1.35cm,y unit chart=0.55cm,
  title label font=\small,bar label font=\small,bar/.style={fill=gray!55}]{1}{5}
-\gantttitle{Etapas relativas de ejecución}{5}\\
+\gantttitle{Orden de las tareas}{5}\\
 \gantttitlelist{1,...,5}{1}\\
-\ganttbar{Fuentes y corpus}{1}{2}\\
-\ganttbar{Calibración de perfiles}{1}{2}\\
+\ganttbar{Fuentes y corpus}{1}{1}\\
+\ganttbar{Calibración de perfiles}{2}{2}\\
 \ganttbar{Mediciones comparables}{3}{3}\\
 \ganttbar{Análisis y contraste}{4}{4}\\
 \ganttbar{Redacción y revisión}{1}{5}
 \end{ganttchart}
-\caption{Orden previsto de las tareas. El informe se redactará durante todo el proceso. Los números identifican etapas, no semanas ni plazos aprobados.}
+\caption{Orden previsto de las tareas. El informe se redactará durante todo el proceso. Las columnas 1--4 corresponden a las primeras cuatro etapas de la tabla; la quinta tarea, redacción, acompaña el proceso completo. Las columnas no representan semanas.}
 \end{figure}
 
 \section{Desarrollo}
@@ -389,7 +391,7 @@ Las pruebas automatizadas cubren respuestas negativas legítimas, controles inco
 
 El 30 de octubre de 2026 se preparó un piloto de 50 dominios: 39 portales educativos o de investigación, cuatro plataformas de contenido adulto, cuatro sitios de apuestas y tres fabricantes de armas. La selección fue intencional, según la evidencia documental disponible, con predominio educativo. Se revisaron páginas institucionales, funciones de los sitios y catálogos oficiales; para adultos se utilizó una comunicación de la Comisión Europea que identifica las cuatro plataformas \cite{ec2025adult}. Se registraron por dominio la fuente, fecha, categoría propuesta y límites. Esa evidencia es preliminar: las filas siguen pendientes de validación final y la ejecución queda marcada como exploratoria. Los 2.000 candidatos principales conservan su estado anterior.
 
-Se consultaron primero cuatro controles técnicos en los seis perfiles por UDP, para A y AAAA: 48 observaciones, de las cuales 28 terminaron en error de red. Una comprobación posterior por TCP recibió las 48 respuestas. Los tiempos de espera fueron 1,5 segundos en UDP y 2,5 en TCP, por lo que la diferencia no permite aislar una causa. El perfil familiar devolvió 0.0.0.0 y :: en los controles de categoría, mientras el estándar entregó direcciones de resolución. La dirección :: se incorporó a la configuración de este piloto como huella empírica de calibración, sin extenderla a otros proveedores.
+Se consultaron primero cuatro controles técnicos en los seis perfiles por UDP, para A y AAAA: 48 observaciones, de las cuales 28 terminaron en error de red. Una comprobación posterior por TCP recibió las 48 respuestas. Los tiempos de espera fueron 1,5 segundos en UDP y 2,5 en TCP, por lo que la diferencia no permite aislar una causa. El perfil familiar devolvió 0.0.0.0 y :: en los controles de categoría, mientras el estándar entregó direcciones de resolución. La dirección \texttt{::} se incorporó como huella empírica exclusiva de este piloto. Su fuente es el registro reproducible \texttt{docs/evidencia/calibracion-piloto-2026-10-30.json}: contiene dominio de control, perfil, tipo, direcciones y transporte. Esa procedencia se conserva en \texttt{fingerprint\_source}; no se presenta como una especificación publicada por Cloudflare ni se extiende a otros proveedores.
 
 El piloto comparó Cloudflare estándar y familiar por TCP/53, con A y AAAA y tres rondas. Se registraron semilla 20261030, intervalo de 0,2 segundos, espera de 2,5 segundos y cero reintentos. La ruta local utiliza la interfaz inalámbrica; no se activó una VPN ni un proxy. Con los controles del perfil familiar se planificaron 600 observaciones y 1.200 consultas. La configuración completa se conserva en el repositorio.
 
@@ -413,7 +415,23 @@ Familiar & AAAA & 150 & 27 & 12 & 111 & 0\\
 
 En A, el perfil estándar resolvió los 50 dominios en las tres rondas. El familiar señaló los cuatro dominios con categoría preliminar de adulto y resolvió los otros 46. No se observaron señales sobre los 39 portales educativos en A; ello no estima una tasa general de bloqueos indebidos. La resolución de apuestas y armas no se interpreta como una falla parental: la política consultada del perfil familiar no promete bloquear esas categorías por sí solas. No hubo errores de red en el piloto TCP.
 
-La comparación entre perfiles incluye 50 dominios para A: 46 coincidencias de resolución y cuatro diferencias, con acuerdo observado de 0,92. En AAAA solo diez dominios conservaron estados interpretables en ambos perfiles durante las tres rondas; hubo nueve coincidencias y una diferencia, con acuerdo 0,90. Los otros 40 se excluyen de esa comparación, principalmente por respuestas sin direcciones. No se convierten en permisos o bloqueos. Kappa y Jaccard son cero en los casos comparables: el estándar no señaló bloqueos, por lo que no hubo bloqueos compartidos. Estos valores describen la diferencia entre dos políticas y no un acierto o una calidad nulos.
+La comparación entre perfiles incluye 50 dominios para A: 46 coincidencias de resolución y cuatro diferencias, con acuerdo observado de 0,92. En AAAA solo diez dominios conservaron estados interpretables en ambos perfiles durante las tres rondas; hubo nueve coincidencias y una diferencia, con acuerdo 0,90. Los otros 40 se excluyen de esa comparación, principalmente por respuestas sin direcciones. No se convierten en permisos o bloqueos. El estándar no señala bloqueos en ninguno de los casos comparables. Por ello, Kappa y Jaccard son cero por construcción y no aportan una comparación discriminante en este piloto. La tabla \ref{tab:contingencia} muestra directamente los casos: las diferencias observadas son cuatro dominios en A y uno en AAAA, sin estimar su acierto respecto de una política validada.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{llrr}
+\toprule
+Tipo & Estándar / Familiar & Resolución & Señal\\
+\midrule
+A & Resolución & 46 & 4\\
+A & Señal & 0 & 0\\
+AAAA & Resolución & 9 & 1\\
+AAAA & Señal & 0 & 0\\
+\bottomrule
+\end{tabular}
+\caption{Contingencia por dominio estable. Filas: estado del estándar; columnas: estado del familiar. En AAAA se excluyen 40 dominios sin estados comparables.}
+\label{tab:contingencia}
+\end{table}
 
 El piloto permitió completar consultas, controles y análisis, y corregir la interpretación a partir de los mensajes. La selección intencional, las categorías preliminares, una sola conexión y la cobertura reducida en AAAA impiden generalizar sus resultados. Faltan la validación final y las mediciones del diseño completo. El repositorio conserva la selección, configuración y extractos de resultados; los mensajes detallados quedan guardados localmente por ejecución.
 
@@ -439,13 +457,14 @@ Total & 1.960 & 94 & 1.866\\
 \label{tab:auditoria}
 \end{table}
 
-Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Aún falta revisar el contenido y la categoría de todas las entradas admitidas. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
+Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Aún falta revisar el contenido y la categoría de todas las entradas admitidas. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. Los 14 solapamientos corresponden exclusivamente a dominios con etiquetas heredadas de adulto y phishing. Al retirar la etiqueta phishing se conservan como candidatos de adulto, por lo que los grupos del conjunto parental quedan sin solapamientos; su categoría sigue pendiente de revisión. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
 
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
+Cisco\_Umbrella pertenece a la ejecución histórica y no a la configuración actual de seis perfiles; su nombre se conserva como etiqueta de procedencia. Esa etiqueta no acredita qué política estaba activa. FINSIN se revisó como posible fuente chilena de contraste de esos registros de amenazas \cite{finsin2022}, sin confirmar disponibilidad actual de sus datos.
+
 Los archivos recuperados de Windows conservan condición, dominio, categoría, estado, dirección y hora, pero no acreditan la ruta, política activa ni controles del diseño actual. Se mantienen como antecedentes exploratorios. El piloto en Linux se guardó como una ejecución nueva, con configuración y controles propios. Las futuras condiciones VPN deberán documentar además cliente, plan, servidor e interfaz. La coincidencia entre registros históricos no demuestra que los servicios compartan infraestructura o algoritmo.
 
-\clearpage
 \section{Conclusiones}
 % Se completará cuando termine la práctica y existan resultados finales.
 
@@ -453,6 +472,8 @@ Los archivos recuperados de Windows conservan condición, dominio, categoría, e
 \begingroup
 \footnotesize
 \setlength{\parskip}{0pt}
+\phantomsection
+\addcontentsline{toc}{section}{Referencias}
 \bibliographystyle{IEEEtran}
 \bibliography{referencias}
 \endgroup

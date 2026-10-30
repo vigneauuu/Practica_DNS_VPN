@@ -93,3 +93,7 @@ Aplicar el lenguaje directo también a pies de figuras, tablas y planificación:
 ## Precisión técnica surgida del piloto (30-10-2026)
 
 Decisión de implementación, sin atribuir una nueva instrucción al profesor: EDE 18 no basta para clasificar filtrado de contenido. Puede indicar un cliente no autorizado y aparecer junto con una respuesta positiva; conservar código, mensaje y contexto conforme al RFC 8914, apartados 3 y 4.19. Si cambia una regla después de medir, conservar evidencia y clasificación originales y producir una interpretación derivada con procedencia y pruebas de regresión.
+
+## Precisiones operativas del 30-10-2026
+
+Decisiones de implementación y revisión, sin atribuir nuevas instrucciones al profesor: comprobar cobertura declarada y activa por categoría antes de interpretar acierto; distinguir huellas publicadas por el proveedor de huellas locales reproducibles; identificar los controles en el informe y advertir los casos en que una medida de acuerdo resulta constante por construcción. Conservar las tablas de contingencia y los registros originales. Retirar respuestas a borradores anteriores que carezcan de contexto para un lector nuevo, manteniendo las limitaciones necesarias.
