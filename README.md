@@ -21,7 +21,8 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 La carpeta del repositorio es el espacio de trabajo. El entorno virtual contiene las dependencias; el editor es opcional. El intérprete del proyecto es `.venv/bin/python`.
 
 ```bash
-cd /home/matias/Practica_Laboral/Practica_DNS_VPN
+git clone https://github.com/vigneauuu/Practica_DNS_VPN.git
+cd Practica_DNS_VPN
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[dev]'
@@ -102,7 +103,6 @@ La prueba HTTP verifica TLS, limita la lectura, no sigue redirecciones ni ejecut
 ## Informe, seguimiento y estructura
 
 - [Fuentes del informe](docs/informe/Practica1.tex) y [bibliografía](docs/informe/referencias.bib).
-- [Proyecto de Overleaf](https://www.overleaf.com/project/6a2c499851552daecb5b028d).
 - [Criterios permanentes del profesor](docs/criterios_profesor.md) y [plantilla para reuniones](docs/reuniones/plantilla.md).
 - [Correcciones aplicadas y pendientes](docs/correcciones.md).
 - [Auditoría del corpus](dataset/corpus.audit.json) y [calibración limitada](docs/evidencia/calibracion-resumen.json).
