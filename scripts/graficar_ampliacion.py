@@ -1,5 +1,7 @@
 """Genera figuras comparativas a partir del resumen público de la medición."""
 from argparse import ArgumentParser
+from collections import Counter
+from itertools import combinations
 from pathlib import Path
 import json
 
@@ -267,6 +269,51 @@ def save_laboratory_plot(output, report):
     plt.close(fig)
 
 
+def save_coverage_plot(output, pairwise):
+    profile_pairs = set(combinations(sorted(profile for profile, _ in PROFILES), 2))
+    domain_totals = {row["n"] + row["excluded"] for row in pairwise}
+    if len(domain_totals) != 1:
+        raise ValueError("Las comparaciones deben corresponder al mismo corpus")
+    domain_count = domain_totals.pop()
+    frequencies = {}
+    for qtype in ("A", "AAAA"):
+        rows = [row for row in pairwise if row["qtype"] == qtype]
+        pairs = {tuple(sorted((row["a"], row["b"]))) for row in rows}
+        if len(rows) != len(profile_pairs) or pairs != profile_pairs:
+            raise ValueError(f"Comparaciones ausentes o duplicadas en {qtype}")
+        frequencies[qtype] = Counter(row["n"] for row in rows)
+
+    fig, ax = plt.subplots(figsize=(7.1, 2.25))
+    shared = frequencies["A"].keys() & frequencies["AAAA"].keys()
+    for qtype, color, hatch, offset in (
+        ("A", "#284751", None, -0.2),
+        ("AAAA", "#D7DFE1", "////", 0.2),
+    ):
+        counts = sorted(frequencies[qtype])
+        bars = ax.bar(
+            [n + offset if n in shared else n for n in counts],
+            [frequencies[qtype][n] for n in counts],
+            width=[0.4 if n in shared else 0.72 for n in counts],
+            facecolor=color, edgecolor="#30454B", hatch=hatch, linewidth=0.6,
+            label=qtype, zorder=3,
+        )
+        ax.bar_label(bars, padding=2, fontsize=8)
+
+    ax.set_xlim(-0.75, domain_count + 1.25)
+    ax.set_ylim(0, max(max(values.values()) for values in frequencies.values()) * 1.16)
+    ax.set_xticks(range(0, domain_count + 1, 5))
+    ax.set_xticks(range(domain_count + 1), minor=True)
+    ax.set_xlabel(f"Dominios comparables por par (de {domain_count})", fontsize=10)
+    ax.set_ylabel("Pares de perfiles", fontsize=10)
+    ax.tick_params(labelsize=9)
+    ax.yaxis.grid(True, linewidth=0.5)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(loc="upper center", ncols=2, frameon=False, fontsize=9)
+    fig.subplots_adjust(left=0.095, right=0.98, bottom=0.24, top=0.96)
+    fig.savefig(output, format="pdf", metadata={"CreationDate": None, "ModDate": None})
+    plt.close(fig)
+
+
 def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("evidence", type=Path)
@@ -287,6 +334,7 @@ def main():
         adult=True,
     )
     save_laboratory_plot(args.output / "vpn-proxy-controles.pdf", report)
+    save_coverage_plot(args.output / "dns-cobertura-pares.pdf", report["pairwise"])
 
 
 if __name__ == "__main__":
