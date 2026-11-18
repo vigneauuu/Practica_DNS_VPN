@@ -1,0 +1,12 @@
+Entre los 91 pares de perfiles, el número de dominios con una respuesta interpretable y estable en ambos va de 45 a 50 en A y de 10 a 14 en AAAA. Por ejemplo, Cloudflare estándar y familiar coinciden en 46 de 50 dominios en A y en 10 de 11 en AAAA. En este último caso se excluyen 39. Los acuerdos de 0,92 y 0,91 tienen coberturas muy distintas.
+
+En la categoría documental de adulto, Cloudflare familiar registró doce señales en A y doce en AAAA. AdGuard familiar registró doce señales en AAAA. Los gráficos aplican la regla común fijada para la corrida y preservan sus estados. La revisión de las respuestas explica por qué los recuentos de señales por sí solos no permiten ordenar los perfiles:
+
+\begin{itemize}
+\item En A, AdGuard familiar devolvió 94.140.14.35 en los cuatro dominios y las tres rondas. Esa dirección coincide con la página de bloqueo identificada por el equipo de AdGuard en su repositorio \cite{adguardblock}.
+\item CleanBrowsing adulto y familiar devolvieron NXDOMAIN en los cuatro dominios, tanto en A como en AAAA. Su guía documenta esa forma de respuesta para el filtrado de adulto \cite{cleanbrowsingverify}. Los controles positivos de A permiten distinguir estos casos de la falta general de respuesta. En AAAA, un control sin direcciones reduce la fuerza de la comparación.
+\item Control D familiar devolvió 0.0.0.0 y :: en los cuatro dominios, de forma consistente con las respuestas de bloqueo que documenta el proveedor \cite{controldblock}. En la corrida común se registraron como anomalías porque esa huella no se había incorporado a la configuración del perfil.
+\item OpenDNS FamilyShield devolvió 146.112.61.106 en A y su equivalente IPv4 mapeado en AAAA. Cisco identifica ambas respuestas como direcciones de la página de bloqueo por categoría. En una comprobación separada se contrastó ese patrón con el dominio de prueba de Cisco y con el perfil estándar \cite{ciscoblock,ciscotest}.
+\end{itemize}
+
+La revisión por proveedor conserva los resultados originales y aporta evidencia para calibrar huellas en otra corrida. Una dirección devuelta por DNS puede pertenecer a una página de bloqueo; su presencia no demuestra acceso al sitio consultado.
