@@ -6,14 +6,14 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 
 ## Estado del avance
 
-- Informe con la presentación de la plantilla y ocho apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo y conclusiones. Dos diagramas de recorridos y evidencia; conclusiones pendientes hasta finalizar.
+- Informe con la presentación de la plantilla y nueve apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo, conclusiones y trabajo futuro. Los recorridos y los resultados se muestran con figuras que distinguen las mediciones públicas de las pruebas de laboratorio.
 - Corpus heredado auditado: **1.960 filas**, 94 entradas inválidas, 14 solapamientos y **1.852 candidatos únicos**. Las categorías están pendientes de revisión semántica.
-- Meta operativa: **2.000 dominios únicos revisados**; no se atribuye esta cantidad al profesor. El conjunto parental tiene **2.000 candidatos únicos**, incluidos 534 de contraste de la lista universitaria UT1 `liste_bu`; todos siguen pendientes de revisión. El inventario original de 1.852 se conserva por separado. Ver [diseño del estudio](docs/diseno_estudio.md).
+- Meta operativa: **2.000 dominios únicos revisados**. El conjunto parental tiene **2.000 candidatos únicos**, incluidos 534 de contraste de la lista universitaria UT1 `liste_bu`; todos siguen pendientes de revisión. El inventario original de 1.852 se conserva por separado. Ver [diseño del estudio](docs/diseno_estudio.md).
 - Motor nuevo con mensajes DNS completos, A/AAAA, EDE, controles temporales, reintentos registrados y ejecuciones independientes.
-- Seis perfiles públicos configurados. Su configuración no acredita que se hayan completado pruebas de todos ellos.
+- Ampliación a **14 perfiles DNS y siete proveedores** con 4.200 observaciones TCP. DoH se contrastó en ocho perfiles. Se probaron OpenVPN y un proxy HTTP en laboratorio. Ver [comparación y reproducción](docs/comparacion_2026-11-18.md).
 - Importación local y exportación de listas para OONI; prueba HTTP opcional para proxies. No se han ejecutado ni publicado mediciones OONI.
 - Piloto exploratorio de 50 dominios con categorías documentales preliminares y comparación por TCP de Cloudflare estándar y familiar. Ver [procedimiento, evidencia y resultados](docs/piloto_2026-10-30.md).
-- Calibración registrada; no hay todavía una evaluación final de eficacia. Ver [correcciones y pendientes](docs/correcciones.md).
+- La calibración y el piloto están documentados. La evaluación final de eficacia requiere validar el corpus, ampliar los perfiles y completar las mediciones.
 - Base exploratoria histórica: 13.720 registros, 1.960 por cada uno de cuatro resolutores y tres condiciones VPN gratuitas. Se conserva como antecedente; no se incorpora a las mediciones del diseño actual sin comprobar sus condiciones.
 
 ## Trabajar en Linux
@@ -100,11 +100,10 @@ pdns-lab ooni-import RUTA_A_MEDICIONES_JSON_O_JSONL --output results/ooni-resume
 
 La prueba HTTP verifica TLS, limita la lectura, no sigue redirecciones ni ejecuta contenido. Un 403 no se etiqueta como bloqueo; las huellas se proporcionan en un JSON local con `--fingerprints`, como `[{"text": "HUELLA", "source": "EVIDENCIA_DE_CALIBRACION"}]`, después de verificarlas. OONI tiene su propio diseño y puede publicar resultados según la configuración: la herramienta de este repositorio solo intercambia archivos locales. Consultar su [documentación de interpretación](https://ooni.org/support/interpreting-ooni-data/).
 
-## Informe, seguimiento y estructura
+## Informe, diseño y estructura
 
 - [Fuentes del informe](docs/informe/Practica1.tex) y [bibliografía](docs/informe/referencias.bib).
-- [Criterios permanentes del profesor](docs/criterios_profesor.md) y [plantilla para reuniones](docs/reuniones/plantilla.md).
-- [Correcciones aplicadas y pendientes](docs/correcciones.md).
+- [Diseño del estudio](docs/diseno_estudio.md) e [inventario de servicios](docs/inventario_servicios.md).
 - [Auditoría del corpus](dataset/corpus.audit.json) y [calibración limitada](docs/evidencia/calibracion-resumen.json).
 
 `src/pdns_lab/` contiene la implementación actual; `tests/`, sus pruebas; `config/`, los perfiles públicos; `dataset/`, los candidatos y controles. `legacy/` conserva los scripts anteriores. `resultados.db` es la base histórica ya versionada: no se modifica ni se interpreta con las reglas nuevas. Los resultados detallados nuevos, el entorno virtual, credenciales y archivos privados quedan fuera de Git.
