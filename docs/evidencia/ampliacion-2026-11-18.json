@@ -5993,5 +5993,187 @@
       "respuesta_http_observada": 3,
       "bloqueo_senalizado": 9
     }
+  },
+  "doh_mullvad": {
+    "attempts": 152,
+    "answers_received": 152,
+    "source_sha256": "60c3965f062724293067c4ac5d3cf54ce5ca20ca5b4e840aad3698f1ca8dae14",
+    "profiles": {
+      "mullvad_open": "https://dns.mullvad.net/dns-query",
+      "mullvad_family": "https://family.dns.mullvad.net/dns-query"
+    },
+    "rounds": 2,
+    "domain_count": 19,
+    "counts": [
+      {
+        "profile": "mullvad_family",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "mullvad_family",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NOERROR": 6,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "mullvad_open",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      }
+    ]
   }
 }
