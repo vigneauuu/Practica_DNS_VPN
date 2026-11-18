@@ -1,7 +1,7 @@
 {
   "study": "control_parental_2000",
   "target_unique_domains": 2000,
-  "target_origin": "Preferencia de Matías del 27 de octubre de 2026; meta operativa, no cuota ni aprobación atribuida al profesor",
+  "target_origin": "Meta operativa del diseño para planificar la selección y la carga de medición",
   "input_domains": 2000,
   "in_scope_candidates": 2000,
   "in_scope_validated": 0,
@@ -21,6 +21,6 @@
     "control_tecnico"
   ],
   "corpus_sha256": "7c88702279954ed3875d818ad53e544a0f887f89d927c549b8b631dd2bbaba9c",
-  "study_sha256": "c7fc0686af2060eeda43410f98276b0b34f18c796169b929a13abb09d4f09535",
+  "study_sha256": "6281d6525ac691041555286707f8f3d10283aa0f8b9046ecf3c96ee4b211e861",
   "note": "La meta no acredita datos obtenidos, balance de categorías ni representatividad estadística."
 }

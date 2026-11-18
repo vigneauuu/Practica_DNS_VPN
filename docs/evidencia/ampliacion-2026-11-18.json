@@ -1,0 +1,5997 @@
+{
+  "scope": "TCP/53 público, etiquetas documentales pendientes de validación final; VPN y proxy de laboratorio",
+  "runs": [
+    {
+      "run_id": "9bd3009a-f51f-40f2-a18f-f2af16e55079",
+      "created_at_utc": "2026-11-18T15:48:14.951083+00:00",
+      "db_sha256": "05e52fbc9e16765ec724ec95fcb8657017721d89ffb9eaa9ab672c61747f5b2d",
+      "profile": "adguard_family",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "39ae1672-7432-4e6c-ba97-684f06eb1ac7",
+      "created_at_utc": "2026-11-18T15:47:24.126056+00:00",
+      "db_sha256": "e1262bc6084a88b6f55271ae3c27be37e4d9173c7cc96802c09e7f768c473d0e",
+      "profile": "adguard_open",
+      "observations": 300,
+      "queries": 300,
+      "queries_by_role": {
+        "target": 300
+      },
+      "errors_by_role": {
+        "target": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "61c8220e-0591-43ee-a833-3fffbc6bb50c",
+      "created_at_utc": "2026-11-18T15:48:21.306461+00:00",
+      "db_sha256": "7fc581f10bc9be0ad6de8195743e5b7b9a4cbf74a75998cb9695ac4252ec6e1a",
+      "profile": "cleanbrowsing_adult",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "5d27940c-ec6e-4ed3-87ce-43a8298811f3",
+      "created_at_utc": "2026-11-18T15:48:51.426140+00:00",
+      "db_sha256": "91a11f6b57a99fe947ccf32de6b6ea9d7e969050e40611926ccfafb94072dfee",
+      "profile": "cleanbrowsing_family",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "d5b78a43-b47e-4220-9c4e-c585e8297fab",
+      "created_at_utc": "2026-11-18T15:47:24.091287+00:00",
+      "db_sha256": "f786dda2ebe3ffb7b6f31ad2ebc2008a22153850d90b2dff18c93fb3100f2c9d",
+      "profile": "cloudflare_family",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "5d1d890b-1234-42cb-8e0d-fb2f60f056fe",
+      "created_at_utc": "2026-11-18T15:47:24.129317+00:00",
+      "db_sha256": "d24472ae2877d15aef13fe569c34426547a7569f0d330f45eedaf7098064f504",
+      "profile": "cloudflare_security",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "dda97cd1-7a9e-4c7a-b33c-7bf64df8cc2d",
+      "created_at_utc": "2026-11-18T15:47:24.128143+00:00",
+      "db_sha256": "62eced0a89054094f2856ca14c40ae6f3225407f884d6940f185b4d078104e71",
+      "profile": "cloudflare_standard",
+      "observations": 300,
+      "queries": 300,
+      "queries_by_role": {
+        "target": 300
+      },
+      "errors_by_role": {
+        "target": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "9000e330-0161-4133-b253-d21eb028dde4",
+      "created_at_utc": "2026-11-18T15:49:18.609748+00:00",
+      "db_sha256": "da9601a6a060efc17301b8c72f0eb1f2c29e60396447c1f83a76e23afa17814c",
+      "profile": "controld_family",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "2563e309-5edb-47dc-8bf1-305d4254599b",
+      "created_at_utc": "2026-11-18T15:48:57.720021+00:00",
+      "db_sha256": "9ed315c7b47380a0867abe65ba74b877fa9b22042ee475c10f487a2f836f08ff",
+      "profile": "controld_open",
+      "observations": 300,
+      "queries": 300,
+      "queries_by_role": {
+        "target": 300
+      },
+      "errors_by_role": {
+        "target": 2
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "24f25468-2cd2-4523-9da8-247cba9f116c",
+      "created_at_utc": "2026-11-18T15:47:24.105622+00:00",
+      "db_sha256": "98841682ef65af15c4adc20c3d6411254babc17a248238145da72c7338f49467",
+      "profile": "google_public",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "4aca9823-eba3-4d45-887e-9608f004418f",
+      "created_at_utc": "2026-11-18T15:49:39.794756+00:00",
+      "db_sha256": "709bb7337051318abfeb1e1bcc09ec80e4a338b77e2a2f6459620b6a1c910f8d",
+      "profile": "opendns_family",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "f59b2a02-cc0d-426e-ba79-f4c412065d4f",
+      "created_at_utc": "2026-11-18T15:49:19.474909+00:00",
+      "db_sha256": "f8ef4939b4df9f9d20222c1385c1ae7d3ba50a1516c129edf504b032e9b8b8ba",
+      "profile": "opendns_standard",
+      "observations": 300,
+      "queries": 300,
+      "queries_by_role": {
+        "target": 300
+      },
+      "errors_by_role": {
+        "target": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "6f7fb262-e6af-4886-83c0-69d26a43a673",
+      "created_at_utc": "2026-11-18T15:47:24.118507+00:00",
+      "db_sha256": "1d4bffa200ec49fd1c8c875826fb5d5e6655a209e647a5745bfde169add2c19e",
+      "profile": "quad9_reference",
+      "observations": 300,
+      "queries": 300,
+      "queries_by_role": {
+        "target": 300
+      },
+      "errors_by_role": {
+        "target": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    },
+    {
+      "run_id": "42cef6f9-0156-4d79-828f-ed253b14fe9f",
+      "created_at_utc": "2026-11-18T15:47:24.119652+00:00",
+      "db_sha256": "b0621817783c51ca9832d7648aff6f497e49989732b34a85b34a0b9063678050",
+      "profile": "quad9_secure",
+      "observations": 300,
+      "queries": 900,
+      "queries_by_role": {
+        "target": 300,
+        "control_before": 300,
+        "control_after": 300
+      },
+      "errors_by_role": {
+        "target": 0,
+        "control_before": 0,
+        "control_after": 0
+      },
+      "corpus_sha256": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+      "profiles_sha256": "8da7e1313043afb36120a67213c109735d98f75ddc0253ce0637573df27f3622",
+      "rounds": 3,
+      "qtypes": [
+        "A",
+        "AAAA"
+      ],
+      "exploratory": true
+    }
+  ],
+  "categories": {
+    "apuestas": 4,
+    "educativo": 39,
+    "adultos": 4,
+    "armas": 3
+  },
+  "observations": 4200,
+  "queries": 9600,
+  "counts": [
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 108,
+        "resolucion_observada": 30,
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "adguard_open",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 138,
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "anomalia": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 30,
+        "anomalia": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 138,
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "anomalia": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 30,
+        "anomalia": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 138,
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 108,
+        "resolucion_observada": 30,
+        "bloqueo_senalizado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cloudflare_security",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "cloudflare_standard",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 138,
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 108,
+        "resolucion_observada": 30,
+        "anomalia": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 149,
+        "error_red": 1
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "error_red": 1,
+        "resolucion_observada": 116
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 116,
+        "resolucion_observada": 33,
+        "error_red": 1
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "controld_open",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 89,
+        "error_red": 1
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "google_public",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 108,
+        "resolucion_observada": 42
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "opendns_standard",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "quad9_reference",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "A",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "A",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "resolucion_observada": 150
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "A",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "resolucion_observada": 12
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "A",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "resolucion_observada": 9
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "A",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 117
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "AAAA",
+      "category": "adultos",
+      "n": 12,
+      "states": {
+        "indeterminado": 9,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "AAAA",
+      "category": "all",
+      "n": 150,
+      "states": {
+        "indeterminado": 117,
+        "resolucion_observada": 33
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "AAAA",
+      "category": "apuestas",
+      "n": 12,
+      "states": {
+        "indeterminado": 12
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "AAAA",
+      "category": "armas",
+      "n": 9,
+      "states": {
+        "indeterminado": 6,
+        "resolucion_observada": 3
+      }
+    },
+    {
+      "profile": "quad9_secure",
+      "qtype": "AAAA",
+      "category": "educativo",
+      "n": 117,
+      "states": {
+        "resolucion_observada": 27,
+        "indeterminado": 90
+      }
+    }
+  ],
+  "pairwise": [
+    {
+      "a": "adguard_family",
+      "b": "adguard_open",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "adguard_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cleanbrowsing_adult",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cleanbrowsing_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.08,
+      "contingency": {
+        "00": 46,
+        "01": 4,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_family",
+      "qtype": "AAAA",
+      "excluded": 36,
+      "n": 14,
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "jaccard_block": 1.0,
+      "a_block_fraction": 0.2857142857142857,
+      "b_block_fraction": 0.2857142857142857,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 4
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_security",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_security",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 36,
+      "n": 14,
+      "agreement": 0.7142857142857143,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.2857142857142857,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_family",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cleanbrowsing_adult",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cleanbrowsing_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.08,
+      "contingency": {
+        "00": 46,
+        "01": 4,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.09090909090909091,
+      "contingency": {
+        "00": 10,
+        "01": 1,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_security",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_security",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "adguard_open",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cleanbrowsing_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_security",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_security",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 5,
+      "n": 45,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 45,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_adult",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_security",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_security",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 5,
+      "n": 45,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 45,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cleanbrowsing_family",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "cloudflare_security",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "cloudflare_security",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 0.9183673469387755,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08163265306122448,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 45,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 36,
+      "n": 14,
+      "agreement": 0.7142857142857143,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.2857142857142857,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 0.92,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.08,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 4,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_family",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 0.9090909090909091,
+      "kappa": 0.0,
+      "jaccard_block": 0.0,
+      "a_block_fraction": 0.09090909090909091,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 1,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "cloudflare_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "cloudflare_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_security",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "controld_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "controld_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "cloudflare_standard",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "controld_open",
+      "qtype": "A",
+      "excluded": 5,
+      "n": 45,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 45,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "controld_open",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 4,
+      "n": 46,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 46,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_family",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 40,
+      "n": 10,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 10,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "google_public",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "google_public",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 1,
+      "n": 49,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 49,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "controld_open",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "opendns_family",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "opendns_family",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "google_public",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "opendns_standard",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "opendns_standard",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_family",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_standard",
+      "b": "quad9_reference",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_standard",
+      "b": "quad9_reference",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_standard",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "opendns_standard",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "quad9_reference",
+      "b": "quad9_secure",
+      "qtype": "A",
+      "excluded": 0,
+      "n": 50,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 50,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    },
+    {
+      "a": "quad9_reference",
+      "b": "quad9_secure",
+      "qtype": "AAAA",
+      "excluded": 39,
+      "n": 11,
+      "agreement": 1.0,
+      "kappa": null,
+      "jaccard_block": null,
+      "a_block_fraction": 0.0,
+      "b_block_fraction": 0.0,
+      "contingency": {
+        "00": 11,
+        "01": 0,
+        "10": 0,
+        "11": 0
+      }
+    }
+  ],
+  "calibration": {
+    "cloudflare_standard": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "google_public": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "cloudflare_security": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "cloudflare_family": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "quad9_secure": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "quad9_reference": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "adguard_open": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "adguard_family": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "cleanbrowsing_adult": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "cleanbrowsing_family": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "controld_open": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "controld_family": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "opendns_standard": {
+      "sent": 8,
+      "answers_received": 8
+    },
+    "opendns_family": {
+      "sent": 8,
+      "answers_received": 8
+    }
+  },
+  "doh": {
+    "attempts": 608,
+    "answers_received": 608,
+    "source_sha256": "e43a84fc9292f1d8c06cf788d95a7a5050c8a78044795de01ff88f68ad52a50b",
+    "profiles": {
+      "cloudflare_standard": "https://cloudflare-dns.com/dns-query",
+      "cloudflare_family": "https://family.cloudflare-dns.com/dns-query",
+      "adguard_open": "https://unfiltered.adguard-dns.com/dns-query",
+      "adguard_family": "https://family.adguard-dns.com/dns-query",
+      "cleanbrowsing_adult": "https://doh.cleanbrowsing.org/doh/adult-filter/",
+      "cleanbrowsing_family": "https://doh.cleanbrowsing.org/doh/family-filter/",
+      "controld_open": "https://freedns.controld.com/p0",
+      "controld_family": "https://freedns.controld.com/family"
+    },
+    "rounds": 2,
+    "domain_count": 19,
+    "counts": [
+      {
+        "profile": "adguard_family",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "ede_politica": 8
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "adguard_family",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NOERROR": 6,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "adguard_open",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_adult",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NXDOMAIN": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cleanbrowsing_family",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "ede_politica": 8
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 2,
+          "NXDOMAIN": 2,
+          "ede_politica": 4
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "ede_politica": 8
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 2,
+          "NXDOMAIN": 2,
+          "ede_politica": 4
+        }
+      },
+      {
+        "profile": "cloudflare_family",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NOERROR": 6,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "cloudflare_standard",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_especial": 8
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "direccion_especial": 8
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "controld_family",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "A",
+        "category": "adultos",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "A",
+        "category": "apuestas",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "A",
+        "category": "armas",
+        "patterns": {
+          "direccion_ordinaria": 6
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "A",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "A",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 8
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "AAAA",
+        "category": "adultos",
+        "patterns": {
+          "NOERROR": 6,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "AAAA",
+        "category": "apuestas",
+        "patterns": {
+          "NOERROR": 8
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "AAAA",
+        "category": "armas",
+        "patterns": {
+          "NOERROR": 4,
+          "direccion_ordinaria": 2
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "AAAA",
+        "category": "control",
+        "patterns": {
+          "direccion_ordinaria": 6,
+          "NXDOMAIN": 2
+        }
+      },
+      {
+        "profile": "controld_open",
+        "qtype": "AAAA",
+        "category": "educativo",
+        "patterns": {
+          "direccion_ordinaria": 4,
+          "NOERROR": 4
+        }
+      }
+    ]
+  },
+  "adult_tcp_observed_patterns": [
+    {
+      "profile": "adguard_family",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "94.140.14.35"
+          ],
+          "policy_ede": [],
+          "rcode": "NOERROR",
+          "state": "resolucion_observada"
+        }
+      ]
+    },
+    {
+      "profile": "adguard_family",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [],
+          "policy_ede": [
+            17
+          ],
+          "rcode": "NOERROR",
+          "state": "bloqueo_senalizado"
+        }
+      ]
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "anomalia"
+        }
+      ]
+    },
+    {
+      "profile": "cleanbrowsing_adult",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 3,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "anomalia"
+        },
+        {
+          "observations": 9,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "indeterminado"
+        }
+      ]
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "anomalia"
+        }
+      ]
+    },
+    {
+      "profile": "cleanbrowsing_family",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 3,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "anomalia"
+        },
+        {
+          "observations": 9,
+          "addresses": [],
+          "policy_ede": [],
+          "rcode": "NXDOMAIN",
+          "state": "indeterminado"
+        }
+      ]
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "0.0.0.0"
+          ],
+          "policy_ede": [
+            17
+          ],
+          "rcode": "NOERROR",
+          "state": "bloqueo_senalizado"
+        }
+      ]
+    },
+    {
+      "profile": "cloudflare_family",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "::"
+          ],
+          "policy_ede": [
+            17
+          ],
+          "rcode": "NOERROR",
+          "state": "bloqueo_senalizado"
+        }
+      ]
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "0.0.0.0"
+          ],
+          "policy_ede": [],
+          "rcode": "NOERROR",
+          "state": "anomalia"
+        }
+      ]
+    },
+    {
+      "profile": "controld_family",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "::"
+          ],
+          "policy_ede": [],
+          "rcode": "NOERROR",
+          "state": "anomalia"
+        }
+      ]
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "A",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "146.112.61.106"
+          ],
+          "policy_ede": [],
+          "rcode": "NOERROR",
+          "state": "resolucion_observada"
+        }
+      ]
+    },
+    {
+      "profile": "opendns_family",
+      "qtype": "AAAA",
+      "patterns": [
+        {
+          "observations": 12,
+          "addresses": [
+            "::ffff:146.112.61.106"
+          ],
+          "policy_ede": [],
+          "rcode": "NOERROR",
+          "state": "resolucion_observada"
+        }
+      ]
+    }
+  ],
+  "cisco_control": {
+    "opendns_standard": {
+      "example.com|A": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "104.20.23.154",
+          "172.66.147.243"
+        ],
+        "error": null
+      },
+      "example.com|AAAA": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "2606:4700:10::6814:179a",
+          "2606:4700:10::ac42:93f3"
+        ],
+        "error": null
+      },
+      "exampleadultsite.com|A": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "146.112.59.12"
+        ],
+        "error": null
+      },
+      "exampleadultsite.com|AAAA": {
+        "rcode": "NOERROR",
+        "addresses": [],
+        "error": null
+      }
+    },
+    "opendns_family": {
+      "example.com|A": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "104.20.23.154",
+          "172.66.147.243"
+        ],
+        "error": null
+      },
+      "example.com|AAAA": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "2606:4700:10::6814:179a",
+          "2606:4700:10::ac42:93f3"
+        ],
+        "error": null
+      },
+      "exampleadultsite.com|A": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "146.112.61.106"
+        ],
+        "error": null
+      },
+      "exampleadultsite.com|AAAA": {
+        "rcode": "NOERROR",
+        "addresses": [
+          "::ffff:146.112.61.106"
+        ],
+        "error": null
+      }
+    }
+  },
+  "vpn_local": {
+    "directa": {
+      "resolucion_observada": 24
+    },
+    "vpn_sin_filtro": {
+      "resolucion_observada": 24
+    },
+    "vpn_con_filtro": {
+      "resolucion_observada": 6,
+      "bloqueo_senalizado": 18
+    }
+  },
+  "vpn_route_checked": "tun0",
+  "proxy_local": {
+    "directa": {
+      "respuesta_http_observada": 12
+    },
+    "proxy_sin_filtro": {
+      "respuesta_http_observada": 12
+    },
+    "proxy_con_filtro": {
+      "respuesta_http_observada": 3,
+      "bloqueo_senalizado": 9
+    }
+  }
+}
