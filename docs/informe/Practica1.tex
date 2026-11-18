@@ -73,7 +73,7 @@
 \hypersetup{pageanchor=true}
 
 \section{Antecedentes y Motivación}
-Este informe presenta la ampliación del piloto a ocho proveedores de DNS público: 14 perfiles por TCP y diez por DNS sobre HTTPS, con perfiles compartidos entre ambas mediciones. Incluye pruebas de VPN y proxy en laboratorio. El estudio distingue las señales registradas de la evaluación de eficacia, que requiere validar el contenido y la política esperada.
+Este informe presenta la ampliación del piloto a ocho proveedores de DNS público: 14 perfiles por TCP y diez por DNS sobre HTTPS, con perfiles compartidos entre ambas mediciones. Incluye pruebas de VPN y proxy en laboratorio y una medición del servicio WARP de Cloudflare. El estudio distingue las señales registradas de la evaluación de eficacia, que requiere validar el contenido y la política esperada.
 
 El Sistema de Nombres de Dominio permite consultar información asociada a nombres, por ejemplo las direcciones IPv4 e IPv6 mediante registros A y AAAA. La resolución recursiva obtiene respuestas de servidores autoritativos o reutiliza información almacenada temporalmente. Su funcionamiento se especifica en los RFC 1034 y 1035 \cite{rfc1034,rfc1035}. La finalidad básica de un resolutor es resolver nombres; la protección por categorías constituye una función adicional que debe identificarse en cada servicio.
 
@@ -145,9 +145,7 @@ Quad9 sin bloqueo & 9.9.9.10 & Referencia dentro del mismo proveedor\\
 \caption{Seis perfiles de la configuración inicial. El archivo de la ampliación registra los 14 perfiles TCP y sus referencias.}
 \end{table}
 
-La prueba VPN implementa una conexión OpenVPN controlada entre dos espacios de red y comprueba la interfaz virtual de la consulta \cite{openvpnmanual}. Un estudio de servicios externos requiere identificar resolutor, cliente, plan, función de protección, ubicación del servidor y ruta efectiva. No se fija de antemano una comparación de tres planes gratuitos contra tres de pago: una prueba temporal o un plan distinto puede cambiar varias funciones simultáneamente. Cada condición debe describirse y justificarse antes de compararla. No se requiere contratar servicios para realizar las pruebas con los perfiles públicos iniciales.
-
-El proxy evaluado en laboratorio opera sobre un origen HTTP local y reglas explícitas. Al incorporar otros proxies se registrarán el tipo de intermediario, la resolución local o remota, el protocolo, la verificación TLS y las huellas disponibles. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. La documentación de OONI sirve para comparar métodos de medición, y sus formatos permiten intercambiar datos. Para ejecutar sus pruebas habrá que registrar la configuración y dónde se guardarán o publicarán los resultados. En este avance no se han generado ni publicado mediciones de OONI.
+Se comparan dos entornos. En el laboratorio, una conexión OpenVPN enlaza dos espacios de red y un proxy HTTP reenvía solicitudes a un origen local \cite{openvpnmanual}. En el servicio externo gratuito WARP de Cloudflare se prueban el túnel con DNS y el modo proxy SOCKS5. El primero permite cambiar el filtro familiar dentro del mismo servicio. En el segundo, el cliente entrega el nombre de destino al proxy y se comprueba qué aplicaciones salen por WARP \cite{warpcliente,warpmodos}. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. La documentación de OONI sirve para comparar métodos de medición, y sus formatos permiten intercambiar datos. Para ejecutar sus pruebas habrá que registrar la configuración y dónde se guardarán o publicarán los resultados. En este avance no se han generado ni publicado mediciones de OONI.
 
 El alcance anterior tiene límites: el corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
 
@@ -192,7 +190,7 @@ Una VPN transporta tráfico mediante un túnel y puede asignar un resolutor o in
 
 Un intermediario limitado al navegador puede afectar solamente a las solicitudes de ese navegador. Una consulta enviada por un programa de consola puede seguir otro recorrido. También debe diferenciarse un proxy HTTP de uno SOCKS. Si el cliente entrega el nombre del destino al proxy, este puede resolverlo; si entrega una dirección que ya resolvió, la consulta DNS precedió a esa solicitud \cite{rfc9110,rfc1928}. La figura \ref{fig:recorrido} distingue estas alternativas, que deben verificarse en cada cliente. Las observaciones de accesibilidad HTTP deben distinguirse de las respuestas DNS y de las decisiones del intermediario. Un estado HTTP 403 o una falla TLS no identifica por sí solo una política del intermediario.
 
-Mullvad documenta el filtrado DNS dentro de su VPN y un proxy SOCKS5 que se utiliza desde el túnel WireGuard. La resolución remota del proxy y los filtros configurados en la VPN son condiciones que se deben registrar por separado \cite{mullvaddns,mullvadsocks}. Windscribe también documenta filtrado DNS durante la conexión, con categorías que dependen del plan \cite{windscribevpn,windscribeplans}. Ambos casos permiten planificar contrastes entre configuraciones con y sin filtro dentro de un servicio.
+El cliente WARP de Cloudflare puede enviar el tráfico y las consultas DNS por el túnel, o limitar la conexión a las aplicaciones configuradas para usar su proxy. En el modo de túnel se puede activar el filtro familiar de malware y contenido adulto \cite{warpcliente,warpmodos}. Mullvad documenta el filtrado DNS dentro de su VPN y un proxy SOCKS5 que se utiliza desde el túnel WireGuard. La resolución remota del proxy y los filtros configurados en la VPN son condiciones que se deben registrar por separado \cite{mullvaddns,mullvadsocks}. Windscribe también documenta filtrado DNS durante la conexión, con categorías que dependen del plan \cite{windscribevpn,windscribeplans}. Ambos casos permiten planificar contrastes entre configuraciones con y sin filtro dentro de un servicio.
 
 \begin{figure}[H]
 \centering
@@ -294,6 +292,8 @@ La ampliación ejecuta los 14 perfiles sobre los mismos 50 dominios del piloto. 
 La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona los 11 dominios de adulto, apuestas o armas del piloto, cuatro educativos elegidos por orden alfabético y cuatro nombres técnicos. Se ejecutan dos rondas, A y AAAA, y se registran el endpoint, el código de respuesta, las direcciones, EDE y errores. Se midieron ocho perfiles en el primer contraste y dos de Mullvad en una segunda corrida con HTTP/2. Esta comprobación describe formas de respuesta directamente. No aplica el criterio de controles temporales de TCP.
 
 Para aislar el papel de VPN y proxy se usan cuatro categorías sintéticas, con una condición educativa permitida. El laboratorio VPN genera nombres bajo el dominio reservado \texttt{.test} \cite{rfc2606}. Compara el enlace directo con el túnel del mismo equipo, primero con el resolutor sin regla y luego con tres categorías restringidas. El proxy HTTP remite a un origen local y, al activar la regla, responde con una marca documentada en su cuerpo. No hay inspección HTTPS en esas pruebas. La política esperada la define el laboratorio y permite contrastar causalmente las tres condiciones dentro de ese entorno.
+
+Para WARP se reutilizan los 19 nombres del contraste DoH. Desde un espacio de red aislado se consulta al resolutor del sistema con el túnel desconectado, conectado sin filtro y conectado con el filtro familiar. En cada condición se repiten las consultas A y AAAA. En modo proxy se comprueba por separado el recorrido de un cliente directo y del que entrega el nombre al proxy SOCKS5. La comparación por HTTPS registra las cabeceras devueltas por los cuatro dominios de control.
 
 \begin{figure}[H]
 \centering
@@ -488,6 +488,15 @@ Se completaron 4.200 observaciones del perfil, correspondientes a 50 dominios, d
 \label{fig:dns-ampliado}
 \end{figure}
 
+La figura \ref{fig:cobertura-pares} muestra cuántos dominios permitieron comparar cada par de perfiles. En A, la comparación abarcó los 50 dominios en 45 de los 91 pares.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\linewidth]{figuras/dns-cobertura-pares.pdf}
+\caption{Dominios comparables en los 91 pares de perfiles DNS por TCP. Un dominio se cuenta una vez si ambos perfiles dieron un estado interpretable y estable en las tres rondas.}
+\label{fig:cobertura-pares}
+\end{figure}
+
 \input{figuras/lectura-resultados.tex}
 
 \begin{figure}[H]
@@ -497,7 +506,7 @@ Se completaron 4.200 observaciones del perfil, correspondientes a 50 dominios, d
 \label{fig:dns-adultos}
 \end{figure}
 
-El contraste DoH se ejecutó con verificación TLS de los nombres de ocho perfiles de cuatro proveedores. Recibió las 608 respuestas previstas. Se observaron respuestas distintas en los cuatro dominios de adulto: Cloudflare familiar devolvió EDE de política en A y AAAA. AdGuard familiar devolvió direcciones ordinarias en A y EDE de política en AAAA. Los dos perfiles CleanBrowsing devolvieron NXDOMAIN. Control D familiar devolvió direcciones especiales, mientras su par sin filtro devolvió direcciones ordinarias en A. La tabla \ref{tab:doh-adultos} presenta el patrón observado en los perfiles de contraste. Los resultados DoH corresponden a dos rondas sobre un subconjunto y a otro momento del día. La comparación indica diferencias en evidencia observable. Harían falta consultas pareadas con el mismo horario y controles para aislar el efecto del transporte.
+El contraste DoH se ejecutó con verificación TLS de los nombres de ocho perfiles de cuatro proveedores. Recibió las 608 respuestas previstas. Se observaron respuestas distintas en los cuatro dominios de adulto: Cloudflare familiar devolvió EDE de política en A y AAAA. En A, las ocho respuestas de AdGuard familiar incluyeron 94.140.14.35, dirección que el proveedor identifica como su página de bloqueo \cite{adguardblock}. En AAAA se recibió EDE de política. Los dos perfiles CleanBrowsing devolvieron NXDOMAIN. Control D familiar devolvió direcciones especiales, mientras su par sin filtro devolvió direcciones ordinarias en A. La tabla \ref{tab:doh-adultos} presenta el patrón observado en los perfiles de contraste. Los resultados DoH corresponden a dos rondas sobre un subconjunto y a otro momento del día. La comparación indica diferencias en evidencia observable. Harían falta consultas pareadas con el mismo horario y controles para aislar el efecto del transporte.
 
 \begin{table}[H]
 \centering\small
@@ -506,7 +515,7 @@ El contraste DoH se ejecutó con verificación TLS de los nombres de ocho perfil
 Perfil DoH & A & AAAA\\
 \midrule
 Cloudflare familiar & EDE de política 8/8 & EDE de política 8/8\\
-AdGuard familiar & Dirección ordinaria 8/8 & EDE de política 8/8\\
+AdGuard familiar & 94.140.14.35 (página de bloqueo) 8/8 & EDE de política 8/8\\
 CleanBrowsing adulto & NXDOMAIN 8/8 & NXDOMAIN 8/8\\
 CleanBrowsing familiar & NXDOMAIN 8/8 & NXDOMAIN 8/8\\
 Control D familiar & Dirección especial 8/8 & Dirección especial 8/8\\
@@ -536,7 +545,7 @@ Educativo & 8 & 0 & 0 & 0 & 0 \\
 \label{tab:doh-mullvad}
 \end{table}
 
-\subsection{Comparación bajo VPN y proxy de laboratorio}
+\subsection{Comparación bajo VPN y proxy}
 En OpenVPN se verificó que la ruta al resolutor de túnel utilizó \texttt{tun0}. El enlace directo y el túnel con la regla desactivada resolvieron los cuatro nombres de prueba en A y AAAA y en tres rondas, 24 observaciones por condición. Al activar en el resolutor la regla que restringía las tres categorías sintéticas adulto, apuestas y armas, hubo 18 respuestas con la huella configurada y seis resoluciones del control educativo. La comparación conserva el mismo túnel al cambiar la regla del resolutor.
 
 Para el proxy HTTP se hicieron 36 observaciones, 12 por condición. Tanto el acceso directo como el paso por el proxy sin regla entregaron doce respuestas HTTP 200 del origen local. Al activar la regla, el proxy entregó nueve HTTP 403 con la huella de política y remitió al origen las tres peticiones educativas, que devolvieron HTTP 200. En la figura \ref{fig:vpn-proxy-lab}, cada panel presenta el denominador de su propia unidad: consultas DNS y solicitudes HTTP.
@@ -548,25 +557,34 @@ Para el proxy HTTP se hicieron 36 observaciones, 12 por condición. Tanto el acc
 \label{fig:vpn-proxy-lab}
 \end{figure}
 
-La demostración comprueba el recorrido y la atribución de la señal para estas dos configuraciones reproducibles. Las categorías se asignaron a casos de laboratorio. La diversidad entre servicios VPN externos y entre operadores de proxy queda fuera de esta ejecución.
+En el servicio externo WARP se obtuvieron 228 respuestas DNS: 19 nombres, dos tipos de registro y dos rondas en cada una de las tres condiciones. El diagnóstico de Cloudflare indicó \texttt{warp=off} en la conexión directa y \texttt{warp=on} con el túnel activo. Se comprobó qué resolutor recibió las consultas. Sin filtro, los cuatro dominios de adulto devolvieron direcciones en A, y solo uno las devolvió en AAAA. Al activar el filtro, los cuatro devolvieron direcciones de sumidero en A y AAAA en las dos rondas (figura \ref{fig:warp-familias}). Los controles de adulto y malware del proveedor mostraron el mismo cambio. Los cuatro dominios de apuestas, los tres de armas y los cuatro educativos siguieron devolviendo direcciones en A. La política familiar documentada de WARP incluye adulto y malware \cite{warpcliente,cloudflare}.
 
-\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.96\linewidth]{figuras/warp-familias.pdf}
+\caption{Respuestas DNS en el túnel WARP con el filtro familiar desactivado y activado. Se muestran 15 dominios con categoría documental, consultados dos veces por tipo. Los cuatro controles técnicos se analizaron aparte.}
+\label{fig:warp-familias}
+\end{figure}
+
+En modo proxy se hicieron 32 solicitudes HTTPS con el método HEAD: cuatro controles, dos recorridos, dos ajustes del filtro y dos rondas. El diagnóstico confirmó la salida directa fuera de WARP y la salida por WARP del cliente SOCKS5 con resolución remota. Con el ajuste familiar activado, los controles de adulto y malware devolvieron HTTP 200 por el proxy en las dos rondas, igual que con el ajuste desactivado. El dominio reservado \texttt{.invalid} no produjo respuesta HTTP. En una segunda sesión se recuperó la página de cada uno de los dos controles de categoría por ambas rutas. Las cuatro respuestas GET coincidieron byte a byte. La comparación HTTP se limitó a los dominios de control.
+
+\Needspace{6\baselineskip}
 \section{Conclusiones}
 La ampliación del piloto permitió comparar perfiles DNS públicos de ocho proveedores entre TCP y DoH. Se observaron señales explícitas, respuestas negativas y direcciones especiales con distinta frecuencia según el perfil y el tipo de registro. La proporción de casos interpretables, especialmente en AAAA, limita los acuerdos por pares. Una comparación basada solo en el número de bloqueos omitiría esa diferencia de cobertura.
 
 La evidencia para identificar una intervención depende de la forma de respuesta y de los controles disponibles. En DoH, el contraste entre los perfiles públicos de Mullvad mostró una diferencia compatible con el filtrado documentado de adulto y apuestas. En ambos casos la comparación fue más clara en A, porque el perfil sin filtro devolvió direcciones. Las 50 etiquetas del piloto siguen siendo documentales y la selección tiene predominio educativo. La exactitud y los bloqueos indebidos requieren un corpus revisado y una decisión esperada según la política de cada perfil.
 
-En laboratorio, conectar una VPN y pasar por un proxy conservaron las respuestas de referencia con la regla desactivada. Al activar la regla en el resolutor del túnel o en el proxy se obtuvieron las señales previstas y se mantuvo el acceso al control educativo. Esta comparación separa el efecto del transporte del efecto de la política aplicada en la capa correspondiente.
+En laboratorio, conectar una VPN y pasar por un proxy conservaron las respuestas de referencia con la regla desactivada. Al activar la regla en el resolutor del túnel o en el proxy se obtuvieron las señales previstas y se mantuvo el acceso al control educativo. En WARP, el filtro familiar cambió las respuestas DNS para los cuatro dominios de adulto. En el modo proxy del mismo cliente, los controles de adulto y malware siguieron respondiendo HTTP 200. Comprobar la salida por WARP y comprobar el efecto del filtro son dos verificaciones distintas.
 
 \section{Trabajo futuro}
 La primera prioridad es completar la revisión de categorías y registrar por qué se incluye o excluye cada dominio. Ampliar el contraste de apuestas con el perfil familiar de Mullvad y habilitar un perfil que declare protección frente a armas permitiría probar ambas categorías con controles educativos revisados. Con reglas esperadas por perfil se podrán estimar omisiones y bloqueos indebidos, con denominadores por categoría.
 
-La segunda prioridad es probar las funciones de filtrado de las VPN documentadas en el estado del arte. Se registrarán plan, cliente, servidor, ruta y resolutor efectivo. Para proxies, el contraste empezará por comprobar si entregar el nombre al proxy SOCKS5 de Mullvad cambia el lugar de resolución. Un segundo intermediario con una política declarada permitirá extender la comparación. En cada caso se mantendrá una condición directa y otra con el filtro desactivado cuando el servicio lo permita.
+La segunda prioridad es repetir la comparación con un operador independiente de WARP que documente su política de filtrado. Se registrarán plan, cliente, servidor, ruta y resolutor efectivo. Para proxies, el contraste empezará por comprobar si entregar el nombre al proxy SOCKS5 de Mullvad cambia el lugar de resolución. Un segundo intermediario con una política declarada permitirá extender la comparación. En cada caso se mantendrá una condición directa y otra con el filtro desactivado cuando el servicio lo permita.
 
 La tercera prioridad es repetir TCP y DoH en ventanas pareadas, desde más de una red y con los mismos casos de control. Se contrastarán entonces las observaciones con mediciones compatibles de OONI, previa definición de la configuración, la red y el tratamiento de los resultados. Esta repetición permitirá distinguir cambios de la política o del transporte de cambios temporales de conectividad.
 
 
-\newpage
+\Needspace{7\baselineskip}
 \begingroup
 \footnotesize
 \setlength{\parskip}{0pt}
