@@ -1,6 +1,6 @@
 # Inventario de servicios: instrumento inicial y ampliación
 
-Revisión documental: 27 de octubre de 2026. Una fila no acredita conectividad, calibración ni cobertura de todas las categorías. No se contrata ni configura un servicio por aparecer aquí.
+Configuración inicial revisada el 27 de octubre de 2026. La ampliación medida figura al final de este documento. Una fila no acredita conectividad, calibración ni cobertura de todas las categorías. No se contrata ni configura un servicio por aparecer aquí.
 
 | Servicio / perfil | Función documentada | Estado |
 |---|---|---|
@@ -18,6 +18,20 @@ Para cada incorporación registrar perfil y plan, categorías efectivamente prom
 
 ## Cobertura por categoría revisada el 30-10-2026
 
-La configuración activa solo aporta protección de contenido adulto con Cloudflare familiar. Los perfiles estándar y de amenazas sirven de referencia técnica; no cubren apuestas ni armas como filtros de contenido. Antes de evaluar esas categorías se requiere un perfil con política declarada, categoría habilitada, plan documentado, endpoint y controles calibrados. Una lista manual de dominios bloqueados no sustituye la evaluación de la categorización del proveedor.
+La configuración del piloto de octubre solo incorporó protección de contenido adulto con Cloudflare familiar. Los perfiles estándar y de amenazas sirven de referencia técnica; no cubren apuestas ni armas como filtros de contenido. Antes de evaluar esas categorías se requiere un perfil con política declarada, categoría habilitada, plan documentado, endpoint y controles calibrados. Una lista manual de dominios bloqueados no sustituye la evaluación de la categorización del proveedor.
 
 CleanBrowsing documenta `category_adult`, `category_gambling` y `category_weapons` en su [API oficial](https://cleanbrowsing.org/api/). Su [descripción de filtros](https://cleanbrowsing.org/learn/cleanbrowsing-predefined-filters) distingue los perfiles gratuitos de las categorías configurables de pago. Se incorpora como candidato con cobertura documental, sin cuenta, contratación, perfil activo ni mediciones. No extrapolar estas categorías a los resolutores gratuitos Family/Adult. La selección operativa permanece pendiente de acceso y calibración; no se declara cerrada la brecha con una revisión documental.
+
+
+## Perfiles medidos el 18-11-2026
+
+La ampliación mantuvo los seis perfiles iniciales y midió ocho más por TCP/53. El perfil de referencia permite comparar respuestas, con las limitaciones del protocolo de medición y de cada política. Los perfiles públicos incorporados documentan funciones familiares, de adulto o de referencia. La cobertura verificable para apuestas y armas sigue pendiente.
+
+| Proveedor | Perfiles añadidos | Referencia para perfiles de filtrado |
+|---|---|---|
+| [AdGuard](https://adguard-dns.io/en/public-dns.html) | Sin filtro y familiar | AdGuard sin filtro |
+| [CleanBrowsing](https://cleanbrowsing.org/filters) | Adulto y familiar | Cloudflare estándar, de otro proveedor |
+| [Control D](https://docs.controld.com/docs/free-dns) | Sin filtro y Family Friendly | Control D sin filtro |
+| [Cisco OpenDNS](https://www.opendns.com/setupguide/) | Estándar y FamilyShield | OpenDNS estándar |
+
+Ver [medición, evidencia y reproducción](comparacion_2026-11-18.md). La VPN y el proxy medidos son configuraciones de laboratorio; la cobertura de proveedores externos de ambas tecnologías sigue pendiente.

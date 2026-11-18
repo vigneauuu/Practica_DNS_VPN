@@ -4,11 +4,11 @@
 
 Caracterizar el comportamiento de servicios que filtran categorías de contenido pertinentes para control parental. Diferenciar la política declarada del proveedor, la categoría revisada del dominio y la evidencia de red. Investigar también bloqueo indebido de contenido permitido, por ejemplo educativo revisado.
 
-Los audios del anteproyecto explicitan este foco. Los audios posteriores afinan PDNS, fuentes, categorías, OONI y recorridos. Se conservan en su orden relativo; una sugerencia antigua no se presenta como una exigencia nueva. Phishing se mantiene como inventario histórico separado: una mención posterior de FINSIN no acredita por sí sola que se haya revocado la indicación de no mezclar detección de amenazas con contenido parental.
+El inventario histórico de phishing se mantiene separado del corpus parental porque registra amenazas y el estudio parental evalúa categorías de contenido.
 
 ## La cantidad
 
-`config/estudio.json` establece una **meta operativa de 2.000 dominios únicos revisados**, solicitada por Matías. No se encontró una exigencia inequívoca del profesor de utilizar exactamente 2.000. Su exigencia es justificar selección, categorías, fuentes y carga, sin introducir cifras o métodos sin antecedentes. El número no acredita representatividad de Internet ni un margen de error.
+`config/estudio.json` establece una **meta operativa de 2.000 dominios únicos revisados** para planificar la selección y dimensionar la carga de consultas. La representatividad y el margen de error no se deducen de esa cifra.
 
 No se rellenará automáticamente con 148 nombres populares para convertir el inventario de 1.852 en 2.000. Eso conservaría las etiquetas cuestionadas, mezclaría phishing con el estudio parental y cambiaría la composición sin una razón de contenido. Tampoco se impondrán 400 por cada categoría heredada.
 
@@ -41,11 +41,11 @@ Con 2.000 dominios, seis perfiles, A y AAAA y tres rondas se planifican 72.000 o
 
 ## Trabajo que no se presenta como completado
 
-La adquisición y validación semántica faltantes, la cobertura final de categorías/servicios y la calibración no se resuelven añadiendo filas. No se ha implementado un algoritmo nuevo de categorización, un resolutor propio con respuestas explicables ni ingeniería inversa del algoritmo de un proveedor. Las ideas de transparencia del anteproyecto son posibles líneas posteriores; los EDE recibidos se conservan como evidencia del servicio.
+La adquisición y validación semántica faltantes, la cobertura final de categorías/servicios y la calibración no se resuelven añadiendo filas. No se ha implementado un algoritmo nuevo de categorización, un resolutor propio con respuestas explicables ni ingeniería inversa del algoritmo de un proveedor. Los EDE recibidos se conservan como evidencia del servicio.
 
 ## Construcción reproducible del conjunto candidato de 2.000
 
-Se descargó el archivo oficial `https://dsi.ut-capitole.fr/blacklists/download/liste_bu.tar.gz`. La descripción UT1 identifica una lista de uso universitario local; no es una garantía de benignidad ni equivalencia con un dataset educativo. Del snapshot se seleccionaron sin reemplazo 534 nombres válidos que no estaban en la base parental, con semilla 20261027. Esta cantidad completa la meta de inventario y añade un contraste de procedencia distinta; no es una cuota estadística óptima ni impuesta por el profesor. Su composición deberá revisarse antes de la medición final.
+Se descargó el archivo oficial `https://dsi.ut-capitole.fr/blacklists/download/liste_bu.tar.gz`. La descripción UT1 identifica una lista de uso universitario local; no es una garantía de benignidad ni equivalencia con un dataset educativo. Del snapshot se seleccionaron sin reemplazo 534 nombres válidos que no estaban en la base parental, con semilla 20261027. Esta cantidad completa la meta del inventario candidato y añade un grupo de contraste de otra procedencia. Su composición deberá revisarse antes de la medición final.
 
 `dataset/corpus-parental-candidatos.csv` contiene exactamente 2.000 candidatos únicos. `dataset/corpus-parental-candidatos.build.json` conserva rechazos, hashes y cantidades; cada fila nueva registra línea y fuente. El snapshot reproducible está en `dataset/fuentes/` y el archivo comprimido original queda fuera del repositorio. El inventario histórico `dataset/corpus.csv` permanece intacto. Reconstruir a otra salida con `pdns-lab corpus-parental-build --output results/parental-reconstruido.csv`.
 
