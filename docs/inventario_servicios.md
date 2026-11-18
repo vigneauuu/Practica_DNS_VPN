@@ -35,3 +35,5 @@ La ampliación mantuvo los seis perfiles iniciales y midió ocho más por TCP/53
 | [Cisco OpenDNS](https://www.opendns.com/setupguide/) | Estándar y FamilyShield | OpenDNS estándar |
 
 Ver [medición, evidencia y reproducción](comparacion_2026-11-18.md). La VPN y el proxy medidos son configuraciones de laboratorio; la cobertura de proveedores externos de ambas tecnologías sigue pendiente.
+
+El contraste DoH incluyó también los perfiles públicos familiar y sin filtro de [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls). Su variante familiar documenta adulto y apuestas. Ambos respondieron a las 152 consultas sobre HTTP/2. El DNS público se midió fuera de la VPN. Para armas sigue pendiente habilitar y calibrar un perfil que declare la categoría.

@@ -12,6 +12,7 @@ Los endpoints, referencias y fuentes del proveedor se conservan en [la configura
 | Calibración TCP inicial | 112 | Cuatro nombres técnicos por perfil, A y AAAA |
 | Contraste adicional Cisco | 8 | Nombre permitido y control de adulto en OpenDNS estándar y FamilyShield |
 | DoH con TLS verificado | 608 | Ocho perfiles de cuatro proveedores, dos rondas y 19 nombres, A y AAAA |
+| DoH de Mullvad sobre HTTP/2 | 152 | Dos perfiles públicos, mismos 19 nombres, dos rondas, A y AAAA |
 | DNS en laboratorio OpenVPN | 72 | Tres condiciones, cuatro nombres sintéticos, A/AAAA y tres rondas |
 | HTTP en laboratorio de proxy | 36 | Tres condiciones, cuatro casos sintéticos y tres rondas |
 
@@ -28,6 +29,10 @@ En los 91 pares por tipo hubo de 45 a 50 dominios estables y comparables en A y 
 
 En OpenVPN se usaron dos espacios de red aislados, certificados efímeros, un enlace virtual y un resolutor local. Se verificó la ruta por `tun0`. Tanto el enlace directo como el túnel con la regla desactivada resolvieron los 24 casos. Al configurar el filtro se observaron 18 señales de bloqueo en adulto, apuestas y armas y seis resoluciones del control educativo. En el proxy HTTP se remitió a un origen local. Con la regla desactivada respondieron 12 casos HTTP 200, igual que en la conexión directa. Al activarla se observaron nueve 403 con una huella explícita de política y tres respuestas 200. Las unidades DNS y HTTP se reportan en paneles distintos. Son configuraciones controladas, con casos sintéticos; falta comparar operadores externos.
 
+El [DNS público de Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls) se probó por separado, sin activar su VPN. El perfil familiar devolvió NXDOMAIN en las ocho consultas por tipo de cada categoría documental, adulto y apuestas. El perfil sin filtro devolvió direcciones en los ocho casos de A de cada categoría. En AAAA devolvió direcciones en dos consultas de adulto y ninguna de apuestas. Una primera corrida por HTTP/1.1 no obtuvo mensajes DNS. La corrida por HTTP/2 sí recibió las 152 respuestas y es la que se resume en `doh_mullvad`. Los registros de ambas corridas se conservan por separado.
+
+Para extender las pruebas por conexión, [Windscribe](https://windscribe.com/features/robert) documenta categorías que dependen del plan. El [SOCKS5 de Mullvad](https://mullvad.net/en/help/socks5-proxy) requiere conectarse a su VPN. En ambos casos falta habilitar el servicio y comprobar ruta, resolutor y política en el cliente real.
+
 ## Reproducción
 
 Activar `.venv` desde la raíz del repositorio. Los experimentos públicos consultan únicamente DNS. Para la VPN de laboratorio se requiere Linux con disponibilidad de TUN, iproute2, OpenSSL, OpenVPN, dnsmasq y privilegios locales para crear espacios de red. El script abre interfaces temporales aisladas y las retira al finalizar. Para regenerar las figuras se instala Matplotlib junto con las dependencias de desarrollo.
@@ -36,9 +41,10 @@ Activar `.venv` desde la raíz del repositorio. Los experimentos públicos consu
 work=results/nueva-ampliacion
 python scripts/medir_ampliacion_dns.py "$work"
 python scripts/contrastar_doh.py "$work/doh.json"
+python scripts/contrastar_doh.py --mullvad "$work/doh-mullvad.json"
 bash scripts/comparar_vpn_local.sh "$work/vpn-verificada"
 python scripts/comparar_proxy_local.py "$work/proxy.json"
-python scripts/resumir_ampliacion.py "$work" "$work/resumen.json"
+python scripts/resumir_ampliacion.py "$work" "$work/resumen.json" --mullvad "$work/doh-mullvad.json"
 python scripts/graficar_ampliacion.py "$work/resumen.json" "$work/figuras"
 ```
 
