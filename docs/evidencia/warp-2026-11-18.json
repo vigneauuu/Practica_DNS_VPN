@@ -1,0 +1,544 @@
+{
+  "client": "Cloudflare WARP Linux 2026.8.2115.0",
+  "tunnel_protocol": "MASQUE",
+  "rounds_per_condition": 2,
+  "source_sha256": {
+    "direct.json": "880b93ae37d33312a54790c6045ebe9049653b8735acc2711e4ba7017f09d924",
+    "warp_off.json": "eab908a79858734e996bb09ec3a7fe5b42fe5e7bc2be3d2198c9abcb1e75d508",
+    "warp_full.json": "1a6fcc8941b5d1e38422c209d6dbffd76a0cfe60fff4ac3fcf4043426f2221f5",
+    "proxy_off.json": "1a67f4bd1175753c18aa556c08cf596aad14923b6056a7f493a2f8906d28a94c",
+    "proxy_full.json": "8e98775dfc574e1b7c8ca85907f3e5bd7eacdaa6829b24df234d8736c0e729d2",
+    "proxy_verify.json": "2ba8b380c664037c896edb0b203cb7a857f78a640ba06e6103ce67b52488fec8",
+    "domains.json": "2cb97b23b72744b29a1a713bf64eab8293fd2038fdf5fc1ded3db1c9d03aeb0c"
+  },
+  "dns": {
+    "observations": 228,
+    "domains": 19,
+    "phases": {
+      "direct": {
+        "observations": 76,
+        "domains": 19,
+        "trace": "off",
+        "route_checks": 4,
+        "route_devices": [
+          "tap0"
+        ],
+        "started_utc": "2026-11-18T20:29:43.553565+00:00",
+        "finished_utc": "2026-11-18T20:29:47.705526+00:00",
+        "requested_policy": null,
+        "categories": {
+          "adultos": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 2,
+                "no_address": 6
+              }
+            }
+          },
+          "apuestas": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "no_address": 8
+              }
+            }
+          },
+          "armas": {
+            "A": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 6
+              }
+            },
+            "AAAA": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 2,
+                "no_address": 4
+              }
+            }
+          },
+          "control": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 6
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 6
+              }
+            }
+          },
+          "educativo": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 4,
+                "no_address": 4
+              }
+            }
+          }
+        },
+        "controls": {
+          "example.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          },
+          "no-existe-pdns-lab.invalid": {
+            "A": {
+              "NXDOMAIN": 2
+            },
+            "AAAA": {
+              "NXDOMAIN": 2
+            }
+          },
+          "nudity.testcategory.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          },
+          "malware.testcategory.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          }
+        }
+      },
+      "warp_off": {
+        "observations": 76,
+        "domains": 19,
+        "trace": "on",
+        "route_checks": 4,
+        "route_devices": [
+          "CloudflareWARP"
+        ],
+        "started_utc": "2026-11-18T20:29:49.917745+00:00",
+        "finished_utc": "2026-11-18T20:29:53.510973+00:00",
+        "requested_policy": "off",
+        "categories": {
+          "adultos": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 2,
+                "no_address": 6
+              }
+            }
+          },
+          "apuestas": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "no_address": 8
+              }
+            }
+          },
+          "armas": {
+            "A": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 6
+              }
+            },
+            "AAAA": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 2,
+                "no_address": 4
+              }
+            }
+          },
+          "control": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 6
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 6
+              }
+            }
+          },
+          "educativo": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 4,
+                "no_address": 4
+              }
+            }
+          }
+        },
+        "controls": {
+          "example.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          },
+          "no-existe-pdns-lab.invalid": {
+            "A": {
+              "NXDOMAIN": 2
+            },
+            "AAAA": {
+              "NXDOMAIN": 2
+            }
+          },
+          "nudity.testcategory.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          },
+          "malware.testcategory.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          }
+        }
+      },
+      "warp_full": {
+        "observations": 76,
+        "domains": 19,
+        "trace": "on",
+        "route_checks": 4,
+        "route_devices": [
+          "CloudflareWARP"
+        ],
+        "started_utc": "2026-11-18T20:29:57.665245+00:00",
+        "finished_utc": "2026-11-18T20:30:00.863659+00:00",
+        "requested_policy": "full",
+        "categories": {
+          "adultos": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "sink": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "sink": 8
+              }
+            }
+          },
+          "apuestas": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "no_address": 8
+              }
+            }
+          },
+          "armas": {
+            "A": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 6
+              }
+            },
+            "AAAA": {
+              "domains": 3,
+              "observations": 6,
+              "states": {
+                "address": 2,
+                "no_address": 4
+              }
+            }
+          },
+          "control": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 2,
+                "sink": 4
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "NXDOMAIN": 2,
+                "address": 2,
+                "sink": 4
+              }
+            }
+          },
+          "educativo": {
+            "A": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 8
+              }
+            },
+            "AAAA": {
+              "domains": 4,
+              "observations": 8,
+              "states": {
+                "address": 4,
+                "no_address": 4
+              }
+            }
+          }
+        },
+        "controls": {
+          "example.com": {
+            "A": {
+              "address": 2
+            },
+            "AAAA": {
+              "address": 2
+            }
+          },
+          "no-existe-pdns-lab.invalid": {
+            "A": {
+              "NXDOMAIN": 2
+            },
+            "AAAA": {
+              "NXDOMAIN": 2
+            }
+          },
+          "nudity.testcategory.com": {
+            "A": {
+              "sink": 2
+            },
+            "AAAA": {
+              "sink": 2
+            }
+          },
+          "malware.testcategory.com": {
+            "A": {
+              "sink": 2
+            },
+            "AAAA": {
+              "sink": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "proxy": {
+    "requests": 32,
+    "domains": 4,
+    "phases": {
+      "proxy_off": {
+        "requests": 16,
+        "requested_policy": "off",
+        "trace": {
+          "direct": "off",
+          "socks5h": "on"
+        },
+        "route_checks_per_path": 4,
+        "outcomes": {
+          "example.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          },
+          "no-existe-pdns-lab.invalid": {
+            "direct": {
+              "curl_6": 2
+            },
+            "socks5h": {
+              "curl_97": 2
+            }
+          },
+          "nudity.testcategory.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          },
+          "malware.testcategory.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          }
+        }
+      },
+      "proxy_full": {
+        "requests": 16,
+        "requested_policy": "full",
+        "trace": {
+          "direct": "off",
+          "socks5h": "on"
+        },
+        "route_checks_per_path": 4,
+        "outcomes": {
+          "example.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          },
+          "no-existe-pdns-lab.invalid": {
+            "direct": {
+              "curl_6": 2
+            },
+            "socks5h": {
+              "curl_97": 2
+            }
+          },
+          "nudity.testcategory.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          },
+          "malware.testcategory.com": {
+            "direct": {
+              "HTTP_200": 2
+            },
+            "socks5h": {
+              "HTTP_200": 2
+            }
+          }
+        }
+      }
+    },
+    "additional_get": {
+      "requests": 4,
+      "requested_policy": "full",
+      "trace_before_and_after": {
+        "direct": "off",
+        "socks5h": "on"
+      },
+      "controls": {
+        "nudity.testcategory.com": {
+          "same_sha256": true,
+          "body_bytes": {
+            "direct": 652,
+            "socks5h": 652
+          },
+          "body_sha256": {
+            "direct": "b7906fb5c5a4431c020882769567fbe9703b96cf3a3cb187714e0846855c9020",
+            "socks5h": "b7906fb5c5a4431c020882769567fbe9703b96cf3a3cb187714e0846855c9020"
+          }
+        },
+        "malware.testcategory.com": {
+          "same_sha256": true,
+          "body_bytes": {
+            "direct": 652,
+            "socks5h": 652
+          },
+          "body_sha256": {
+            "direct": "b7906fb5c5a4431c020882769567fbe9703b96cf3a3cb187714e0846855c9020",
+            "socks5h": "b7906fb5c5a4431c020882769567fbe9703b96cf3a3cb187714e0846855c9020"
+          }
+        }
+      }
+    }
+  }
+}
