@@ -48,4 +48,4 @@ python scripts/resumir_ampliacion.py "$work" "$work/resumen.json" --mullvad "$wo
 python scripts/graficar_ampliacion.py "$work/resumen.json" "$work/figuras"
 ```
 
-El resumen registra identificadores, huellas y denominadores. Las bases con las respuestas completas se quedan en almacenamiento local. Los resultados de octubre conservan sus identificadores y su interpretación histórica. El informe contiene conclusiones para lo medido y trabajo futuro para la validación del corpus, cobertura de apuestas y armas, VPN y proxies externos y repetición en otras redes.
+El resumen registra identificadores, huellas y denominadores. Las bases con las respuestas completas se conservan en almacenamiento local. Tras esta ampliación se midieron por separado seis nombres de apuestas de la nómina de Subtel con Mullvad y, al día siguiente, esos seis nombres y tres fabricantes de armas con DNS4EU. El estudio del conjunto parental completo y la repetición desde otras redes siguen pendientes. [Medición de Mullvad y alcance del anuncio de retirada](doh-apuestas-subtel-2026-11-18.md) · [Medición de DNS4EU](doh-dns4eu-2026-11-19.md)
