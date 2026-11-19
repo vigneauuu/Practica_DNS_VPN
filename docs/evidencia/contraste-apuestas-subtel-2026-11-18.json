@@ -1,0 +1,39 @@
+{
+  "fuente": {
+    "institucion": "Subsecretaría de Telecomunicaciones de Chile",
+    "titulo": "Subtel ordena bloqueo de 42 sitios de apuestas online",
+    "fecha": "2026-09-01",
+    "url": "https://www.subtel.gob.cl/subtel-ordena-bloqueo-de-42-sitios-de-apuestas-online/",
+    "apartado": "Listado de los 42 sitios"
+  },
+  "fecha_del_cotejo": "2026-11-18",
+  "urls_publicadas": 42,
+  "nombres_de_host_distintos": 42,
+  "sha256_nombres_de_host": "ffa386bee813548c3ecadd978b79622f2d3d5e12f5867e7c8eab0a6c7154a7ff",
+  "formato_para_sha256": "Nombres de host en minúsculas, en el orden de la lista numerada, una línea por URL con salto LF después de cada nombre, incluido el último. Codificación UTF-8.",
+  "metodo": "Extraer el nombre de host de cada URL con urllib.parse.urlsplit(url).hostname. Compararlo por igualdad exacta en minúsculas con la columna domain de las filas cuya columna categories contenga la etiqueta apuestas. Se conservan www y los demás subdominios.",
+  "resultados": [
+    {
+      "archivo": "dataset/corpus-parental-candidatos.csv",
+      "dominios_del_archivo": 2000,
+      "dominios_con_etiqueta_apuestas": 400,
+      "numero_de_coincidencias": 6,
+      "nombres_coincidentes": [
+        "1xbet.com",
+        "betsson.com",
+        "coolbet.com",
+        "jugabet.cl",
+        "micasino.com",
+        "rojabet.cl"
+      ]
+    },
+    {
+      "archivo": "dataset/piloto-50-2026-10-30.csv",
+      "dominios_del_archivo": 50,
+      "dominios_con_etiqueta_apuestas": 4,
+      "numero_de_coincidencias": 0,
+      "nombres_coincidentes": []
+    }
+  ],
+  "alcance": "Coincidencia documental de nombres. No se consultaron los sitios de la nómina ni se midieron respuestas DNS, acceso web o cumplimiento del bloqueo."
+}
