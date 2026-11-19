@@ -3,7 +3,7 @@ import json
 import random
 from pathlib import Path
 
-from .corpus import CATEGORIES, read_corpus, sha256, write_corpus
+from .corpus import CATEGORIES, experimental_rows, read_corpus, sha256, write_corpus
 
 
 def load_study(path):
@@ -37,8 +37,8 @@ def eligible_rows(rows, study, *, validated=False):
 def plan_study(corpus, study_path):
     study = load_study(study_path)
     rows = read_corpus(corpus)
-    candidates = eligible_rows(rows, study)
-    reviewed = eligible_rows(rows, study, validated=True)
+    candidates = eligible_rows(experimental_rows(rows), study)
+    reviewed = eligible_rows(candidates, study, validated=True)
     target = study["target_unique_domains"]
     return {"study": study["id"], "target_unique_domains": target,
             "target_origin": study["target_origin"], "input_domains": len(rows),
@@ -58,7 +58,8 @@ def select_study(corpus, study_path, output):
     if output.exists() or output.with_suffix(".selection.json").exists():
         raise ValueError("La salida ya existe; conserve el historial de selección")
     study = load_study(study_path)
-    rows = sorted(eligible_rows(read_corpus(corpus), study, validated=True), key=lambda r: r["domain"])
+    rows = sorted(eligible_rows(experimental_rows(read_corpus(corpus)), study, validated=True),
+                  key=lambda r: r["domain"])
     target = study["target_unique_domains"]
     if len(rows) < target:
         raise ValueError(f"Se requieren {target} dominios validados en alcance; disponibles: {len(rows)}")

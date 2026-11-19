@@ -8,6 +8,8 @@ from pathlib import Path
 
 FIELDS = ["domain", "categories", "sources", "validation_status", "validation_evidence", "reviewer", "reviewed_at"]
 CATEGORIES = {"adultos", "armas", "apuestas", "phishing", "popular", "educativo", "referencia_biblioteca", "control_tecnico"}
+# El archivo heredado llamado «armas» es una copia literal de UT1 agressif/domains.
+UT1_AGRESSIF_SHA256 = "d89c12bc7854628a71ad59257a1fe58cdab75cf137727aec161eea2eddfd3fd1"
 LEGACY = {
     "adultos_top400.csv": ("adultos", "UT1; snapshot heredado, fecha de extracción desconocida"),
     "armas_top400.csv": ("armas", "UT1; snapshot heredado, fecha de extracción desconocida"),
@@ -70,6 +72,30 @@ def read_corpus(path):
         if row["validation_status"] == "validated" and not all(row[k].strip() for k in ("validation_evidence", "reviewer", "reviewed_at")):
             raise ValueError("Una etiqueta validada requiere evidencia, responsable y fecha")
     return rows
+
+
+def experimental_rows(rows):
+    """Proyecta las etiquetas utilizables sin alterar el inventario histórico."""
+    for row in rows:
+        if row.get("validation_status") == "excluded":
+            continue
+        labels = row["categories"].split("|")
+        sources = row.get("sources", "")
+        if ("armas" in labels and row.get("validation_status") != "validated"
+                and UT1_AGRESSIF_SHA256 in sources):
+            try:
+                provenance = json.loads(sources)
+            except ValueError:
+                provenance = []
+            if isinstance(provenance, list) and any(
+                isinstance(entry, dict) and entry.get("sha256") == UT1_AGRESSIF_SHA256
+                for entry in provenance
+            ):
+                labels.remove("armas")
+                if not labels:
+                    continue
+                row = {**row, "categories": "|".join(labels)}
+        yield row
 
 
 def build_legacy(source, output):

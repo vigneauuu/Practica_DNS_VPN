@@ -12,7 +12,7 @@ import sys
 import uuid
 
 from . import __version__
-from .corpus import build_legacy, read_corpus, write_corpus, sha256, normalize_domain, CATEGORIES
+from .corpus import build_legacy, experimental_rows, read_corpus, write_corpus, sha256, normalize_domain, CATEGORIES
 from .dnsprobe import probe, classify, utcnow
 from .analysis import analyze
 from .storage import Store
@@ -87,7 +87,8 @@ def run(args):
     if args.rounds < 1 or args.retries < 0 or args.timeout <= 0 or args.interval < 0 or (args.limit is not None and args.limit < 1):
         raise ValueError("Parámetros de ejecución fuera de rango")
     profiles = load_profiles(args.profiles, args.select)
-    rows = [r for r in read_corpus(args.corpus) if r["validation_status"] != "excluded" and (args.include_unreviewed or r["validation_status"] == "validated")]
+    rows = [r for r in experimental_rows(read_corpus(args.corpus))
+            if args.include_unreviewed or r["validation_status"] == "validated"]
     if not rows:
         raise ValueError("No hay dominios validados. Revise etiquetas o use --include-unreviewed para una ejecución exploratoria explícita")
     rng = random.Random(args.seed)
