@@ -1,0 +1,3914 @@
+{
+  "ventana_inicio_consultas_utc": [
+    "2026-11-19T23:09:23.974933+00:00",
+    "2026-11-19T23:12:33.233238+00:00"
+  ],
+  "entrada": "dataset/referencia-politica-dns4eu-2026-11-19.csv",
+  "sha256_entrada": "b201dd7d285bdfa0066595e34c38d4968282f59db28a7f8866f800c7c5120fd9",
+  "sha256_respuestas_locales": "f671dbe4d4fde536611e5db9ac4764c3a5e42bdb64df3586184a0bd6f83a3988",
+  "sha256_programa_medicion": "d543afe5662ecd25540e36d43d841012e3fc97de67d3386ecec9762f17d4a6f3",
+  "consultas": 1116,
+  "respuestas_dns": 1116,
+  "version_http": {
+    "HTTP/2": 1116
+  },
+  "direcciones_aviso": {
+    "A": [
+      "51.15.69.11"
+    ],
+    "AAAA": [
+      "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+    ]
+  },
+  "controles": {
+    "example.com": {
+      "A": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "malware.testcategory.com": {
+      "A": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "no-existe-pdns-lab.invalid": {
+      "A": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "AAAA": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      }
+    },
+    "nudity.testcategory.com": {
+      "A": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "warning.joindns4.eu": {
+      "A": {
+        "dns4eu_unfiltered": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "AAAA": {
+        "dns4eu_unfiltered": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      }
+    }
+  },
+  "resultados_por_dominio": {
+    "apuestas": {
+      "A": {
+        "restriccion_observada": 38,
+        "sin_referencia": 2,
+        "sin_senal": 2
+      },
+      "AAAA": {
+        "restriccion_observada": 19,
+        "sin_referencia": 21,
+        "sin_senal": 2
+      }
+    },
+    "educativo": {
+      "A": {
+        "resolucion_observada": 39
+      },
+      "AAAA": {
+        "resolucion_observada": 9,
+        "sin_referencia": 30
+      }
+    },
+    "adultos": {
+      "A": {
+        "restriccion_observada": 4
+      },
+      "AAAA": {
+        "sin_referencia": 3,
+        "restriccion_observada": 1
+      }
+    },
+    "armas": {
+      "A": {
+        "restriccion_observada": 3
+      },
+      "AAAA": {
+        "sin_referencia": 2,
+        "restriccion_observada": 1
+      }
+    }
+  },
+  "detalle": [
+    {
+      "dominio": "lat.betano.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "lat.betano.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "coolbet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "coolbet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "coolbetchile.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "coolbetchile.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "1xbet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "1xbet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "chile.1xbet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "chile.1xbet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsson.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsson.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "betsson1001.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsson1001.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "rojabet.cl",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "rojabet.cl",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "rojabet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "rojabet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsala.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsala.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "betsala11.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betsala11.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "micasino.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "micasino.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "micasinoenvivo.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "micasinoenvivo.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "jugabet.cl",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "jugabet.cl",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stake.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stake.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.allsport365.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.allsport365.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.z2.bet365.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.z2.bet365.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "1wins.cl",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "1wins.cl",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "estelarbet.cl",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "estelarbet.cl",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "estelarbet.vip",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "estelarbet.vip",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "juegalo.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "juegalo.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.apuestasroyal.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.apuestasroyal.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "cl.novibet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "cl.novibet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "epicbet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "epicbet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "bc.game",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "bc.game",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "playglobal5.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "playglobal5.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "aviso",
+          "aviso"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "rabona.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "rabona.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "rab0na-2417.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "rab0na-2417.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "pin-up.world",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "pin-up.world",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "latamwinonline.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "sin_senal"
+    },
+    {
+      "dominio": "latamwinonline.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "sin_senal"
+    },
+    {
+      "dominio": "melbet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "melbet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "tikitaka.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "tikitaka.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "tonybet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "tonybet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betfury.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "betfury.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "bet7k.cl",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "bet7k.cl",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "doradobet.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "doradobet.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "winchile.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "winchile.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.jackpotcitycasino.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.jackpotcitycasino.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.juegaconelking.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.juegaconelking.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "casinonano.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "casinonano.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.nayafacil-903.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "sin_senal"
+    },
+    {
+      "dominio": "www.nayafacil-903.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "sin_senal"
+    },
+    {
+      "dominio": "www.betcris.com",
+      "categoria": "apuestas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.betcris.com",
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "esperado": "resolver",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "smith-wesson.com",
+      "categoria": "armas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "smith-wesson.com",
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "ruger.com",
+      "categoria": "armas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "ruger.com",
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_protective": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "sigsauer.com",
+      "categoria": "armas",
+      "tipo": "A",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "sigsauer.com",
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "esperado": "restringir",
+      "perfiles": {
+        "dns4eu_unfiltered": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_protective": [
+          "direccion",
+          "direccion"
+        ],
+        "dns4eu_child": [
+          "aviso",
+          "aviso"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "tor_version": "0.4.9.17",
+  "rounds_per_route": 2,
+  "route_diagnostic": "https://check.torproject.org/api/ip",
+  "head_requests": 16,
+  "sha256_raw": "2f486efd533323c652c907bc90a168905dfa846b855211092d2e17a4d8b86fec",
+  "routes": {
+    "directa": {
+      "route_checks": 4,
+      "is_tor": false,
+      "controls": {
+        "example.com": {
+          "http_200": 2
+        },
+        "nudity.testcategory.com": {
+          "http_200": 2
+        },
+        "malware.testcategory.com": {
+          "http_200": 2
+        },
+        "no-existe-pdns-lab.invalid": {
+          "curl_6": 2
+        }
+      },
+      "start_utc": "2026-11-19T23:13:19.889106+00:00",
+      "finish_utc": "2026-11-19T23:13:23.094960+00:00"
+    },
+    "tor": {
+      "route_checks": 4,
+      "is_tor": true,
+      "controls": {
+        "example.com": {
+          "http_200": 2
+        },
+        "nudity.testcategory.com": {
+          "http_200": 2
+        },
+        "malware.testcategory.com": {
+          "http_200": 2
+        },
+        "no-existe-pdns-lab.invalid": {
+          "curl_97": 2
+        }
+      },
+      "start_utc": "2026-11-19T23:13:24.344698+00:00",
+      "finish_utc": "2026-11-19T23:13:39.586982+00:00"
+    }
+  }
+}

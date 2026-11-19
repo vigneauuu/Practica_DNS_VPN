@@ -3,15 +3,15 @@
   "target_unique_domains": 2000,
   "target_origin": "Meta operativa del diseño para planificar la selección y la carga de medición",
   "input_domains": 2000,
-  "in_scope_candidates": 2000,
+  "in_scope_candidates": 1734,
   "in_scope_validated": 0,
-  "additional_candidates_needed": 0,
+  "additional_candidates_needed": 266,
   "validation_gap": 2000,
   "ready_for_selection": false,
   "candidate_memberships": {
     "adultos": 400,
     "apuestas": 400,
-    "armas": 266,
+    "armas": 0,
     "educativo": 0,
     "popular": 400,
     "referencia_biblioteca": 534

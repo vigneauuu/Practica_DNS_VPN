@@ -1,0 +1,746 @@
+{
+  "fecha_cotejo": "2026-11-19",
+  "fuentes": {
+    "ROR": {
+      "version": "2.16",
+      "doi": "https://doi.org/10.5281/zenodo.24378467",
+      "sha256_zip": "40bdfe53bcf8c5216ce9f1af35ab07b4851aa6083738654ac6c570834f98136b"
+    },
+    "Citizen Lab": {
+      "commit": "fe6ca9beb46e127878b1448005347296787025ec",
+      "url": "https://github.com/citizenlab/test-lists/tree/fe6ca9beb46e127878b1448005347296787025ec",
+      "sha256_contenido_tablas": "0d47b2c873d5930ca305412262331c08b1fd7ca18b6b16e42d4672be3e2e9105"
+    },
+    "UT1": {
+      "url": "https://dsi.ut-capitole.fr/blacklists/download/agressif.tar.gz",
+      "miembro": "agressif/domains",
+      "archivo_heredado": "armas_top400.csv",
+      "sha256_comun": "d89c12bc7854628a71ad59257a1fe58cdab75cf137727aec161eea2eddfd3fd1"
+    },
+    "Subtel": {
+      "url": "https://www.subtel.gob.cl/subtel-ordena-bloqueo-de-42-sitios-de-apuestas-online/",
+      "evidencia_previa": "docs/evidencia/contraste-apuestas-subtel-2026-11-18.json",
+      "sha256_evidencia": "723c2475185a3e7c6f5e77aac6c3a7bbc4079f927022a04103c573e44e6f8fd3"
+    }
+  },
+  "sha256_inventario": "7c88702279954ed3875d818ad53e544a0f887f89d927c549b8b631dd2bbaba9c",
+  "sha256_piloto": "62bd71191d68863c08687db571a548259a46b9561416a59e424f3b48cda01885",
+  "dominios_inventariados": 2000,
+  "dominios_con_coincidencia": 52,
+  "coincidencias_por_asociacion": {
+    "apuestas": 12,
+    "institucion_educativa": 40
+  },
+  "dominios_por_fuente_positiva": {
+    "Citizen Lab": 7,
+    "ROR": 40,
+    "Subtel": 6
+  },
+  "educativos_ROR_tambien_en_piloto": 29,
+  "dominios_con_etiqueta_armas_retirada": 266,
+  "otros_sin_coincidencia_en_el_cotejo": 1682,
+  "validaciones_finales_asignadas_por_este_cotejo": 0,
+  "coincidencias": [
+    {
+      "dominio": "1xbet.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "bd.csv",
+          "url_registrada": "https://1xbet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2025-11-20"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "ch.csv",
+          "url_registrada": "http://1xbet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-09-13"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "cz.csv",
+          "url_registrada": "http://1xbet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2017-07-26"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "pl.csv",
+          "url_registrada": "https://1xbet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2017-04-09"
+        }
+      ]
+    },
+    {
+      "dominio": "22bet.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "bd.csv",
+          "url_registrada": "https://22bet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2025-11-20"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "ch.csv",
+          "url_registrada": "http://22bet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-09-13"
+        }
+      ]
+    },
+    {
+      "dominio": "888sport.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "lt.csv",
+          "url_registrada": "http://888sport.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2016-11-09"
+        }
+      ]
+    },
+    {
+      "dominio": "bet365.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "ch.csv",
+          "url_registrada": "http://bet365.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-09-13"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "lt.csv",
+          "url_registrada": "http://bet365.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2016-04-05"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "th.csv",
+          "url_registrada": "http://bet365.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2014-04-15"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "tz.csv",
+          "url_registrada": "https://bet365.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-07-18"
+        }
+      ]
+    },
+    {
+      "dominio": "betsson.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        }
+      ]
+    },
+    {
+      "dominio": "betway.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "bg.csv",
+          "url_registrada": "https://betway.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2025-08-02"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "by.csv",
+          "url_registrada": "https://betway.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-04-09"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "in.csv",
+          "url_registrada": "https://betway.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2025-06-22"
+        },
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "lt.csv",
+          "url_registrada": "http://betway.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2016-01-11"
+        }
+      ]
+    },
+    {
+      "dominio": "coolbet.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        }
+      ]
+    },
+    {
+      "dominio": "em-lyon.com",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/009gmrj52",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "ensiacet.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/013948m30",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "harvard.edu",
+      "grupo_inicial": "popular",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/03vek6s52",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "helsinki.fi",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/040af2s02",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "icp.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/043a7rc44",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "inp-toulouse.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/033p9g875",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/020ws7586",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/0511xx539",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "jugabet.cl",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        }
+      ]
+    },
+    {
+      "dominio": "marathonbet.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "lt.csv",
+          "url_registrada": "http://marathonbet.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2016-02-04"
+        }
+      ]
+    },
+    {
+      "dominio": "micasino.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        }
+      ]
+    },
+    {
+      "dominio": "mit.edu",
+      "grupo_inicial": "popular",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/042nb2s44",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "pinnacle.com",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Citizen Lab",
+          "archivo": "ch.csv",
+          "url_registrada": "http://pinnacle.com/",
+          "codigo": "GMB",
+          "fecha_incorporacion": "2019-09-13"
+        }
+      ]
+    },
+    {
+      "dominio": "rojabet.cl",
+      "grupo_inicial": "apuestas",
+      "asociacion_documental": "apuestas",
+      "evidencia": [
+        {
+          "fuente": "Subtel"
+        }
+      ]
+    },
+    {
+      "dominio": "rsu.lv",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/03nadks56",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "sfu.ca",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/0213rcc28",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "stanford.edu",
+      "grupo_inicial": "popular",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/00f54p054",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "u-bordeaux.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/057qpr032",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "udg.edu",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/01xdxns91",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/054pv6659",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uit.no",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/00wge5k78",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "unal.edu.co",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/059yx9a68",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/041nas322",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/033eqas34",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/01y9bpm73",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "unirioja.es",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/0553yr311",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "unistra.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/00pg6eq24",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "unistrapg.it",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/047302w76",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-artois.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/053x9s498",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/0372th171",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/02kzqn938",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-littoral.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/02gdcg342",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/029brtt94",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-montp3.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/05pbb8783",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/002t25c44",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-paris13.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/0199hds37",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/04wez5e68",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-tlse2.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/04ezk3x31",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/02wwzvj46",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "unizar.es",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/012a91z28",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uu.nl",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/04pp8hn57",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uv.es",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/043nxc105",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "uva.nl",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/04dkp9463",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "vu.nl",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/008xxew50",
+          "campo": "domains"
+        }
+      ]
+    },
+    {
+      "dominio": "yale.edu",
+      "grupo_inicial": "referencia_biblioteca",
+      "asociacion_documental": "institucion_educativa",
+      "evidencia": [
+        {
+          "fuente": "ROR",
+          "registro": "https://ror.org/03v76x132",
+          "campo": "domains"
+        }
+      ]
+    }
+  ]
+}

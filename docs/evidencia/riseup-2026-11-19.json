@@ -1,0 +1,885 @@
+{
+  "domains": {
+    "1xbet.com": "apuestas_subtel",
+    "betfair.com": "apuestas",
+    "betsson.com": "apuestas_subtel",
+    "bwin.com": "apuestas",
+    "cam.ac.uk": "educativo",
+    "cambridgeenglish.org": "educativo",
+    "coolbet.com": "apuestas_subtel",
+    "ehess.fr": "educativo",
+    "em-lyon.com": "educativo",
+    "example.com": "control",
+    "jugabet.cl": "apuestas_subtel",
+    "malware.testcategory.com": "control",
+    "micasino.com": "apuestas_subtel",
+    "no-existe-pdns-lab.invalid": "control",
+    "nudity.testcategory.com": "control",
+    "pokerstars.com": "apuestas",
+    "pornhub.com": "adultos",
+    "rojabet.cl": "apuestas_subtel",
+    "ruger.com": "armas",
+    "sigsauer.com": "armas",
+    "smith-wesson.com": "armas",
+    "stripchat.com": "adultos",
+    "warning.joindns4.eu": "control",
+    "williamhill.com": "apuestas",
+    "xnxx.com": "adultos",
+    "xvideos.com": "adultos"
+  },
+  "rounds": 2,
+  "egress_changed": true,
+  "doh_profiles": {
+    "dns4eu_sin_filtro": [
+      "unfiltered.joindns4.eu",
+      "86.54.11.100"
+    ],
+    "dns4eu_infantil": [
+      "child.joindns4.eu",
+      "86.54.11.12"
+    ]
+  },
+  "matched_without_controls": {
+    "dns4eu_sin_filtro": {
+      "pairs_planned": 84,
+      "pairs_with_both_responses": 84,
+      "pairs_same_state": 84,
+      "pairs_same_addresses": 80
+    },
+    "dns4eu_infantil": {
+      "pairs_planned": 84,
+      "pairs_with_both_responses": 84,
+      "pairs_same_state": 84,
+      "pairs_same_addresses": 84
+    }
+  },
+  "routes": {
+    "directa": {
+      "devices": [
+        "eth0"
+      ],
+      "countries": [
+        "CL"
+      ],
+      "route_checks": 4,
+      "dns_riseup": null,
+      "started_utc": "2026-11-19T23:11:44.288297+00:00",
+      "finished_utc": "2026-11-19T23:13:30.464829+00:00",
+      "sha256_raw": "fb52f690197c3d71ee1d22ccb0cb83e6dbb335c55e4bcab171d92cd3a996aaba",
+      "profiles": {
+        "dns4eu_sin_filtro": {
+          "observations": 104,
+          "transport": {
+            "doh_http2": 104
+          },
+          "warning_addresses": {
+            "A": [
+              "51.15.69.11"
+            ],
+            "AAAA": [
+              "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+            ]
+          },
+          "groups": {
+            "adultos": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "apuestas": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "sin_direccion": 8
+                }
+              }
+            },
+            "apuestas_subtel": {
+              "A": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 12
+                }
+              },
+              "AAAA": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 6,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "armas": {
+              "A": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 6
+                }
+              },
+              "AAAA": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 4
+                }
+              }
+            },
+            "control": {
+              "A": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              },
+              "AAAA": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              }
+            },
+            "educativo": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 4,
+                  "sin_direccion": 4
+                }
+              }
+            }
+          },
+          "controls": {
+            "example.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "no-existe-pdns-lab.invalid": {
+              "A": {
+                "nxdomain": 2
+              },
+              "AAAA": {
+                "nxdomain": 2
+              }
+            },
+            "nudity.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "malware.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "warning.joindns4.eu": {
+              "A": {
+                "direccion_aviso": 2
+              },
+              "AAAA": {
+                "direccion_aviso": 2
+              }
+            }
+          }
+        },
+        "dns4eu_infantil": {
+          "observations": 104,
+          "transport": {
+            "doh_http2": 104
+          },
+          "warning_addresses": {
+            "A": [
+              "51.15.69.11"
+            ],
+            "AAAA": [
+              "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+            ]
+          },
+          "groups": {
+            "adultos": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              }
+            },
+            "apuestas": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              }
+            },
+            "apuestas_subtel": {
+              "A": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion_aviso": 12
+                }
+              },
+              "AAAA": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion_aviso": 12
+                }
+              }
+            },
+            "armas": {
+              "A": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion_aviso": 6
+                }
+              },
+              "AAAA": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion_aviso": 6
+                }
+              }
+            },
+            "control": {
+              "A": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              },
+              "AAAA": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              }
+            },
+            "educativo": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 4,
+                  "sin_direccion": 4
+                }
+              }
+            }
+          },
+          "controls": {
+            "example.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "no-existe-pdns-lab.invalid": {
+              "A": {
+                "nxdomain": 2
+              },
+              "AAAA": {
+                "nxdomain": 2
+              }
+            },
+            "nudity.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "malware.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "warning.joindns4.eu": {
+              "A": {
+                "direccion_aviso": 2
+              },
+              "AAAA": {
+                "direccion_aviso": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "riseup": {
+      "devices": [
+        "tun0"
+      ],
+      "countries": [
+        "FR"
+      ],
+      "route_checks": 4,
+      "dns_riseup": "10.42.0.1",
+      "started_utc": "2026-11-19T23:11:44.932117+00:00",
+      "finished_utc": "2026-11-19T23:13:41.147816+00:00",
+      "sha256_raw": "9758d26f2e40faae9c79e5d201dbc333b6da4732ae15672e9ed8af671a8d0da2",
+      "profiles": {
+        "dns4eu_sin_filtro": {
+          "observations": 104,
+          "transport": {
+            "doh_http2": 104
+          },
+          "warning_addresses": {
+            "A": [
+              "51.15.69.11"
+            ],
+            "AAAA": [
+              "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+            ]
+          },
+          "groups": {
+            "adultos": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "apuestas": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "sin_direccion": 8
+                }
+              }
+            },
+            "apuestas_subtel": {
+              "A": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 12
+                }
+              },
+              "AAAA": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 6,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "armas": {
+              "A": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 6
+                }
+              },
+              "AAAA": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 4
+                }
+              }
+            },
+            "control": {
+              "A": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              },
+              "AAAA": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              }
+            },
+            "educativo": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 4,
+                  "sin_direccion": 4
+                }
+              }
+            }
+          },
+          "controls": {
+            "example.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "no-existe-pdns-lab.invalid": {
+              "A": {
+                "nxdomain": 2
+              },
+              "AAAA": {
+                "nxdomain": 2
+              }
+            },
+            "nudity.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "malware.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "warning.joindns4.eu": {
+              "A": {
+                "direccion_aviso": 2
+              },
+              "AAAA": {
+                "direccion_aviso": 2
+              }
+            }
+          }
+        },
+        "dns4eu_infantil": {
+          "observations": 104,
+          "transport": {
+            "doh_http2": 104
+          },
+          "warning_addresses": {
+            "A": [
+              "51.15.69.11"
+            ],
+            "AAAA": [
+              "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+            ]
+          },
+          "groups": {
+            "adultos": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              }
+            },
+            "apuestas": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion_aviso": 8
+                }
+              }
+            },
+            "apuestas_subtel": {
+              "A": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion_aviso": 12
+                }
+              },
+              "AAAA": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion_aviso": 12
+                }
+              }
+            },
+            "armas": {
+              "A": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion_aviso": 6
+                }
+              },
+              "AAAA": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion_aviso": 6
+                }
+              }
+            },
+            "control": {
+              "A": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              },
+              "AAAA": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "direccion_aviso": 2,
+                  "nxdomain": 2
+                }
+              }
+            },
+            "educativo": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 4,
+                  "sin_direccion": 4
+                }
+              }
+            }
+          },
+          "controls": {
+            "example.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "no-existe-pdns-lab.invalid": {
+              "A": {
+                "nxdomain": 2
+              },
+              "AAAA": {
+                "nxdomain": 2
+              }
+            },
+            "nudity.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "malware.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "warning.joindns4.eu": {
+              "A": {
+                "direccion_aviso": 2
+              },
+              "AAAA": {
+                "direccion_aviso": 2
+              }
+            }
+          }
+        },
+        "dns_riseup": {
+          "observations": 104,
+          "transport": {
+            "udp": 104
+          },
+          "warning_addresses": {},
+          "groups": {
+            "adultos": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "apuestas": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "sin_direccion": 8
+                }
+              }
+            },
+            "apuestas_subtel": {
+              "A": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 12
+                }
+              },
+              "AAAA": {
+                "domains": 6,
+                "observations": 12,
+                "states": {
+                  "direccion": 6,
+                  "sin_direccion": 6
+                }
+              }
+            },
+            "armas": {
+              "A": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 6
+                }
+              },
+              "AAAA": {
+                "domains": 3,
+                "observations": 6,
+                "states": {
+                  "direccion": 2,
+                  "sin_direccion": 4
+                }
+              }
+            },
+            "control": {
+              "A": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "nxdomain": 2,
+                  "sin_direccion": 2
+                }
+              },
+              "AAAA": {
+                "domains": 5,
+                "observations": 10,
+                "states": {
+                  "direccion": 6,
+                  "nxdomain": 2,
+                  "sin_direccion": 2
+                }
+              }
+            },
+            "educativo": {
+              "A": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 8
+                }
+              },
+              "AAAA": {
+                "domains": 4,
+                "observations": 8,
+                "states": {
+                  "direccion": 4,
+                  "sin_direccion": 4
+                }
+              }
+            }
+          },
+          "controls": {
+            "example.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "no-existe-pdns-lab.invalid": {
+              "A": {
+                "nxdomain": 2
+              },
+              "AAAA": {
+                "nxdomain": 2
+              }
+            },
+            "nudity.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "malware.testcategory.com": {
+              "A": {
+                "direccion": 2
+              },
+              "AAAA": {
+                "direccion": 2
+              }
+            },
+            "warning.joindns4.eu": {
+              "A": {
+                "sin_direccion": 2
+              },
+              "AAAA": {
+                "sin_direccion": 2
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
