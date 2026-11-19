@@ -73,8 +73,6 @@
 \hypersetup{pageanchor=true}
 
 \section{Antecedentes y Motivación}
-La primera medición, realizada en octubre, consultó 50 dominios a dos perfiles públicos de Cloudflare. Sirvió para comprobar el procedimiento con respuestas de red reales. En noviembre se midieron 14 perfiles por TCP y 13 por DNS sobre HTTPS (DoH), de nueve proveedores en total. También se compararon la conexión directa, una VPN y un proxy, en laboratorio y con el servicio externo WARP de Cloudflare.
-
 El Sistema de Nombres de Dominio permite consultar información asociada a nombres, por ejemplo las direcciones IPv4 e IPv6 mediante registros A y AAAA. La resolución recursiva obtiene respuestas de servidores autoritativos o reutiliza información almacenada temporalmente. Su funcionamiento se especifica en los RFC 1034 y 1035 \cite{rfc1034,rfc1035}. La finalidad básica de un resolutor es resolver nombres; la protección por categorías constituye una función adicional que debe identificarse en cada servicio.
 
 En este trabajo se utiliza el término \emph{DNS protector} o PDNS para los servicios que aplican políticas destinadas a impedir la resolución ordinaria de ciertos dominios. El estudio de Liu y colaboradores describe proveedores con distintas formas de modificación de respuestas y distintas fuentes de información sobre amenazas \cite{liu2024}. Por ello, el nombre comercial de un servicio no basta para describir el tratamiento aplicado a cada consulta: también importan el perfil, la dirección consultada y la política activa.
@@ -95,7 +93,7 @@ La práctica reúne y compara respuestas de servicios de protección, prepara un
 
 Se seleccionaron perfiles con políticas diferentes para comparar su comportamiento ante los mismos dominios. Cloudflare permite comparar resolución ordinaria, seguridad y protección familiar dentro de un proveedor; Quad9 permite contrastar protección y resolución sin bloqueo; Google aporta una referencia de resolución adicional \cite{cloudflare,quad9,google}. Estas funciones justifican la selección inicial de seis perfiles. La segunda medición suma AdGuard, CleanBrowsing, Control D y OpenDNS. Sus perfiles permiten contrastar funciones familiares, de contenido adulto y de referencia \cite{adguardpublic,cleanbrowsingfree,controldfree,opendnssetup}.
 
-Las etiquetas heredadas describen popularidad, contenido adulto, apuestas, armas y reportes de phishing. Se conserva el inventario original para auditar su procedencia, pero el alcance parental separa las amenazas de las categorías de contenido. La etiqueta heredada de armas requiere especial revisión: el archivo contiene indicios de sitios de odio y violencia que no acreditan pertenencia a armas. La revisión debe establecer la categoría aplicable a cada entrada antes de utilizarla en una comparación.
+Las etiquetas heredadas describen popularidad, contenido adulto, apuestas y reportes de phishing, además de un grupo que se había rotulado como armas. El cotejo de procedencia identificó este último archivo como una copia de la lista de incitación al odio de UT1 \cite{ut1}. Sus 266 nombres se conservan en el inventario histórico y se excluyen del grupo de armas. Los tres fabricantes medidos se seleccionaron por separado a partir de sus catálogos oficiales.
 
 La meta de \textbf{2.000 dominios únicos revisados} fija el volumen de trabajo a una escala cercana a los 1.852 nombres del inventario histórico (tabla \ref{tab:auditoria}). De esos nombres, 386 figuraban solo como phishing. A los 1.466 restantes se añadieron 534 referencias de bibliotecas para reunir 2.000 candidatos. La selección es intencional. Para evaluar el filtrado de una categoría se necesita comprobar el contenido de cada dominio y determinar qué decisión prevé la política del perfil.
 
@@ -105,21 +103,18 @@ Se utiliza Python porque la biblioteca dnspython permite enviar consultas y acce
 
 El estudio de Liu sobre DNS protector y la documentación del \emph{Open Observatory of Network Interference} (OONI) sobre mediciones de conectividad ayudan a distinguir respuestas modificadas, anomalías y fallas \cite{liu2024,ooni}. Las tablas de contingencia y el acuerdo observado describen las coincidencias entre perfiles; Kappa y Jaccard ofrecen descriptores adicionales con límites que se desarrollan en metodología \cite{cohen1960,kosub2016}. Su elección se apoya en esos antecedentes, pero el acuerdo entre servicios no equivale a acierto respecto del contenido.
 
-En la medición inicial, o piloto, se eligieron 50 dominios para comprobar la selección, los controles y el registro de respuestas. Sus etiquetas documentales permitieron comparar los perfiles. Estimar aciertos del filtrado requiere validar esas etiquetas de forma independiente.
-
-La comparación responderá tres preguntas: (i) qué protege cada perfil según su política declarada; (ii) qué respuestas entrega bajo condiciones reproducibles; y (iii) en qué casos sus resultados pueden compararse con los de otros perfiles o con mediciones de conectividad. Se adopta un estudio descriptivo y comparativo. El acuerdo entre perfiles y el acierto respecto de una política se analizan por separado; una discrepancia no demuestra por sí sola ineficacia.
+La primera medición, realizada en octubre, consultó 50 dominios a dos perfiles de Cloudflare para comprobar el procedimiento. En noviembre se ampliaron los servicios y los recorridos de prueba. El análisis distingue qué declara filtrar cada perfil, qué respuestas entrega y en cuántos dominios puede contrastarse el resultado con la decisión esperada.
 
 \section{Objetivos}
-\subsection{General}
-Comparar las respuestas de servicios de DNS protector para control parental y de conexiones mediante VPN o proxy con una función de protección comprobada. Se utilizará un conjunto de dominios con categorías documentadas y consultas de control, y se registrarán las condiciones para repetir las pruebas y los límites de los resultados.
+El objetivo general es comparar las respuestas de servicios de DNS protector para control parental y de conexiones mediante VPN o proxy en las que se compruebe cómo se aplica el filtrado. Se utilizan dominios con categorías documentadas, consultas de control y configuraciones que permitan repetir las pruebas.
 
-\subsection{Específicos}
+Para lograrlo se plantean los siguientes objetivos específicos:
 \begin{enumerate}
 \item Revisar y documentar los mecanismos de resolución y protección, las políticas declaradas de los perfiles y los métodos de medición, incluyendo OONI.
 \item Construir y revisar un conjunto de dominios, conservando sus fuentes, categorías, criterios de inclusión, evidencias de revisión e historial de cambios.
 \item Implementar consultas A y AAAA con controles antes y después de la observación, repeticiones, identificación de errores y almacenamiento de mensajes y configuración.
 \item Documentar y verificar el recorrido de consultas directas y bajo VPN; tratar por separado la accesibilidad HTTP mediante proxies y las señales DNS.
-\item Describir frecuencias, cobertura, estabilidad y acuerdo por perfil y categoría, indicando los casos excluidos y el total de casos utilizado para calcular cada proporción.
+\item Medir la cobertura, estabilidad y coincidencia de las respuestas. Cuando se disponga de una referencia de contenido y una política declarada, contrastar las señales observadas con la decisión esperada para cada categoría.
 \item Entregar el código, las listas, los resultados y los pasos para repetir y revisar las pruebas.
 \end{enumerate}
 
@@ -145,7 +140,7 @@ Quad9 sin bloqueo & 9.9.9.10 & Referencia dentro del mismo proveedor\\
 \caption{Seis perfiles de la configuración inicial. El archivo de la ampliación registra los 14 perfiles TCP y sus referencias.}
 \end{table}
 
-Se comparan dos entornos. En el laboratorio, una conexión OpenVPN enlaza dos espacios de red y un proxy HTTP reenvía solicitudes a un origen local \cite{openvpnmanual}. En el servicio externo gratuito WARP de Cloudflare se prueban el túnel con DNS y el modo proxy SOCKS5. El primero permite cambiar el filtro familiar dentro del mismo servicio. En el segundo, el cliente entrega el nombre de destino al proxy y se comprueba qué aplicaciones salen por WARP \cite{warpcliente,warpmodos}. La herramienta incluye una prueba HTTP opcional y limitada, sin ejecutar el contenido recibido ni seguir redirecciones automáticamente. La documentación de OONI sirve para comparar métodos de medición, y sus formatos permiten intercambiar datos. Para ejecutar sus pruebas habrá que registrar la configuración y dónde se guardarán o publicarán los resultados. En este avance no se han generado ni publicado mediciones de OONI.
+En laboratorio, OpenVPN conecta dos espacios de red y un proxy HTTP reenvía solicitudes a un origen local \cite{openvpnmanual}. En WARP se miden el túnel y el modo proxy SOCKS5 \cite{warpcliente,warpmodos}. RiseupVPN añade una segunda VPN externa para probar los mismos perfiles de DNS4EU con y sin túnel \cite{riseupvpn}. El proxy SOCKS5 de Tor sirve como comparación del acceso a los controles HTTPS con resolución remota \cite{torprotocol}. Se consultan también registros públicos de OONI para contrastar un control de conectividad.
 
 El alcance anterior tiene límites: el corpus es un conjunto experimental de candidatos, no una muestra probabilística de Internet. Las categorías pueden superponerse y las fuentes pueden contener errores. La popularidad no acredita benignidad, ni una lista de phishing demuestra que sus entradas sean recientes o sigan activas. Los perfiles pueden perseguir objetivos distintos y evolucionar con el tiempo.
 
@@ -267,9 +262,9 @@ FINSIN & Posible contraste del inventario histórico \cite{finsin2022} & Disponi
 \caption{Fuentes consideradas para el corpus parental y la auditoría histórica; sus etiquetas requieren revisión.}
 \end{table}
 
-El conjunto candidato parental se guarda en \texttt{dataset/corpus-parental-candidatos.csv}: 400 adultos, 400 apuestas, 266 armas, 400 populares y 534 referencias de biblioteca, sin solapamientos entre estos grupos tras retirar la etiqueta phishing. La composición es una base de trabajo, no una cuota óptima ni una clasificación ya comprobada. Las entradas heredadas y las nuevas referencias comienzan en estado \texttt{pending}. Para pasar a \texttt{validated} se requiere justificar la etiqueta mediante evidencia identificable y revisión con responsable y fecha; las entradas descartadas quedan como \texttt{excluded}. El programa exige esos campos y conserva la decisión, pero no puede verificar por sí solo la calidad de la revisión humana. La categoría de cada dominio se revisa con evidencias independientes de las respuestas DNS y del acuerdo entre proveedores.
+El inventario de 2.000 candidatos reúne 400 nombres etiquetados como adulto, 400 como apuestas, 266 con la antigua etiqueta de armas, 400 populares y 534 referencias de biblioteca. Estas cifras describen la composición inicial. La revisión conserva los archivos de origen y registra por separado la decisión sobre cada categoría. Para admitir un dominio se exige una fuente identificable, fecha, responsable y una razón de inclusión. Las respuestas DNS y el acuerdo entre proveedores se analizan después de establecer la categoría de referencia.
 
-Para cada fuente se documentarán las definiciones de sus categorías, la fecha de la copia y el método publicado de asignación y actualización de etiquetas: revisión manual, procedimiento automático o combinación de ambos. Si la fuente no explica ese método, se registrará como información no disponible. Se comprobará además si dos listas reutilizan los mismos datos, para no tratar su coincidencia como evidencia independiente. Esta revisión de fuentes aún está pendiente.
+El nombre DNS completo se cotejó con la nómina de Subtel, las listas de Citizen Lab y los enlaces de organizaciones educativas activas de Research Organization Registry (ROR) \cite{subtel2026apuestas,citizenlab2026,ror2026}. Citizen Lab reúne URL para pruebas de conectividad y ROR registra organizaciones de investigación. Las coincidencias orientan la revisión individual. Una coincidencia institucional describe el dominio de un portal, y su alcance se limita al contenido con evidencia registrada. Se conserva la versión de cada fuente y se registra si publica su método de categorización.
 
 La revisión de cada dominio conservará la URL o el documento consultado, fecha, una descripción breve de la evidencia y la razón de inclusión o exclusión. Se contrastará el contenido descrito con la definición de la categoría, sin deducirlo del nombre del dominio o de la respuesta DNS. Las discrepancias quedarán pendientes hasta resolverlas; si no hay evidencia suficiente, la entrada no pasará al corpus revisado. La actividad del sitio se registrará aparte de su categoría, sin exigir visitas automáticas a los sitios. Antes de medir se revisará la composición resultante y se reemplazarán los descartados conservando su historial.
 
@@ -296,6 +291,8 @@ La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona lo
 Para aislar el papel de VPN y proxy se usan cuatro categorías sintéticas, con una condición educativa permitida. El laboratorio VPN genera nombres bajo el dominio reservado \texttt{.test} \cite{rfc2606}. Compara el enlace directo con el túnel del mismo equipo, primero con el resolutor sin regla y luego con tres categorías restringidas. El proxy HTTP remite a un origen local y, al activar la regla, responde con una marca documentada en su cuerpo. No hay inspección HTTPS en esas pruebas. La política esperada la define el laboratorio y permite contrastar causalmente las tres condiciones dentro de ese entorno.
 
 Para WARP se reutilizan los 19 nombres del contraste DoH. Desde un espacio de red aislado se consulta al resolutor del sistema con el túnel desconectado, conectado sin filtro y conectado con el filtro familiar. En cada condición se repiten las consultas A y AAAA. En modo proxy se comprueba por separado el recorrido de un cliente directo y del que entrega el nombre al proxy SOCKS5. Para cada uno de los cuatro controles HTTPS se registra el estado HTTP recibido o, si la conexión falla antes, el error del cliente.
+
+Para RiseupVPN se consultan por DoH los mismos perfiles de DNS4EU antes de conectar y a través del túnel. Se mide además el resolutor interno de Riseup por UDP. Antes y después de las rondas se verifican la ruta al resolutor y la salida mediante un diagnóstico HTTPS. Se consultan los dominios de adulto, apuestas, armas y los técnicos ya descritos, con cuatro educativos. Para Tor se reutilizan los cuatro controles HTTPS de WARP. Se hacen solicitudes HEAD directas y con resolución remota por SOCKS5 y se verifica la salida con el diagnóstico de Tor.
 
 \begin{figure}[H]
 \centering
@@ -348,9 +345,9 @@ p_e=p_Ap_B+(1-p_A)(1-p_B).
 \]
 Aquí $p_o$ es la fracción de coincidencias y $p_A,p_B$ las proporciones de señales de bloqueo de cada perfil en los mismos casos. Se publican esas proporciones y el número de casos comparados. Cuando $p_e=1$, el valor se informa como no definido. Si un perfil nunca señala bloqueos y el otro sí, $p_o=p_e$ y Kappa es cero por construcción. Del mismo modo, Jaccard es cero si un conjunto de bloqueos está vacío y el otro no. En esos casos se conservan los valores por reproducibilidad, se advierte su falta de capacidad para distinguir comportamientos y se interpreta la tabla de contingencia. No se usa una escala universal para aceptar o rechazar la eficacia de un servicio.
 
-La evaluación de acierto respecto de una política requerirá categorías validadas y criterios de decisión esperada por perfil, definidos antes del análisis. Se distinguirá bloqueo de contenido restringido, paso de contenido restringido, bloqueo indebido de contenido permitido y resolución de contenido permitido. Los errores e indeterminados se informarán aparte. La comparación incluirá candidatos educativos revisados cuando la política los permita, sin declarar benigno todo dominio popular. Solo en ese subconjunto corresponderá estimar medidas de acierto o errores de política, con sus denominadores. La versión actual produce descripciones de evidencia y acuerdo, no una clasificación global de proveedores de mejor a peor ni una estimación de falsos positivos a partir de popularidad.
+Para contrastar la política infantil de DNS4EU se fijó la decisión esperada antes de analizar la medición. Las categorías declaradas de apuestas, armas y contenido sexual se contrastan con la señal de restricción. Para los portales educativos se espera resolución respecto del filtro adicional de contenido. Se exige que los perfiles sin filtro y protector devuelvan una dirección ordinaria en las dos rondas. Con esa referencia, el perfil infantil se considera interpretable cuando devuelve en ambas rondas una dirección ordinaria o la dirección calibrada de la página de aviso. El informe muestra por separado cada tipo de registro y conserva los casos sin referencia o con una respuesta infantil indeterminada. Dos consultas repetidas a un mismo nombre cuentan como un dominio.
 
-Para OONI se pueden exportar como URL los dominios con revisión documentada. El importador conserva los valores de accesibilidad y bloqueo que OONI registra \cite{ooni}. El contraste empírico queda pendiente. Se buscarán mediciones de la misma URL en un período y una red comparables, con el perfil de resolución y el uso de VPN documentados. Se compararán por separado las respuestas DNS y los resultados de acceso web.
+Para el contraste con el archivo público de OONI se buscó la URL exacta del control y de cuatro portales educativos. El importador conserva el resultado de accesibilidad, la señal de bloqueo y el método de conexión disponible en cada registro \cite{ooni}. Comparar el comportamiento de un filtro exige además que el recorrido, la política y la ventana de medición sean comparables.
 
 El repositorio conserva el código, las fuentes del informe, las configuraciones de prueba y las auditorías. Los registros detallados se guardan por ejecución.
 
@@ -367,7 +364,7 @@ Fuentes y corpus & Revisar las categorías, incluir sitios de contenido permitid
 Configuración y calibración & Verificar conectividad, huellas de política y rutas; completar y justificar la selección de perfiles.\\
 Medición & Completar las rondas previstas bajo condiciones registradas, conservando controles e incidencias.\\
 Análisis y contraste & Publicar cobertura, estabilidad y acuerdo; contrastar políticas y OONI donde exista evidencia comparable.\\
-Informe y revisión & Integrar fuentes, métodos y avances durante todas las etapas; redactar conclusiones al finalizar el análisis.\\
+Informe y revisión & Vincular las conclusiones con las mediciones realizadas y registrar las pruebas que aún faltan.\\
 \bottomrule
 \end{tabularx}
 \caption{Etapas del trabajo y requisitos para completarlas.}
@@ -458,7 +455,7 @@ La tabla \ref{tab:auditoria} muestra el resultado reproducible de la validación
 Lista heredada & Filas & Rechazadas & Membresías válidas\\
 \midrule
 Adultos & 400 & 0 & 400\\
-Armas & 360 & 94 & 266\\
+Armas (etiqueta heredada) & 360 & 94 & 266\\
 Apuestas & 400 & 0 & 400\\
 Phishing (antes «recientes») & 400 & 0 & 400\\
 Popularidad & 400 & 0 & 400\\
@@ -470,9 +467,11 @@ Total & 1.960 & 94 & 1.866\\
 \label{tab:auditoria}
 \end{table}
 
-En el archivo de armas se descartaron 93 direcciones IPv4 y una etiqueta inválida. Los 14 nombres que aparecían en dos listas tenían las etiquetas de adulto y phishing. Al retirar phishing quedaron como candidatos de adulto, pendientes de revisión. El informe de auditoría identifica el archivo, la línea y el motivo de cada rechazo.
+En el archivo con la antigua etiqueta de armas se descartaron 93 direcciones IPv4 y un nombre inválido. El archivo completo coincide byte a byte con \texttt{agressif/domains} de UT1, cuya descripción incluye racismo, antisemitismo e incitación al odio \cite{ut1}. Los 266 nombres restantes quedan excluidos como ejemplos de armas. Los 14 nombres que aparecían en dos listas tenían etiquetas de adulto y phishing. Al retirar phishing quedaron como candidatos de adulto, pendientes de revisión.
 
 Se comparó el nombre de servidor de cada URL de la nómina de Subtel con los dominios etiquetados como apuestas, conservando los subdominios \cite{subtel2026apuestas}. De los 400 candidatos, seis coincidieron exactamente con nombres de la nómina. Entre los cuatro dominios de apuestas del piloto hubo cero coincidencias. Los seis nombres coincidentes se utilizaron en una medición adicional por DoH. La consulta DNS conserva los subdominios y omite las rutas de las URL, como la ruta regional incluida en uno de los seis casos.
+
+Citizen Lab aportó siete coincidencias de apuestas entre los candidatos, una compartida con Subtel. ROR aportó 40 coincidencias de organizaciones educativas, 29 de ellas con los portales educativos ya documentados en el piloto. En total se obtuvieron coincidencias para 52 nombres del inventario. La revisión deja 1.734 candidatos por examinar, después de excluir los 266 de procedencia incompatible. Para alcanzar la meta de 2.000 revisados harán falta al menos 266 reemplazos.
 
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
@@ -562,6 +561,34 @@ El 19 de noviembre, los tres perfiles de DNS4EU respondieron a las 204 consultas
 
 En la figura \ref{fig:contraste-categorias}, los cuatro nombres educativos devolvieron direcciones distintas de la dirección común del perfil infantil de DNS4EU. Esa comparación permite examinar la respuesta DNS en esos cuatro casos. El acceso al contenido del sitio requeriría una prueba web separada.
 
+\subsection{Evaluación de la política infantil de DNS4EU}
+La comparación de seis nombres de apuestas se amplió a los 42 nombres de la nómina de Subtel. Se incluyeron también los 39 portales educativos, los cuatro dominios de adulto y los tres fabricantes de armas de la revisión documental del piloto. Las 42 URL de Subtel corresponden a nombres distintos. Se conservó el nombre completo, con su subdominio, y se omitió la ruta de la URL. La expectativa se obtuvo de la categoría documentada y de la política de DNS4EU \cite{subtel2026apuestas,dns4eupolitica}. En particular, la expectativa de resolución para los portales educativos se limita al efecto adicional del filtro parental respecto del perfil protector.
+
+El 19 de noviembre se recibieron las 1.116 respuestas DNS previstas por DoH sobre HTTP/2 con verificación TLS. Se consultaron los 88 dominios y cinco controles a los tres perfiles, en dos rondas por tipo. \texttt{warning.joindns4.eu} devolvió en todos los perfiles las mismas direcciones de aviso de la medición anterior. La tabla \ref{tab:politica-dns4eu} separa los dominios sin dirección ordinaria estable en los perfiles de referencia de aquellos en los que se pudo interpretar la respuesta infantil.
+
+\begin{table}[H]
+\centering\small
+\begin{tabular}{llrrrr}
+\toprule
+Tipo & Categoría & Dominios & Con aviso & Con dirección ordinaria & Sin referencia \\
+\midrule
+A & Apuestas & 42 & 38 & 2 & 2 \\
+A & Adulto & 4 & 4 & 0 & 0 \\
+A & Armas & 3 & 3 & 0 & 0 \\
+A & Educativo & 39 & 0 & 39 & 0 \\
+\midrule
+AAAA & Apuestas & 42 & 19 & 2 & 21 \\
+AAAA & Adulto & 4 & 1 & 0 & 3 \\
+AAAA & Armas & 3 & 1 & 0 & 2 \\
+AAAA & Educativo & 39 & 0 & 9 & 30 \\
+\bottomrule
+\end{tabular}
+\caption{Dominios por resultado del perfil infantil de DNS4EU en dos rondas. Las columnas de aviso y dirección ordinaria requieren que los perfiles protector y sin filtro devuelvan direcciones ordinarias en ambas rondas.}
+\label{tab:politica-dns4eu}
+\end{table}
+
+En A se pudieron interpretar 47 de los 49 dominios documentados como restringidos y los 39 educativos. El filtro infantil devolvió una dirección de aviso para 45 de esos 47 dominios. Los dos restantes, ambos de apuestas, resolvieron sin señal de filtrado en las dos rondas. Ninguno de los 39 educativos mostró la dirección de aviso. En AAAA se interpretaron 23 de los 49 restringidos y 9 de los 39 educativos. Se observaron los mismos dos casos de apuestas sin señal. Esta comparación mide señales DNS en la selección documentada. Extrapolar esos recuentos a otros sitios o comprobar acceso web requeriría otras mediciones.
+
 \subsection{Comparación bajo VPN y proxy}
 En OpenVPN se verificó que la ruta al resolutor de túnel utilizó \texttt{tun0}. El enlace directo y el túnel con la regla desactivada resolvieron los cuatro nombres de prueba en A y AAAA y en tres rondas, 24 observaciones por condición. Al activar en el resolutor la regla que restringía las tres categorías sintéticas adulto, apuestas y armas, hubo 18 respuestas con la huella configurada y seis resoluciones del control educativo. La comparación conserva el mismo túnel al cambiar la regla del resolutor.
 
@@ -585,20 +612,33 @@ En el servicio externo WARP se obtuvieron 228 respuestas DNS: 19 nombres, dos ti
 
 En modo proxy se hicieron 32 solicitudes HTTPS con el método HEAD: cuatro controles, dos recorridos, dos ajustes del filtro y dos rondas. El diagnóstico confirmó la salida directa fuera de WARP y la salida por WARP del cliente SOCKS5 con resolución remota. Con el ajuste familiar activado, los controles de adulto y malware devolvieron HTTP 200 por el proxy en las dos rondas, igual que con el ajuste desactivado. El dominio reservado \texttt{.invalid} no produjo respuesta HTTP. En una segunda sesión, con el ajuste familiar activado, se hicieron cuatro solicitudes GET. Para cada control de categoría, el cuerpo recibido por la ruta directa y por el proxy tuvo el mismo SHA-256 y midió 652 bytes. La prueba HTTPS se limitó a estos controles técnicos.
 
+Con RiseupVPN se obtuvieron 520 respuestas para 26 nombres, en cinco configuraciones, dos tipos y dos rondas. La conexión OpenVPN autenticó el servidor y las comprobaciones de ruta confirmaron el paso por \texttt{tun0} y el cambio de salida. El DNS interno respondió por UDP y los perfiles de DNS4EU respondieron por DoH. Los 17 dominios de adulto, apuestas y armas de esa selección devolvieron la dirección de aviso con el perfil infantil de DNS4EU tanto por la ruta directa como por el túnel. Por cada perfil se conservó el estado de respuesta en 84 de 84 pares de consultas, excluidos los controles técnicos. El aviso corresponde al filtro de DNS4EU. Los cuatro portales educativos devolvieron direcciones ordinarias en A en las cinco configuraciones.
+
+Tor se probó con 16 solicitudes HEAD, repartidas entre la conexión directa y el proxy en dos rondas. El diagnóstico confirmó el paso por Tor. En las comparaciones con Tor y WARP, los tres controles con nombre válido devolvieron HTTP 200. El nombre \texttt{.invalid} falló antes de recibir HTTP. La figura \ref{fig:rutas-externas} separa las consultas DNS de las pruebas HTTPS.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figuras/rutas-externas.pdf}
+\caption{Panel A, consultas por ruta directa y por Riseup. Panel B, dos solicitudes por control y ruta en WARP con filtro familiar activado y en Tor. La prueba de Tor comprueba recorrido y acceso HTTPS.}
+\label{fig:rutas-externas}
+\end{figure}
+
+Como comprobación externa del control, se importaron diez mediciones públicas de \texttt{https://example.com/} en OONI del 18 y 19 de noviembre, ocho de Indonesia y dos de Turquía. Las diez informaron acceso y DNS consistente con el control de OONI. En las pruebas propias, el mismo nombre obtuvo dirección en las doce consultas DNS de WARP y en las doce de la primera medición de DNS4EU. En WARP, las ocho solicitudes HTTPS al control devolvieron HTTP 200. Las búsquedas para Chile del 20 de octubre al 20 de noviembre (UTC) no devolvieron resultados para la URL del control ni para los cuatro portales educativos consultados. El contraste comprueba el comportamiento del control en otras redes. Para comparar filtrado se necesitan mediciones sobre la misma política y en condiciones equivalentes.
+
 \Needspace{6\baselineskip}
 \section{Conclusiones}
 Las mediciones permitieron comparar perfiles DNS de nueve proveedores entre TCP y DoH. Se observaron señales explícitas, respuestas negativas y direcciones especiales con distinta frecuencia según el perfil y el tipo de registro. La proporción de casos interpretables, especialmente en AAAA, limita los acuerdos por pares. Una comparación basada solo en el número de bloqueos omitiría esa diferencia de cobertura.
 
-Un mismo grupo de seis nombres de apuestas recibió dos formas de respuesta según el perfil. El familiar de Mullvad devolvió NXDOMAIN y el infantil de DNS4EU devolvió una dirección IPv4 común. Los perfiles de referencia de ambos operadores devolvieron otras direcciones en A. En DNS4EU se observó la misma diferencia entre perfiles para los tres nombres de armas. Contar solo las respuestas NXDOMAIN habría omitido este segundo patrón. Estos resultados describen los dominios consultados y las políticas documentadas.
+Mullvad Familiar devolvió NXDOMAIN para los seis nombres de apuestas del primer contraste. DNS4EU Infantil devolvió la dirección de aviso para esos mismos nombres. En la medición ampliada de DNS4EU, dos dominios de apuestas resolvieron sin señal de filtrado en A y AAAA pese a que la política incluye esa categoría. Los 39 portales educativos con referencia en A resolvieron sin aviso. La menor disponibilidad de registros AAAA redujo la cobertura de esa comparación.
 
-En laboratorio, conectar una VPN y pasar por un proxy conservaron las respuestas de referencia con la regla desactivada. Al activar la regla en el resolutor del túnel o en el proxy se obtuvieron las señales previstas y se mantuvo el acceso al control educativo. En WARP, el filtro familiar cambió las respuestas DNS de los cuatro dominios de adulto. En modo proxy, los dos controles de categoría siguieron accesibles por HTTPS con el filtro activo.
+En laboratorio, las señales aparecieron al activar la regla del resolutor o del proxy. En WARP, el filtro familiar cambió las respuestas DNS de los cuatro dominios de adulto. El perfil infantil de DNS4EU mantuvo sus señales al cambiar la ruta directa por el túnel de Riseup. En las pruebas HTTPS por los proxies de WARP y Tor, los tres controles con nombre válido siguieron accesibles. Estos resultados sitúan la señal observada en el resolutor y muestran qué comprobar al usar un proxy.
 
 \section{Trabajo futuro}
-La primera prioridad es completar la revisión de categorías del corpus de 2.000 candidatos. Para ampliar la evaluación de armas y apuestas se necesitan más dominios con evidencia independiente de su contenido y más controles educativos. Con la decisión esperada según cada política se podrán estimar omisiones y bloqueos indebidos por categoría. En DNS4EU interesa comprobar si el mismo patrón se mantiene con otros dominios y en otras fechas.
+La primera prioridad es revisar los candidatos restantes y reemplazar el lote de antigua procedencia incompatible con armas. La ampliación del conjunto de referencia permitirá repetir la evaluación en otros perfiles con categorías declaradas y comprobar si las dos omisiones de DNS4EU se mantienen en otras fechas.
 
-La segunda prioridad es repetir la comparación con un operador independiente de WARP que documente su política de filtrado. Se registrarán plan, cliente, servidor, ruta y resolutor efectivo. Para proxies, el contraste empezará por comprobar si entregar el nombre al proxy SOCKS5 de Mullvad cambia el lugar de resolución. Un segundo intermediario con una política declarada permitirá extender la comparación. En cada caso se mantendrá una condición directa y otra con el filtro desactivado cuando el servicio lo permita.
+La segunda prioridad es comparar WARP con otra VPN que declare su propio filtro parental y probar un proxy con una política de contenido explícita. Así se podrá estudiar también cómo cambia la respuesta al variar la política del operador. En cada ejecución se registrarán plan, cliente, servidor, ruta y resolutor efectivo.
 
-La tercera prioridad es repetir TCP y DoH en ventanas pareadas, desde más de una red y con los mismos casos de control. Se contrastarán entonces las observaciones con mediciones compatibles de OONI, previa definición de la configuración, la red y el tratamiento de los resultados. Las ventanas pareadas reducirán la diferencia de horario entre los perfiles comparados.
+Conviene repetir TCP y DoH en ventanas pareadas y desde más de una red. El contraste con OONI puede ampliarse con mediciones que identifiquen la red, el perfil y el recorrido de la solicitud, usando los mismos casos de control.
 
 
 \Needspace{7\baselineskip}
