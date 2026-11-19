@@ -27,6 +27,11 @@ MULLVAD_ENDPOINTS = {
     "mullvad_open": "https://dns.mullvad.net/dns-query",
     "mullvad_family": "https://family.dns.mullvad.net/dns-query",
 }
+DNS4EU_ENDPOINTS = {
+    "dns4eu_unfiltered": "https://unfiltered.joindns4.eu/dns-query",
+    "dns4eu_protective": "https://protective.joindns4.eu/dns-query",
+    "dns4eu_child": "https://child.joindns4.eu/dns-query",
+}
 CONTROLS = ["example.com", "no-existe-pdns-lab.invalid", "nudity.testcategory.com", "malware.testcategory.com"]
 
 
@@ -34,9 +39,14 @@ def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     parser.add_argument("--corpus", type=Path, default=Path("dataset/piloto-50-2026-10-30.csv"))
-    parser.add_argument("--mullvad", action="store_true",
-                        help="mide solo los dos perfiles públicos de Mullvad")
+    profiles = parser.add_mutually_exclusive_group()
+    profiles.add_argument("--mullvad", action="store_const", dest="endpoints", const=MULLVAD_ENDPOINTS,
+                          help="mide solo los dos perfiles públicos de Mullvad")
+    profiles.add_argument("--dns4eu", action="store_const", dest="endpoints", const=DNS4EU_ENDPOINTS,
+                          help="mide los perfiles sin filtro, protector y con protección infantil de DNS4EU")
+    parser.set_defaults(endpoints=ENDPOINTS)
     args = parser.parse_args()
+    use_http2 = args.endpoints is not ENDPOINTS
     corpus = list(csv.DictReader(args.corpus.open(encoding="utf-8")))
     educational = sorted(row["domain"] for row in corpus if row["categories"] == "educativo")[:4]
     cases = [(name, "control") for name in CONTROLS]
@@ -47,7 +57,7 @@ def main():
         profile, endpoint = pair
         observations = []
         with httpx.Client(verify=True, trust_env=False, follow_redirects=False,
-                          http2=args.mullvad, timeout=3) as client:
+                          http2=use_http2, timeout=3) as client:
             for round_no, (domain, category), qtype in product((1, 2), cases, ("A", "AAAA")):
                 row = dict(profile=profile, endpoint=endpoint, domain=domain, category=category,
                            qtype=qtype, round=round_no, started_at_utc=utcnow())
@@ -63,18 +73,19 @@ def main():
                     if not q.is_response(response):
                         raise ValueError("Respuesta DNS no corresponde a la pregunta")
                     row.update(error=None, **summarize_response(response))
-                    if args.mullvad:
+                    if use_http2:
                         row["http_version"] = answer.http_version
                 except (dns.exception.DNSException, httpx.HTTPError, OSError, ValueError) as exc:
                     row.update(error=type(exc).__name__, rcode=None, addresses=[], ede=[])
+                    if isinstance(exc, httpx.HTTPStatusError):
+                        row["http_status"] = exc.response.status_code
                 observations.append(row)
                 time.sleep(.08)
         print(profile, sum(v["error"] is None for v in observations), "/", len(observations), flush=True)
         return observations
 
-    endpoints = MULLVAD_ENDPOINTS if args.mullvad else ENDPOINTS
     with ThreadPoolExecutor(max_workers=4) as pool:
-        rows = [row for group in pool.map(measure, endpoints.items()) for row in group]
+        rows = [row for group in pool.map(measure, args.endpoints.items()) for row in group]
     with args.output.open("x", encoding="utf-8") as handle:
         json.dump(rows, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
