@@ -18,11 +18,12 @@ La auditoría actual distingue:
 | Base heredada con alguna etiqueta del alcance | 1.466 | Se retiran los exclusivamente de phishing; no son datos validados |
 | Contraste universitario incorporado | 534 | Procedencia UT1 liste_bu; etiqueta referencia_biblioteca, pendiente de revisión |
 | Conjunto parental candidato | 2.000 | Nombres únicos en archivo separado, no corpus final validado |
-| Dominios con categoría validada en el conjunto parental | 0 | Los 2.000 candidatos siguen pendientes de revisión |
+| Dominios con revisión final aprobada | 0 | Hay coincidencias documentales para 52 nombres |
 | Meta de selección final | 2.000 | Únicos y con evidencia de categoría |
-| Nuevos candidatos necesarios para completar el inventario | 0 | Ya hay 2.000 candidatos; habrá que sustituir los descartados |
+| Candidatos disponibles para revisar después del cotejo de procedencia | 1.734 | Se retiró la etiqueta de armas a 266 nombres |
+| Reemplazos necesarios para alcanzar 2.000 | Al menos 266 | La revisión del resto puede requerir otros reemplazos |
 
-Las 14 entradas con etiquetas adulto y phishing se cuentan una vez dentro del inventario en alcance por su etiqueta candidata de adulto. Esta regla no valida esa etiqueta. La categoría heredada de armas contiene indicios de odio/violencia; debe comprobarse su fuente y clasificación antes de admitirla. Popularidad tampoco acredita contenido permitido. Falta validar el contraste educativo; las referencias universitarias no se dan por educativas automáticamente.
+Las 14 entradas con etiquetas adulto y phishing se cuentan una vez por su etiqueta candidata de adulto. El archivo heredado de armas es idéntico a la lista `agressif` de UT1, que reúne sitios de racismo, antisemitismo e incitación al odio. Sus 266 nombres válidos se conservan en el inventario histórico. La selección y las nuevas mediciones omiten la etiqueta de armas de esa fuente hasta que exista una revisión individual documentada. El cotejo identificó 40 nombres registrados por instituciones educativas y 12 asociados a apuestas. [Fuentes, resultados y procedimiento](cotejo-corpus-2026-11-19.md)
 
 ## Preparación del corpus y de las mediciones
 
