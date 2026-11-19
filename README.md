@@ -8,7 +8,7 @@ El proyecto caracteriza respuestas de perfiles de protección para control paren
 
 - Informe con la presentación de la plantilla y nueve apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo, conclusiones y trabajo futuro. Los recorridos y los resultados se muestran con figuras que distinguen las mediciones públicas de las pruebas de laboratorio.
 - Corpus heredado auditado: **1.960 filas**, 94 entradas inválidas, 14 solapamientos y **1.852 candidatos únicos**. Las categorías están pendientes de revisión semántica.
-- Meta operativa: **2.000 dominios únicos revisados**. El conjunto parental tiene **2.000 candidatos únicos**, incluidos 534 de contraste de la lista universitaria UT1 `liste_bu`; todos siguen pendientes de revisión. El inventario original de 1.852 se conserva por separado. Ver [diseño del estudio](docs/diseno_estudio.md).
+- La meta es **2.000 dominios únicos revisados**. Del inventario inicial de 2.000 se retiraron de la comparación 266 nombres cuya fuente correspondía a incitación al odio. Quedan **1.734 candidatos**. Hay coincidencias documentales para 40 dominios de instituciones educativas y 12 asociados a apuestas. La revisión final por dominio sigue pendiente. [Cotejo del corpus](docs/cotejo-corpus-2026-11-19.md) · [Diseño del estudio](docs/diseno_estudio.md)
 - Motor nuevo con mensajes DNS completos, A/AAAA, EDE, controles temporales, reintentos registrados y ejecuciones independientes.
 - El piloto del 30 de octubre comparó Cloudflare estándar y familiar mediante consultas DNS por TCP a 50 dominios. Para estimar la eficacia sobre el conjunto parental quedan pendientes la validación de sus categorías y las mediciones sobre la selección final. [Procedimiento y resultados del piloto](docs/piloto_2026-10-30.md)
 - En la primera ampliación del 18 de noviembre se registraron 4.200 observaciones en 14 perfiles TCP de siete proveedores. Por DoH se recibieron 760 respuestas en diez perfiles. Mullvad fue el octavo proveedor entre ambos transportes. [Comparación de perfiles](docs/comparacion_2026-11-18.md)
@@ -104,6 +104,7 @@ La prueba HTTP verifica TLS, limita la lectura, no sigue redirecciones ni ejecut
 ## Informe, diseño y estructura
 
 - [Fuentes del informe](docs/informe/Practica1.tex) y [bibliografía](docs/informe/referencias.bib).
+- [Evaluación de la política infantil de DNS4EU](docs/politica-dns4eu-2026-11-19.md), [pruebas con Riseup y Tor](docs/riseup-tor-2026-11-19.md) y [contraste del control con OONI](docs/ooni-control-2026-11-19.md).
 - [Diseño del estudio](docs/diseno_estudio.md) e [inventario de servicios](docs/inventario_servicios.md).
 - [Auditoría del corpus](dataset/corpus.audit.json) y [calibración limitada](docs/evidencia/calibracion-resumen.json).
 
