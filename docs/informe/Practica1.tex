@@ -87,7 +87,7 @@ El foco es el filtrado de dominios para control parental: contrastar la polític
 
 \textbf{¿Qué diferencias y qué estabilidad presentan las respuestas de perfiles de protección ante un corpus de contenido documentado para control parental, y qué evidencia permite distinguir señales de filtrado de fallas o respuestas negativas legítimas?}
 
-Se distinguen contenido adulto, apuestas y armas de la detección de phishing o malware. Son criterios distintos: una página legítima puede pertenecer a una categoría que una política parental restringe. Los datos históricos de phishing se conservan para auditoría y no forman parte del corpus parental definitivo en este diseño. Se incluirán sitios educativos para estudiar bloqueos indebidos, después de revisar su contenido y comprobar que la política del servicio los permite. Que un sitio sea popular no sustituye esa revisión.
+Se distinguen contenido adulto, apuestas y armas de la detección de phishing o malware. Son criterios distintos: una página legítima puede pertenecer a una categoría que una política parental restringe. Los datos históricos de phishing se conservan para auditoría y no forman parte del corpus parental definitivo en este diseño. Se incluirán sitios educativos para estudiar bloqueos indebidos, después de revisar su contenido y comprobar que la política del servicio los permite. Para apuestas hay una fuente chilena de contraste. El 1 de septiembre de 2026, la Subsecretaría de Telecomunicaciones (Subtel) publicó 42 URL revisadas por la Superintendencia de Casinos de Juego y comunicó a seis proveedores de acceso una instrucción de bloqueo por DNS \cite{subtel2026apuestas}. Esa nómina aporta una fuente independiente para revisar los candidatos de apuestas. Cada servicio parental se evalúa según su propia política.
 
 Para comparar los servicios también es necesario conocer la procedencia de las listas y el significado de sus categorías. Plonka, Palacio y Perouli estudian listas de amenazas frente a consultas observadas en una red de investigación y educación \cite{plonka2025}. Las diferencias de objetivos y procedencia que describen motivan documentar esas características en el corpus de esta práctica. Su estudio utiliza tráfico observado y listas de amenazas; la comparación parental requiere seleccionar y revisar dominios según su contenido.
 
@@ -103,7 +103,7 @@ La selección de fuentes también requiere distinguir su finalidad. Tranco ofrec
 
 Se utiliza Python porque la biblioteca dnspython permite enviar consultas y acceder a los mensajes, registros y campos DNS \cite{dnspython}. Esa capacidad permite automatizar las consultas y conservar la evidencia requerida. La herramienta registra y compara respuestas; no implementa un clasificador nuevo ni reconstruye el algoritmo interno de un proveedor.
 
-Los trabajos de PDNS y OONI fundamentan distinguir respuestas modificadas, anomalías y fallas, e informar frecuencias y cobertura \cite{liu2024,ooni}. Las tablas de contingencia y el acuerdo observado describen las coincidencias entre perfiles; Kappa y Jaccard ofrecen descriptores adicionales con límites que se desarrollan en metodología \cite{cohen1960,kosub2016}. Su elección se apoya en esos antecedentes, pero el acuerdo entre servicios no equivale a acierto respecto del contenido.
+El estudio de Liu sobre DNS protector y la documentación del \emph{Open Observatory of Network Interference} (OONI) sobre mediciones de conectividad ayudan a distinguir respuestas modificadas, anomalías y fallas \cite{liu2024,ooni}. Las tablas de contingencia y el acuerdo observado describen las coincidencias entre perfiles; Kappa y Jaccard ofrecen descriptores adicionales con límites que se desarrollan en metodología \cite{cohen1960,kosub2016}. Su elección se apoya en esos antecedentes, pero el acuerdo entre servicios no equivale a acierto respecto del contenido.
 
 En un piloto exploratorio de 50 dominios se probaron la selección, los controles, el registro de respuestas y el análisis. Sus etiquetas documentales permiten describir cómo respondieron los perfiles. Estimar aciertos del filtrado requiere validar esas etiquetas de forma independiente.
 
@@ -291,11 +291,11 @@ Para $N$ dominios, $S$ perfiles, $T$ tipos y $R$ rondas, el número de observaci
 
 La ampliación ejecuta los 14 perfiles sobre los mismos 50 dominios del piloto. Cada perfil usa el mismo orden de dominios y corre en una ejecución separada, con paralelismo limitado y pausas de 0,09 segundos después de cada consulta. Se usó TCP/53, tres rondas para A y AAAA, espera de 2,5 segundos, cero reintentos y semilla 20261118. Nueve perfiles usan dos controles por observación. Para CleanBrowsing se eligió una referencia externa, por lo que la comparación admite diferencias de política o caché. La calibración de 112 consultas técnicas se contabiliza por separado.
 
-La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona los 11 dominios de adulto, apuestas o armas del piloto, cuatro educativos elegidos por orden alfabético y cuatro nombres técnicos. Se ejecutan dos rondas, A y AAAA, y se registran el endpoint, el código de respuesta, las direcciones, EDE y errores. Se midieron ocho perfiles en el primer contraste y dos de Mullvad en una segunda corrida con HTTP/2. Esta comprobación describe formas de respuesta directamente. No aplica el criterio de controles temporales de TCP.
+La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona los 11 dominios de adulto, apuestas o armas del piloto, cuatro educativos elegidos por orden alfabético y cuatro nombres técnicos. Se ejecutan dos rondas, A y AAAA, y se registran la dirección del servicio DoH, el código de respuesta, las direcciones, EDE y errores. Se midieron ocho perfiles en el primer contraste y dos de Mullvad en una segunda corrida con HTTP/2. Esta comprobación describe formas de respuesta directamente. No aplica el criterio de controles temporales de TCP.
 
 Para aislar el papel de VPN y proxy se usan cuatro categorías sintéticas, con una condición educativa permitida. El laboratorio VPN genera nombres bajo el dominio reservado \texttt{.test} \cite{rfc2606}. Compara el enlace directo con el túnel del mismo equipo, primero con el resolutor sin regla y luego con tres categorías restringidas. El proxy HTTP remite a un origen local y, al activar la regla, responde con una marca documentada en su cuerpo. No hay inspección HTTPS en esas pruebas. La política esperada la define el laboratorio y permite contrastar causalmente las tres condiciones dentro de ese entorno.
 
-Para WARP se reutilizan los 19 nombres del contraste DoH. Desde un espacio de red aislado se consulta al resolutor del sistema con el túnel desconectado, conectado sin filtro y conectado con el filtro familiar. En cada condición se repiten las consultas A y AAAA. En modo proxy se comprueba por separado el recorrido de un cliente directo y del que entrega el nombre al proxy SOCKS5. La comparación por HTTPS registra las cabeceras devueltas por los cuatro dominios de control.
+Para WARP se reutilizan los 19 nombres del contraste DoH. Desde un espacio de red aislado se consulta al resolutor del sistema con el túnel desconectado, conectado sin filtro y conectado con el filtro familiar. En cada condición se repiten las consultas A y AAAA. En modo proxy se comprueba por separado el recorrido de un cliente directo y del que entrega el nombre al proxy SOCKS5. Para cada uno de los cuatro controles HTTPS se registra el estado HTTP recibido o, si la conexión falla antes, el error del cliente.
 
 \begin{figure}[H]
 \centering
@@ -335,7 +335,7 @@ Indeterminado & Ausencia de evidencia suficiente, por ejemplo respuestas negativ
 \caption{Estados implementados; las anomalías y errores no se convierten en decisiones binarias de bloqueo.}
 \end{table}
 
-Las huellas deben comprobarse durante la calibración. Los mensajes DNS convencionales pueden verse afectados por intermediarios y los EDE no constituyen por sí mismos autenticación criptográfica. También pueden existir bloqueos no detectados por estas reglas. Estas reglas permiten revisar cómo se interpretó cada respuesta. La falta de una señal reconocida no descarta que exista filtrado.
+Las huellas deben comprobarse durante la calibración. Los mensajes DNS convencionales pueden verse afectados por intermediarios y los EDE no constituyen por sí mismos autenticación criptográfica. Un perfil puede usar una forma de bloqueo que las reglas aún no reconozcan.
 
 A partir de estos estados se informa, por perfil, categoría y tipo DNS, el total de observaciones y la cantidad en cada estado. La proporción de señales sobre el total es distinta de la proporción entre observaciones interpretables. Ambas se acompañan de la cobertura: la proporción de observaciones que pueden interpretarse como señal de bloqueo o resolución. Los errores no se rellenan como permisos ni bloqueos. Los dominios con varias etiquetas pueden contribuir a varios desgloses, pero solo una vez al resumen global. No se suman desgloses solapados para reconstruir el total.
 
@@ -355,13 +355,13 @@ Para OONI se pueden exportar como URL los dominios con revisión documentada. El
 El repositorio conserva el código, las fuentes del informe, las configuraciones de prueba y las auditorías. Los registros detallados se guardan por ejecución.
 
 \subsection{Plan de trabajo y criterios de cierre}
-La tabla \ref{tab:plan} resume las cinco etapas del estudio. La revisión de categorías precede a la evaluación de aciertos, y la comprobación de perfiles y rutas precede a las mediciones. Las fechas de las etapas pendientes quedan por confirmar.
+La tabla \ref{tab:plan} indica cómo se comprueba cada tarea. La revisión de categorías precede a la evaluación de aciertos, y la comprobación de perfiles y rutas precede a las mediciones. Las fechas de las etapas pendientes quedan por confirmar.
 
 \begin{table}[H]
 \centering\small
 \begin{tabularx}{\textwidth}{p{3.1cm}Y}
 \toprule
-Etapa & Criterio de cierre\\
+Tarea & Criterio de cierre\\
 \midrule
 Fuentes y corpus & Revisar las categorías, incluir sitios de contenido permitido y documentar los 2.000 dominios únicos o cuántos faltan.\\
 Configuración y calibración & Verificar conectividad, huellas de política y rutas; completar y justificar la selección de perfiles.\\
@@ -377,16 +377,16 @@ Informe y revisión & Integrar fuentes, métodos y avances durante todas las eta
 \begin{figure}[H]
 \centering
 \begin{ganttchart}[hgrid,vgrid,x unit=1.35cm,y unit chart=0.55cm,
- title label font=\small,bar label font=\small,bar/.style={fill=gray!55}]{1}{5}
-\gantttitle{Orden de las tareas}{5}\\
-\gantttitlelist{1,...,5}{1}\\
+ title label font=\small,bar label font=\small,bar/.style={fill=gray!55}]{1}{4}
+\gantttitle{Etapas}{4}\\
+\gantttitlelist{1,...,4}{1}\\
 \ganttbar{Fuentes y corpus}{1}{1}\\
 \ganttbar{Calibración de perfiles}{2}{2}\\
 \ganttbar{Mediciones comparables}{3}{3}\\
 \ganttbar{Análisis y contraste}{4}{4}\\
-\ganttbar{Redacción y revisión}{1}{5}
+\ganttbar{Redacción y revisión}{1}{4}
 \end{ganttchart}
-\caption{Orden previsto de las tareas. El informe se redactará durante todo el proceso. Las columnas 1--4 corresponden a las primeras cuatro etapas de la tabla; la quinta tarea, redacción, acompaña el proceso completo. Las columnas no representan semanas.}
+\caption{Orden de las cuatro etapas. La redacción y la revisión del informe acompañan cada una.}
 \end{figure}
 
 \section{Desarrollo}
@@ -424,7 +424,7 @@ Familiar & AAAA & 150 & 27 & 12 & 111 & 0\\
 \label{tab:piloto}
 \end{table}
 
-En A, el perfil estándar resolvió los 50 dominios en las tres rondas. El familiar señaló los cuatro dominios con categoría preliminar de adulto y resolvió los otros 46. No se observaron señales sobre los 39 portales educativos en A; ello no estima una tasa general de bloqueos indebidos. La resolución de apuestas y armas no se interpreta como una falla parental: la política consultada del perfil familiar no promete bloquear esas categorías por sí solas. No hubo errores de red en el piloto TCP.
+En A, el perfil estándar resolvió los 50 dominios en las tres rondas. El familiar señaló los cuatro dominios con categoría preliminar de adulto y resolvió los otros 46. No se observaron señales sobre los 39 portales educativos en A; ello no estima una tasa general de bloqueos indebidos. El perfil familiar consultado declara filtrar contenido adulto y amenazas. Resolver sitios de apuestas o armas es compatible con esa política. No hubo errores de red en el piloto TCP.
 
 La comparación entre perfiles incluye 50 dominios para A: 46 coincidencias de resolución y cuatro diferencias, con acuerdo observado de 0,92. En AAAA solo diez dominios conservaron estados interpretables en ambos perfiles durante las tres rondas; hubo nueve coincidencias y una diferencia, con acuerdo 0,90. Los otros 40 se excluyen de esa comparación, principalmente por respuestas sin direcciones. No se convierten en permisos o bloqueos. El estándar no señala bloqueos en ninguno de los casos comparables. Por ello, Kappa y Jaccard son cero por construcción y no aportan una comparación discriminante en este piloto. La tabla \ref{tab:contingencia} muestra directamente los casos: las diferencias observadas son cuatro dominios en A y uno en AAAA, sin estimar su acierto respecto de una política validada.
 
@@ -470,7 +470,9 @@ Total & 1.960 & 94 & 1.866\\
 \label{tab:auditoria}
 \end{table}
 
-Las 94 entradas rechazadas corresponden a 93 direcciones IPv4 y una etiqueta inválida en el archivo de armas. Aún falta revisar el contenido y la categoría de todas las entradas admitidas. Los 1.852 nombres describen el inventario histórico; no son los 2.000 dominios revisados de la meta actual ni el corpus parental definitivo. Los 14 solapamientos corresponden exclusivamente a dominios con etiquetas heredadas de adulto y phishing. Al retirar la etiqueta phishing se conservan como candidatos de adulto, por lo que los grupos del conjunto parental quedan sin solapamientos; su categoría sigue pendiente de revisión. El informe de auditoría conserva cada rechazo con archivo, línea y motivo. La auditoría permite conservar la diferencia entre cantidad de filas, dominios únicos y categorías revisadas.
+En el archivo de armas se descartaron 93 direcciones IPv4 y una etiqueta inválida. Los 14 nombres que aparecían en dos listas tenían las etiquetas de adulto y phishing. Al retirar phishing quedaron como candidatos de adulto, pendientes de revisión. El informe de auditoría identifica el archivo, la línea y el motivo de cada rechazo.
+
+Se comparó el nombre de servidor de cada URL de la nómina de Subtel con los dominios etiquetados como apuestas, conservando los subdominios \cite{subtel2026apuestas}. De los 400 candidatos, seis coincidieron exactamente con nombres de la nómina. Entre los cuatro dominios de apuestas del piloto hubo cero coincidencias. El cotejo identifica casos para una próxima medición de filtrado.
 
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
@@ -579,7 +581,7 @@ La evidencia para identificar una intervención depende de la forma de respuesta
 En laboratorio, conectar una VPN y pasar por un proxy conservaron las respuestas de referencia con la regla desactivada. Al activar la regla en el resolutor del túnel o en el proxy se obtuvieron las señales previstas y se mantuvo el acceso al control educativo. En WARP, el filtro familiar cambió las respuestas DNS de los cuatro dominios de adulto. En modo proxy, los dos controles de categoría siguieron accesibles por HTTPS con el filtro activo.
 
 \section{Trabajo futuro}
-La primera prioridad es completar la revisión de categorías y registrar por qué se incluye o excluye cada dominio. Ampliar el contraste de apuestas con el perfil familiar de Mullvad y habilitar un perfil que declare protección frente a armas permitiría probar ambas categorías con controles educativos revisados. Con reglas esperadas por perfil se podrán estimar omisiones y bloqueos indebidos, con denominadores por categoría.
+La primera prioridad es completar la revisión de categorías y registrar por qué se incluye o excluye cada dominio. Para ampliar la prueba de apuestas con Mullvad se revisarán primero los seis candidatos que figuran en la nómina de Subtel. Para armas se necesita un perfil que declare filtrar esa categoría. Ambas pruebas incluirán controles educativos revisados. Con reglas esperadas por perfil se podrán estimar omisiones y bloqueos indebidos, con denominadores por categoría.
 
 La segunda prioridad es repetir la comparación con un operador independiente de WARP que documente su política de filtrado. Se registrarán plan, cliente, servidor, ruta y resolutor efectivo. Para proxies, el contraste empezará por comprobar si entregar el nombre al proxy SOCKS5 de Mullvad cambia el lugar de resolución. Un segundo intermediario con una política declarada permitirá extender la comparación. En cada caso se mantendrá una condición directa y otra con el filtro desactivado cuando el servicio lo permita.
 
