@@ -10,8 +10,6 @@ El inventario histórico de phishing se mantiene separado del corpus parental po
 
 `config/estudio.json` establece una **meta operativa de 2.000 dominios únicos revisados** para planificar la selección y dimensionar la carga de consultas. La representatividad y el margen de error no se deducen de esa cifra.
 
-No se rellenará automáticamente con 148 nombres populares para convertir el inventario de 1.852 en 2.000. Eso conservaría las etiquetas cuestionadas, mezclaría phishing con el estudio parental y cambiaría la composición sin una razón de contenido. Tampoco se impondrán 400 por cada categoría heredada.
-
 La auditoría actual distingue:
 
 | Concepto | Cantidad | Significado |
@@ -20,24 +18,24 @@ La auditoría actual distingue:
 | Base heredada con alguna etiqueta del alcance | 1.466 | Se retiran los exclusivamente de phishing; no son datos validados |
 | Contraste universitario incorporado | 534 | Procedencia UT1 liste_bu; etiqueta referencia_biblioteca, pendiente de revisión |
 | Conjunto parental candidato | 2.000 | Nombres únicos en archivo separado, no corpus final validado |
-| Dominios revisados en alcance | 0 | No se ha simulado la revisión humana |
+| Dominios con categoría validada en el conjunto parental | 0 | Los 2.000 candidatos siguen pendientes de revisión |
 | Meta de selección final | 2.000 | Únicos y con evidencia de categoría |
 | Nuevos candidatos necesarios para completar el inventario | 0 | Ya hay 2.000 candidatos; habrá que sustituir los descartados |
 
 Las 14 entradas con etiquetas adulto y phishing se cuentan una vez dentro del inventario en alcance por su etiqueta candidata de adulto. Esta regla no valida esa etiqueta. La categoría heredada de armas contiene indicios de odio/violencia; debe comprobarse su fuente y clasificación antes de admitirla. Popularidad tampoco acredita contenido permitido. Falta validar el contraste educativo; las referencias universitarias no se dan por educativas automáticamente.
 
-## Puertas de avance
+## Preparación del corpus y de las mediciones
 
 1. Identificar fuentes pertinentes y su taxonomía, versión, fecha y método de categorización. Comparar fuentes alternativas; buscar el corpus previo del trabajo de Nicolás Rojas si está disponible, sin afirmar que ya se recuperó.
 2. Normalizar y deduplicar; conservar etiquetas múltiples, desacuerdos y procedencia. Revisar evidencia con responsable y fecha, separando actividad de categoría.
 3. Consultar `pdns-lab study-plan`. El resultado reproducible está en `docs/evidencia/plan-corpus-2000.json`.
 4. Al reunir suficientes revisados, usar `pdns-lab corpus-select --output results/corpus-parental-2000.csv`. Selecciona exactamente 2.000 sin reemplazo y guarda semilla, composición y SHA-256. Si faltan revisados, falla sin crear un archivo final incompleto. La selección no impone balance por categoría; la composición y cualquier necesidad de ajuste se revisan antes de medir.
-5. Construir una matriz por servicio: categoría ofrecida, plan, configuración, transporte, referencia, condiciones y evidencia. Los seis perfiles instrumentados no constituyen el inventario definitivo ni cubren necesariamente armas/apuestas. Un filtro de amenazas no se juzga como filtro parental universal.
+5. Registrar para cada perfil su política, plan, configuración, transporte, referencia y evidencia. Evaluar cada categoría según lo que el proveedor declare restringir. Las configuraciones iniciales y la ampliación se describen en el [inventario de servicios](inventario_servicios.md).
 6. Calibrar y medir con controles; informar indeterminados. Estimar aciertos o errores solo respecto de categorías y decisiones esperadas revisadas. Acuerdo, Kappa y similitud siguen siendo descriptores de acuerdo, no verdad de referencia.
 
 ## Tamaño y carga
 
-Con 2.000 dominios, seis perfiles, A y AAAA y tres rondas se planifican 72.000 observaciones del perfil; con cuatro perfiles que requieren dos controles, son 168.000 grupos de consulta antes de reintentos. Estas cantidades dimensionan la carga; no autorizan una ejecución completa sin calibración ni justifican un nivel de confianza estadístico. Si cambia el inventario de perfiles, debe recalcularse el plan.
+Para 2.000 dominios, los seis perfiles de la configuración inicial, dos tipos de registro (A y AAAA) y tres rondas, el plan prevé 72.000 observaciones. Cuatro perfiles requieren dos controles por observación, lo que elevaría el total a 168.000 grupos de consulta antes de reintentos. La [ampliación por TCP](comparacion_2026-11-18.md) se ejecutó sobre 50 dominios y 14 perfiles.
 
 ## Trabajo que no se presenta como completado
 
@@ -62,4 +60,6 @@ Se preparó una selección separada de 50 dominios con evidencia documental prel
 
 ## Requisito de cobertura por categoría (30-10-2026)
 
-Antes de medir acierto de adulto, apuestas o armas, registrar un perfil que declare tratar esa categoría, su plan y configuración activa, evidencia de la categoría del dominio y calibración de controles. La configuración actual solo incluye una política de contenido adulto. Apuestas y armas siguen pendientes de perfiles comparables; las respuestas del piloto para esas categorías son observaciones de resolución. Ver `inventario_servicios.md` para el candidato CleanBrowsing configurable y sus límites de acceso. No reducir el alcance parental por conveniencia de los seis perfiles iniciales ni presentar al candidato como implementado.
+Para medir aciertos en adulto, apuestas o armas se requiere una política que declare restringir la categoría, evidencia del contenido del dominio y controles calibrados. El 30 de octubre, Cloudflare familiar aportaba una política de contenido adulto. Sus respuestas a los dominios de apuestas y armas se registraron como observaciones de resolución.
+
+El 18 de noviembre se compararon por DoH los perfiles públicos familiar y sin filtro de Mullvad. El familiar declara protección frente a adulto y apuestas. Para armas queda pendiente medir un perfil con esa categoría habilitada. La [ampliación](comparacion_2026-11-18.md) detalla el contraste de Mullvad y el [inventario](inventario_servicios.md) identifica la opción configurable de CleanBrowsing para armas.

@@ -2,7 +2,7 @@
 
 Configuración inicial revisada el 27 de octubre de 2026. La ampliación medida figura al final de este documento. Una fila no acredita conectividad, calibración ni cobertura de todas las categorías. No se contrata ni configura un servicio por aparecer aquí.
 
-| Servicio / perfil | Función documentada | Estado |
+| Servicio / perfil | Función documentada | Estado al 27 de octubre |
 |---|---|---|
 | Cloudflare estándar / seguridad / familiar | Resolución, amenazas, contenido adulto según perfil | Tres perfiles instrumentados; solo calibración limitada |
 | Google Public DNS | Referencia de resolución | Instrumentado, pendiente de calibración completa |
@@ -10,7 +10,7 @@ Configuración inicial revisada el 27 de octubre de 2026. La ampliación medida 
 | CleanBrowsing Family / Adult | Filtros de contenido adulto; Family incluye condiciones distintas de Adult | Candidatos documentados, no incorporados a mediciones |
 | AdGuard DNS público familiar | Publicita protección frente a contenido adulto, además de otras funciones | Candidato documentado, sin calibrar |
 | OpenDNS FamilyShield | Perfil FamilyShield con resolutores propios | Candidato documentado; contrastar política y señales antes de incorporarlo |
-| VPN y proxies con protección por categorías | Depende del plan, cliente y configuración reales | Requieren evidencia de filtro activo, recorrido y ámbito; no inventar condiciones |
+| VPN y proxies con protección por categorías | Depende del plan, cliente y configuración reales | Faltaba comprobar el filtro activo, la ruta y las aplicaciones que lo utilizaban |
 
 Fuentes primarias: [Cloudflare](https://developers.cloudflare.com/1.1.1.1/setup/), [Google](https://developers.google.com/speed/public-dns/docs/intro), [Quad9](https://docs.quad9.net/services/), [CleanBrowsing](https://cleanbrowsing.org/filters), [AdGuard](https://adguard-dns.io/en/public-dns.html), [OpenDNS](https://www.opendns.com/setupguide/).
 
@@ -25,7 +25,7 @@ CleanBrowsing documenta `category_adult`, `category_gambling` y `category_weapon
 
 ## Perfiles medidos el 18-11-2026
 
-La ampliación mantuvo los seis perfiles iniciales y midió ocho más por TCP/53. El perfil de referencia permite comparar respuestas, con las limitaciones del protocolo de medición y de cada política. Los perfiles públicos incorporados documentan funciones familiares, de adulto o de referencia. La cobertura verificable para apuestas y armas sigue pendiente.
+La ampliación mantuvo los seis perfiles iniciales y midió ocho más por TCP/53. La tabla indica qué resolutor se utilizó como referencia para cada perfil de filtrado. El contraste específico de apuestas se hizo por DoH.
 
 | Proveedor | Perfiles añadidos | Referencia para perfiles de filtrado |
 |---|---|---|
@@ -34,6 +34,6 @@ La ampliación mantuvo los seis perfiles iniciales y midió ocho más por TCP/53
 | [Control D](https://docs.controld.com/docs/free-dns) | Sin filtro y Family Friendly | Control D sin filtro |
 | [Cisco OpenDNS](https://www.opendns.com/setupguide/) | Estándar y FamilyShield | OpenDNS estándar |
 
-Ver [medición, evidencia y reproducción](comparacion_2026-11-18.md). La VPN y el proxy medidos son configuraciones de laboratorio; la cobertura de proveedores externos de ambas tecnologías sigue pendiente.
+En laboratorio se midieron una conexión OpenVPN y un proxy HTTP. En el servicio externo WARP de Cloudflare se midieron las respuestas DNS del túnel y el acceso HTTPS por un proxy SOCKS5. Queda pendiente comparar estos resultados con los de otro operador externo. [Mediciones de laboratorio](comparacion_2026-11-18.md) y [prueba de WARP](warp-2026-11-18.md).
 
-El contraste DoH incluyó también los perfiles públicos familiar y sin filtro de [Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls). Su variante familiar documenta adulto y apuestas. Ambos respondieron a las 152 consultas sobre HTTP/2. El DNS público se midió fuera de la VPN. Para armas sigue pendiente habilitar y calibrar un perfil que declare la categoría.
+El contraste DoH incluyó los perfiles públicos familiar y sin filtro de Mullvad. Su variante familiar documenta protección frente a adulto y apuestas. Se recibieron 152 respuestas sobre HTTP/2, 76 por perfil, fuera de la VPN. Para armas queda pendiente habilitar y calibrar un perfil que declare la categoría. [Documentación de Mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls).
