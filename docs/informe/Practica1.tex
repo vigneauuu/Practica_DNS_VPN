@@ -63,7 +63,7 @@
 {\bfseries\fontsize{14}{17}\selectfont Profesor Guía: }{\fontsize{12}{15}\selectfont Nicolás Boettcher}\\[0.3cm]
 {\bfseries\fontsize{14}{17}\selectfont Alumno: }{\fontsize{12}{15}\selectfont Matías Vigneau Andrades}\\[0.3cm]
 \vspace{0.8cm}
-{\fontsize{10}{12}\selectfont 18 de noviembre de 2026\par}
+{\fontsize{10}{12}\selectfont 19 de noviembre de 2026\par}
 \end{center}
 \end{titlepage}
 \tableofcontents
@@ -73,7 +73,7 @@
 \hypersetup{pageanchor=true}
 
 \section{Antecedentes y Motivación}
-Este informe presenta la ampliación del piloto a ocho proveedores de DNS público: 14 perfiles por TCP y diez por DNS sobre HTTPS, con perfiles compartidos entre ambas mediciones. Incluye pruebas de VPN y proxy en laboratorio y una medición del servicio WARP de Cloudflare. El estudio distingue las señales registradas de la evaluación de eficacia, que requiere validar el contenido y la política esperada.
+La primera medición, realizada en octubre, consultó 50 dominios a dos perfiles públicos de Cloudflare. Sirvió para comprobar el procedimiento con respuestas de red reales. En noviembre se midieron 14 perfiles por TCP y 13 por DNS sobre HTTPS (DoH), de nueve proveedores en total. También se compararon la conexión directa, una VPN y un proxy, en laboratorio y con el servicio externo WARP de Cloudflare.
 
 El Sistema de Nombres de Dominio permite consultar información asociada a nombres, por ejemplo las direcciones IPv4 e IPv6 mediante registros A y AAAA. La resolución recursiva obtiene respuestas de servidores autoritativos o reutiliza información almacenada temporalmente. Su funcionamiento se especifica en los RFC 1034 y 1035 \cite{rfc1034,rfc1035}. La finalidad básica de un resolutor es resolver nombres; la protección por categorías constituye una función adicional que debe identificarse en cada servicio.
 
@@ -105,7 +105,7 @@ Se utiliza Python porque la biblioteca dnspython permite enviar consultas y acce
 
 El estudio de Liu sobre DNS protector y la documentación del \emph{Open Observatory of Network Interference} (OONI) sobre mediciones de conectividad ayudan a distinguir respuestas modificadas, anomalías y fallas \cite{liu2024,ooni}. Las tablas de contingencia y el acuerdo observado describen las coincidencias entre perfiles; Kappa y Jaccard ofrecen descriptores adicionales con límites que se desarrollan en metodología \cite{cohen1960,kosub2016}. Su elección se apoya en esos antecedentes, pero el acuerdo entre servicios no equivale a acierto respecto del contenido.
 
-En un piloto exploratorio de 50 dominios se probaron la selección, los controles, el registro de respuestas y el análisis. Sus etiquetas documentales permiten describir cómo respondieron los perfiles. Estimar aciertos del filtrado requiere validar esas etiquetas de forma independiente.
+En la medición inicial, o piloto, se eligieron 50 dominios para comprobar la selección, los controles y el registro de respuestas. Sus etiquetas documentales permitieron comparar los perfiles. Estimar aciertos del filtrado requiere validar esas etiquetas de forma independiente.
 
 La comparación responderá tres preguntas: (i) qué protege cada perfil según su política declarada; (ii) qué respuestas entrega bajo condiciones reproducibles; y (iii) en qué casos sus resultados pueden compararse con los de otros perfiles o con mediciones de conectividad. Se adopta un estudio descriptivo y comparativo. El acuerdo entre perfiles y el acierto respecto de una política se analizan por separado; una discrepancia no demuestra por sí sola ineficacia.
 
@@ -126,7 +126,7 @@ Comparar las respuestas de servicios de DNS protector para control parental y de
 \section{Alcances y Limitaciones}
 La configuración inicial reúne seis perfiles de resolución ordinaria, protección contra amenazas y filtrado de contenido adulto. Sus direcciones, políticas y fuentes constan en \texttt{config/profiles.json}. Las políticas de esos seis perfiles se revisaron el 27 de octubre de 2026 \cite{cloudflare,quad9,google}. La ampliación por TCP abarcó 14 perfiles. Para evaluar cada uno se consideran las categorías que su proveedor declara restringir.
 
-El alcance parental comprende adulto, apuestas y armas. El DNS público familiar de Mullvad declara filtrado de adulto y apuestas en su perfil cifrado \cite{mullvaddns}. Su cobertura se explora por DoH en la misma submuestra que los contrastes anteriores. Para armas queda pendiente medir una política que declare esa categoría. CleanBrowsing la documenta entre sus opciones configurables de pago \cite{cleanbrowsingapi,cleanbrowsingcategories}.
+El alcance parental comprende adulto, apuestas y armas. Mullvad documentó el filtrado de contenido adulto y apuestas en su perfil familiar y anunció el retiro de su DNS público cifrado para el 2 de noviembre de 2026 \cite{mullvaddns,mullvadretiro}. Los dos servidores de la guía respondieron con TLS válido desde la red de prueba el 18 de noviembre. Los resultados describen esa observación fechada. Para estudiar apuestas y armas se eligió además el perfil infantil de DNS4EU, cuya política incluye ambas categorías. Se comparó con los perfiles protector y sin filtro del mismo operador \cite{dns4eupolitica,dns4euperfiles}. CleanBrowsing también documenta la categoría de armas entre sus opciones configurables de pago \cite{cleanbrowsingapi,cleanbrowsingcategories}.
 
 \begin{table}[H]
 \centering\small
@@ -289,9 +289,9 @@ Se consultan A y AAAA por separado, solicitando información DNSSEC disponible. 
 Para $N$ dominios, $S$ perfiles, $T$ tipos y $R$ rondas, el número de observaciones del perfil es $NSTR$. Si $S_c$ perfiles requieren dos controles por observación, los grupos de consulta son $NTR(S+2S_c)$, antes de reintentos. Con seis perfiles, dos tipos, tres rondas y cuatro perfiles con controles, corresponden $36N$ observaciones y $84N$ grupos de consulta. La opción de simulación informa estos valores antes de transmitir consultas; la carga se ajustará tras la calibración.
 
 
-La ampliación ejecuta los 14 perfiles sobre los mismos 50 dominios del piloto. Cada perfil usa el mismo orden de dominios y corre en una ejecución separada, con paralelismo limitado y pausas de 0,09 segundos después de cada consulta. Se usó TCP/53, tres rondas para A y AAAA, espera de 2,5 segundos, cero reintentos y semilla 20261118. Nueve perfiles usan dos controles por observación. Para CleanBrowsing se eligió una referencia externa, por lo que la comparación admite diferencias de política o caché. La calibración de 112 consultas técnicas se contabiliza por separado.
+La ampliación por TCP se ejecutó con 14 perfiles sobre los mismos 50 dominios del piloto. Cada perfil usa el mismo orden de dominios y corre en una ejecución separada, con paralelismo limitado y pausas de 0,09 segundos después de cada consulta. Se usó TCP/53, tres rondas para A y AAAA, espera de 2,5 segundos, cero reintentos y semilla 20261118. Nueve perfiles usan dos controles por observación. Para CleanBrowsing se eligió una referencia externa, por lo que la comparación admite diferencias de política o caché. La calibración de 112 consultas técnicas se contabiliza por separado.
 
-La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona los 11 dominios de adulto, apuestas o armas del piloto, cuatro educativos elegidos por orden alfabético y cuatro nombres técnicos. Se ejecutan dos rondas, A y AAAA, y se registran la dirección del servicio DoH, el código de respuesta, las direcciones, EDE y errores. Se midieron ocho perfiles en el primer contraste y dos de Mullvad en una segunda corrida con HTTP/2. Esta comprobación describe formas de respuesta directamente. No aplica el criterio de controles temporales de TCP.
+La comprobación DoH utiliza mensajes DNS en HTTPS \cite{rfc8484}. Selecciona los 11 dominios de adulto, apuestas o armas del piloto, cuatro educativos elegidos por orden alfabético y cuatro nombres técnicos. Se ejecutan dos rondas, A y AAAA, y se registran la dirección del servicio DoH, el código de respuesta, las direcciones, EDE y errores. Se midieron ocho perfiles en el primer contraste y dos de Mullvad en una segunda ejecución con HTTP/2. En ambos casos se compararon directamente los códigos y las direcciones devueltas por los distintos perfiles. En las mediciones posteriores se consultaron los seis nombres de apuestas que también figuraban en la nómina de Subtel, los mismos cuatro educativos y los cuatro controles técnicos. DNS4EU incluyó además los tres nombres de fabricantes de armas del piloto. En ambos servicios se hicieron dos rondas por perfil y tipo, con verificación TLS.
 
 Para aislar el papel de VPN y proxy se usan cuatro categorías sintéticas, con una condición educativa permitida. El laboratorio VPN genera nombres bajo el dominio reservado \texttt{.test} \cite{rfc2606}. Compara el enlace directo con el túnel del mismo equipo, primero con el resolutor sin regla y luego con tres categorías restringidas. El proxy HTTP remite a un origen local y, al activar la regla, responde con una marca documentada en su cuerpo. No hay inspección HTTPS en esas pruebas. La política esperada la define el laboratorio y permite contrastar causalmente las tres condiciones dentro de ese entorno.
 
@@ -390,7 +390,7 @@ Informe y revisión & Integrar fuentes, métodos y avances durante todas las eta
 \end{figure}
 
 \section{Desarrollo}
-\subsection{Implementación y prueba piloto}
+\subsection{Implementación y primera medición con Cloudflare}
 El repositorio es el espacio de trabajo del proyecto y un entorno virtual \texttt{.venv} contiene sus dependencias Python. La interfaz \texttt{pdns-lab} permite auditar el corpus, registrar revisiones, simular el plan, medir y analizar. El informe LaTeX se mantiene junto al código y se actualiza en el proyecto de Overleaf.
 
 El módulo de planificación separa el inventario histórico, los candidatos en alcance y la selección final; exige la cantidad y validación declaradas en \texttt{config/estudio.json}. La estructura del proyecto separa \texttt{src/pdns\_lab/}, \texttt{config/}, \texttt{dataset/}, \texttt{tests/} y \texttt{docs/informe/}. Las mediciones nuevas se almacenan en \texttt{results/}, identificando cada ejecución por separado. La base histórica \texttt{resultados.db} se conserva como antecedente exploratorio; sus etiquetas anteriores no se copian como decisiones de bloqueo comprobadas. El código anterior se conserva en \texttt{legacy/} para consultar cómo se obtuvieron esos registros.
@@ -400,7 +400,7 @@ En una comprobación previa se consultaron cuatro dominios técnicos contra Clou
 Las pruebas automatizadas cubren respuestas negativas legítimas, controles incompletos, sumideros documentados, EDE, múltiples direcciones, reintentos, categorías solapadas, valores degenerados de Kappa, datos faltantes por par, rondas inestables, importación OONI y estados HTTP ambiguos. Sus respuestas de red son simuladas, por lo que verifican el comportamiento del programa y no la calidad de un proveedor. La evidencia de ejecución y los comandos de reproducción se conservan en el repositorio.
 
 
-El 30 de octubre de 2026 se preparó un piloto de 50 dominios: 39 portales educativos o de investigación, cuatro plataformas de contenido adulto, cuatro sitios de apuestas y tres fabricantes de armas. La selección fue intencional, según la evidencia documental disponible, con predominio educativo. Se revisaron páginas institucionales, funciones de los sitios y catálogos oficiales; para adultos se utilizó una comunicación de la Comisión Europea que identifica las cuatro plataformas \cite{ec2025adult}. Se registraron por dominio la fuente, fecha, categoría propuesta y límites. Esa evidencia es preliminar: las filas siguen pendientes de validación final y la ejecución queda marcada como exploratoria. Los 2.000 candidatos principales conservan su estado anterior.
+Para la medición del 30 de octubre de 2026 se seleccionaron 50 dominios: 39 portales educativos o de investigación, cuatro plataformas de contenido adulto, cuatro sitios de apuestas y tres fabricantes de armas. La selección fue intencional, según la evidencia documental disponible, con predominio educativo. Se revisaron páginas institucionales, funciones de los sitios y catálogos oficiales; para adultos se utilizó una comunicación de la Comisión Europea que identifica las cuatro plataformas \cite{ec2025adult}. Se registraron por dominio la fuente, fecha, categoría propuesta y límites. Esa evidencia es preliminar: las filas siguen pendientes de validación final y la ejecución queda marcada como exploratoria. Los 2.000 candidatos principales conservan su estado anterior.
 
 Se consultaron primero cuatro controles técnicos en los seis perfiles por UDP, para A y AAAA: 48 observaciones, de las cuales 28 terminaron en error de red. Una comprobación posterior por TCP recibió las 48 respuestas. Los tiempos de espera fueron 1,5 segundos en UDP y 2,5 en TCP, por lo que la diferencia no permite aislar una causa. El perfil familiar devolvió 0.0.0.0 y :: en los controles de categoría, mientras el estándar entregó direcciones de resolución. La dirección \texttt{::} se incorporó como huella empírica exclusiva de este piloto. Su fuente es el registro reproducible \texttt{docs/evidencia/calibracion-piloto-2026-10-30.json}: contiene dominio de control, perfil, tipo, direcciones y transporte. Esa procedencia se conserva en \texttt{fingerprint\_source}; no se presenta como una especificación publicada por Cloudflare ni se extiende a otros proveedores.
 
@@ -472,7 +472,7 @@ Total & 1.960 & 94 & 1.866\\
 
 En el archivo de armas se descartaron 93 direcciones IPv4 y una etiqueta inválida. Los 14 nombres que aparecían en dos listas tenían las etiquetas de adulto y phishing. Al retirar phishing quedaron como candidatos de adulto, pendientes de revisión. El informe de auditoría identifica el archivo, la línea y el motivo de cada rechazo.
 
-Se comparó el nombre de servidor de cada URL de la nómina de Subtel con los dominios etiquetados como apuestas, conservando los subdominios \cite{subtel2026apuestas}. De los 400 candidatos, seis coincidieron exactamente con nombres de la nómina. Entre los cuatro dominios de apuestas del piloto hubo cero coincidencias. El cotejo identifica casos para una próxima medición de filtrado.
+Se comparó el nombre de servidor de cada URL de la nómina de Subtel con los dominios etiquetados como apuestas, conservando los subdominios \cite{subtel2026apuestas}. De los 400 candidatos, seis coincidieron exactamente con nombres de la nómina. Entre los cuatro dominios de apuestas del piloto hubo cero coincidencias. Los seis nombres coincidentes se utilizaron en una medición adicional por DoH. La consulta DNS conserva los subdominios y omite las rutas de las URL, como la ruta regional incluida en uno de los seis casos.
 
 La base histórica contiene 13.720 registros: 1.960 para cada uno de los cuatro resolutores públicos identificados como \texttt{Cisco\_Umbrella}, \texttt{Cloudflare\_Families}, \texttt{Google\_DNS} y \texttt{Quad9\_Security}, y 1.960 para cada una de las condiciones \texttt{ProtonVPN\_Free}, \texttt{Windscribe\_Free} y \texttt{HideMe\_Free}. Los recuentos se comprobaron mediante consultas de solo lectura. Son filas de ejecución sobre las listas originales, no 13.720 dominios únicos ni observaciones del corpus parental revisado.
 
@@ -529,7 +529,7 @@ Control D familiar & Dirección especial 8/8 & Dirección especial 8/8\\
 \label{tab:doh-adultos}
 \end{table}
 
-Se añadieron los perfiles públicos sin filtro y familiar de Mullvad. Se repitieron los mismos 19 nombres y dos rondas por tipo, y se recibieron las 152 respuestas por DoH sobre HTTP/2. Ambos perfiles resolvieron los cuatro dominios educativos de la submuestra en A. El perfil familiar devolvió NXDOMAIN en los cuatro dominios documentados como adulto y los cuatro de apuestas en A y AAAA (tabla \ref{tab:doh-mullvad}). En A, el perfil sin filtro devolvió direcciones en esos ocho dominios. Esta diferencia coincide con la política y la forma de respuesta que Mullvad documenta \cite{mullvaddns}. En AAAA el perfil sin filtro devolvió una dirección en un solo dominio de adulto y en ninguno de apuestas. La evidencia de resolución en el par es más clara en A. Los tres dominios documentados como armas dieron la misma forma de respuesta en ambos perfiles. La prueba consultó el DNS público fuera de un túnel.
+En el primer contraste con Mullvad se consultaron los perfiles sin filtro y familiar. Se repitieron los mismos 19 nombres y dos rondas por tipo, y se recibieron las 152 respuestas por DoH sobre HTTP/2. Ambos perfiles resolvieron los cuatro dominios educativos de la submuestra en A. El perfil familiar devolvió NXDOMAIN en los cuatro dominios documentados como adulto y los cuatro de apuestas en A y AAAA (tabla \ref{tab:doh-mullvad}). En A, el perfil sin filtro devolvió direcciones en esos ocho dominios. Esta diferencia coincide con la política y la forma de respuesta que Mullvad documenta \cite{mullvaddns}. En AAAA el perfil sin filtro devolvió una dirección en un solo dominio de adulto y en ninguno de apuestas. La evidencia de resolución en el par es más clara en A. Los tres dominios documentados como armas dieron la misma forma de respuesta en ambos perfiles. La prueba consultó el DNS público fuera de un túnel.
 
 \begin{table}[H]
 \centering\small
@@ -548,6 +548,19 @@ Educativo & 8 & 0 & 0 & 0 & 0 \\
 \caption{Respuestas NXDOMAIN de los dos perfiles públicos de Mullvad. Las consultas se cuentan por perfil y tipo de registro. Cada dominio se consultó en dos rondas. Se excluyen de la tabla los cuatro controles técnicos.}
 \label{tab:doh-mullvad}
 \end{table}
+
+Con los seis nombres de apuestas de la nómina de Subtel se completaron otras 112 consultas a los dos perfiles de Mullvad, incluidos los controles. En ambas rondas, el perfil sin filtro devolvió registros A para los seis nombres y el familiar devolvió NXDOMAIN para los seis. En AAAA, solo tres devolvieron una dirección con el perfil sin filtro. Los cuatro nombres educativos devolvieron direcciones en A con ambos perfiles. Esta medición se hizo el 18 de noviembre, hora de Chile, después de la fecha de retiro anunciada por el proveedor \cite{mullvadretiro}.
+
+El 19 de noviembre, los tres perfiles de DNS4EU respondieron a las 204 consultas previstas, 68 por perfil. En ambas rondas, el perfil infantil devolvió una misma dirección IPv4 (\texttt{51.15.69.11}) para los seis nombres de apuestas y los tres de armas. También devolvió una sola dirección IPv6 común a esos nueve nombres. Los perfiles protector y sin filtro devolvieron otras direcciones en A para los nueve. En AAAA solo devolvieron direcciones para tres de los seis nombres de apuestas y uno de los tres de armas. En seis consultas separadas, los tres perfiles devolvieron esas dos direcciones para \texttt{warning.joindns4.eu}, el servidor de aviso identificado por Szymutko \cite{szymutko2026}. Esta coincidencia permite reconocer una señal de filtrado en el perfil infantil. El mensaje DNS no especificó el motivo aplicado a cada nombre.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figuras/contraste-categorias.pdf}
+\caption{Respuestas a consultas A por perfil y categoría. Cada dominio se consultó en dos rondas. Los tres dominios de armas se incluyeron solo en la ampliación con DNS4EU.}
+\label{fig:contraste-categorias}
+\end{figure}
+
+En la figura \ref{fig:contraste-categorias}, los cuatro nombres educativos devolvieron direcciones distintas de la dirección común del perfil infantil de DNS4EU. Esa comparación permite examinar la respuesta DNS en esos cuatro casos. El acceso al contenido del sitio requeriría una prueba web separada.
 
 \subsection{Comparación bajo VPN y proxy}
 En OpenVPN se verificó que la ruta al resolutor de túnel utilizó \texttt{tun0}. El enlace directo y el túnel con la regla desactivada resolvieron los cuatro nombres de prueba en A y AAAA y en tres rondas, 24 observaciones por condición. Al activar en el resolutor la regla que restringía las tres categorías sintéticas adulto, apuestas y armas, hubo 18 respuestas con la huella configurada y seis resoluciones del control educativo. La comparación conserva el mismo túnel al cambiar la regla del resolutor.
@@ -574,14 +587,14 @@ En modo proxy se hicieron 32 solicitudes HTTPS con el método HEAD: cuatro contr
 
 \Needspace{6\baselineskip}
 \section{Conclusiones}
-La ampliación del piloto permitió comparar perfiles DNS públicos de ocho proveedores entre TCP y DoH. Se observaron señales explícitas, respuestas negativas y direcciones especiales con distinta frecuencia según el perfil y el tipo de registro. La proporción de casos interpretables, especialmente en AAAA, limita los acuerdos por pares. Una comparación basada solo en el número de bloqueos omitiría esa diferencia de cobertura.
+Las mediciones permitieron comparar perfiles DNS de nueve proveedores entre TCP y DoH. Se observaron señales explícitas, respuestas negativas y direcciones especiales con distinta frecuencia según el perfil y el tipo de registro. La proporción de casos interpretables, especialmente en AAAA, limita los acuerdos por pares. Una comparación basada solo en el número de bloqueos omitiría esa diferencia de cobertura.
 
-La evidencia para identificar una intervención depende de la forma de respuesta y de los controles disponibles. En DoH, el contraste entre los perfiles públicos de Mullvad mostró una diferencia compatible con el filtrado documentado de adulto y apuestas. En ambos casos la comparación fue más clara en A, porque el perfil sin filtro devolvió direcciones. Las 50 etiquetas del piloto siguen siendo documentales y la selección tiene predominio educativo. La exactitud y los bloqueos indebidos requieren un corpus revisado y una decisión esperada según la política de cada perfil.
+Un mismo grupo de seis nombres de apuestas recibió dos formas de respuesta según el perfil. El familiar de Mullvad devolvió NXDOMAIN y el infantil de DNS4EU devolvió una dirección IPv4 común. Los perfiles de referencia de ambos operadores devolvieron otras direcciones en A. En DNS4EU se observó la misma diferencia entre perfiles para los tres nombres de armas. Contar solo las respuestas NXDOMAIN habría omitido este segundo patrón. Estos resultados describen los dominios consultados y las políticas documentadas.
 
 En laboratorio, conectar una VPN y pasar por un proxy conservaron las respuestas de referencia con la regla desactivada. Al activar la regla en el resolutor del túnel o en el proxy se obtuvieron las señales previstas y se mantuvo el acceso al control educativo. En WARP, el filtro familiar cambió las respuestas DNS de los cuatro dominios de adulto. En modo proxy, los dos controles de categoría siguieron accesibles por HTTPS con el filtro activo.
 
 \section{Trabajo futuro}
-La primera prioridad es completar la revisión de categorías y registrar por qué se incluye o excluye cada dominio. Para ampliar la prueba de apuestas con Mullvad se revisarán primero los seis candidatos que figuran en la nómina de Subtel. Para armas se necesita un perfil que declare filtrar esa categoría. Ambas pruebas incluirán controles educativos revisados. Con reglas esperadas por perfil se podrán estimar omisiones y bloqueos indebidos, con denominadores por categoría.
+La primera prioridad es completar la revisión de categorías del corpus de 2.000 candidatos. Para ampliar la evaluación de armas y apuestas se necesitan más dominios con evidencia independiente de su contenido y más controles educativos. Con la decisión esperada según cada política se podrán estimar omisiones y bloqueos indebidos por categoría. En DNS4EU interesa comprobar si el mismo patrón se mantiene con otros dominios y en otras fechas.
 
 La segunda prioridad es repetir la comparación con un operador independiente de WARP que documente su política de filtrado. Se registrarán plan, cliente, servidor, ruta y resolutor efectivo. Para proxies, el contraste empezará por comprobar si entregar el nombre al proxy SOCKS5 de Mullvad cambia el lugar de resolución. Un segundo intermediario con una política declarada permitirá extender la comparación. En cada caso se mantendrá una condición directa y otra con el filtro desactivado cuando el servicio lo permita.
 
