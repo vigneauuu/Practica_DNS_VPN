@@ -1,0 +1,804 @@
+{
+  "ventana_inicio_consultas_utc": {
+    "primera": "2026-11-19T12:55:35.458735+00:00",
+    "ultima": "2026-11-19T12:56:10.819921+00:00"
+  },
+  "fecha_local_inicio_America_Santiago": "2026-11-19",
+  "corpus": "dataset/doh-dns4eu-2026-11-19.csv",
+  "sha256_corpus": "dc0a264e6f791cc78bde09822ee490cd25dd3ad745c1225c6cc4f70499f4335b",
+  "cotejo_subtel": "docs/evidencia/contraste-apuestas-subtel-2026-11-18.json",
+  "programa": "scripts/contrastar_doh.py",
+  "sha256_programa": "0694db7ddb5f0d458d53e9e914f36e6236e16b0261bad4de533f517d54de40e1",
+  "versiones": {
+    "Python": "3.14.10",
+    "dnspython": "2.9.0",
+    "httpx": "0.28.1",
+    "h2": "4.4.1"
+  },
+  "condiciones": {
+    "perfiles": {
+      "dns4eu_child": "https://child.joindns4.eu/dns-query",
+      "dns4eu_protective": "https://protective.joindns4.eu/dns-query",
+      "dns4eu_unfiltered": "https://unfiltered.joindns4.eu/dns-query"
+    },
+    "metodo": "POST",
+    "http": "HTTP/2",
+    "verificar_tls": true,
+    "proxy_de_entorno": false,
+    "redirecciones": false,
+    "reintentos": 0,
+    "limite_por_operacion_segundos": 3,
+    "pausa_por_perfil_segundos": 0.08,
+    "rondas": 2,
+    "tipos": [
+      "A",
+      "AAAA"
+    ],
+    "perfiles_en_paralelo": 3,
+    "nombres_por_perfil": 17,
+    "controles_tecnicos": [
+      "example.com",
+      "no-existe-pdns-lab.invalid",
+      "nudity.testcategory.com",
+      "malware.testcategory.com"
+    ]
+  },
+  "consultas": 204,
+  "respuestas_dns": 204,
+  "http_version_observada": {
+    "HTTP/2": 204
+  },
+  "archivo_local": "results/dns4eu-2026-11-19/respuestas.json",
+  "sha256_archivo_local": "ba4a8fffad2684e7b79d1d6b7b60c2d4da8179096355f3bc90b2fbdfa2c9d30f",
+  "direcciones_comunes_observadas": {
+    "A": "51.15.69.11",
+    "AAAA": "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+  },
+  "recuentos_por_grupo": [
+    {
+      "categoria": "apuestas",
+      "tipo": "A",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_direccion_comun": 12
+      }
+    },
+    {
+      "categoria": "apuestas",
+      "tipo": "A",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 12
+      }
+    },
+    {
+      "categoria": "apuestas",
+      "tipo": "A",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 12
+      }
+    },
+    {
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_direccion_comun": 12
+      }
+    },
+    {
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NOERROR_sin_direccion_del_tipo": 6
+      }
+    },
+    {
+      "categoria": "apuestas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NOERROR_sin_direccion_del_tipo": 6
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "A",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_direccion_comun": 6
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "A",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "A",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_direccion_comun": 6
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_sin_direccion_del_tipo": 4,
+        "NOERROR_con_direccion_del_tipo": 2
+      }
+    },
+    {
+      "categoria": "armas",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_sin_direccion_del_tipo": 4,
+        "NOERROR_con_direccion_del_tipo": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "A",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "A",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "A",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "control",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 6,
+        "NXDOMAIN": 2
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "A",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 8
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "A",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 8
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "A",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 8
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_child",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 4,
+        "NOERROR_sin_direccion_del_tipo": 4
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_protective",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 4,
+        "NOERROR_sin_direccion_del_tipo": 4
+      }
+    },
+    {
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "perfil": "dns4eu_unfiltered",
+      "respuestas": {
+        "NOERROR_con_direccion_del_tipo": 4,
+        "NOERROR_sin_direccion_del_tipo": 4
+      }
+    }
+  ],
+  "recuentos_por_nombre": {
+    "1xbet.com": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "betsson.com": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "cam.ac.uk": {
+      "categoria_documental": "educativo",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "cambridgeenglish.org": {
+      "categoria_documental": "educativo",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "coolbet.com": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "ehess.fr": {
+      "categoria_documental": "educativo",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "em-lyon.com": {
+      "categoria_documental": "educativo",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "example.com": {
+      "categoria_documental": "control",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "jugabet.cl": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "malware.testcategory.com": {
+      "categoria_documental": "control",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "micasino.com": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "no-existe-pdns-lab.invalid": {
+      "categoria_documental": "control",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NXDOMAIN": 2
+          },
+          "dns4eu_protective": {
+            "NXDOMAIN": 2
+          },
+          "dns4eu_child": {
+            "NXDOMAIN": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NXDOMAIN": 2
+          },
+          "dns4eu_protective": {
+            "NXDOMAIN": 2
+          },
+          "dns4eu_child": {
+            "NXDOMAIN": 2
+          }
+        }
+      }
+    },
+    "nudity.testcategory.com": {
+      "categoria_documental": "control",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_con_direccion_del_tipo": 2
+          }
+        }
+      }
+    },
+    "rojabet.cl": {
+      "categoria_documental": "apuestas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "ruger.com": {
+      "categoria_documental": "armas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "sigsauer.com": {
+      "categoria_documental": "armas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    },
+    "smith-wesson.com": {
+      "categoria_documental": "armas",
+      "tipos": {
+        "A": {
+          "dns4eu_unfiltered": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_con_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        },
+        "AAAA": {
+          "dns4eu_unfiltered": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_protective": {
+            "NOERROR_sin_direccion_del_tipo": 2
+          },
+          "dns4eu_child": {
+            "NOERROR_direccion_comun": 2
+          }
+        }
+      }
+    }
+  },
+  "codigos_ede_recibidos": {
+    "29": 3
+  },
+  "comprobacion_previa": {
+    "archivo_local": "results/dns4eu-2026-11-19/preflight.json",
+    "sha256": "3c35a5d0e1e76b706144113f496c2311bc00103f44d9a75d94bd6c49bd740a37",
+    "nombre": "example.com",
+    "tipo": "A",
+    "respuestas_noerror": 3
+  },
+  "comprobacion_posterior": {
+    "archivo_local": "results/dns4eu-2026-11-19/aviso.json",
+    "sha256": "4606721ee3d1c20a531795fdc2c2f868a7ac78fd96c44aca263dd9417f04be98",
+    "nombre": "warning.joindns4.eu",
+    "mediciones": [
+      {
+        "profile": "dns4eu_unfiltered",
+        "qtype": "A",
+        "started_at_utc": "2026-11-19T12:57:19.024959+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "51.15.69.11"
+        ],
+        "error": null
+      },
+      {
+        "profile": "dns4eu_unfiltered",
+        "qtype": "AAAA",
+        "started_at_utc": "2026-11-19T12:57:19.931475+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+        ],
+        "error": null
+      },
+      {
+        "profile": "dns4eu_protective",
+        "qtype": "A",
+        "started_at_utc": "2026-11-19T12:57:20.413254+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "51.15.69.11"
+        ],
+        "error": null
+      },
+      {
+        "profile": "dns4eu_protective",
+        "qtype": "AAAA",
+        "started_at_utc": "2026-11-19T12:57:21.326858+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+        ],
+        "error": null
+      },
+      {
+        "profile": "dns4eu_child",
+        "qtype": "A",
+        "started_at_utc": "2026-11-19T12:57:21.814472+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "51.15.69.11"
+        ],
+        "error": null
+      },
+      {
+        "profile": "dns4eu_child",
+        "qtype": "AAAA",
+        "started_at_utc": "2026-11-19T12:57:22.708353+00:00",
+        "rcode": "NOERROR",
+        "addresses": [
+          "2001:bc8:1640:3ffd:dc00:ff:fe4a:3ec9"
+        ],
+        "error": null
+      }
+    ]
+  },
+  "politica": "https://legal-documents-dns4eu.s3.fr-par.scw.cloud/DNS4EU-Public-DNS-Resolver-policy-2025.pdf",
+  "direcciones_doh": "https://joindns4.eu/for-public"
+}
