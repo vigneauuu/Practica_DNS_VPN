@@ -11,6 +11,7 @@ import dns.exception
 import dns.message
 import httpx
 
+from pdns_lab.corpus import experimental_rows
 from pdns_lab.dnsprobe import summarize_response, utcnow
 
 ENDPOINTS = {
@@ -39,6 +40,10 @@ def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
     parser.add_argument("--corpus", type=Path, default=Path("dataset/piloto-50-2026-10-30.csv"))
+    parser.add_argument("--todos-educativos", action="store_true",
+                        help="incluye todos los dominios educativos del archivo")
+    parser.add_argument("--control-adicional", action="append", default=[], metavar="DOMINIO",
+                        help="añade un control técnico al inicio de cada ronda")
     profiles = parser.add_mutually_exclusive_group()
     profiles.add_argument("--mullvad", action="store_const", dest="endpoints", const=MULLVAD_ENDPOINTS,
                           help="mide solo los dos perfiles públicos de Mullvad")
@@ -47,11 +52,12 @@ def main():
     parser.set_defaults(endpoints=ENDPOINTS)
     args = parser.parse_args()
     use_http2 = args.endpoints is not ENDPOINTS
-    corpus = list(csv.DictReader(args.corpus.open(encoding="utf-8")))
+    with args.corpus.open(encoding="utf-8", newline="") as source:
+        corpus = list(experimental_rows(csv.DictReader(source)))
     educational = sorted(row["domain"] for row in corpus if row["categories"] == "educativo")[:4]
-    cases = [(name, "control") for name in CONTROLS]
+    cases = [(name, "control") for name in [*CONTROLS, *args.control_adicional]]
     cases += [(row["domain"], row["categories"]) for row in corpus
-              if row["categories"] != "educativo" or row["domain"] in educational]
+              if args.todos_educativos or row["categories"] != "educativo" or row["domain"] in educational]
 
     def measure(pair):
         profile, endpoint = pair
