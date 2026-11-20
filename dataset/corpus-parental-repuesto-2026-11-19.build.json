@@ -1,0 +1,43 @@
+{
+  "filas_iniciales": 2000,
+  "filas_conservadas": 1734,
+  "etiquetas_armas_retiradas": 266,
+  "incorporaciones": 266,
+  "incorporaciones_por_fuente": {
+    "CRUCH": 22,
+    "IPEDS HD2024": 177,
+    "Ofcom": 18,
+    "Piloto": 13,
+    "Subtel": 36
+  },
+  "incorporaciones_por_categoria": {
+    "adultos": 22,
+    "apuestas": 39,
+    "armas": 3,
+    "educativo": 202
+  },
+  "composicion": {
+    "adultos": 422,
+    "apuestas": 439,
+    "armas": 3,
+    "educativo": 202,
+    "popular": 400,
+    "referencia_biblioteca": 534
+  },
+  "dominios_unicos": 2000,
+  "revisiones_finales": 0,
+  "portales_directorio_CRUCH": 30,
+  "coincidencias_educativas_disponibles_por_pais": {
+    "CL": 22,
+    "US": 2146
+  },
+  "semilla": 20261027,
+  "sha256_registros_CRUCH": "a4af429036d02b1e3ee20590c9b1ec5c8e7b54116483c2becee6c2dc7af241b0",
+  "sha256_IPEDS": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+  "sha256_ROR": "40bdfe53bcf8c5216ce9f1af35ab07b4851aa6083738654ac6c570834f98136b",
+  "sha256_panel": "b201dd7d285bdfa0066595e34c38d4968282f59db28a7f8866f800c7c5120fd9",
+  "sha256_lista_Ofcom": "e78530878955b94c39e9690092a53b408034d2b7a62c6d3e3c8b25ae80eff597",
+  "sha256_inventario_anterior": "7c88702279954ed3875d818ad53e544a0f887f89d927c549b8b631dd2bbaba9c",
+  "sha256_piloto_documental": "1512c394b4b59714fb6c99d9036717246ff147cb49fb659acaf360f95ca8ec71",
+  "sha256_corpus": "e62f05e9a764ccfa741dfbf486a578bb59859b6a41d04d5679763f5c910c7bfc"
+}
