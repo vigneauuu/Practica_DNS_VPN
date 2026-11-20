@@ -153,11 +153,11 @@ def main(argv=None):
     parent.add_argument("--reference-source", default="dataset/fuentes/ut1_liste_bu_dominios_2026-10-27.txt")
     parent.add_argument("--output", default="dataset/corpus-parental-candidatos.csv")
     plan = sub.add_parser("study-plan")
-    plan.add_argument("--corpus", default="dataset/corpus-parental-candidatos.csv")
+    plan.add_argument("--corpus")
     plan.add_argument("--study", default="config/estudio.json")
     plan.add_argument("--output")
     select = sub.add_parser("corpus-select")
-    select.add_argument("--corpus", default="dataset/corpus-parental-candidatos.csv")
+    select.add_argument("--corpus")
     select.add_argument("--study", default="config/estudio.json")
     select.add_argument("--output", required=True)
     review = sub.add_parser("corpus-review")
@@ -208,10 +208,15 @@ def main(argv=None):
                   "multilabel_domains": sum("|" in r["categories"] for r in rows)})
         elif args.command == "corpus-parental-build":
             dump(build_parental_candidates(args.corpus, args.study, args.reference_source, args.output))
-        elif args.command == "study-plan":
-            dump(plan_study(args.corpus, args.study), args.output)
-        elif args.command == "corpus-select":
-            dump(select_study(args.corpus, args.study, args.output))
+        elif args.command in {"study-plan", "corpus-select"}:
+            corpus = args.corpus
+            if corpus is None:
+                study = json.loads(Path(args.study).read_text(encoding="utf-8"))
+                corpus = study.get("candidate_corpus", "dataset/corpus-parental-candidatos.csv")
+            if args.command == "study-plan":
+                dump(plan_study(corpus, args.study), args.output)
+            else:
+                dump(select_study(corpus, args.study, args.output))
         elif args.command == "corpus-review":
             rows = read_corpus(args.corpus)
             categories = set(args.categories.split("|"))
