@@ -21,7 +21,7 @@ La auditoría actual distingue:
 | Dominios con revisión final aprobada | 0 | Hay coincidencias documentales para 52 nombres |
 | Meta de selección final | 2.000 | Únicos y con evidencia de categoría |
 | Candidatos disponibles para revisar después del cotejo de procedencia | 1.734 | Se retiró la etiqueta de armas a 266 nombres |
-| Reemplazos necesarios para alcanzar 2.000 | Al menos 266 | La revisión del resto puede requerir otros reemplazos |
+| Reemplazos incorporados en el inventario repuesto | 266 | Altas con procedencia documentada; devuelve el inventario a 2.000 candidatos sin validación individual final |
 
 Las 14 entradas con etiquetas adulto y phishing se cuentan una vez por su etiqueta candidata de adulto. El archivo heredado de armas es idéntico a la lista `agressif` de UT1, que reúne sitios de racismo, antisemitismo e incitación al odio. Sus 266 nombres válidos se conservan en el inventario histórico. La selección y las nuevas mediciones omiten la etiqueta de armas de esa fuente hasta que exista una revisión individual documentada. El cotejo identificó 40 nombres registrados por instituciones educativas y 12 asociados a apuestas. [Fuentes, resultados y procedimiento](cotejo-corpus-2026-11-19.md)
 
@@ -29,7 +29,7 @@ Las 14 entradas con etiquetas adulto y phishing se cuentan una vez por su etique
 
 1. Identificar fuentes pertinentes y su taxonomía, versión, fecha y método de categorización. Comparar fuentes alternativas; buscar el corpus previo del trabajo de Nicolás Rojas si está disponible, sin afirmar que ya se recuperó.
 2. Normalizar y deduplicar; conservar etiquetas múltiples, desacuerdos y procedencia. Revisar evidencia con responsable y fecha, separando actividad de categoría.
-3. Consultar `pdns-lab study-plan`. El resultado reproducible está en `docs/evidencia/plan-corpus-2000.json`.
+3. Consultar `pdns-lab study-plan`. La configuración apunta al inventario repuesto. El resultado está en [el plan vigente](evidencia/plan-corpus-repuesto-2026-11-19.json).
 4. Al reunir suficientes revisados, usar `pdns-lab corpus-select --output results/corpus-parental-2000.csv`. Selecciona exactamente 2.000 sin reemplazo y guarda semilla, composición y SHA-256. Si faltan revisados, falla sin crear un archivo final incompleto. La selección no impone balance por categoría; la composición y cualquier necesidad de ajuste se revisan antes de medir.
 5. Registrar para cada perfil su política, plan, configuración, transporte, referencia y evidencia. Evaluar cada categoría según lo que el proveedor declare restringir. Las configuraciones iniciales y la ampliación se describen en el [inventario de servicios](inventario_servicios.md).
 6. Calibrar y medir con controles; informar indeterminados. Estimar aciertos o errores solo respecto de categorías y decisiones esperadas revisadas. Acuerdo, Kappa y similitud siguen siendo descriptores de acuerdo, no verdad de referencia.
@@ -47,6 +47,8 @@ La adquisición y validación semántica faltantes, la cobertura final de catego
 Se descargó el archivo oficial `https://dsi.ut-capitole.fr/blacklists/download/liste_bu.tar.gz`. La descripción UT1 identifica una lista de uso universitario local; no es una garantía de benignidad ni equivalencia con un dataset educativo. Del snapshot se seleccionaron sin reemplazo 534 nombres válidos que no estaban en la base parental, con semilla 20261027. Esta cantidad completa la meta del inventario candidato y añade un grupo de contraste de otra procedencia. Su composición deberá revisarse antes de la medición final.
 
 `dataset/corpus-parental-candidatos.csv` contiene exactamente 2.000 candidatos únicos. `dataset/corpus-parental-candidatos.build.json` conserva rechazos, hashes y cantidades; cada fila nueva registra línea y fuente. El snapshot reproducible está en `dataset/fuentes/` y el archivo comprimido original queda fuera del repositorio. El inventario histórico `dataset/corpus.csv` permanece intacto. Reconstruir a otra salida con `pdns-lab corpus-parental-build --output results/parental-reconstruido.csv`.
+
+El [inventario actual](../dataset/corpus-parental-repuesto-2026-11-19.csv) conserva los 1.734 candidatos aptos del inventario anterior e incorpora 266 nombres con procedencia registrada. Contiene 2.000 candidatos y mantiene pendiente su validación final. [Reglas y reproducción de la reposición](reposicion-corpus-2026-11-19.md)
 
 ## Revisión de fuentes y etiquetas antes de medir
 
