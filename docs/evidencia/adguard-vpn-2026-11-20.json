@@ -1,0 +1,512 @@
+{
+  "domains": {
+    "1xbet.com": "apuestas_subtel",
+    "betfair.com": "apuestas",
+    "betsson.com": "apuestas_subtel",
+    "bwin.com": "apuestas",
+    "cam.ac.uk": "educativo",
+    "cambridgeenglish.org": "educativo",
+    "coolbet.com": "apuestas_subtel",
+    "ehess.fr": "educativo",
+    "em-lyon.com": "educativo",
+    "example.com": "control",
+    "jugabet.cl": "apuestas_subtel",
+    "malware.testcategory.com": "control",
+    "micasino.com": "apuestas_subtel",
+    "no-existe-pdns-lab.invalid": "control",
+    "nudity.testcategory.com": "control",
+    "pokerstars.com": "apuestas",
+    "pornhub.com": "adultos",
+    "rojabet.cl": "apuestas_subtel",
+    "ruger.com": "armas",
+    "sigsauer.com": "armas",
+    "smith-wesson.com": "armas",
+    "stripchat.com": "adultos",
+    "williamhill.com": "apuestas",
+    "xnxx.com": "adultos",
+    "xvideos.com": "adultos"
+  },
+  "rounds_per_phase": 2,
+  "tunnel_same_egress": true,
+  "tunnel_splits_from_reference": true,
+  "phases": {
+    "doh_sin_filtro": {
+      "queries": 100,
+      "answers": 100,
+      "transport": {
+        "doh_http2": 100
+      },
+      "route_checks": 4,
+      "route_interfaces": [
+        "wlan0"
+      ],
+      "resolver_in_container": null,
+      "countries": [
+        "CL"
+      ],
+      "started_utc": "2026-11-20T00:50:58.139300+00:00",
+      "finished_utc": "2026-11-20T00:51:16.166461+00:00",
+      "groups": {
+        "adultos": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "apuestas": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "sin_direccion": 8
+            }
+          }
+        },
+        "apuestas_subtel": {
+          "A": {
+            "queries": 12,
+            "states": {
+              "direccion": 12
+            }
+          },
+          "AAAA": {
+            "queries": 12,
+            "states": {
+              "direccion": 6,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "armas": {
+          "A": {
+            "queries": 6,
+            "states": {
+              "direccion": 6
+            }
+          },
+          "AAAA": {
+            "queries": 6,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 4
+            }
+          }
+        },
+        "control": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          }
+        },
+        "educativo": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 4,
+              "sin_direccion": 4
+            }
+          }
+        }
+      },
+      "raw_sha256": "dd7422b4756919b5ea638f7e5cfcd1600fda996c16fb207e7fdbcfa11981cab1"
+    },
+    "doh_familiar": {
+      "queries": 100,
+      "answers": 100,
+      "transport": {
+        "doh_http2": 100
+      },
+      "route_checks": 4,
+      "route_interfaces": [
+        "wlan0"
+      ],
+      "resolver_in_container": null,
+      "countries": [
+        "CL"
+      ],
+      "started_utc": "2026-11-20T00:50:58.141114+00:00",
+      "finished_utc": "2026-11-20T00:51:18.808787+00:00",
+      "groups": {
+        "adultos": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion_aviso": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "ede_politica": 8
+            }
+          }
+        },
+        "apuestas": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "sin_direccion": 8
+            }
+          }
+        },
+        "apuestas_subtel": {
+          "A": {
+            "queries": 12,
+            "states": {
+              "direccion": 12
+            }
+          },
+          "AAAA": {
+            "queries": 12,
+            "states": {
+              "direccion": 6,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "armas": {
+          "A": {
+            "queries": 6,
+            "states": {
+              "direccion": 6
+            }
+          },
+          "AAAA": {
+            "queries": 6,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 4
+            }
+          }
+        },
+        "control": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          }
+        },
+        "educativo": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 4,
+              "sin_direccion": 4
+            }
+          }
+        }
+      },
+      "raw_sha256": "30695b6ec71cabde1c4bda575d4f97927c76964089a46095b7daf9334ae72e8e"
+    },
+    "tun_sin_filtro": {
+      "queries": 100,
+      "answers": 99,
+      "transport": {
+        "udp": 99,
+        "error": 1
+      },
+      "route_checks": 4,
+      "route_interfaces": [
+        "tun0"
+      ],
+      "resolver_in_container": "46.243.231.30",
+      "countries": [
+        "US"
+      ],
+      "started_utc": "2026-11-20T04:17:15.488199+00:00",
+      "finished_utc": "2026-11-20T04:17:36.922893+00:00",
+      "groups": {
+        "adultos": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "apuestas": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "sin_direccion": 8
+            }
+          }
+        },
+        "apuestas_subtel": {
+          "A": {
+            "queries": 12,
+            "states": {
+              "direccion": 12
+            }
+          },
+          "AAAA": {
+            "queries": 12,
+            "states": {
+              "direccion": 6,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "armas": {
+          "A": {
+            "queries": 6,
+            "states": {
+              "direccion": 5,
+              "error": 1
+            }
+          },
+          "AAAA": {
+            "queries": 6,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 4
+            }
+          }
+        },
+        "control": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          }
+        },
+        "educativo": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 4,
+              "sin_direccion": 4
+            }
+          }
+        }
+      },
+      "raw_sha256": "37e94c667c42cc7794d982b842237b25556165d4db7f414c8cc819391331330c"
+    },
+    "tun_familiar": {
+      "queries": 100,
+      "answers": 100,
+      "transport": {
+        "udp": 100
+      },
+      "route_checks": 4,
+      "route_interfaces": [
+        "tun0"
+      ],
+      "resolver_in_container": "46.243.231.30",
+      "countries": [
+        "US"
+      ],
+      "started_utc": "2026-11-20T04:18:56.528173+00:00",
+      "finished_utc": "2026-11-20T04:19:12.124697+00:00",
+      "groups": {
+        "adultos": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion_aviso": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "ede_politica": 8
+            }
+          }
+        },
+        "apuestas": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "sin_direccion": 8
+            }
+          }
+        },
+        "apuestas_subtel": {
+          "A": {
+            "queries": 12,
+            "states": {
+              "direccion": 12
+            }
+          },
+          "AAAA": {
+            "queries": 12,
+            "states": {
+              "direccion": 6,
+              "sin_direccion": 6
+            }
+          }
+        },
+        "armas": {
+          "A": {
+            "queries": 6,
+            "states": {
+              "direccion": 6
+            }
+          },
+          "AAAA": {
+            "queries": 6,
+            "states": {
+              "direccion": 2,
+              "sin_direccion": 4
+            }
+          }
+        },
+        "control": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 6,
+              "nxdomain": 2
+            }
+          }
+        },
+        "educativo": {
+          "A": {
+            "queries": 8,
+            "states": {
+              "direccion": 8
+            }
+          },
+          "AAAA": {
+            "queries": 8,
+            "states": {
+              "direccion": 4,
+              "sin_direccion": 4
+            }
+          }
+        }
+      },
+      "raw_sha256": "ac1c42ad0d32b15ed4bb245a4f402f74b16e3012e0e96d3273e2ec8ee69bd572"
+    },
+    "socks": {
+      "requests": 16,
+      "controls_by_route": {
+        "direct": {
+          "example.com": {
+            "http_200": 2
+          },
+          "nudity.testcategory.com": {
+            "http_200": 2
+          },
+          "malware.testcategory.com": {
+            "http_200": 2
+          },
+          "no-existe-pdns-lab.invalid": {
+            "curl_6": 2
+          }
+        },
+        "proxy": {
+          "example.com": {
+            "http_200": 2
+          },
+          "nudity.testcategory.com": {
+            "http_200": 2
+          },
+          "malware.testcategory.com": {
+            "http_200": 2
+          },
+          "no-existe-pdns-lab.invalid": {
+            "curl_97": 2
+          }
+        }
+      },
+      "route_checks": 4,
+      "egress_changes": true,
+      "started_utc": "2026-11-20T04:26:56.758210+00:00",
+      "finished_utc": "2026-11-20T04:27:03.348947+00:00",
+      "raw_sha256": "9a5ae784205432da9237b109f1fae1451fb0c53e712614e0870e4a682ada86fc"
+    }
+  }
+}
