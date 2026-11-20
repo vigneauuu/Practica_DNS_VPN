@@ -33,6 +33,14 @@ DNS4EU_ENDPOINTS = {
     "dns4eu_protective": "https://protective.joindns4.eu/dns-query",
     "dns4eu_child": "https://child.joindns4.eu/dns-query",
 }
+FAMILY_ENDPOINTS = {
+    "cloudflare_standard": ENDPOINTS["cloudflare_standard"],
+    "cloudflare_security": "https://security.cloudflare-dns.com/dns-query",
+    "cloudflare_family": ENDPOINTS["cloudflare_family"],
+    "adguard_open": ENDPOINTS["adguard_open"],
+    "adguard_default": "https://dns.adguard-dns.com/dns-query",
+    "adguard_family": ENDPOINTS["adguard_family"],
+}
 CONTROLS = ["example.com", "no-existe-pdns-lab.invalid", "nudity.testcategory.com", "malware.testcategory.com"]
 
 
@@ -49,6 +57,8 @@ def main():
                           help="mide solo los dos perfiles públicos de Mullvad")
     profiles.add_argument("--dns4eu", action="store_const", dest="endpoints", const=DNS4EU_ENDPOINTS,
                           help="mide los perfiles sin filtro, protector y con protección infantil de DNS4EU")
+    profiles.add_argument("--familia", action="store_const", dest="endpoints", const=FAMILY_ENDPOINTS,
+                          help="contrasta perfiles familiares y de referencia de Cloudflare y AdGuard")
     parser.set_defaults(endpoints=ENDPOINTS)
     args = parser.parse_args()
     use_http2 = args.endpoints is not ENDPOINTS

@@ -45,14 +45,13 @@ def estado(fila, aviso):
     return "sin_direccion"
 
 
-def evaluar(observado, esperado):
-    if any(rondas != ["direccion", "direccion"] for perfil, rondas in observado.items()
-           if perfil in REFERENCIAS):
+def evaluar(observado, esperado, infantil=INFANTIL, referencias=REFERENCIAS):
+    if any(observado[perfil] != ["direccion", "direccion"] for perfil in referencias):
         return "sin_referencia"
-    infantil = observado[INFANTIL]
-    if infantil == ["aviso", "aviso"]:
+    rondas_infantil = observado[infantil]
+    if rondas_infantil == ["aviso", "aviso"]:
         return "restriccion_observada" if esperado == "restringir" else "aviso_en_educativo"
-    if infantil == ["direccion", "direccion"]:
+    if rondas_infantil == ["direccion", "direccion"]:
         return "sin_senal" if esperado == "restringir" else "resolucion_observada"
     return "infantil_indeterminado"
 
