@@ -27,4 +27,9 @@ for grupo in educativo ofcom; do
   python scripts/contrastar_doh.py --familia --todos-educativos --corpus "$corpus" "$salida.json"
   python scripts/evaluar_filtros_familiares.py "$corpus" "$salida.json" "$salida-resumen.json"
 done
+python scripts/graficar_evaluacion_familiar.py \
+  docs/evidencia/politica-dns4eu-2026-11-19.json \
+  docs/evidencia/filtros-familiares-2026-11-19.json \
+  docs/evidencia/filtros-familiares-ofcom-2026-11-19.json \
+  docs/informe/figuras/evaluacion-perfiles-familiares.pdf
 ```
