@@ -1,0 +1,2038 @@
+{
+  "ventana_inicio_utc": [
+    "2026-11-20T00:50:55.919739+00:00",
+    "2026-11-20T00:51:41.232459+00:00"
+  ],
+  "sha256_referencia": "e78530878955b94c39e9690092a53b408034d2b7a62c6d3e3c8b25ae80eff597",
+  "sha256_respuestas_locales": "a55b8756f263c1ca2a44d3d5693b3369f9d79d1efc79ff9f8fa7dbcb5994c8ec",
+  "consultas": 576,
+  "respuestas_dns": 576,
+  "version_http": {
+    "HTTP/2": 576
+  },
+  "errores_por_perfil": {},
+  "aviso_adguard": {
+    "direccion": "94.140.14.35",
+    "fuente": "https://github.com/AdguardTeam/AdGuardHome/issues/5028"
+  },
+  "controles": {
+    "example.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "no-existe-pdns-lab.invalid": {
+      "A": {
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      }
+    },
+    "nudity.testcategory.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "malware.testcategory.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    }
+  },
+  "por_dominio": {
+    "cloudflare": {
+      "A": {
+        "adultos": {
+          "restriccion_observada": 18
+        },
+        "educativo": {
+          "resolucion_observada": 2
+        }
+      },
+      "AAAA": {
+        "adultos": {
+          "sin_referencia": 18
+        },
+        "educativo": {
+          "sin_referencia": 1,
+          "resolucion_observada": 1
+        }
+      }
+    },
+    "adguard": {
+      "A": {
+        "adultos": {
+          "restriccion_observada": 18
+        },
+        "educativo": {
+          "resolucion_observada": 2
+        }
+      },
+      "AAAA": {
+        "adultos": {
+          "sin_referencia": 18
+        },
+        "educativo": {
+          "sin_referencia": 1,
+          "resolucion_observada": 1
+        }
+      }
+    }
+  },
+  "detalle": [
+    {
+      "dominio": "www.pornzog.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.pornzog.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.pornzog.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.pornzog.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.txxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.txxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.txxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.txxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.txxx.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.txxx.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.txxx.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.txxx.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.upornia.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.upornia.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.upornia.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.upornia.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hdzog.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hdzog.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hdzog.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hdzog.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hdzog.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hdzog.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hdzog.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hdzog.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.thegay.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.thegay.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.thegay.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.thegay.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.thegay.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.thegay.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.thegay.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.thegay.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.ooxxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.ooxxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.ooxxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.ooxxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hotmovs.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hotmovs.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hotmovs.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hotmovs.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hclips.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hclips.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.hclips.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.hclips.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.vjav.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.vjav.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.vjav.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.vjav.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.pornl.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.pornl.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.pornl.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.pornl.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.voyeurhit.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.voyeurhit.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.voyeurhit.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.voyeurhit.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.manysex.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.manysex.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.manysex.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.manysex.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.tubepornclassic.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.tubepornclassic.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.tubepornclassic.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.tubepornclassic.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.shemalez.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.shemalez.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.shemalez.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.shemalez.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.shemalez.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.shemalez.tube",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "www.shemalez.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.shemalez.tube",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    }
+  ]
+}

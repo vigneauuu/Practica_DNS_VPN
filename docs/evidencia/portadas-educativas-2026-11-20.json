@@ -1,0 +1,2605 @@
+{
+  "sha256_corpus": "e62f05e9a764ccfa741dfbf486a578bb59859b6a41d04d5679763f5c910c7bfc",
+  "portales": 199,
+  "max_bytes_por_portada": 393216,
+  "estados": {
+    "fallo_de_lectura": 4,
+    "html_sin_ambos_indicios": 11,
+    "redireccion_fuera_del_portal": 2,
+    "respuesta_http_sin_portada": 16,
+    "titulo_y_enlace_academico": 166
+  },
+  "resultados": [
+    {
+      "dominio": "aoma.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://aoma.edu/",
+      "http": 200,
+      "titulo": "Regionally Accredited Acupuncture College Austin,TX 奥斯汀中医学院Visit our FacebookVisit our InstagramVisit our TwitterVisit our FacebookVisit our Instagram",
+      "enlaces_academicos": [],
+      "bytes_leidos": 165165,
+      "sha256_bytes_leidos": "93ba2887c3a84a54770a102a1e731b0ba64367f74fec2705bfdafb3f4bbeb42f",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "byu.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://byu.edu/",
+      "http": 301,
+      "estado": "redireccion_fuera_del_portal"
+    },
+    {
+      "dominio": "epic.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://www.epic.edu/",
+      "http": 200,
+      "titulo": "Bible College in the United States | EPIC Bible College",
+      "enlaces_academicos": [
+        "www.epic.edu/admissions",
+        "www.epic.edu/degrees"
+      ],
+      "bytes_leidos": 124395,
+      "sha256_bytes_leidos": "66d28be6b6baa6abada73c15262f36d75afa1b9fdb58247931380836666751f9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "fairfield.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://www.fairfield.edu/",
+      "http": 200,
+      "titulo": "Fairfield University",
+      "enlaces_academicos": [
+        "www.fairfield.edu/admission-and-aid/visit/index.html",
+        "www.fairfield.edu/admission-and-aid/apply/index.html"
+      ],
+      "bytes_leidos": 223476,
+      "sha256_bytes_leidos": "4222eb20a7b526493eea4b3a1526bfae5a55fc708081a0377b4104faf6bf7f57",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "gsw.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://www.gsw.edu/",
+      "http": 200,
+      "titulo": "Georgia Southwestern State University",
+      "enlaces_academicos": [
+        "www.gsw.edu/admissions/apply",
+        "www.gsw.edu/academic-affairs/iep/sacscoc-accreditation"
+      ],
+      "bytes_leidos": 335750,
+      "sha256_bytes_leidos": "67661c5fe39505768363355947f2ef73d76133a997c4d00b629dbf091a672ecb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "kc.edu",
+      "inicio_utc": "2026-11-20T04:12:32+00:00",
+      "url": "https://kc.edu/",
+      "http": 200,
+      "titulo": "Home | Kettering College",
+      "enlaces_academicos": [
+        "kc.edu/admissions",
+        "kc.edu/admissions/admission-essentials"
+      ],
+      "bytes_leidos": 182849,
+      "sha256_bytes_leidos": "34fba2d5b40410186927f42899d8e344630dd03a5b23608e9b236aaad1c47921",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "lifepacific.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://lifepacific.edu/",
+      "http": 200,
+      "titulo": "Life Pacific University | Christian University in California",
+      "enlaces_academicos": [
+        "lifepacific.edu/academics/",
+        "lifepacific.edu/academics/programs-majors/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "b1b072e97ae842f736d9310221755288443804417b98afb73f0fc5760b31923f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "madisoncollege.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://madisoncollege.edu/",
+      "http": 200,
+      "titulo": "Madison Area Technical College | Madison CollegeMadison College FacebookMadison College LinkedInMadison College YouTubeMadison College Instagram",
+      "enlaces_academicos": [
+        "madisoncollege.edu/get-started/admissions",
+        "madisoncollege.edu/academics"
+      ],
+      "bytes_leidos": 72656,
+      "sha256_bytes_leidos": "6506f79a5c641b3bd1fa1be62c42fe62a385522029b58c7731f84855ba5f649f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "msmary.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://msmary.edu/",
+      "http": 200,
+      "titulo": "Mount St. Mary's University Artboard 1 apply Artboard 1 copy 2 Mount_Logo_Primary_RGB Mount_Logo_Primary_RGB give Artboard 1 copy 3 info link Mount_Lo",
+      "enlaces_academicos": [
+        "msmary.edu/admissions/visit-campus/index.html",
+        "msmary.edu/academics/index.html"
+      ],
+      "bytes_leidos": 236058,
+      "sha256_bytes_leidos": "8f5811bbf481e40a8243e9e2e9361e20808bf47475acad160e08cac3ab9b4c70",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "necmusic.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://necmusic.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "oregonstate.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://oregonstate.edu/",
+      "http": 200,
+      "titulo": "Oregon State University",
+      "enlaces_academicos": [
+        "oregonstate.edu/academics",
+        "registrar.oregonstate.edu/osu-academic-calendar"
+      ],
+      "bytes_leidos": 67041,
+      "sha256_bytes_leidos": "e74cf034767002e38fb8415532de7df20c9330af17984aa41fde90f9cd2903e6",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "point.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://point.edu/",
+      "http": 200,
+      "titulo": "Point University | Top Christian University in Georgia",
+      "enlaces_academicos": [
+        "point.edu/academics/",
+        "point.edu/admissions/"
+      ],
+      "bytes_leidos": 301028,
+      "sha256_bytes_leidos": "21bdcf722d35cccce589e00a2f110cdeef95ade3b38d9efe7fba14e8a04cf308",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "uda.cl",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://uda.cl/",
+      "http": 200,
+      "titulo": "Universidad de Atacama – Somos la universidad del Estado en la región de Atacama ⚒️ 43 años de trayectoria 🎖️ Acreditada en calidad de Avanzada Copiap",
+      "enlaces_academicos": [
+        "pregrado.uda.cl/index.php/calendario-academico-2026/",
+        "admision.uda.cl/index.php/carreras-profesionales-de-acceso-centralizado-2/"
+      ],
+      "bytes_leidos": 244250,
+      "sha256_bytes_leidos": "34c45ef911eba589854c0a046248cb0f1b2c48cc4ecde2bce9d28c2b3cee9524",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "uiowa.edu",
+      "inicio_utc": "2026-11-20T04:12:33+00:00",
+      "url": "https://uiowa.edu/",
+      "http": 200,
+      "titulo": "The University of Iowa",
+      "enlaces_academicos": [
+        "www.maui.uiowa.edu/maui/pub/admissions/webinquiry/undergraduate.page",
+        "uiowa.edu/admissions"
+      ],
+      "bytes_leidos": 101197,
+      "sha256_bytes_leidos": "5e89b4bce05f786c26b520507b0592befe9a0b95f25871ee8a20665f1e0ca2a9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "usm.cl",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://usm.cl/",
+      "http": 200,
+      "titulo": "Inicio - Universidad Técnica Federico Santa María",
+      "enlaces_academicos": [
+        "usm.cl/sitios-academicos/",
+        "usm.cl/admision/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "145d4d4904d66f3549604328357687c06a92eea00709e0e22664052eb137c0e4",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "wooster.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://wooster.edu/",
+      "http": 200,
+      "titulo": "Home Page",
+      "enlaces_academicos": [
+        "wooster.edu/academics/areas-of-study",
+        "wooster.edu/academics/student-success"
+      ],
+      "bytes_leidos": 182517,
+      "sha256_bytes_leidos": "5c544e30e0807ae3268cdff1e82360921fda697f510801bc17fbd4f2d021af49",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.abac.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://www.abac.edu/",
+      "http": 200,
+      "titulo": "Home | Abraham Baldwin Agricultural College",
+      "enlaces_academicos": [
+        "www.abac.edu/admissions/index.html",
+        "www.abac.edu/academics/bainbridge.html"
+      ],
+      "bytes_leidos": 179948,
+      "sha256_bytes_leidos": "6b5b6d4769cebd1e6642ef504584ad8bf4d301d2e3e4d2bbe59237af10b49316",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.albion.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://www.albion.edu/",
+      "http": 200,
+      "titulo": "Albion CollegebookinfomappencilgiftAlbion CollegeSearchbookinfomappencilgiftSearchAlbion CollegeGiveOpenCloseOpenClosepreviousnextTimeTimeTimeAlbionFa",
+      "enlaces_academicos": [
+        "www.albion.edu/academics/programs/",
+        "www.albion.edu/admission/request-info/"
+      ],
+      "bytes_leidos": 110351,
+      "sha256_bytes_leidos": "4e569d819e5d94762b5977d31e9d47973db7201b5619c63e93ca8d437985abbc",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.anselm.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://www.anselm.edu/",
+      "http": 200,
+      "titulo": "Homepage | Saint Anselm College",
+      "enlaces_academicos": [
+        "www.anselm.edu/about/offices-centers-institutes/academic-affairs/career-development-center",
+        "www.anselm.edu/about/offices-centers-institutes/centers-institutes/new-hampshire-institute-politics/academics/research-centers/center-study-religion-and-public-life"
+      ],
+      "bytes_leidos": 219260,
+      "sha256_bytes_leidos": "c6986aed3c386ae4eaeac2d6214fd34e4c5c9431b8f290ca4ee0b4e8fd44359a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.arcadia.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://www.arcadia.edu/",
+      "http": 200,
+      "titulo": "Home | Arcadia University",
+      "enlaces_academicos": [
+        "www.arcadia.edu/admissions/",
+        "www.arcadia.edu/admissions/undergraduate/apply/"
+      ],
+      "bytes_leidos": 383842,
+      "sha256_bytes_leidos": "394edbf1121e913a1ff77c0fbb7416e9a4bdda21c68cdbe6f26fc355bb62597f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.artacademy.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://www.artacademy.edu/",
+      "http": 200,
+      "titulo": "College of Art and Design Since 1869 - Art Academy of Cincinnati",
+      "enlaces_academicos": [
+        "www.artacademy.edu/admissions/how-to-apply/",
+        "www.artacademy.edu/admissions/explore-cincinnati/"
+      ],
+      "bytes_leidos": 296195,
+      "sha256_bytes_leidos": "009bd7c06e28bfe903cb93fa909ef2e45b6e81e0a21893b32b4eb4d8c2e87d92",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.atom.edu",
+      "inicio_utc": "2026-11-20T04:12:34+00:00",
+      "url": "https://atom.edu/",
+      "http": 200,
+      "titulo": "Atlantic Institute of Oriental Medicine – Knowledge. Compassion. Healing.",
+      "enlaces_academicos": [
+        "atom.edu/atom-masters-admission",
+        "atom.edu/atom-daom-admissions"
+      ],
+      "bytes_leidos": 130366,
+      "sha256_bytes_leidos": "221cf66a0144a0d94ba6ad6106f4cf42ff4b7955fa295b0be28d6d3ac9310578",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.bcs.edu",
+      "inicio_utc": "2026-11-20T04:12:35+00:00",
+      "url": "https://bcs.edu/",
+      "http": 200,
+      "titulo": "Home - Byzantine Catholic Seminary of Saints Cyril and Methodius",
+      "enlaces_academicos": [
+        "bcs.edu/wp-content/uploads/2025/02/Academic-Catalog-2025.pdf"
+      ],
+      "bytes_leidos": 267368,
+      "sha256_bytes_leidos": "8f4f8c0c3d357a41e4111bcc61018223519ac6788e399c93ea2b12fc9587a9e1",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.bennington.edu",
+      "inicio_utc": "2026-11-20T04:12:35+00:00",
+      "url": "https://www.bennington.edu/",
+      "http": 200,
+      "titulo": "Home | Bennington College",
+      "enlaces_academicos": [
+        "www.bennington.edu/academics",
+        "www.bennington.edu/admissions-and-financial-aid"
+      ],
+      "bytes_leidos": 56930,
+      "sha256_bytes_leidos": "03e653d768eea252f7253f30a31d65f9b8560b9dea236d1ebd034bd03155c465",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.bethelks.edu",
+      "inicio_utc": "2026-11-20T04:12:35+00:00",
+      "url": "https://www.bethelks.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.blc.edu",
+      "inicio_utc": "2026-11-20T04:12:35+00:00",
+      "url": "https://www.blc.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.bloomfield.edu",
+      "inicio_utc": "2026-11-20T04:12:35+00:00",
+      "url": "https://www.bloomfield.edu/",
+      "http": 302,
+      "estado": "redireccion_fuera_del_portal"
+    },
+    {
+      "dominio": "www.butte.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://www.butte.edu/",
+      "http": 200,
+      "titulo": "Butte College",
+      "enlaces_academicos": [
+        "www.butte.edu/student-resources/academic-resources/online-learning/index.html",
+        "www.butte.edu/academic-programs/index.html"
+      ],
+      "bytes_leidos": 162935,
+      "sha256_bytes_leidos": "0407fe28a003a9ed694381e91e3e76929809fc3b1b3d0b8e9061c3c2cbafb5a1",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cambridgecollege.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://www.cambridgecollege.edu/",
+      "http": 200,
+      "titulo": "Cambridge College at Bay Path University | Certificates & Degrees",
+      "enlaces_academicos": [
+        "www.cambridgecollege.edu/academics",
+        "www.cambridgecollege.edu/academics/degrees-certificates"
+      ],
+      "bytes_leidos": 52354,
+      "sha256_bytes_leidos": "8a753fc015aac2447ccf4fdf2246e60631d7865f1da3b4016716fb74f0006863",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.capella.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://www.capella.edu/",
+      "http": 200,
+      "titulo": "Capella University | Online Degrees from an Accredited University",
+      "enlaces_academicos": [
+        "www.capella.edu/content/capella/en/degrees-programs/",
+        "www.capella.edu/online-business-degrees/"
+      ],
+      "bytes_leidos": 253060,
+      "sha256_bytes_leidos": "2e0a11dcf142eef6476eca0123b1ed1004e8f22468a4611f44273ba3781f5f4d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.caspercollege.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://caspercollege.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.ccu.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://www.ccu.edu/",
+      "http": 200,
+      "titulo": "Colorado Christian University | Premier Christ-Centered Private College",
+      "enlaces_academicos": [
+        "www.ccu.edu/academics/",
+        "www.ccu.edu/admissions/"
+      ],
+      "bytes_leidos": 50608,
+      "sha256_bytes_leidos": "c977c438e8e38d308e5d5be9bd408f7a5321263e6ede86529c2aa753f00b9a7c",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.centralaz.edu",
+      "inicio_utc": "2026-11-20T04:12:36+00:00",
+      "url": "https://www.centralaz.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.centralpenn.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "estado": "fallo_de_lectura",
+      "error": "ConnectError"
+    },
+    {
+      "dominio": "www.chaffey.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.chaffey.edu/",
+      "http": 200,
+      "titulo": "Home | Chaffey College",
+      "enlaces_academicos": [
+        "www.chaffey.edu/admissions/index.php",
+        "www.chaffey.edu/admissions/register.php"
+      ],
+      "bytes_leidos": 50343,
+      "sha256_bytes_leidos": "a934291edf5670d5bec86553d8e72e0b5f08ea455cfd74037a7b1201e490c015",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.chapman.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.chapman.edu/",
+      "http": 200,
+      "titulo": "Chapman University | A Top Private University in California | Chapman UniversityCloseToggle Section MenuChapman Universitycanva icon",
+      "enlaces_academicos": [
+        "www.chapman.edu/academics/provost/deans.aspx",
+        "www.chapman.edu/academics/index.aspx"
+      ],
+      "bytes_leidos": 206722,
+      "sha256_bytes_leidos": "2e0b6a811fefdc05e4d4a6627a3120ef04fc5b3eb14c5cf118df4702b0968c67",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.charteroak.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.charteroak.edu/",
+      "http": 200,
+      "titulo": "Finish your Degree Online | Charter Oak State College",
+      "enlaces_academicos": [
+        "www.charteroak.edu/prospective/admissions/transfer-students/index.php",
+        "www.charteroak.edu/prospective/admissions/military/index.php"
+      ],
+      "bytes_leidos": 96409,
+      "sha256_bytes_leidos": "11cec6577f0e5bb3d60a95ef6763a3edf081c816856b9fd44c13fd6346f93c09",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cincinnatistate.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.cincinnatistate.edu/",
+      "http": 200,
+      "titulo": "Home - Cincinnati State",
+      "enlaces_academicos": [
+        "www.cincinnatistate.edu/academic-calendar",
+        "www.cincinnatistate.edu/academic-advising"
+      ],
+      "bytes_leidos": 168227,
+      "sha256_bytes_leidos": "52231347e468e898b4fb657f91f6a9896c8b7d331fed6553ed5fb1f573b2c9d5",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.clark.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.clark.edu/",
+      "http": 200,
+      "titulo": "Clark College",
+      "enlaces_academicos": [
+        "www.clark.edu/academics",
+        "www.clark.edu/academics/programs/dept/culinary-institute/"
+      ],
+      "bytes_leidos": 88265,
+      "sha256_bytes_leidos": "f890f3177f3fc95432399090ebe0578a20aaf8d961ec381b015092320b4a86a5",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cmccd.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.cmccd.edu/",
+      "http": 200,
+      "titulo": "Home Page - Copper Mountain College",
+      "enlaces_academicos": [
+        "www.cmccd.edu/academics/",
+        "www.cmccd.edu/academics/degrees/"
+      ],
+      "bytes_leidos": 200153,
+      "sha256_bytes_leidos": "22601cc0b9824adeb2b7ac5d16d119cdab497e02d35e5460c6d66d199ffbddb8",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cod.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.cod.edu/",
+      "http": 200,
+      "titulo": "College of DuPage Home | College of DuPage",
+      "enlaces_academicos": [
+        "cod.edu/academics/faculty/index.html",
+        "cod.edu/admissions/visit/index.html"
+      ],
+      "bytes_leidos": 181875,
+      "sha256_bytes_leidos": "3a5c39a7b0b7167fed4a8eb5ef09a7c25597f4032bcab0099d6f0210c3ea6a38",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.coe.edu",
+      "inicio_utc": "2026-11-20T04:12:37+00:00",
+      "url": "https://www.coe.edu/",
+      "http": 200,
+      "titulo": "One of the Best Small Colleges in the Country | Coe College",
+      "enlaces_academicos": [
+        "www.coe.edu/admission/first-year-students/apply-enroll",
+        "www.coe.edu/admission/request-information"
+      ],
+      "bytes_leidos": 38472,
+      "sha256_bytes_leidos": "73247dea94b10c35117fa1cd4db5df1abea7743c28d68467ba87fc282adaad2c",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.columbia.edu",
+      "inicio_utc": "2026-11-20T04:12:38+00:00",
+      "url": "https://www.columbia.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.columbiastate.edu",
+      "inicio_utc": "2026-11-20T04:12:38+00:00",
+      "url": "https://www.columbiastate.edu/",
+      "http": 200,
+      "titulo": "Columbia State",
+      "enlaces_academicos": [
+        "www.columbiastate.edu/admissions/index.html",
+        "www.columbiastate.edu/admissions/admissions-help-page.html"
+      ],
+      "bytes_leidos": 76609,
+      "sha256_bytes_leidos": "fd6cc112ad94ac5aa014f8b5ba3f65f4c082ad9fbb98908544fe927262283bd0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.columbusstate.edu",
+      "inicio_utc": "2026-11-20T04:12:38+00:00",
+      "url": "https://www.columbusstate.edu/",
+      "http": 200,
+      "titulo": "Columbus State University Home - Columbus State University",
+      "enlaces_academicos": [
+        "www.columbusstate.edu/degrees-and-programs/",
+        "www.columbusstate.edu/admissions/"
+      ],
+      "bytes_leidos": 74274,
+      "sha256_bytes_leidos": "f17ca1cfa638b6b1a363f2a319d4d3d287d80c853fbef5974c3565ec653833e0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.concordiacollege.edu",
+      "inicio_utc": "2026-11-20T04:12:38+00:00",
+      "url": "https://www.concordiacollege.edu/",
+      "http": 200,
+      "titulo": "Concordia College",
+      "enlaces_academicos": [
+        "www.concordiacollege.edu/admission/",
+        "www.concordiacollege.edu/academics/"
+      ],
+      "bytes_leidos": 76729,
+      "sha256_bytes_leidos": "101652721963158a9ca2b4391d1b9698dcce66a83743f1e94abd8b6a5b893ce7",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.creighton.edu",
+      "inicio_utc": "2026-11-20T04:12:38+00:00",
+      "url": "https://www.creighton.edu/",
+      "http": 200,
+      "titulo": "Creighton University | A private, Jesuit university",
+      "enlaces_academicos": [
+        "www.creighton.edu/academics",
+        "www.creighton.edu/academics/degrees-programs"
+      ],
+      "bytes_leidos": 85895,
+      "sha256_bytes_leidos": "1289a0af6564c44164f22dad645a12670cf66ac39e2382702fb087339eb5eba6",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cscc.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.cscc.edu/",
+      "http": 200,
+      "titulo": "Home | Columbus State Community CollegeColumbus State Community College HomeColumbus State Community College Home",
+      "enlaces_academicos": [
+        "www.cscc.edu/admissions/apply.shtml",
+        "www.cscc.edu/admissions/visit.shtml"
+      ],
+      "bytes_leidos": 77615,
+      "sha256_bytes_leidos": "7e6adb0e73313aa80b99e7dddc08c5a959c72118925f255ab2ec1896cf074916",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.csm.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.csm.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.csus.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.csus.edu/",
+      "http": 200,
+      "titulo": "California State University, Sacramento | Sacramento State",
+      "enlaces_academicos": [
+        "www.csus.edu/student-life/academic-advising/index.html",
+        "www.csus.edu/undergraduate-studies/index.html"
+      ],
+      "bytes_leidos": 65314,
+      "sha256_bytes_leidos": "7f545f35a440fc86a675e35ecfeb17585fba30c186f5f2391f5943112cf64071",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ctu.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://ctu.edu/",
+      "http": 200,
+      "titulo": "Catholic Theological Union - Graduate School of Theology and Ministry",
+      "enlaces_academicos": [
+        "ctu.edu/academics-new/",
+        "ctu.edu/academics/degrees-and-certificates/"
+      ],
+      "bytes_leidos": 277287,
+      "sha256_bytes_leidos": "1b46e85ee1436c5708435faeac7db1e745a5b3c7e3369c7e33282682e345f089",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.culver.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://culver.edu/",
+      "http": 200,
+      "titulo": "Culver-Stockton College | Canton, Missouri",
+      "enlaces_academicos": [
+        "culver.edu/majors/",
+        "culver.edu/online-undergraduate-programs/"
+      ],
+      "bytes_leidos": 212880,
+      "sha256_bytes_leidos": "ba8c28460d7ccc734161760fc98f129bd58a143742daea0144f65aff84ff4ceb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.cw.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.cw.edu/",
+      "http": 200,
+      "titulo": "The College of Westchester | Certificate, Associate, Bachelors | White Plains, NY",
+      "enlaces_academicos": [
+        "www.cw.edu/academic-calendar",
+        "www.cw.edu/undergraduate/"
+      ],
+      "bytes_leidos": 175799,
+      "sha256_bytes_leidos": "0c2f4a106b2f008998f3414c62fdbc82161222a9f4f6767e6808f5a312383974",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.dallas.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.dallas.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.dbq.edu",
+      "inicio_utc": "2026-11-20T04:12:39+00:00",
+      "url": "https://www.dbq.edu/",
+      "http": 200,
+      "titulo": "University of Dubuque",
+      "enlaces_academicos": [
+        "www.dbq.edu/Academics/Registrar/AcademicDatesandDeadlines/",
+        "www.dbq.edu/Academics/GraduatePrograms/"
+      ],
+      "bytes_leidos": 44967,
+      "sha256_bytes_leidos": "bf25841b9ed498287d6bfa9ccb03548cf5f82c4639271b88ec4321a91e4ca819",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.dean.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.dean.edu/",
+      "http": 200,
+      "titulo": "Dean College | Private College in Franklin Massachusetts",
+      "enlaces_academicos": [
+        "www.dean.edu/admissions/visit-campus/",
+        "www.dean.edu/admissions/apply-now/"
+      ],
+      "bytes_leidos": 93015,
+      "sha256_bytes_leidos": "bef5e8170563703984c765a09bf6f5410d73327c29735394911ec84701a19d9f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.desales.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.desales.edu/",
+      "http": 200,
+      "titulo": "DeSales University | DeSales University",
+      "enlaces_academicos": [
+        "www.desales.edu/academics/index",
+        "www.desales.edu/academics/academic-programs"
+      ],
+      "bytes_leidos": 158110,
+      "sha256_bytes_leidos": "7b058da39e4c54f8313e5ba15c92f9ceb274ef9bf2786c80bf82b7ce7a865928",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.dillard.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.dillard.edu/",
+      "http": 200,
+      "titulo": "Dillard University, New Orleans - Louisiana's Oldest HBCU",
+      "enlaces_academicos": [
+        "www.dillard.edu/admissions-aid/apply-now/",
+        "www.dillard.edu/academics"
+      ],
+      "bytes_leidos": 303756,
+      "sha256_bytes_leidos": "da539db3866a54bb4ee28c2996409e29a0fc979c4973d10719b438de5243958d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.dom.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.dom.edu/",
+      "http": 200,
+      "titulo": "Dominican University Home | Dominican University",
+      "enlaces_academicos": [
+        "www.dom.edu/admission",
+        "www.dom.edu/academics/commencement"
+      ],
+      "bytes_leidos": 69973,
+      "sha256_bytes_leidos": "478291c580f3abebe07caac5aa413d38e23f6c9fbb102bd4d30759a5835a2512",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.dordt.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.dordt.edu/",
+      "http": 202,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.eccc.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://www.eccc.edu/",
+      "http": 200,
+      "titulo": "East Central Community College in Decatur, Mississippi",
+      "enlaces_academicos": [],
+      "bytes_leidos": 52518,
+      "sha256_bytes_leidos": "3bf04b61073384589d3e40368100ea87b7bd06a6b1f1e9906526f19b79f243a9",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.egcc.edu",
+      "inicio_utc": "2026-11-20T04:12:40+00:00",
+      "url": "https://egcc.edu/closure-teachout/",
+      "http": 200,
+      "titulo": "College Closed – Eastern Gateway Community College",
+      "enlaces_academicos": [
+        "egcc.edu/academics/general-information/transcript-request/",
+        "egcc.edu/academics/programs/course-catalog/"
+      ],
+      "bytes_leidos": 75393,
+      "sha256_bytes_leidos": "d82d9b938b6227cca8cf41be46c8be0f41b40a49d68ba4f192bb202106297986",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.emoryhenry.edu",
+      "inicio_utc": "2026-11-20T04:12:41+00:00",
+      "url": "https://www.emoryhenry.edu/",
+      "http": 200,
+      "titulo": "Emory & Henry University",
+      "enlaces_academicos": [
+        "www.emoryhenry.edu/academics",
+        "www.emoryhenry.edu/admission"
+      ],
+      "bytes_leidos": 73557,
+      "sha256_bytes_leidos": "e8d14a494c0869f495853187e98260ce8765a0be755d1b74728f3b7dd938e339",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.enc.edu",
+      "inicio_utc": "2026-11-20T04:12:41+00:00",
+      "estado": "fallo_de_lectura",
+      "error": "ConnectTimeout"
+    },
+    {
+      "dominio": "www.everettcc.edu",
+      "inicio_utc": "2026-11-20T04:12:41+00:00",
+      "url": "https://www.everettcc.edu/",
+      "http": 200,
+      "titulo": "",
+      "enlaces_academicos": [],
+      "bytes_leidos": 212,
+      "sha256_bytes_leidos": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.evergladesuniversity.edu",
+      "inicio_utc": "2026-11-20T04:12:41+00:00",
+      "url": "https://www.evergladesuniversity.edu/",
+      "http": 200,
+      "titulo": "Online & On-Campus Degree Programs - Everglades University",
+      "enlaces_academicos": [
+        "www.evergladesuniversity.edu/undergraduate-programs/",
+        "www.evergladesuniversity.edu/academic-calendar/"
+      ],
+      "bytes_leidos": 319519,
+      "sha256_bytes_leidos": "378013e850481ec70417378b6e473201c939bf5826ebb8bc7e2edc6373a4effe",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.fau.edu",
+      "inicio_utc": "2026-11-20T04:12:41+00:00",
+      "url": "https://www.fau.edu/",
+      "http": 200,
+      "titulo": "Florida Atlantic University | Florida Atlantic UniversityFlorida Atlantic University campuses map",
+      "enlaces_academicos": [
+        "www.fau.edu/admissions/",
+        "www.fau.edu/admissions/freshmen/"
+      ],
+      "bytes_leidos": 321453,
+      "sha256_bytes_leidos": "0804b75544688045098fb2ab3e7d2ca637bfdbfa38fe7cd7929a23c7e90d0341",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.fhda.edu",
+      "inicio_utc": "2026-11-20T04:12:42+00:00",
+      "url": "https://www.fhda.edu/",
+      "http": 200,
+      "titulo": "Welcome to Foothill-De Anza",
+      "enlaces_academicos": [],
+      "bytes_leidos": 27155,
+      "sha256_bytes_leidos": "feffd3370132f0dc6c10e9469f02e68240dbda2fe16e9e57e31d5ffd4e70af62",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.flcc.edu",
+      "inicio_utc": "2026-11-20T04:12:42+00:00",
+      "url": "https://www.flcc.edu/",
+      "http": 200,
+      "titulo": "Finger Lakes Community College | Finger Lakes Community CollegePrevious SlideNext SlidePrevious SlideNext Slide",
+      "enlaces_academicos": [
+        "www.flcc.edu/academics/",
+        "www.flcc.edu/academics/programs/"
+      ],
+      "bytes_leidos": 59149,
+      "sha256_bytes_leidos": "93d2793b5ed06d17d238bb71b75df0758cf02a42c8dc91eff9cd4fa3d3f05f6d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.fst.edu",
+      "inicio_utc": "2026-11-20T04:12:42+00:00",
+      "url": "https://www.fst.edu/",
+      "http": 200,
+      "titulo": "Franciscan School of Theology | University of San Diego",
+      "enlaces_academicos": [
+        "www.fst.edu/admissions/visit-fst/",
+        "www.fst.edu/academics/personal-enrichment/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "2fcf1e47dcc213a277df8cf5199b535fdd23db9fff69559b140d0d7787ee7ad6",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.fullsail.edu",
+      "inicio_utc": "2026-11-20T04:12:42+00:00",
+      "url": "https://www.fullsail.edu/",
+      "http": 200,
+      "titulo": "Campus and Online Degrees - Full Sail University",
+      "enlaces_academicos": [
+        "www.fullsail.edu/explore-degrees",
+        "www.fullsail.edu/admissions"
+      ],
+      "bytes_leidos": 133412,
+      "sha256_bytes_leidos": "6eddcfbdfa46a7d4a81f831cd553b75d0658d186f8360c19f668ac4e502d3686",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.gatewaycc.edu",
+      "inicio_utc": "2026-11-20T04:12:42+00:00",
+      "url": "https://www.gatewaycc.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.gavilan.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.gavilan.edu/",
+      "http": 200,
+      "titulo": "Home - Gavilan College",
+      "enlaces_academicos": [
+        "www.gavilan.edu/academic/index.php",
+        "www.gavilan.edu/academic/business/index.php"
+      ],
+      "bytes_leidos": 51762,
+      "sha256_bytes_leidos": "87dc4bdd9190b649fa39c76ac6c14b5923039de5fa0903457b69554692966d51",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.georgiasouthern.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.georgiasouthern.edu/",
+      "http": 200,
+      "titulo": "Georgia Southern University | Statesboro, Savannah & Hinesville",
+      "enlaces_academicos": [
+        "www.georgiasouthern.edu/admissions-aid/apply",
+        "www.georgiasouthern.edu/admissions-aid/visit"
+      ],
+      "bytes_leidos": 299828,
+      "sha256_bytes_leidos": "64cbc9c18c885a2b99be438c24c0fc813fb08fce0f1ba1d5d3454022b5a00627",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.gmu.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.gmu.edu/",
+      "http": 200,
+      "titulo": "A Top 50 Public R1 Research University | George Mason University",
+      "enlaces_academicos": [
+        "www.gmu.edu/admissions-aid",
+        "www.gmu.edu/academics"
+      ],
+      "bytes_leidos": 107173,
+      "sha256_bytes_leidos": "9c64ec3970e35246534f59f4c8ebe80da50e77d18443fd87688279e505b98703",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.gordonstate.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.gordonstate.edu/",
+      "http": 200,
+      "titulo": "Home | Gordon State College",
+      "enlaces_academicos": [
+        "www.gordonstate.edu/admissions/index.html",
+        "www.gordonstate.edu/academics/index.html"
+      ],
+      "bytes_leidos": 46317,
+      "sha256_bytes_leidos": "0059a441b63da644eee5fc21a0e68833ffc6d09afe4516c929ad1c6fffbeb0c5",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.govst.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.govst.edu/",
+      "http": 200,
+      "titulo": "GovState Home | Governors State University, an Illinois Public University",
+      "enlaces_academicos": [
+        "www.govst.edu/academics",
+        "www.govst.edu/academic-calendar"
+      ],
+      "bytes_leidos": 216228,
+      "sha256_bytes_leidos": "ff3f7f62002abbeed6a6cc5f719558665e6aa9205f99f7eb87462908234dbc9f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.grandview.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.grandview.edu/",
+      "http": 200,
+      "titulo": "Discover the Viking Experience | Grand View University",
+      "enlaces_academicos": [
+        "www.grandview.edu/academics",
+        "www.grandview.edu/academics/programs"
+      ],
+      "bytes_leidos": 287981,
+      "sha256_bytes_leidos": "9d93bfb3e739394b8a8482e9cfddf7ef55a99e8db94c5cb9a00f30c9c93afab5",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.hacc.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.hacc.edu/",
+      "http": 200,
+      "titulo": "HACC, Central Pennsylvania's Community College Home Page",
+      "enlaces_academicos": [
+        "www.hacc.edu/Admissions/index.cfm",
+        "www.hacc.edu/Admissions/Connect/Visit-a-Campus.cfm"
+      ],
+      "bytes_leidos": 43124,
+      "sha256_bytes_leidos": "0ee5e04d582fdd7018e2a28ab96801dd683a4139f9ee351168d5984bbcb781df",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.hancockcollege.edu",
+      "inicio_utc": "2026-11-20T04:12:43+00:00",
+      "url": "https://www.hancockcollege.edu/",
+      "http": 200,
+      "titulo": "Allan Hancock College | Community College on the Central Coast of California",
+      "enlaces_academicos": [
+        "www.hancockcollege.edu/admissions/priority.php",
+        "www.hancockcollege.edu/admissions/index.php"
+      ],
+      "bytes_leidos": 78662,
+      "sha256_bytes_leidos": "08469088dbddc317cc59a788f530f3fb22543163162799a724769f089c5ca8d1",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.harford.edu",
+      "inicio_utc": "2026-11-20T04:12:44+00:00",
+      "url": "https://www.harford.edu/",
+      "http": 200,
+      "titulo": "Harford Community College | Harford Community College",
+      "enlaces_academicos": [
+        "www.harford.edu/academics/index.php",
+        "www.harford.edu/admissions/index.php"
+      ],
+      "bytes_leidos": 104560,
+      "sha256_bytes_leidos": "d74b2feeaec6d30e1080b5d4d387d91c8c6671161331bc785878617aa24b112b",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.hollins.edu",
+      "inicio_utc": "2026-11-20T04:12:44+00:00",
+      "url": "https://www.hollins.edu/",
+      "http": 200,
+      "titulo": "Hollins University | All-Women University in Virginia",
+      "enlaces_academicos": [
+        "www.hollins.edu/admission-aid/visit-hollins/",
+        "www.hollins.edu/admission-aid/"
+      ],
+      "bytes_leidos": 253514,
+      "sha256_bytes_leidos": "5e5eb0fdc4a74b5997340242710a379c95b7405f0128cb7b6bd09b4c29c0e95d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.hpu.edu",
+      "inicio_utc": "2026-11-20T04:12:44+00:00",
+      "url": "https://www.hpu.edu/",
+      "http": 200,
+      "titulo": "Hawaii Pacific University - Private College Honolulu",
+      "enlaces_academicos": [
+        "www.hpu.edu/academics/index.html",
+        "www.hpu.edu/academics/colleges/index.html"
+      ],
+      "bytes_leidos": 64714,
+      "sha256_bytes_leidos": "257a2ce5daac8f214800ebf373c3860c10e1a529c6edd81e18473cfc9c0b68d9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ic.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://www.ic.edu/",
+      "http": 200,
+      "titulo": "Illinois College | Where students Graduate READY",
+      "enlaces_academicos": [
+        "www.ic.edu/academics",
+        "www.ic.edu/majors-programs"
+      ],
+      "bytes_leidos": 103952,
+      "sha256_bytes_leidos": "19cf80ae4c235b30619178cbc260159ad525712011eb8f8120887b19dc62218c",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.jccc.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://www.jccc.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.jessup.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://jessup.edu/",
+      "http": 200,
+      "titulo": "Transform Lives Through Education | Jessup University",
+      "enlaces_academicos": [
+        "jessup.edu/admissions/visit/",
+        "jessup.edu/admissions/request-information/"
+      ],
+      "bytes_leidos": 159838,
+      "sha256_bytes_leidos": "5ad19cb2b5eb05e9bc5310dc6216372640561d5fb67d484cdec3d2d4ffeac891",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.jsu.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://www.jsu.edu/",
+      "http": 200,
+      "titulo": "Jax State - The Friendliest Campus in the South",
+      "enlaces_academicos": [
+        "www.jsu.edu/admissions/",
+        "www.jsu.edu/admissions/index.html"
+      ],
+      "bytes_leidos": 72177,
+      "sha256_bytes_leidos": "90b8396f1ed832bf0809115acaab5831c701f7ab4def658dedbcc7838d25d41d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.jwcc.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://www.jwcc.edu/",
+      "http": 200,
+      "titulo": "John Wood Community College | Quincy, IL - JWCC",
+      "enlaces_academicos": [
+        "www.jwcc.edu/admissions/",
+        "www.jwcc.edu/admissions/freshman/"
+      ],
+      "bytes_leidos": 105221,
+      "sha256_bytes_leidos": "d85cf8c4a9080b69779822730f17c87d18e5da7ebca99c2bc8a392fbd1357aa4",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.kgi.edu",
+      "inicio_utc": "2026-11-20T04:12:45+00:00",
+      "url": "https://www.kgi.edu/",
+      "http": 200,
+      "titulo": "Home - Keck Graduate Institute",
+      "enlaces_academicos": [
+        "www.kgi.edu/academic-affairs/index.html",
+        "www.kgi.edu/admissions/index.html"
+      ],
+      "bytes_leidos": 74050,
+      "sha256_bytes_leidos": "b70e48fd6d214d0335cdd9fd5feb157815fa34f9e3c5fda8f468bb037e1ddb47",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lamar.edu",
+      "inicio_utc": "2026-11-20T04:12:46+00:00",
+      "url": "https://www.lamar.edu/",
+      "http": 200,
+      "titulo": "Lamar University is a Nationally-Ranked College in Texas - Lamar University",
+      "enlaces_academicos": [
+        "www.lamar.edu/events/academic-calendar-listing.html",
+        "www.lamar.edu/admissions/how-to-apply/index.html"
+      ],
+      "bytes_leidos": 63014,
+      "sha256_bytes_leidos": "9f5cf14eb95b8ebea3994acb7c8d40c1414b1140f5a2fabd7e9eb8beaa81d75e",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lasell.edu",
+      "inicio_utc": "2026-11-20T04:12:46+00:00",
+      "url": "https://www.lasell.edu/",
+      "http": 200,
+      "titulo": "Undergraduate, Graduate & Online Programs - Boston, MA – Lasell University",
+      "enlaces_academicos": [
+        "www.lasell.edu/admissions.html",
+        "www.lasell.edu/admissions/undergraduate-admission.html"
+      ],
+      "bytes_leidos": 188373,
+      "sha256_bytes_leidos": "d1c913a7982762a762bf5ab5e11509c7781ad45c76315ddfd4f120b569c71cf0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.liberty.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.liberty.edu/",
+      "http": 200,
+      "titulo": "Liberty University: A Christian University in Virginia and OnlineFill 1Chat LiveRequest InfoApply NowVisit Liberty",
+      "enlaces_academicos": [
+        "www.liberty.edu/academics/bachelors/",
+        "www.liberty.edu/academics/masters/"
+      ],
+      "bytes_leidos": 232060,
+      "sha256_bytes_leidos": "421a873ff0daba10fb985f0edb3a7c882a68fed79c550236df3fe9aa61162010",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.life.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.life.edu/",
+      "http": 200,
+      "titulo": "Life University | Purpose-Driven College in Marietta, GALife University | Purpose-Driven College in Marietta, GAarrow-downarrow-leftarrow-navarrow-rig",
+      "enlaces_academicos": [
+        "www.life.edu/academics/dc-doctor-of-chiropractic/",
+        "www.life.edu/admissions-pages/visit-life/"
+      ],
+      "bytes_leidos": 335781,
+      "sha256_bytes_leidos": "daeb69b15e0d08f2b4be6e08964b191c3d40d2f21613f50a0a6bf920a9b4f034",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lincolnu.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.lincolnu.edu/",
+      "http": 200,
+      "titulo": "Lincoln University of Missouri",
+      "enlaces_academicos": [
+        "www.lincolnu.edu/academics/lu-online/index.html",
+        "www.lincolnu.edu/admissions/rotc/index.html"
+      ],
+      "bytes_leidos": 65126,
+      "sha256_bytes_leidos": "d8e2350be8798cd06c275bf5eb504dbd5951ebf503066de673617c56565d3361",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.littlepriest.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.littlepriest.edu/",
+      "http": 200,
+      "titulo": "Home - Little Priest Tribal College",
+      "enlaces_academicos": [
+        "www.littlepriest.edu/academic-office-staff/",
+        "www.littlepriest.edu/degrees-programs/"
+      ],
+      "bytes_leidos": 108840,
+      "sha256_bytes_leidos": "bb150dad686c068874541ecae88ff536200c30c41d45daa8f5138fe225ca3d6d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lltc.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.lltc.edu/",
+      "http": 200,
+      "titulo": "Home - Leech Lake Tribal College",
+      "enlaces_academicos": [
+        "www.lltc.edu/office-of-admissions/",
+        "www.lltc.edu/wp-content/uploads/2022/10/Academic-Financial-Aid-Appeal-Form.pdf"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "31dc5fdb2969bee4bc2f94e3be917d819cb01c1102caffaa5a6ccdbc3d9921eb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lssu.edu",
+      "inicio_utc": "2026-11-20T04:12:47+00:00",
+      "url": "https://www.lssu.edu/",
+      "http": 200,
+      "titulo": "Lake Superior State University – Superior Education. Superior ExperienceSearchSearch",
+      "enlaces_academicos": [
+        "www.lssu.edu/admissions/how-to-apply/",
+        "www.lssu.edu/admissions/plan-a-visit/schedule-campus-visit/"
+      ],
+      "bytes_leidos": 349024,
+      "sha256_bytes_leidos": "6bac327440485ac9543b5ccce35d8f9031353303e9b85db7daf223327283102a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.lsua.edu",
+      "inicio_utc": "2026-11-20T04:12:48+00:00",
+      "url": "https://www.lsua.edu/",
+      "http": 200,
+      "titulo": "LSU Alexandria | Louisiana State University of Alexandria (LSUA)",
+      "enlaces_academicos": [
+        "www.lsua.edu/admissions",
+        "www.lsua.edu/academics/library"
+      ],
+      "bytes_leidos": 116783,
+      "sha256_bytes_leidos": "0cdf14fd4f188c32cb26b448bedc2c71d8cb4340bff122bda62412abc02667a1",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.macomb.edu",
+      "inicio_utc": "2026-11-20T04:12:48+00:00",
+      "url": "https://www.macomb.edu/",
+      "http": 200,
+      "titulo": "Macomb Community College - Discover. Connect. Advance.",
+      "enlaces_academicos": [
+        "www.macomb.edu/admissions-aid/index.html",
+        "www.macomb.edu/programs-courses/academic-calendar.html"
+      ],
+      "bytes_leidos": 162115,
+      "sha256_bytes_leidos": "f140941f1ddab7cf3cb253549c6e37b03baf46b3eba9d7f29df84c1b86843147",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.macu.edu",
+      "inicio_utc": "2026-11-20T04:12:48+00:00",
+      "url": "https://www.macu.edu/",
+      "http": 200,
+      "titulo": "Mid-America Christian University | Oklahoma City, OK",
+      "enlaces_academicos": [
+        "www.macu.edu/degrees",
+        "www.macu.edu/degrees/undergraduate/"
+      ],
+      "bytes_leidos": 161167,
+      "sha256_bytes_leidos": "42acbba46682eda901563afc5fa8611bad3faba27bad6d7cd2c68042440d5d40",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.marist.edu",
+      "inicio_utc": "2026-11-20T04:12:48+00:00",
+      "url": "https://www.marist.edu/",
+      "http": 200,
+      "titulo": "Inspired to do More - Marist University",
+      "enlaces_academicos": [
+        "www.marist.edu/admission-financial-aid",
+        "www.marist.edu/admission/visit"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "28f76f4b874e8ded759bf5f5f86db298befb8881ae80a3ce88834b6abe22fc67",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.mercer.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.mercer.edu/",
+      "http": 200,
+      "titulo": "Mercer University | A Best Value Among National UniversitiesMercer UniversityMercer University",
+      "enlaces_academicos": [
+        "www.mercer.edu/academics/program-finder/",
+        "www.mercer.edu/admissions/"
+      ],
+      "bytes_leidos": 275065,
+      "sha256_bytes_leidos": "f83a94890e21a39ca11c279bf6e32a31d2b180ca58f6d018722f133896f2e702",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.mercyhurst.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.mercyhurst.edu/",
+      "http": 200,
+      "titulo": "Homepage | Mercyhurst",
+      "enlaces_academicos": [
+        "www.mercyhurst.edu/admissions",
+        "www.mercyhurst.edu/admissions/meet-admissions-team"
+      ],
+      "bytes_leidos": 261852,
+      "sha256_bytes_leidos": "b899b6a205f39cf78a154ea644efa4c6845ac850e2d5a192830e10b0ba1e1f47",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.mica.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.mica.edu/",
+      "http": 200,
+      "titulo": "MICA",
+      "enlaces_academicos": [
+        "www.mica.edu/admissions/",
+        "www.mica.edu/admissions/undergraduate-admission/"
+      ],
+      "bytes_leidos": 94223,
+      "sha256_bytes_leidos": "d13cbfdc3791d6f708ad9037a38757af80db0e28579140161cd9edd36ddac014",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.monroeccc.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.monroeccc.edu/",
+      "http": 200,
+      "titulo": "Enriching Lives | Monroe County Community College",
+      "enlaces_academicos": [
+        "www.monroeccc.edu/admissions",
+        "www.monroeccc.edu/academics"
+      ],
+      "bytes_leidos": 45060,
+      "sha256_bytes_leidos": "f638b68fdf206155dd8039244c213bc28240672f23e1c94cc5f38339f5a4a9d0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.moravian.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.moravian.edu/",
+      "http": 200,
+      "titulo": "Moravian University | Moravian University",
+      "enlaces_academicos": [
+        "www.moravian.edu/admissions/visit-tour",
+        "www.moravian.edu/academics"
+      ],
+      "bytes_leidos": 152929,
+      "sha256_bytes_leidos": "8401eb37bf4f9e6ee7c08f013b53dcba74729c63f1cd22cc62ec80c1f9123de1",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.moreheadstate.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.moreheadstate.edu/",
+      "http": 200,
+      "titulo": "SOAR Higher | Morehead State University | Kentucky",
+      "enlaces_academicos": [
+        "www.moreheadstate.edu/admissions/index",
+        "www.moreheadstate.edu/academics/colleges/craft-academy/index"
+      ],
+      "bytes_leidos": 122306,
+      "sha256_bytes_leidos": "f3bb2c1fdf097617a2207e8bcde838ecd8c43a4e4b6b1f56d1c014cb035bc56a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.mvcc.edu",
+      "inicio_utc": "2026-11-20T04:12:49+00:00",
+      "url": "https://www.mvcc.edu/",
+      "http": 200,
+      "titulo": "Mohawk Valley Community College Home",
+      "enlaces_academicos": [
+        "www.mvcc.edu/admissions/index.php",
+        "www.mvcc.edu/admissions/application.php"
+      ],
+      "bytes_leidos": 66658,
+      "sha256_bytes_leidos": "18805a428900c6241560df75fbc758831e0577ae02ab5608dddafebfd27bf2d0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ndscs.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://ndscs.edu/",
+      "http": 200,
+      "titulo": "Home - North Dakota State College of ScienceNorth Dakota State College of Science",
+      "enlaces_academicos": [
+        "ndscs.edu/admissions-aid/apply-to-ndscs/",
+        "ndscs.edu/admissions-aid/visit/"
+      ],
+      "bytes_leidos": 249673,
+      "sha256_bytes_leidos": "ef8c60f86cfb0f30234a7ec86033afadc48f3fe6468266d6da1ea2c41631afc2",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.niu.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.niu.edu/index.shtml",
+      "http": 200,
+      "titulo": "Northern Illinois University | Your Future. Our Focus.",
+      "enlaces_academicos": [
+        "www.niu.edu/academics/index.shtml",
+        "www.niu.edu/academics/undergraduate/index.shtml"
+      ],
+      "bytes_leidos": 127634,
+      "sha256_bytes_leidos": "e8f90735b84f5c18e0a28c7cfb6b87047766e6e750a0ba45f3ed847d6fc87117",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.northpark.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.northpark.edu/",
+      "http": 200,
+      "titulo": "North Park University | Christian, City-Centered, Intercultural.",
+      "enlaces_academicos": [
+        "www.northpark.edu/academics/",
+        "www.northpark.edu/admissions-aid/"
+      ],
+      "bytes_leidos": 190760,
+      "sha256_bytes_leidos": "6f7ea3126743f31dfe9507926a56ee6444f7b334a77154d6f9edc1e223661074",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.nr.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.nr.edu/",
+      "http": 200,
+      "titulo": "New River Community College - Dublin, Virginia",
+      "enlaces_academicos": [
+        "www.nr.edu/degrees/",
+        "www.nr.edu/admissions/"
+      ],
+      "bytes_leidos": 139267,
+      "sha256_bytes_leidos": "56b90af3c9424f2a6a8dd188c1daf157ac120f9471364fb4f406ecfc3a5a434b",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.nsuok.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.nsuok.edu/",
+      "http": 200,
+      "titulo": "Northeastern State University",
+      "enlaces_academicos": [
+        "offices.nsuok.edu/admissions/default.aspx",
+        "offices.nsuok.edu/admissions/Admission/TuitionFees.aspx"
+      ],
+      "bytes_leidos": 94709,
+      "sha256_bytes_leidos": "9e38aaa8e0f3465dd863e4fe99dada8428ec237ecd15c8e9d050b8ad2e6dedef",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ntc.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.ntc.edu/",
+      "http": 200,
+      "titulo": "Northcentral Technical Collegemenusearchsearchsearchlogo-full",
+      "enlaces_academicos": [
+        "www.ntc.edu/academics-training",
+        "www.ntc.edu/admissions"
+      ],
+      "bytes_leidos": 110428,
+      "sha256_bytes_leidos": "458e925a40ac930e773d868a1ef96ddbdd07dc62e72d7bda042f9a6dbd6e1230",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.nymc.edu",
+      "inicio_utc": "2026-11-20T04:12:50+00:00",
+      "url": "https://www.nymc.edu/",
+      "http": 200,
+      "titulo": "New York Medical College | New York Medical CollegeSubmit SearchClose DrawerSubmit Search",
+      "enlaces_academicos": [
+        "www.nymc.edu/academics/",
+        "www.nymc.edu/admissions--aid/"
+      ],
+      "bytes_leidos": 59824,
+      "sha256_bytes_leidos": "8e5c090b894ededb553e745295349cacf72a7fcf8b0a77eb56176d6b299f39bc",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.nyu.edu",
+      "inicio_utc": "2026-11-20T04:12:51+00:00",
+      "url": "https://www.nyu.edu/",
+      "http": 200,
+      "titulo": "New York University",
+      "enlaces_academicos": [
+        "www.nyu.edu/academics.html",
+        "www.nyu.edu/admissions.html"
+      ],
+      "bytes_leidos": 101354,
+      "sha256_bytes_leidos": "e64c3d43e19a8b62136666684cf127f22b72ce462defabc597b3abdff98e9067",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.olc.edu",
+      "inicio_utc": "2026-11-20T04:12:51+00:00",
+      "url": "https://www.olc.edu/",
+      "http": 200,
+      "titulo": "Oglala Lakota College | Affordable College Degree | College",
+      "enlaces_academicos": [
+        "www.olc.edu/admissions-aid/",
+        "www.olc.edu/admissions-aid/admissions-process/"
+      ],
+      "bytes_leidos": 84945,
+      "sha256_bytes_leidos": "dc7e379f72d88fc730c73e1eb8b22cbd265a5f29f4942dc7949ea28078877651",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.olympic.edu",
+      "inicio_utc": "2026-11-20T04:12:51+00:00",
+      "url": "https://www.olympic.edu/",
+      "http": 200,
+      "titulo": "Olympic College",
+      "enlaces_academicos": [
+        "www.olympic.edu/academics",
+        "www.olympic.edu/academics/academic-pathways"
+      ],
+      "bytes_leidos": 148601,
+      "sha256_bytes_leidos": "e7611571bdccb43197c78f0aa4a81deece8e51bc2d7dcb71734b16be5a0e5cc2",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.owu.edu",
+      "inicio_utc": "2026-11-20T04:12:51+00:00",
+      "url": "https://www.owu.edu/",
+      "http": 200,
+      "titulo": "Ohio Wesleyan University",
+      "enlaces_academicos": [
+        "www.owu.edu/admission/",
+        "www.owu.edu/admission/apply/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "d29044ced018acdf39fdb285347534edfbb357f908903c7df03a550e95faf133",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.phoenixcollege.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.phoenixcollege.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.pittstate.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.pittstate.edu/",
+      "http": 200,
+      "titulo": "Pittsburg State University",
+      "enlaces_academicos": [
+        "www.pittstate.edu/academics/index.html",
+        "www.pittstate.edu/academics/academic-programs/fields-of-study.html"
+      ],
+      "bytes_leidos": 91980,
+      "sha256_bytes_leidos": "0a685408a4e1e3ee97c895984305a0fb8a0516b191573e49229142485a22df15",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.plattsburgh.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.plattsburgh.edu/",
+      "http": 200,
+      "titulo": "SUNY Plattsburghtwitterbrainbusinesscompasscomputerenvironmentexit-siteglobegraphhandshakehealthjusticemeasurenetworkingopen-pdfpencilsciencetrendvide",
+      "enlaces_academicos": [
+        "www.plattsburgh.edu/admissions/visit/index.html",
+        "www.plattsburgh.edu/admissions/request-information/index.html"
+      ],
+      "bytes_leidos": 206318,
+      "sha256_bytes_leidos": "59ea1e5c535c1478ef54db46a2bf372205f3853e5b9ede6fe02a5f3ae53daaa0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.plymouth.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.plymouth.edu/",
+      "http": 200,
+      "titulo": "Plymouth State University",
+      "enlaces_academicos": [
+        "www.plymouth.edu/admissions/schedule-visit",
+        "www.plymouth.edu/academics"
+      ],
+      "bytes_leidos": 83578,
+      "sha256_bytes_leidos": "143b13a3653850554c5fdf1497c09ca8f24646cff83f09a392a3f3aa3a2c93a5",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.pugetsound.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.pugetsound.edu/",
+      "http": 200,
+      "titulo": "University of Puget Sound Home Page | University of Puget Sound",
+      "enlaces_academicos": [
+        "www.pugetsound.edu/admission/visit-us",
+        "www.pugetsound.edu/admission/apply"
+      ],
+      "bytes_leidos": 263007,
+      "sha256_bytes_leidos": "59a64e1db19962a25396eeec78fd1966517b75dc1f408bd69f966ceee8df3a52",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.redlandscc.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.redlandscc.edu/",
+      "http": 200,
+      "titulo": "Home",
+      "enlaces_academicos": [
+        "www.redlandscc.edu/academics/calendar.php",
+        "www.redlandscc.edu/academics/catalog.php"
+      ],
+      "bytes_leidos": 42454,
+      "sha256_bytes_leidos": "c7c99193234d4e9fbd16d2dbcc7e80d7c5bd6d34e9b843622f06f41c45537111",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.reinhardt.edu",
+      "inicio_utc": "2026-11-20T04:12:52+00:00",
+      "url": "https://www.reinhardt.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.reynolds.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.reynolds.edu/",
+      "http": 200,
+      "titulo": "College that fits your life. | Reynolds Community College",
+      "enlaces_academicos": [],
+      "bytes_leidos": 89692,
+      "sha256_bytes_leidos": "4410a1a946dafd79a6825f343868447421bca15a3fdb84bd5147ad40396e8886",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.rider.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.rider.edu/",
+      "http": 200,
+      "titulo": "Rider University | Private University in Lawrenceville, NJ",
+      "enlaces_academicos": [
+        "www.rider.edu/academics/program-finder",
+        "www.rider.edu/academics/academic-support/registrar/verification-transcript-requests"
+      ],
+      "bytes_leidos": 233217,
+      "sha256_bytes_leidos": "1b3e7ea27a66b9881a0fdf596b40411755a50549e10105f82a4632cfb804eac6",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.rowan.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.rowan.edu/",
+      "http": 200,
+      "titulo": "Home | www.rowan.edu | Rowan University",
+      "enlaces_academicos": [
+        "www.rowan.edu/admissions/plan-a-visit/index.html",
+        "www.rowan.edu/academics/index.html"
+      ],
+      "bytes_leidos": 101924,
+      "sha256_bytes_leidos": "4a352185fbedfcd717d30d4184d2d64eeb92bd0aab85f0f4f0b1226d3a7844f7",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.rustcollege.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://rustcollege.edu/",
+      "http": 200,
+      "titulo": "Home - Rust College",
+      "enlaces_academicos": [
+        "rustcollege.edu/academic-affairs/",
+        "rustcollege.edu/academics/"
+      ],
+      "bytes_leidos": 164693,
+      "sha256_bytes_leidos": "bcf0a51d1faaccb454f187c0280a8576e835bcb572b6a3f69e7173378f3d58eb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.saintvincentseminary.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.saintvincentseminary.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.salem.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.salem.edu/",
+      "http": 200,
+      "titulo": "Women’s College in North Carolina | Salem College",
+      "enlaces_academicos": [
+        "www.salem.edu/academics/",
+        "www.salem.edu/academics/academic-programs/"
+      ],
+      "bytes_leidos": 83859,
+      "sha256_bytes_leidos": "a46ff1eb1a28ea402d7fccca5ee7b24492d2862122e4ca2dfffe3c042289f662",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.sanjuancollege.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.sanjuancollege.edu/",
+      "http": 200,
+      "titulo": "Home | San Juan College",
+      "enlaces_academicos": [
+        "www.sanjuancollege.edu/admissions-aid/",
+        "www.sanjuancollege.edu/admissions-aid/how-to-apply/"
+      ],
+      "bytes_leidos": 39025,
+      "sha256_bytes_leidos": "d7c1a8269229e272033ae8e25035ddfc7f9a3a3845b28cb5c9615e1c6e20e87f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.schoolcraft.edu",
+      "inicio_utc": "2026-11-20T04:12:53+00:00",
+      "url": "https://www.schoolcraft.edu/",
+      "http": 200,
+      "titulo": "Community College Detroit Michigan – Schoolcraft College",
+      "enlaces_academicos": [
+        "www.schoolcraft.edu/academics/",
+        "www.schoolcraft.edu/admissions-and-aid/"
+      ],
+      "bytes_leidos": 139924,
+      "sha256_bytes_leidos": "62f42f4c5d41970490012fccd42aeb8495877e5bd8dd7823524f3aa0a681568f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.sdsmt.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.sdsmt.edu/index.html",
+      "http": 200,
+      "titulo": "South Dakota Mines | Leading Science and Engineering School",
+      "enlaces_academicos": [
+        "www.sdsmt.edu/admissions-aid/apply_page.html",
+        "www.sdsmt.edu/admissions-aid/visit-mines/index.html"
+      ],
+      "bytes_leidos": 79182,
+      "sha256_bytes_leidos": "f61c861d07af06773b8c995a73d7dd7243686f063a73259ba608eafbcc69b220",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.shepherd.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.shepherd.edu/",
+      "http": 200,
+      "titulo": "Shepherd University",
+      "enlaces_academicos": [
+        "www.shepherd.edu/admissions/apply-to-shepherd",
+        "www.shepherd.edu/admissions/visit-campus"
+      ],
+      "bytes_leidos": 49449,
+      "sha256_bytes_leidos": "e783cb378ee564886806ff1c4a341b73368760f9cd90029a97f3f3d6016d3235",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.sinclair.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.sinclair.edu/",
+      "http": 200,
+      "titulo": "Sinclair Community College",
+      "enlaces_academicos": [
+        "www.sinclair.edu/academics",
+        "www.sinclair.edu/admissions/campus-visits/"
+      ],
+      "bytes_leidos": 46971,
+      "sha256_bytes_leidos": "4268925615674c71a2388e4317fd9712414469261f8de81dc367d721c4dec329",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.sintegleska.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.sintegleska.edu/",
+      "http": 200,
+      "titulo": "Home | SinteGleska",
+      "enlaces_academicos": [],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "8cc67b0705be733b912d22da53ba2bcd1284dd3d6751fef5e104b26ddb21e445",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.siue.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.siue.edu/",
+      "http": 200,
+      "titulo": "Southern Illinois University Edwardsville | SIUE",
+      "enlaces_academicos": [
+        "siue.edu/admissions/",
+        "siue.edu/undergraduate/"
+      ],
+      "bytes_leidos": 40002,
+      "sha256_bytes_leidos": "3eb8c79a569b7b2f8ae205489f642bd1ef40d81172e004c3c6d629caab37fb65",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.southeasternbaptist.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://southeasternbaptist.edu/",
+      "http": 200,
+      "titulo": "Southeastern College",
+      "enlaces_academicos": [
+        "southeasternbaptist.edu/academics/academic-calendar/",
+        "southeasternbaptist.edu/academics/academic-programs/"
+      ],
+      "bytes_leidos": 240553,
+      "sha256_bytes_leidos": "8378ee86fb8dd6e10119ec6942ad384d5b31086fedab23adb5bf49163aaf3912",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ssc.edu",
+      "inicio_utc": "2026-11-20T04:12:54+00:00",
+      "url": "https://www.ssc.edu/",
+      "http": 200,
+      "titulo": "South Suburban College | This is Success.",
+      "enlaces_academicos": [
+        "www.ssc.edu/admissions-registration/campus-visits/",
+        "www.ssc.edu/admissions-registration/"
+      ],
+      "bytes_leidos": 141644,
+      "sha256_bytes_leidos": "0585bb5f4b06456f9ee6c9a428db88ec27785798fff24d2740bb4cabc04b25a4",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.stanbridge.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://www.stanbridge.edu/",
+      "http": 200,
+      "titulo": "Nursing & Allied Health Programs in California | Stanbridge",
+      "enlaces_academicos": [],
+      "bytes_leidos": 175988,
+      "sha256_bytes_leidos": "d22a1df9615dd3c3ab1ec83f5ee36f13b72bffc5e2587028ac1949cfa6f4bca1",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.stlcc.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://stlcc.edu/",
+      "http": 200,
+      "titulo": "STLCC: Affordable Education That Changes Lives",
+      "enlaces_academicos": [
+        "stlcc.edu/programs-academics/online-education/index.aspx",
+        "stlcc.edu/office-of-the-registrar/academic-calendar.aspx"
+      ],
+      "bytes_leidos": 61894,
+      "sha256_bytes_leidos": "08bf4db1e3510022ef7df80f9d7ab56ae0b51c7307609fa35a687a56f843728d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.stmarys-ca.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://www.stmarys-ca.edu/",
+      "http": 200,
+      "titulo": "Saint Mary's College of California | A Bay Area Liberal Arts College",
+      "enlaces_academicos": [
+        "www.stmarys-ca.edu/admissions-aid",
+        "www.stmarys-ca.edu/admissions-aid/undergraduate"
+      ],
+      "bytes_leidos": 139775,
+      "sha256_bytes_leidos": "21d88058399150198757b8f5dc00a03d492b2e4aa9be8c2d6ce2c0d5ef2d7722",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.su.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://www.su.edu/",
+      "http": 200,
+      "titulo": "200+ Areas of Study at Shenandoah University200+ Areas of Study at Shenandoah University",
+      "enlaces_academicos": [],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "dc11126c1b224380ca7ad0796c1472d828e0678812591f614e86e2b85e4ea78f",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.sunyempire.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://www.sunyempire.edu/",
+      "http": 200,
+      "titulo": "SUNY Empire State University – Flexible Online Degrees",
+      "enlaces_academicos": [
+        "www.sunyempire.edu/academics/index.html",
+        "www.sunyempire.edu/academics/explore-all-programs.html"
+      ],
+      "bytes_leidos": 82298,
+      "sha256_bytes_leidos": "5c893c340ae900d7f09b6571d4f508a2703bf7c4e63f84e120e2fc0ebfe8d713",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.tctc.edu",
+      "inicio_utc": "2026-11-20T04:12:55+00:00",
+      "url": "https://www.tctc.edu/",
+      "http": 200,
+      "titulo": "Tri-County Technical College in Upstate SC | TCTC",
+      "enlaces_academicos": [
+        "www.tctc.edu/admissions/tour-tctc/",
+        "www.tctc.edu/about-us/the-office-of-academic-development/"
+      ],
+      "bytes_leidos": 370870,
+      "sha256_bytes_leidos": "ab60bc55dd01ce4401246349a0c2d7c5dd5bf89bba2ce19c44fb6e02ce0b3669",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.texascollege.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.texascollege.edu/",
+      "http": 200,
+      "titulo": "Texas College | Tyler, TX",
+      "enlaces_academicos": [
+        "www.texascollege.edu/office-of-br-academic-affairs/academic-calendars/fall-2026-academic-calendar/",
+        "www.texascollege.edu/office-of-br-academic-affairs/academic-calendars/spring-2027-academic-calendar/"
+      ],
+      "bytes_leidos": 46829,
+      "sha256_bytes_leidos": "690b3cd191926613ea4f7e182ba8435cc3ab0a51b0dbc687fe8f1258f1d6b986",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.texastech.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.texastech.edu/",
+      "http": 200,
+      "titulo": "Texas Tech University System | Texas Tech University System",
+      "enlaces_academicos": [],
+      "bytes_leidos": 52373,
+      "sha256_bytes_leidos": "e68aa7f041229a89b9b220b6f2f2d3479937e9abe30852c9fc0e4217acc73f86",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.tjc.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://tjc.edu/",
+      "http": 200,
+      "titulo": "Home - Tyler Junior College",
+      "enlaces_academicos": [
+        "tjc.edu/faculty-staff/academic-student-affairs/",
+        "tjc.edu/admissions/"
+      ],
+      "bytes_leidos": 191182,
+      "sha256_bytes_leidos": "20bd42a81563db9c362f75c6b8591677f9db90ddb9d420f970b38db79b2eb084",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.transy.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.transy.edu/",
+      "http": 200,
+      "titulo": "Transylvania University | Private Liberal Arts College in LexingtonTransylvania UniversityFacebookInstagramYouTubeTikTokXLinkedinTransylvania Universi",
+      "enlaces_academicos": [
+        "www.transy.edu/academics/find-your-major/",
+        "www.transy.edu/admission/"
+      ],
+      "bytes_leidos": 180122,
+      "sha256_bytes_leidos": "ab3cb8c6ef932873b730772bbf5e09b413c6d04fc2dc220276006b20cf9094b7",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.trevecca.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.trevecca.edu/",
+      "http": 200,
+      "titulo": "From Calling to Becoming | Trevecca Nazarene UniversityTrevecca",
+      "enlaces_academicos": [
+        "www.trevecca.edu/academics/program/adult-undergraduate",
+        "www.trevecca.edu/academics"
+      ],
+      "bytes_leidos": 144862,
+      "sha256_bytes_leidos": "f5d570978fdf6c25ca90779405e4059480cba29946926f596514276ae11f690a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.tridenttech.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.tridenttech.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.trnty.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://trnty.edu/",
+      "http": 200,
+      "titulo": "Home - Trinity Christian College",
+      "enlaces_academicos": [
+        "trnty.edu/academic-records/"
+      ],
+      "bytes_leidos": 224969,
+      "sha256_bytes_leidos": "5ebafaca540ce9be866a50bd544e8fc611e0d93ed0f7a3aebed3227dc37e60eb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.truman.edu",
+      "inicio_utc": "2026-11-20T04:12:56+00:00",
+      "url": "https://www.truman.edu/",
+      "http": 200,
+      "titulo": "Truman State University | Distinct by Design",
+      "enlaces_academicos": [
+        "www.truman.edu/admission-cost/",
+        "www.truman.edu/admission-cost/apply-to-truman/"
+      ],
+      "bytes_leidos": 79012,
+      "sha256_bytes_leidos": "f2f09431700f074f7242db0e0f0250f1bd2e50980bb6868f3d36fac35f9ac54c",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uaccm.edu",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "estado": "fallo_de_lectura",
+      "error": "ConnectTimeout"
+    },
+    {
+      "dominio": "www.uach.cl",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "url": "https://www.uach.cl/",
+      "http": 200,
+      "titulo": "Universidad Austral de Chile",
+      "enlaces_academicos": [
+        "www.uach.cl/admision/portada",
+        "www.uach.cl/admision/valdivia"
+      ],
+      "bytes_leidos": 107164,
+      "sha256_bytes_leidos": "a5c8d3aa05d4391eedf5996d73931154368b0e7ae56c04c1e8b62d36289c6f6d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uahurtado.cl",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "url": "https://www.uahurtado.cl/",
+      "http": 200,
+      "titulo": "UAH | Universidad por el bien común",
+      "enlaces_academicos": [
+        "www.uahurtado.cl/academicas-os/",
+        "admision.uahurtado.cl/admision-via-paes/"
+      ],
+      "bytes_leidos": 239661,
+      "sha256_bytes_leidos": "0be5683535a6778a21d0cd79a5b5981e6026744ba9e9d80f3e1b265e9f5042b0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uakron.edu",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "url": "https://www.uakron.edu/",
+      "http": 200,
+      "titulo": "The University Of Akron: The World Needs More Yes. : The University of Akron, Ohio",
+      "enlaces_academicos": [
+        "www.uakron.edu/admissions/apply.dot",
+        "www.uakron.edu/admissions/undergraduate/visiting_campus/index.dot"
+      ],
+      "bytes_leidos": 189372,
+      "sha256_bytes_leidos": "9f39f690336cc2768b8c1425e73d6702febc44fcff8e25a7532b57dc9f68f72f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uandes.cl",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "url": "https://www.uandes.cl/",
+      "http": 200,
+      "titulo": "Inicio - Universidad de los Andes",
+      "enlaces_academicos": [
+        "admision.uandes.cl/carreras",
+        "admision.uandes.cl/admision"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "13d8fdb3f7d97184ab65ddd9e05f370297414352210fdc577bc3d88810b39710",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uantof.cl",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "url": "https://www.uantof.cl/",
+      "http": 200,
+      "titulo": "Herramientas de accesibilidadAumentar textoDisminuir textoEscala de grisesAlto contrasteContraste negativoFondo claroSubrayar enlacesFuente legibleRes",
+      "enlaces_academicos": [
+        "www.uantof.cl/academicos/",
+        "intranetua.uantof.cl/academicos/pages/academicos.asp"
+      ],
+      "bytes_leidos": 130737,
+      "sha256_bytes_leidos": "7b3c6689cdfb121e9835d59b078f51864628e1850dea4b3f61eb7d0a148db5be",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ubiobio.cl",
+      "inicio_utc": "2026-11-20T04:12:57+00:00",
+      "estado": "fallo_de_lectura",
+      "error": "ConnectError"
+    },
+    {
+      "dominio": "www.ucf.edu",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.ucf.edu/",
+      "http": 200,
+      "titulo": "University of Central Florida | Florida's Technological University",
+      "enlaces_academicos": [
+        "www.ucf.edu/academics/",
+        "www.ucf.edu/admissions/"
+      ],
+      "bytes_leidos": 146322,
+      "sha256_bytes_leidos": "8f5a0ceb9840814567b0b192c9411390b3568f42c91f073c78ff48329eeb701a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ucm.cl",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.ucm.cl/",
+      "http": 200,
+      "titulo": "",
+      "enlaces_academicos": [],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "4cbd585ebeae4a9a5f522dc8971fda60cf40522feee900159545e2b5510ff42c",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.ucn.cl",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.ucn.cl/",
+      "http": 200,
+      "titulo": "Inicio - Universidad Católica del Norte",
+      "enlaces_academicos": [
+        "www.ucn.cl/universidad/somos-ucn/actividades-academicas-2025/",
+        "admision.ucn.cl/carreras/"
+      ],
+      "bytes_leidos": 103690,
+      "sha256_bytes_leidos": "571cc4276b2d9113b908a53aee7f6072ba643c85047886d3a36ebf84ece3441e",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ucsb.edu",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.ucsb.edu/",
+      "http": 200,
+      "titulo": "Home | UC Santa BarbaraUC Santa Barbara",
+      "enlaces_academicos": [
+        "www.ucsb.edu/applying/undergraduate-admission",
+        "www.ucsb.edu/applying/graduate-admission"
+      ],
+      "bytes_leidos": 335279,
+      "sha256_bytes_leidos": "ddf11e384e108f87ae9a30dad7e3b7ebe535a546d8f3dbb24356fe0d9d467120",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uct.cl",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.uct.cl/",
+      "http": 200,
+      "titulo": "Inicio > UCT",
+      "enlaces_academicos": [
+        "www.uct.cl/carreras/",
+        "www.uct.cl/calendario-academico"
+      ],
+      "bytes_leidos": 167427,
+      "sha256_bytes_leidos": "1c570164e98c9d40008df28a772b7fef712de78cc3567bfa6dfa903d2bbef859",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.udec.cl",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.udec.cl/",
+      "http": 200,
+      "titulo": "Universidad de Concepción",
+      "enlaces_academicos": [
+        "www.udec.cl/sobre-la-udec/historia/primeras-carreras/"
+      ],
+      "bytes_leidos": 151608,
+      "sha256_bytes_leidos": "4ae0f5fe9b8700b43ba211700cb071ea17952106e2e68c4882f524e80def9e7d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ufro.cl",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.ufro.cl/",
+      "http": 200,
+      "titulo": "Inicio | Universidad de La Frontera",
+      "enlaces_academicos": [
+        "calidad.ufro.cl/acreditacion-pregrado/",
+        "calidad.ufro.cl/acreditacion-postgrado/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "f694e100fa9103a964d2177be7b05ae3467b4d9a0af36d18bfc2f997983e90e9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uhd.edu",
+      "inicio_utc": "2026-11-20T04:12:58+00:00",
+      "url": "https://www.uhd.edu/",
+      "http": 200,
+      "titulo": "University of Houston-Downtown",
+      "enlaces_academicos": [
+        "www.uhd.edu/admissions/admissions-request.html",
+        "www.uhd.edu/admissions/apply/index.html"
+      ],
+      "bytes_leidos": 124152,
+      "sha256_bytes_leidos": "d2f296be63d730851b7a941d2c03c3c7cf6ec37705f7a46c53ec64bc3ef5da3d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uis.edu",
+      "inicio_utc": "2026-11-20T04:12:59+00:00",
+      "url": "https://www.uis.edu/",
+      "http": 200,
+      "titulo": "University of Illinois Springfield",
+      "enlaces_academicos": [
+        "www.uis.edu/admission-aid",
+        "www.uis.edu/admission-aid/how-apply"
+      ],
+      "bytes_leidos": 88926,
+      "sha256_bytes_leidos": "a0f0b2dcdefb2a7dfe191966cfb0d0d09f6d73c4b02c8cb3b6e0f43f2de619da",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ulagos.cl",
+      "inicio_utc": "2026-11-20T04:12:59+00:00",
+      "url": "https://www.ulagos.cl/",
+      "http": 200,
+      "titulo": "Universidad de Los Lagos",
+      "enlaces_academicos": [
+        "www.itr.ulagos.cl/admision",
+        "www.ulagos.cl/vicerrectoria-de-planificacion-y-postgrado/direccion-de-postgrado/oferta-de-postgrado/"
+      ],
+      "bytes_leidos": 115255,
+      "sha256_bytes_leidos": "7850796d62f3569449abf924a807c4be2ad70b62ae7adbe2d76d4a68e2c6d284",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.umassmed.edu",
+      "inicio_utc": "2026-11-20T04:12:59+00:00",
+      "url": "https://www.umassmed.edu/",
+      "http": 403,
+      "estado": "respuesta_http_sin_portada"
+    },
+    {
+      "dominio": "www.umce.cl",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.umce.cl/",
+      "http": 200,
+      "titulo": "UMCE — Conoce El Poder Transformador De La Educación",
+      "enlaces_academicos": [
+        "www.umce.cl/coordinacion-nuevas-carreras/",
+        "www.umce.cl/universidad/gobierno-central/vicerrectoria-academica/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "0877ab538abdce580727b26e6d5747dc3b4810fcb12374e9934f51b0f4708ce9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.unap.cl",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.unap.cl/",
+      "http": 200,
+      "titulo": "",
+      "enlaces_academicos": [],
+      "bytes_leidos": 479,
+      "sha256_bytes_leidos": "b5926cd20ee04e722968224bf76693956e295e1048356ef6e03da3c9382f3d16",
+      "estado": "html_sin_ambos_indicios"
+    },
+    {
+      "dominio": "www.uncg.edu",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.uncg.edu/",
+      "http": 200,
+      "titulo": "The University of North Carolina at Greensboro | UNC GreensboroBlueSky iconFacebook iconInstagram iconTikTok iconX Twitter iconYouTube iconLinkedIn ic",
+      "enlaces_academicos": [
+        "www.uncg.edu/academics-support/",
+        "www.uncg.edu/academics-support/degrees-programs/"
+      ],
+      "bytes_leidos": 154021,
+      "sha256_bytes_leidos": "f62fb2223a64495151f06af833a395688c0231fb664ee4bc6b2e107add74068f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uncp.edu",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.uncp.edu/",
+      "http": 200,
+      "titulo": "Home | The University of North Carolina at Pembroke",
+      "enlaces_academicos": [
+        "www.uncp.edu/academics/all-majors-and-minors/index.html",
+        "www.uncp.edu/admissions/visit-campus.html"
+      ],
+      "bytes_leidos": 124029,
+      "sha256_bytes_leidos": "ec92edd7fbfe893ac185cc8fe1a983425bc13809ef16b7b3152a8f6771773833",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.unk.edu",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.unk.edu/",
+      "http": 200,
+      "titulo": "University of Nebraska at Kearney | University of Nebraska at Kearney single-neutral-actions-check-2information-deskpin-1coin",
+      "enlaces_academicos": [
+        "www.unk.edu/academics/health_sciences/unmc-programs-at-unk.php",
+        "www.unk.edu/academics/index.php"
+      ],
+      "bytes_leidos": 51738,
+      "sha256_bytes_leidos": "cf1558fcf371a3e6ff3d3aebe7326a367367a0f2e09257ea7ea32bac2af78db9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uoh.cl",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.uoh.cl/",
+      "http": 200,
+      "titulo": "Home Universidad de O'Higgins - Universidad de O'Higgins",
+      "enlaces_academicos": [
+        "www.uoh.cl/admision/unidad-de-aranceles/becas-y-creditos/",
+        "www.uoh.cl/universidad/vicerrectoria-academica/direccion-de-asuntos-estudiantiles/"
+      ],
+      "bytes_leidos": 263297,
+      "sha256_bytes_leidos": "34443db31c387c5bf98288ad4fa16a7a6833a4f305ff4c7b33d0196a80021a7a",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.upla.cl",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.upla.cl/portada/",
+      "http": 200,
+      "titulo": "Portada - Universidad de Playa Ancha - Portada",
+      "enlaces_academicos": [
+        "www.upla.cl/admision/",
+        "www.upla.cl/admision"
+      ],
+      "bytes_leidos": 265092,
+      "sha256_bytes_leidos": "183585b48e256e21f9ac14dc3c447ef29e96d08deab3726d2e1c068f12162dfb",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.usach.cl",
+      "inicio_utc": "2026-11-20T04:13:00+00:00",
+      "url": "https://www.usach.cl/",
+      "http": 200,
+      "titulo": "| Universidad de Santiago de Chile",
+      "enlaces_academicos": [
+        "www.usach.cl/registro-academico",
+        "www.usach.cl/oferta-de-postgrado-y-educacion-continua-0"
+      ],
+      "bytes_leidos": 99387,
+      "sha256_bytes_leidos": "a5678f392feed9d7a85e58bee403b15e0464d858c37c3e481ad387fcd49da128",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.usd.edu",
+      "inicio_utc": "2026-11-20T04:13:01+00:00",
+      "url": "https://www.usd.edu/",
+      "http": 200,
+      "titulo": "USD Home | University of South Dakota",
+      "enlaces_academicos": [
+        "www.usd.edu/Admissions-and-Aid/Apply",
+        "www.usd.edu/Admissions-and-Aid/Visit-USD"
+      ],
+      "bytes_leidos": 105410,
+      "sha256_bytes_leidos": "e75f99a23bc52a95549df14ffc7670979cb59abba9d9b8495bb8963d0047a58e",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.ut.edu",
+      "inicio_utc": "2026-11-20T04:13:01+00:00",
+      "url": "https://www.ut.edu/",
+      "http": 200,
+      "titulo": "University of Tampa - Home Page",
+      "enlaces_academicos": [
+        "www.ut.edu/admissions/visit",
+        "www.ut.edu/admissions"
+      ],
+      "bytes_leidos": 240833,
+      "sha256_bytes_leidos": "660af9e7a25d9c3791c6c01652b750448a3ff6b26c70cfac03840a573f71f216",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uta.cl",
+      "inicio_utc": "2026-11-20T04:13:01+00:00",
+      "url": "https://www.uta.cl/",
+      "http": 200,
+      "titulo": "Universidad de Tarapacá – Universidad del Estado",
+      "enlaces_academicos": [
+        "www.uta.cl/index.php/calendario_academico/",
+        "www.uta.cl/wp-content/uploads/2026/05/Calendario-docente-de-postgrado-ano-2026.pdf"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "b40f60f45e474fc2c3ef8d7a23fb8c45ef2746400f9172f9f96c5c7500ffc5d0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.utalca.cl",
+      "inicio_utc": "2026-11-20T04:13:01+00:00",
+      "url": "https://www.utalca.cl/",
+      "http": 200,
+      "titulo": "Universidad de Talca",
+      "enlaces_academicos": [
+        "admision.utalca.cl/carreras-pregrado/",
+        "admision.utalca.cl/carreras-para-profesionales/"
+      ],
+      "bytes_leidos": 123649,
+      "sha256_bytes_leidos": "436c195c20ab5c628d5319a2c41d6ff0dbe925927642f13d18a37d33cf33597d",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.utem.cl",
+      "inicio_utc": "2026-11-20T04:13:01+00:00",
+      "url": "https://www.utem.cl/",
+      "http": 200,
+      "titulo": "UTEM - Universidad Tecnológica Metropolitana",
+      "enlaces_academicos": [
+        "www.utem.cl/admision/",
+        "www.utem.cl/oferta-academica/"
+      ],
+      "bytes_leidos": 107929,
+      "sha256_bytes_leidos": "de1faf92d4e0b9d72b9639365cd0d0be5e3c512bb85a86f32991dfba7a66dd87",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.utk.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.utk.edu/",
+      "http": 200,
+      "titulo": "University of Tennessee, KnoxvilleSearch IconSearch Icon",
+      "enlaces_academicos": [
+        "www.utk.edu/academics",
+        "www.utk.edu/academics/programs"
+      ],
+      "bytes_leidos": 132639,
+      "sha256_bytes_leidos": "9bee121bcfb8595608f8f3316556becdedd75ea0be16cffd43aca700986e1773",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uv.cl",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.uv.cl/",
+      "http": 200,
+      "titulo": "Universidad de Valparaíso - inicio",
+      "enlaces_academicos": [
+        "www.uv.cl/programas/pregrado",
+        "www.uv.cl/institucion/calendario-academico"
+      ],
+      "bytes_leidos": 120226,
+      "sha256_bytes_leidos": "da5361456a7369f365a323b5b034bde02d6df3c59d6e32d81a24fd0ed909d6e9",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.uws.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.uws.edu/",
+      "http": 200,
+      "titulo": "University of Western States | Whole-Person Health Education",
+      "enlaces_academicos": [
+        "www.uws.edu/admissions/events/",
+        "www.uws.edu/academics/"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "aa08a324b74d7563445f477fba00b08c6730f003d75fa9a5ec80eef58f7c6dd7",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.virginiawestern.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.virginiawestern.edu/",
+      "http": 200,
+      "titulo": "Virginia Western Community College – Virginia Western Community College",
+      "enlaces_academicos": [
+        "www.virginiawestern.edu/academics",
+        "www.virginiawestern.edu/academic-calendar/"
+      ],
+      "bytes_leidos": 174093,
+      "sha256_bytes_leidos": "b0c949abda4ff4393c018862b6df3c1e65417082f0ddd0b1b34f8831c3a139f8",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.westpoint.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.westpoint.edu/",
+      "http": 200,
+      "titulo": "United States Military Academy West Point",
+      "enlaces_academicos": [
+        "www.westpoint.edu/admissions",
+        "www.westpoint.edu/admissions/admissions-tours"
+      ],
+      "bytes_leidos": 225239,
+      "sha256_bytes_leidos": "aab18f6b8b00d3c92d32298c50507a68de0001dbaef39f6ae07888bc1f61acae",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wfu.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.wfu.edu/",
+      "http": 200,
+      "titulo": "Wake Forest University",
+      "enlaces_academicos": [
+        "about.wfu.edu/academics/",
+        "admissions.wfu.edu/academics/majors-minors/"
+      ],
+      "bytes_leidos": 318124,
+      "sha256_bytes_leidos": "d7840e83a15e904549011c45f2ef67036bf659ca4ca49df9787249e9a27118f0",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wilmu.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.wilmu.edu/",
+      "http": 200,
+      "titulo": "Wilmington University",
+      "enlaces_academicos": [
+        "www.wilmu.edu/admission/inquiry.aspx",
+        "www.wilmu.edu/admission/applyonline.aspx"
+      ],
+      "bytes_leidos": 42595,
+      "sha256_bytes_leidos": "33d57f6c5dd208eb73ba5936b3eeb71675921fd504bcc85c399da08e75667cd2",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.winthrop.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.winthrop.edu/",
+      "http": 200,
+      "titulo": "Winthrop University, Rock Hill, SC 29733, USA",
+      "enlaces_academicos": [
+        "www.winthrop.edu/admissions/",
+        "www.winthrop.edu/admissions/undergraduate.aspx"
+      ],
+      "bytes_leidos": 51877,
+      "sha256_bytes_leidos": "3995e65e7c1f417c7ef29f6d83582a90c62069d3145385dc0a20b1ced9cefb57",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wisconsin.edu",
+      "inicio_utc": "2026-11-20T04:13:02+00:00",
+      "url": "https://www.wisconsin.edu/",
+      "http": 200,
+      "titulo": "Universities of Wisconsin",
+      "enlaces_academicos": [
+        "www.wisconsin.edu/academic-calendars/",
+        "www.wisconsin.edu/academic-advising/"
+      ],
+      "bytes_leidos": 79817,
+      "sha256_bytes_leidos": "b1530c13961a5c8f18e000d7765d98b6b108479e6851dbe8fbf55da74509ddfa",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wlc.edu",
+      "inicio_utc": "2026-11-20T04:13:03+00:00",
+      "url": "https://www.wlc.edu/",
+      "http": 200,
+      "titulo": "Home | Wisconsin Lutheran College",
+      "enlaces_academicos": [
+        "www.wlc.edu/academics/index.html",
+        "www.wlc.edu/academics/academic-calendar.html"
+      ],
+      "bytes_leidos": 90307,
+      "sha256_bytes_leidos": "c60cd03918339650996e330ffaf82a1717a479e0fff0031ae8d7eb812acf1a3f",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wmcarey.edu",
+      "inicio_utc": "2026-11-20T04:13:03+00:00",
+      "url": "https://www.wmcarey.edu/",
+      "http": 200,
+      "titulo": "William Carey University | A Christian University | William Carey University",
+      "enlaces_academicos": [
+        "www.wmcarey.edu/admissions/index.html",
+        "www.wmcarey.edu/admissions/undergraduate/index.html"
+      ],
+      "bytes_leidos": 63663,
+      "sha256_bytes_leidos": "8f46ff87d7d2565f1a8c10a125fa14aa51111d34d5ed700c6e002fa788e86f85",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.wpi.edu",
+      "inicio_utc": "2026-11-20T04:13:03+00:00",
+      "url": "https://www.wpi.edu/",
+      "http": 200,
+      "titulo": "Worcester Polytechnic Institute (WPI)",
+      "enlaces_academicos": [
+        "www.wpi.edu/admissions",
+        "www.wpi.edu/academics"
+      ],
+      "bytes_leidos": 246299,
+      "sha256_bytes_leidos": "13c449ad349ed05cacbf6a48d1993bc56343d80a3803a1ad01db14ba229effac",
+      "estado": "titulo_y_enlace_academico"
+    },
+    {
+      "dominio": "www.yoec.edu",
+      "inicio_utc": "2026-11-20T04:13:03+00:00",
+      "url": "https://www.yoec.edu/",
+      "http": 200,
+      "titulo": "YOEC | Yeshiva Ohr Elchonon Chabad | Los Angeles",
+      "enlaces_academicos": [
+        "www.yoec.edu/admissions-1"
+      ],
+      "bytes_leidos": 393216,
+      "sha256_bytes_leidos": "4e6c87471512a48b95b3ddde66dd5e5187a0adf20e0b3597dcbdce29ebe301f6",
+      "estado": "titulo_y_enlace_academico"
+    }
+  ]
+}

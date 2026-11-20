@@ -1,0 +1,4069 @@
+{
+  "ventana_inicio_utc": [
+    "2026-11-20T00:49:12.151781+00:00",
+    "2026-11-20T00:50:20.905892+00:00"
+  ],
+  "sha256_referencia": "408b750936be9e95785b5dd0286c80995ef1fae18f3f96115f2423a547a47577",
+  "sha256_respuestas_locales": "8da17d5e37dd553f62858259c84d9adc4bd8c0559c3383072f4b74e91da3fcfe",
+  "consultas": 1128,
+  "respuestas_dns": 1124,
+  "version_http": {
+    "HTTP/2": 1124
+  },
+  "errores_por_perfil": {
+    "cloudflare_standard": 1,
+    "cloudflare_security": 1,
+    "cloudflare_family": 2
+  },
+  "aviso_adguard": {
+    "direccion": "94.140.14.35",
+    "fuente": "https://github.com/AdguardTeam/AdGuardHome/issues/5028"
+  },
+  "controles": {
+    "example.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "no-existe-pdns-lab.invalid": {
+      "A": {
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      }
+    },
+    "nudity.testcategory.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    },
+    "malware.testcategory.com": {
+      "A": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "AAAA": {
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ]
+      }
+    }
+  },
+  "por_dominio": {
+    "cloudflare": {
+      "A": {
+        "educativo": {
+          "resolucion_observada": 38,
+          "sin_referencia": 1
+        },
+        "adultos": {
+          "restriccion_observada": 4
+        }
+      },
+      "AAAA": {
+        "educativo": {
+          "resolucion_observada": 9,
+          "sin_referencia": 30
+        },
+        "adultos": {
+          "sin_referencia": 3,
+          "restriccion_observada": 1
+        }
+      }
+    },
+    "adguard": {
+      "A": {
+        "educativo": {
+          "resolucion_observada": 39
+        },
+        "adultos": {
+          "restriccion_observada": 4
+        }
+      },
+      "AAAA": {
+        "educativo": {
+          "resolucion_observada": 9,
+          "sin_referencia": 30
+        },
+        "adultos": {
+          "sin_referencia": 3,
+          "restriccion_observada": 1
+        }
+      }
+    }
+  },
+  "detalle": [
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cambridgeenglish.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "ehess.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "em-lyon.com",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "helsinki.fi",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "icp.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "insa-rouen.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "error",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "error",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "error",
+          "direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "error",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-rodez.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "iut-tarbes.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "nber.org",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "rsu.lv",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "sfu.ca",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "solvay.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "u-bourgogne.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "udg.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uibk.ac.at",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uit.no",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unal.edu.co",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-bonn.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-giessen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-goettingen.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uni-magdeburg.de",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistra.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unistrapg.it",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-brest.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lille.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-lyon1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris1.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-paris8.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "univ-tours.fr",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "unizar.es",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "yale.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "uc.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "mit.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "cam.ac.uk",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "harvard.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "stanford.edu",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "www.udp.cl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "uu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "resolucion_observada"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "resolver",
+      "perfiles": {
+        "cloudflare_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "vu.nl",
+      "categoria": "educativo",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "resolver",
+      "perfiles": {
+        "adguard_family": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "pornhub.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "stripchat.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "xnxx.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "direccion",
+          "direccion"
+        ],
+        "cloudflare_security": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "A",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "direccion",
+          "direccion"
+        ],
+        "adguard_default": [
+          "direccion",
+          "direccion"
+        ]
+      },
+      "resultado": "restriccion_observada"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "cloudflare",
+      "esperado": "restringir",
+      "perfiles": {
+        "cloudflare_family": [
+          "aviso",
+          "aviso"
+        ],
+        "cloudflare_standard": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "cloudflare_security": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    },
+    {
+      "dominio": "xvideos.com",
+      "categoria": "adultos",
+      "tipo": "AAAA",
+      "operador": "adguard",
+      "esperado": "restringir",
+      "perfiles": {
+        "adguard_family": [
+          "aviso",
+          "aviso"
+        ],
+        "adguard_open": [
+          "sin_direccion",
+          "sin_direccion"
+        ],
+        "adguard_default": [
+          "sin_direccion",
+          "sin_direccion"
+        ]
+      },
+      "resultado": "sin_referencia"
+    }
+  ]
+}

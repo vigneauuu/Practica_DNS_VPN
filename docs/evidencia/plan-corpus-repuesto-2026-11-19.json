@@ -1,0 +1,26 @@
+{
+  "study": "control_parental_2000",
+  "target_unique_domains": 2000,
+  "target_origin": "Meta operativa del diseño para planificar la selección y la carga de medición",
+  "input_domains": 2000,
+  "in_scope_candidates": 2000,
+  "in_scope_validated": 0,
+  "additional_candidates_needed": 0,
+  "validation_gap": 2000,
+  "ready_for_selection": false,
+  "candidate_memberships": {
+    "adultos": 422,
+    "apuestas": 439,
+    "armas": 3,
+    "educativo": 202,
+    "popular": 400,
+    "referencia_biblioteca": 534
+  },
+  "excluded_categories": [
+    "phishing",
+    "control_tecnico"
+  ],
+  "corpus_sha256": "e62f05e9a764ccfa741dfbf486a578bb59859b6a41d04d5679763f5c910c7bfc",
+  "study_sha256": "63076a29cd478f6fffac2bdbbb543f0c69523840316e9c2e5e204040ddf631a3",
+  "note": "La meta no acredita datos obtenidos, balance de categorías ni representatividad estadística."
+}
