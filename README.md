@@ -1,12 +1,12 @@
-# Caracterización reproducible de DNS protector
+# Evaluación reproducible de Protective DNS (PDNS) para control parental
 
 Práctica I de **Matías Vigneau Andrades**, Universidad Diego Portales. Profesor guía: Nicolás Boettcher.
 
-El proyecto caracteriza respuestas de perfiles de protección para control parental ante un corpus documentado. El inventario de phishing se conserva como antecedente separado, sin incorporarlo al estudio parental principal. Distingue señales de bloqueo, resolución observada, anomalías y errores de red. El acuerdo entre perfiles se informa por separado de la eficacia respecto de una política.
+El proyecto evalúa comparativamente respuestas de servicios de *Protective DNS* (PDNS), VPN y proxies para control parental ante un corpus documentado. El inventario de phishing se conserva como antecedente separado, sin incorporarlo al estudio parental principal. Distingue señales de bloqueo, resolución observada, anomalías y errores de red. El acuerdo entre perfiles se informa por separado de la eficacia respecto de la política de filtrado declarada por cada proveedor.
 
-## Estado del avance
+## Resumen del estudio y resultados
 
-- Informe con la presentación de la plantilla y nueve apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo, conclusiones y trabajo futuro. Los recorridos y los resultados se muestran con figuras que distinguen las mediciones públicas de las pruebas de laboratorio.
+- Informe final (`docs/informe/Practica1.tex`, 25 páginas, 12 tablas, 11 figuras, 61 referencias) con nueve apartados: antecedentes y motivación, objetivos, alcances y limitaciones, resultados esperados, estado del arte, metodología de trabajo, desarrollo y resultados, conclusiones y trabajo futuro.
 - Corpus heredado auditado: **1.960 filas**, 94 entradas inválidas, 14 solapamientos y **1.852 candidatos únicos**. Las categorías están pendientes de revisión semántica.
 - La meta es **2.000 dominios únicos revisados**. Se repusieron los 266 nombres del lote de procedencia incompatible y el inventario vuelve a reunir 2.000 candidatos. Cada alta registra su fuente. El plan distingue los candidatos de los dominios admitidos después de la revisión individual. [Reposición del corpus](docs/reposicion-corpus-2026-11-19.md) · [Diseño del estudio](docs/diseno_estudio.md)
 - Motor nuevo con mensajes DNS completos, A/AAAA, EDE, controles temporales, reintentos registrados y ejecuciones independientes.
