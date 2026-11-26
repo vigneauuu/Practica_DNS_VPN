@@ -1,0 +1,1348 @@
+{
+  "fecha_utc": "2026-11-26T01:39:08.480087+00:00",
+  "source_dir": "results/ampliacion-2026-11-18/",
+  "per_profile": {
+    "cloudflare_standard": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "cloudflare_security": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "cloudflare_family": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 108,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "google_public": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "quad9_reference": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "quad9_secure": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "adguard_open": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "adguard_family": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 108,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "cleanbrowsing_adult": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 3
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "bloqueo_senalizado": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "cleanbrowsing_family": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 3
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "bloqueo_senalizado": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "controld_open": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 116,
+            "error_red": 1
+          },
+          "ALL": {
+            "resolucion_observada": 149,
+            "error_red": 1
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 89,
+            "resolucion_observada": 27,
+            "error_red": 1
+          },
+          "ALL": {
+            "indeterminado": 116,
+            "resolucion_observada": 33,
+            "error_red": 1
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 49,
+          "inconsistente": 0,
+          "con_error_red": 1,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 0.98
+        },
+        "AAAA": {
+          "consistente": 49,
+          "inconsistente": 0,
+          "con_error_red": 1,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 0.98
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 116
+    },
+    "controld_family": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 108,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "opendns_standard": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 150
+          },
+          "adultos": {
+            "resolucion_observada": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 117,
+            "resolucion_observada": 33
+          },
+          "adultos": {
+            "indeterminado": 9,
+            "resolucion_observada": 3
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    },
+    "opendns_family": {
+      "counts": {
+        "A": {
+          "educativo": {
+            "resolucion_observada": 117
+          },
+          "ALL": {
+            "resolucion_observada": 138,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "resolucion_observada": 12
+          },
+          "armas": {
+            "resolucion_observada": 9
+          }
+        },
+        "AAAA": {
+          "educativo": {
+            "indeterminado": 90,
+            "resolucion_observada": 27
+          },
+          "ALL": {
+            "indeterminado": 108,
+            "resolucion_observada": 30,
+            "bloqueo_senalizado": 12
+          },
+          "adultos": {
+            "bloqueo_senalizado": 12
+          },
+          "apuestas": {
+            "indeterminado": 12
+          },
+          "armas": {
+            "resolucion_observada": 3,
+            "indeterminado": 6
+          }
+        }
+      },
+      "consistency": {
+        "A": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        },
+        "AAAA": {
+          "consistente": 50,
+          "inconsistente": 0,
+          "con_error_red": 0,
+          "tasa_consistencia_sin_error": 1.0,
+          "tasa_consistencia_total": 1.0
+        }
+      },
+      "edu_false_positives_A": 0,
+      "edu_resolved_A": 117
+    }
+  },
+  "inter_round_timing": {
+    "cloudflare_standard": {
+      "total_duration_s": 56.82,
+      "start_deltas_s": [
+        27.47,
+        15.72
+      ],
+      "target_errors": 0
+    },
+    "cloudflare_security": {
+      "total_duration_s": 114.39,
+      "start_deltas_s": [
+        45.68,
+        35.26
+      ],
+      "target_errors": 0
+    },
+    "cloudflare_family": {
+      "total_duration_s": 113.76,
+      "start_deltas_s": [
+        45.79,
+        35.16
+      ],
+      "target_errors": 0
+    },
+    "google_public": {
+      "total_duration_s": 134.73,
+      "start_deltas_s": [
+        48.66,
+        44.92
+      ],
+      "target_errors": 0
+    },
+    "quad9_reference": {
+      "total_duration_s": 50.51,
+      "start_deltas_s": [
+        29.03,
+        10.98
+      ],
+      "target_errors": 0
+    },
+    "quad9_secure": {
+      "total_duration_s": 92.82,
+      "start_deltas_s": [
+        30.85,
+        30.64
+      ],
+      "target_errors": 0
+    },
+    "adguard_open": {
+      "total_duration_s": 86.87,
+      "start_deltas_s": [
+        43.2,
+        21.38
+      ],
+      "target_errors": 0
+    },
+    "adguard_family": {
+      "total_duration_s": 203.88,
+      "start_deltas_s": [
+        66.9,
+        68.08
+      ],
+      "target_errors": 0
+    },
+    "cleanbrowsing_adult": {
+      "total_duration_s": 146.65,
+      "start_deltas_s": [
+        56.81,
+        45.82
+      ],
+      "target_errors": 0
+    },
+    "cleanbrowsing_family": {
+      "total_duration_s": 134.34,
+      "start_deltas_s": [
+        47.67,
+        44.78
+      ],
+      "target_errors": 0
+    },
+    "controld_open": {
+      "total_duration_s": 55.31,
+      "start_deltas_s": [
+        33.76,
+        10.88
+      ],
+      "target_errors": 2
+    },
+    "controld_family": {
+      "total_duration_s": 93.93,
+      "start_deltas_s": [
+        31.17,
+        31.44
+      ],
+      "target_errors": 0
+    },
+    "opendns_standard": {
+      "total_duration_s": 126.68,
+      "start_deltas_s": [
+        48.54,
+        42.54
+      ],
+      "target_errors": 0
+    },
+    "opendns_family": {
+      "total_duration_s": 312.79,
+      "start_deltas_s": [
+        119.29,
+        102.87
+      ],
+      "target_errors": 0
+    }
+  },
+  "pairwise_parental_post_calibration": {
+    "A": [
+      {
+        "a": "cloudflare_family",
+        "b": "adguard_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_adult",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "controld_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "opendns_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "cleanbrowsing_adult",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "cleanbrowsing_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "controld_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "opendns_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "cleanbrowsing_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "controld_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "opendns_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "controld_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "opendns_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "controld_family",
+        "b": "opendns_family",
+        "n": 50,
+        "c00": 46,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      }
+    ],
+    "AAAA": [
+      {
+        "a": "cloudflare_family",
+        "b": "adguard_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_adult",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "controld_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "opendns_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "cleanbrowsing_adult",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "cleanbrowsing_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "controld_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "adguard_family",
+        "b": "opendns_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "cleanbrowsing_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "controld_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "opendns_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "controld_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "opendns_family",
+        "n": 11,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      },
+      {
+        "a": "controld_family",
+        "b": "opendns_family",
+        "n": 14,
+        "c00": 10,
+        "c01": 0,
+        "c10": 0,
+        "c11": 4,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "jaccard": 1.0
+      }
+    ]
+  },
+  "coverage_91_pairs_post_calibration": {
+    "A": {
+      "49": 13,
+      "50": 78
+    },
+    "AAAA": {
+      "11": 85,
+      "14": 6
+    }
+  }
+}

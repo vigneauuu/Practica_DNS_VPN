@@ -1,0 +1,171 @@
+{
+  "fecha_utc": "2026-11-26T01:52:58.205305+00:00",
+  "probe_cc": "CL",
+  "window_historical": "2024-01-01..2026-11-26",
+  "cl_web_connectivity_aggregation_sep_nov_2026": {
+    "v": 0,
+    "dimension_count": 0,
+    "db_stats": {
+      "row_count": 171639805,
+      "bytes": 575475942,
+      "total_row_count": 171639805,
+      "elapsed_seconds": 0.16686081886291504
+    },
+    "result": {
+      "anomaly_count": 5579,
+      "confirmed_count": 1,
+      "failure_count": 4746,
+      "ok_count": 267230,
+      "measurement_count": 277556
+    }
+  },
+  "total_domains_queried": 84,
+  "domains_with_any_cl_records_2024_2026": 4,
+  "domains_with_cl_records_2026": 4,
+  "hits_detail": [
+    {
+      "domain": "pornhub.com",
+      "category": "adultos_ue",
+      "count_2024_2026": 50,
+      "count_2026": 50,
+      "count_sep_nov_2026": 50,
+      "anomalies_2024_2026": 2,
+      "confirmed_2024_2026": 0,
+      "anomalies_2026": 2,
+      "confirmed_2026": 0,
+      "anomalies_sep_nov_2026": 2,
+      "latest_utc": "2026-11-25T04:02:46.000000Z",
+      "asns_2026": [
+        "AS14117",
+        "AS22047",
+        "AS264827",
+        "AS272105",
+        "AS27651",
+        "AS27901",
+        "AS7418"
+      ],
+      "sample_inputs": [
+        "https://www.pornhub.com/"
+      ]
+    },
+    {
+      "domain": "xnxx.com",
+      "category": "adultos_ue",
+      "count_2024_2026": 50,
+      "count_2026": 50,
+      "count_sep_nov_2026": 50,
+      "anomalies_2024_2026": 1,
+      "confirmed_2024_2026": 0,
+      "anomalies_2026": 1,
+      "confirmed_2026": 0,
+      "anomalies_sep_nov_2026": 1,
+      "latest_utc": "2026-11-25T04:04:26.000000Z",
+      "asns_2026": [
+        "AS14117",
+        "AS22047",
+        "AS264827",
+        "AS272105",
+        "AS27651",
+        "AS27901",
+        "AS7418"
+      ],
+      "sample_inputs": [
+        "https://www.xnxx.com/"
+      ]
+    },
+    {
+      "domain": "xvideos.com",
+      "category": "adultos_ue",
+      "count_2024_2026": 50,
+      "count_2026": 50,
+      "count_sep_nov_2026": 50,
+      "anomalies_2024_2026": 1,
+      "confirmed_2024_2026": 0,
+      "anomalies_2026": 1,
+      "confirmed_2026": 0,
+      "anomalies_sep_nov_2026": 1,
+      "latest_utc": "2026-11-25T04:04:33.000000Z",
+      "asns_2026": [
+        "AS14117",
+        "AS22047",
+        "AS264827",
+        "AS272105",
+        "AS27651",
+        "AS27901",
+        "AS7418"
+      ],
+      "sample_inputs": [
+        "https://www.xvideos.com/"
+      ]
+    },
+    {
+      "domain": "juegalo.com",
+      "category": "apuestas_subtel",
+      "count_2024_2026": 44,
+      "count_2026": 44,
+      "count_sep_nov_2026": 44,
+      "anomalies_2024_2026": 37,
+      "confirmed_2024_2026": 0,
+      "anomalies_2026": 37,
+      "confirmed_2026": 0,
+      "anomalies_sep_nov_2026": 37,
+      "latest_utc": "2026-11-25T03:58:33.000000Z",
+      "asns_2026": [
+        "AS14117",
+        "AS22047",
+        "AS264827",
+        "AS272105",
+        "AS27651",
+        "AS27901",
+        "AS7418"
+      ],
+      "sample_inputs": [
+        "https://juegalo.com/"
+      ]
+    }
+  ],
+  "all_results_summary": {
+    "apuestas_subtel": {
+      "queried": 42,
+      "with_hits_2024_2026": 1,
+      "with_hits_2026": 1,
+      "total_measurements_2026": 44,
+      "anomalies_2026": 37
+    },
+    "adultos_ue": {
+      "queried": 4,
+      "with_hits_2024_2026": 3,
+      "with_hits_2026": 3,
+      "total_measurements_2026": 150,
+      "anomalies_2026": 4
+    },
+    "adultos_ofcom": {
+      "queried": 18,
+      "with_hits_2024_2026": 0,
+      "with_hits_2026": 0,
+      "total_measurements_2026": 0,
+      "anomalies_2026": 0
+    },
+    "armas": {
+      "queried": 13,
+      "with_hits_2024_2026": 0,
+      "with_hits_2026": 0,
+      "total_measurements_2026": 0,
+      "anomalies_2026": 0
+    },
+    "educativo": {
+      "queried": 6,
+      "with_hits_2024_2026": 0,
+      "with_hits_2026": 0,
+      "total_measurements_2026": 0,
+      "anomalies_2026": 0
+    },
+    "control_tecnico": {
+      "queried": 1,
+      "with_hits_2024_2026": 0,
+      "with_hits_2026": 0,
+      "total_measurements_2026": 0,
+      "anomalies_2026": 0
+    }
+  }
+}

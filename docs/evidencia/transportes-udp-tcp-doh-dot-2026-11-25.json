@@ -1,0 +1,530 @@
+{
+  "fecha_utc": "2026-11-26T01:41:59.717439+00:00",
+  "timeout_port53_s": 2.5,
+  "timeout_tls_s": 3.5,
+  "rounds": 2,
+  "domains_count": 24,
+  "raw_sha256": "3c5c7973ef41258a9b5d2c79c442e0b44b18f90ae522dde6411162f24d26e811",
+  "opendns_dot_probe": {
+    "doh.familyshield.opendns.com": "ConnectionRefusedError",
+    "208.67.222.123": "OK"
+  },
+  "availability_by_profile_transport": {
+    "cloudflare_standard": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 10.4
+      },
+      "udp53": {
+        "ok": 24,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 7.4
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 8.7
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 81.7
+      }
+    },
+    "cloudflare_family": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 11.6
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 12.9
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 83.8
+      }
+    },
+    "google_public": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 61.5
+      },
+      "udp53": {
+        "ok": 22,
+        "err": 2,
+        "tc_true": 0,
+        "ms_median": 7.2
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 8.7
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 58.0
+      }
+    },
+    "quad9_unfiltered": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 9.2
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 6.0
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 32.9
+      }
+    },
+    "quad9_secure": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 11.5
+      },
+      "udp53": {
+        "ok": 24,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 5.5
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 6.4
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 33.5
+      }
+    },
+    "adguard_unfiltered": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 105.9
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 120.1
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 279.3
+      }
+    },
+    "adguard_family": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 106.2
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 53.4
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 275.1
+      }
+    },
+    "cleanbrowsing_family": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 104.4
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 53.9
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 226.7
+      }
+    },
+    "controld_family": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 8.9
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 6.2
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 28.6
+      }
+    },
+    "opendns_family": {
+      "tcp53": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 114.1
+      },
+      "udp53": {
+        "ok": 0,
+        "err": 24,
+        "tc_true": 0,
+        "ms_median": null
+      },
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 144.7
+      }
+    },
+    "mullvad_family": {
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 128.2
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 520.5
+      }
+    },
+    "dns4eu_child": {
+      "doh": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 420.9
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 909.5
+      }
+    }
+  },
+  "transport_parity": {
+    "udp53_vs_tcp53": {
+      "compared": 70,
+      "matched": 70,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "tcp53_vs_doh": {
+      "compared": 960,
+      "matched": 960,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "tcp53_vs_dot853": {
+      "compared": 864,
+      "matched": 864,
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "doh_vs_dot853": {
+      "compared": 1056,
+      "matched": 1056,
+      "mismatch_count": 0,
+      "mismatches": []
+    }
+  },
+  "dot853_category_A": {
+    "cloudflare_standard": {
+      "adultos": {
+        "resolucion": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "cloudflare_family": {
+      "adultos": {
+        "bloqueo": 10,
+        "resolucion": 2
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 2,
+        "nxdomain": 2,
+        "bloqueo": 4
+      }
+    },
+    "google_public": {
+      "adultos": {
+        "resolucion": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "quad9_unfiltered": {
+      "adultos": {
+        "resolucion": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "quad9_secure": {
+      "adultos": {
+        "resolucion": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "adguard_unfiltered": {
+      "adultos": {
+        "resolucion": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "adguard_family": {
+      "adultos": {
+        "bloqueo": 10,
+        "resolucion": 2
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "cleanbrowsing_family": {
+      "adultos": {
+        "nxdomain": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "controld_family": {
+      "adultos": {
+        "bloqueo": 10,
+        "resolucion": 2
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "mullvad_family": {
+      "adultos": {
+        "nxdomain": 10,
+        "resolucion": 2
+      },
+      "apuestas": {
+        "nxdomain": 8,
+        "resolucion": 4
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "dns4eu_child": {
+      "adultos": {
+        "bloqueo": 12
+      },
+      "apuestas": {
+        "bloqueo": 8,
+        "resolucion": 4
+      },
+      "armas": {
+        "bloqueo": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    }
+  },
+  "elapsed_total_s": 165.7
+}
