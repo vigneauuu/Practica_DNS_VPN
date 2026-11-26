@@ -357,7 +357,7 @@ def fig8_transportes_4_capas() -> None:
 
     # Panel B: Cross-transport blocking/response parity bar chart
     pair_items = [
-        ("udp53_vs_tcp53", "UDP/53 vs. TCP/53\n(3 perfiles sin filtro parental)"),
+        ("udp53_vs_tcp53", "UDP/53 frente a TCP/53\n(3 perfiles sin filtro parental)"),
         ("tcp53_vs_doh", "TCP/53 frente a DoH\n(10 perfiles)"),
         ("tcp53_vs_dot853", "TCP/53 frente a DoT/853\n(10 perfiles)"),
         ("doh_vs_dot853", "DoH frente a DoT/853\n(12 perfiles)"),
