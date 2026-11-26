@@ -28,6 +28,11 @@ C_NODATA = "#BDBDBD"   # Gris neutro: Sin referencia / Indeterminado
 C_ERR = "#CA0020"      # Rojo carmesí: Error de red / Fallo
 C_OK = "#1B7837"       # Verde bosque: Verificado / Disponible
 
+
+def fmt_es(val: float, dec: int = 1) -> str:
+    """Formatea un número flotante con coma decimal en español."""
+    return f"{val:.{dec}f}".replace(".", ",")
+
 plt.rcParams.update({
     "font.family": "DejaVu Sans",
     "font.size": 8.5,
@@ -140,7 +145,7 @@ def fig5_cobertura_pares_reclasificado() -> None:
         ys = [cov[k] for k in xs]
         bars = ax.bar(xs, ys, width=0.55, color=color, edgecolor="#333333", linewidth=0.5)
         for rect, val in zip(bars, ys):
-            ax.text(rect.get_x() + rect.get_width() / 2, val + 2.0, f"{val} pares\n({val/91*100:.1f}%)",
+            ax.text(rect.get_x() + rect.get_width() / 2, val + 2.0, f"{val} pares\n({fmt_es(val/91*100, 1)} %)",
                     ha="center", va="bottom", fontsize=7.6, fontweight="bold")
         ax.set_title(title, pad=6)
         ax.set_xlabel("Dominios consistentes comparables por par (de 50)")
@@ -163,9 +168,9 @@ def fig6_benchmark_9_proveedores() -> None:
     ]
     groups = [
         ("adultos_reg", "Adulto reg.\n(UE/Ofcom, n=22)"),
-        ("adultos_cand", "Adulto cand.\n(corpus, n=100)"),
+        ("adultos_cand", "Adulto cand.\n(n=100; 90 act.)"),
         ("apuestas_subtel", "Apuestas Subtel\n(Chile, n=42)"),
-        ("apuestas_cand", "Apuestas cand.\n(corpus, n=100)"),
+        ("apuestas_cand", "Apuestas cand.\n(n=100; 85 act.)"),
         ("armas_verif", "Armas oficiales\n(n=13)"),
         ("educativo_verif", "Educativo\n(CRUCH/IPEDS, n=166)"),
     ]
@@ -181,7 +186,7 @@ def fig6_benchmark_9_proveedores() -> None:
             denom = blk + res
             pct = (blk / denom * 100.0) if denom > 0 else 0.0
             mat[i, j] = pct
-            ann[i][j] = f"{pct:.1f}%\n({blk}/{denom})" if denom > 0 else "s/ref"
+            ann[i][j] = f"{fmt_es(pct, 1)} %\n({blk}/{denom})" if denom > 0 else "s/ref"
 
     fig, ax = plt.subplots(figsize=(8.4, 4.4))
     im = ax.imshow(mat, cmap="PuBu", vmin=0, vmax=100, aspect="auto")
@@ -219,7 +224,7 @@ def fig7_matrices_kappa_jaccard() -> None:
         "cloudflare_family", "adguard_family", "cleanbrowsing_adult", "cleanbrowsing_family",
         "controld_family", "opendns_family", "mullvad_family", "dns4eu_child",
     ]
-    short = ["CF Fam", "AG Fam", "CB Adu", "CB Fam", "CD Fam", "OD Fam", "MV Fam", "D4 Chi"]
+    short = ["CF Fam", "AG Fam", "CB Adu", "CB Fam", "CD Fam", "OD Fam", "MV Fam", "D4 Inf"]
     n = len(parental)
     idx = {p: i for i, p in enumerate(parental)}
 
@@ -254,7 +259,7 @@ def fig7_matrices_kappa_jaccard() -> None:
                         ax.text(c, r, "n/d", ha="center", va="center", fontsize=6.8, color="#777777")
                     else:
                         txt_c = "white" if v >= 0.58 else "#111111"
-                        ax.text(c, r, f"{v:.2f}", ha="center", va="center", fontsize=7.0,
+                        ax.text(c, r, fmt_es(v, 2), ha="center", va="center", fontsize=7.0,
                                 fontweight="bold" if v >= 0.5 else "normal", color=txt_c)
 
         ax.set_title(title, pad=8)
@@ -272,7 +277,7 @@ def fig7_matrices_kappa_jaccard() -> None:
     axes[0].set_xlabel("Triáng. sup.: Kappa (κ) | Triáng. inf.: Jaccard (J)")
     axes[1].set_xlabel("Triáng. sup.: Kappa (κ) | Triáng. inf.: Jaccard (J)")
     cbar = fig.colorbar(im, ax=axes.ravel().tolist(), fraction=0.02, pad=0.025)
-    cbar.set_label("Valor del índice (0 a 1)", fontsize=8.0)
+    cbar.set_label("Valor del índice (escala 0 a 1; valores < 0 al mínimo)", fontsize=7.6)
     fig.savefig(FIG_DIR / "fig7_matrices_kappa_jaccard.pdf", bbox_inches="tight")
     plt.close(fig)
 
@@ -287,7 +292,12 @@ def fig8_transportes_4_capas() -> None:
         "cleanbrowsing_family", "controld_family", "opendns_family",
         "mullvad_family", "dns4eu_child",
     ]
-    transports = [("udp53", "UDP/53\n(2,5 s)"), ("tcp53", "TCP/53\n(2,5 s)"), ("doh", "DoH\n(443)"), ("dot853", "DoT\n(853)")]
+    transports = [
+        ("udp53", "UDP/53\n2,5 s · n=24"),
+        ("tcp53", "TCP/53\n2,5 s · n=96"),
+        ("doh", "DoH\n443 · n=96"),
+        ("dot853", "DoT\n853 · n=96"),
+    ]
     mat = np.full((len(order), len(transports)), np.nan)
     ann = [["" for _ in transports] for _ in order]
 
@@ -295,18 +305,18 @@ def fig8_transportes_4_capas() -> None:
         tmap = ev["availability_by_profile_transport"].get(pid, {})
         for j, (tkey, _) in enumerate(transports):
             if tkey not in tmap:
-                if pid == "opendns_family" and tkey == "dot853":
-                    mat[i, j] = -1.0  # No soportado (refused)
-                    ann[i][j] = "No sop."
-                else:
-                    ann[i][j] = "N/A"
+                ann[i][j] = "N/A"
             else:
                 ok = tmap[tkey]["ok"]
                 tot = ok + tmap[tkey]["err"]
                 pct = ok / tot * 100.0 if tot else 0.0
                 mat[i, j] = pct
                 ms = tmap[tkey]["ms_median"]
-                ann[i][j] = f"{pct:.0f}%\n({ms:.0f} ms)" if ok > 0 and ms is not None else f"0%\n(timeout)"
+                if ok > 0 and ms is not None:
+                    ms_str = fmt_es(ms, 1) if ms < 100 else f"{int(ms + 0.5)}"
+                    ann[i][j] = f"{pct:.0f} %\n({ms_str} ms)"
+                else:
+                    ann[i][j] = "0 %\n(sin resp.)"
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8.4, 4.2), gridspec_kw={"width_ratios": [1.45, 1.0]})
 
@@ -330,7 +340,7 @@ def fig8_transportes_4_capas() -> None:
 
     ax1.set_title("A. Disponibilidad y mediana RTT por transporte", pad=6)
     ax1.set_xticks(range(len(transports)))
-    ax1.set_xticklabels([t[1] for t in transports])
+    ax1.set_xticklabels([t[1] for t in transports], fontsize=7.3)
     ax1.set_yticks(range(len(order)))
     ax1.set_yticklabels([LABELS_PROFILE[p] for p in order], fontsize=7.8)
     ax1.set_xticks(np.arange(-0.5, len(transports), 1), minor=True)
@@ -342,10 +352,10 @@ def fig8_transportes_4_capas() -> None:
 
     # Panel B: Cross-transport blocking/response parity bar chart
     pair_items = [
-        ("udp53_vs_tcp53", "UDP/53 vs. TCP/53"),
-        ("tcp53_vs_doh", "TCP/53 vs. DoH"),
-        ("tcp53_vs_dot853", "TCP/53 vs. DoT/853"),
-        ("doh_vs_dot853", "DoH vs. DoT/853"),
+        ("udp53_vs_tcp53", "UDP/53 frente a TCP/53"),
+        ("tcp53_vs_doh", "TCP/53 frente a DoH"),
+        ("tcp53_vs_dot853", "TCP/53 frente a DoT/853"),
+        ("doh_vs_dot853", "DoH frente a DoT/853"),
     ]
     yp = np.arange(len(pair_items))
     vals = []
@@ -354,7 +364,9 @@ def fig8_transportes_4_capas() -> None:
         pv = ev["transport_parity"][pk]
         pct = pv["matched"] / pv["compared"] * 100.0 if pv["compared"] else 0.0
         vals.append(pct)
-        labs.append(f"{pv['matched']}/{pv['compared']} ({pct:.1f}%)")
+        m_s = f"{pv['matched']:,}".replace(",", ".")
+        c_s = f"{pv['compared']:,}".replace(",", ".")
+        labs.append(f"{m_s}/{c_s} ({fmt_es(pct, 1)} %)")
 
     bars = ax2.barh(yp, vals, height=0.52, color=C_OK, alpha=0.88)
     for rect, ltxt in zip(bars, labs):
@@ -453,7 +465,7 @@ def fig10_vpn_proxies_externos() -> None:
 
     ax1.barh(y1, blk, height=0.62, color=C_BLOCK, label="Bloqueo señalizado (adulto / política DNS4EU)")
     ax1.barh(y1, alw, left=blk, height=0.62, color=C_ALLOW, label="Resolución observada (permitido o sin filtro)")
-    ax1.barh(y1, err, left=blk + alw, height=0.62, color=C_ERR, label="Error de red (timeout)")
+    ax1.barh(y1, err, left=blk + alw, height=0.62, color=C_ERR, label="Error de red (espera agotada)")
 
     for i in range(len(rows_a)):
         if blk[i] > 0:
@@ -483,7 +495,7 @@ def fig10_vpn_proxies_externos() -> None:
         ["example.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
         ["nudity.testcategory.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
         ["malware.testcategory.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
-        ["no-existe-pdns-lab.invalid", "curl 6 (0/2)", "curl 97 (0/2)", "curl 6 (0/2)", "curl 97 (0/2)", "curl 6 (0/2)", "curl 97 (0/2)"],
+        ["no-existe-pdns-lab.invalid", "curl 6 (2/2)", "curl 97 (2/2)", "curl 6 (2/2)", "curl 97 (2/2)", "curl 6 (2/2)", "curl 97 (2/2)"],
     ]
     cell_colors = []
     for row in tbl_data:
@@ -542,7 +554,7 @@ def fig11_ooni_chile() -> None:
 
     for i in range(len(order_doms)):
         if anom_pct[i] >= 12:
-            ax.text(anom_pct[i] / 2, y[i], f"{anom[i]}/{tot[i]} ({anom_pct[i]:.1f}%)",
+            ax.text(anom_pct[i] / 2, y[i], f"{anom[i]}/{tot[i]} ({fmt_es(anom_pct[i], 1)} %)",
                     ha="center", va="center", color="white", fontweight="bold", fontsize=7.8)
         else:
             ax.text(anom_pct[i] + 1.5, y[i], f"{anom[i]} anom.", ha="left", va="center",
@@ -550,14 +562,14 @@ def fig11_ooni_chile() -> None:
                     bbox=dict(boxstyle="round,pad=0.12", fc="white", ec="none", alpha=0.85))
         if ok_pct[i] >= 15:
             xpos = anom_pct[i] + ok_pct[i] / 2
-            ax.text(xpos, y[i], f"{ok[i]}/{tot[i]} ({ok_pct[i]:.1f}%)",
+            ax.text(xpos, y[i], f"{ok[i]}/{tot[i]} ({fmt_es(ok_pct[i], 1)} %)",
                     ha="center", va="center", color="white", fontweight="bold", fontsize=7.8)
 
     ax.set_yticks(y)
     ax.set_yticklabels(labels, fontsize=8.0)
     ax.set_xlim(0, 100)
     ax.set_xticks([0, 20, 40, 60, 80, 100])
-    ax.set_xlabel("Proporción de mediciones OONI en Chile (7 ASNs, septiembre–noviembre 2026, %)")
+    ax.set_xlabel("Proporción de mediciones OONI en Chile (7 ASN, sep.–nov. 2026, tope 50/URL, %)")
     ax.grid(axis="x", linestyle=":", alpha=0.5)
     ax.invert_yaxis()
     ax.legend(loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.48, -0.34))

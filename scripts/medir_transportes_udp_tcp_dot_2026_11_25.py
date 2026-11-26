@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Experimento pareado de 4 transportes DNS: UDP/53 vs. TCP/53 (mismo timeout 2,5 s), DoH y DoT/853.
+"""Experimento pareado de 4 transportes DNS: UDP/53 frente a TCP/53 (espera 2,5 s), DoH y DoT/853.
 
-Responde empíricamente dos preguntas directas del estudio:
-1. Paridad de disponibilidad y filtrado entre UDP/53 y TCP/53 con idéntico tiempo de espera (2,5 s)
-   registrando bandera TC (truncamiento) y timeouts.
-2. Existencia y paridad de servicios PDNS sobre DNS-over-TLS (DoT, puerto 853, RFC 7858) frente a DoH y TCP/53.
+Responde dos preguntas directas del estudio:
+1. Paridad de disponibilidad y filtrado entre UDP/53 y TCP/53 con idéntico tiempo de espera (2,5 s),
+   registrando bandera TC (truncamiento) y tiempos agotados.
+2. Soporte y paridad de servicios PDNS sobre DNS-over-TLS (DoT, puerto 853, RFC 7858) frente a DoH y TCP/53.
 """
 from __future__ import annotations
 
@@ -33,15 +33,15 @@ ROUNDS = 2
 QTYPES = ("A", "AAAA")
 
 DOMAINS = [
-    # 6 adulto regulatorio (4 UE + 2 Ofcom)
+    # 6 adulto regulatorio (4 UE + 2 Ofcom, subconjunto estricto del benchmark de 448)
     ("pornhub.com", "adultos"),
     ("xvideos.com", "adultos"),
     ("xnxx.com", "adultos"),
     ("stripchat.com", "adultos"),
-    ("adultwork.com", "adultos"),
-    ("vivastreet.co.uk", "adultos"),
-    # 6 apuestas Subtel (incluye las 2 omisiones previas de DNS4EU)
-    ("betano.com", "apuestas"),
+    ("www.pornzog.com", "adultos"),
+    ("www.txxx.com", "adultos"),
+    # 6 apuestas Subtel exactos (incluye las 2 omisiones compartidas)
+    ("lat.betano.com", "apuestas"),
     ("coolbet.com", "apuestas"),
     ("jugabet.cl", "apuestas"),
     ("rojabet.cl", "apuestas"),
@@ -52,11 +52,11 @@ DOMAINS = [
     ("sigsauer.com", "armas"),
     ("smith-wesson.com", "armas"),
     ("glock.com", "armas"),
-    # 4 educativos verificados (2 CRUCH + 2 IPEDS)
-    ("uchile.cl", "educativo"),
-    ("uc.cl", "educativo"),
-    ("mit.edu", "educativo"),
-    ("stanford.edu", "educativo"),
+    # 4 educativos verificados del benchmark (2 CRUCH + 2 IPEDS)
+    ("usm.cl", "educativo"),
+    ("www.uach.cl", "educativo"),
+    ("fairfield.edu", "educativo"),
+    ("madisoncollege.edu", "educativo"),
     # 4 controles técnicos
     ("example.com", "control_tecnico"),
     ("no-existe-pdns-lab.invalid", "control_tecnico"),
@@ -83,7 +83,7 @@ PROVIDERS = [
      "doh_url": "https://doh.cleanbrowsing.org/doh/family-filter/"},
     {"id": "controld_family", "ip53": "76.76.2.4", "dot_ip": None, "dot_host": "family.freedns.controld.com",
      "doh_url": "https://freedns.controld.com/family"},
-    {"id": "opendns_family", "ip53": "208.67.222.123", "dot_ip": None, "dot_host": None,
+    {"id": "opendns_family", "ip53": "208.67.222.123", "dot_ip": "208.67.222.123", "dot_host": "dns.opendns.com",
      "doh_url": "https://doh.familyshield.opendns.com/dns-query"},
     {"id": "mullvad_family", "ip53": None, "dot_ip": "194.242.2.6", "dot_host": "family.dns.mullvad.net",
      "doh_url": "https://family.dns.mullvad.net/dns-query"},
@@ -183,8 +183,8 @@ def main() -> None:
         # and run paired UDP/53 at IDENTICAL 2.5s timeout on 12 domains (4 EC adult + 2 Subtel + 2 armas + 2 edu + 2 controls) x 2 rounds x A = 24 queries (max 60s in parallel, 1s when UDP works)!
         udp_subset = [
             "pornhub.com", "xvideos.com", "xnxx.com", "stripchat.com",
-            "betano.com", "coolbet.com", "ruger.com", "sigsauer.com",
-            "uchile.cl", "mit.edu", "example.com", "no-existe-pdns-lab.invalid",
+            "lat.betano.com", "coolbet.com", "ruger.com", "sigsauer.com",
+            "usm.cl", "fairfield.edu", "example.com", "no-existe-pdns-lab.invalid",
         ]
         for rnd in range(1, ROUNDS + 1):
             for dom, cat in DOMAINS:
@@ -316,6 +316,10 @@ def main() -> None:
         "timeout_tls_s": TIMEOUT_TLS,
         "rounds": ROUNDS,
         "domains_count": len(DOMAINS),
+        "udp_subset_domains": 12,
+        "udp_qtypes": ["A"],
+        "udp_queries_per_profile": 24,
+        "other_transports_queries_per_profile": len(DOMAINS) * len(QTYPES) * ROUNDS,
         "raw_sha256": hashlib.sha256(RAW_OUT.read_bytes()).hexdigest(),
         "opendns_dot_probe": opendns_dot_check,
         "availability_by_profile_transport": {pid: dict(tmap) for pid, tmap in avail.items()},

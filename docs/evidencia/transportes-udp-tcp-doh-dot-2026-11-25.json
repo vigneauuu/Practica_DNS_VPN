@@ -1,10 +1,16 @@
 {
-  "fecha_utc": "2026-11-26T01:41:59.717439+00:00",
+  "fecha_utc": "2026-11-26T04:05:41.709593+00:00",
   "timeout_port53_s": 2.5,
   "timeout_tls_s": 3.5,
   "rounds": 2,
   "domains_count": 24,
-  "raw_sha256": "3c5c7973ef41258a9b5d2c79c442e0b44b18f90ae522dde6411162f24d26e811",
+  "udp_subset_domains": 12,
+  "udp_qtypes": [
+    "A"
+  ],
+  "udp_queries_per_profile": 24,
+  "other_transports_queries_per_profile": 96,
+  "raw_sha256": "b2ca9dfea5adf5c1266ba950ccc3ed4ee43b405b43b7ff51e9dc7311378f64d3",
   "opendns_dot_probe": {
     "doh.familyshield.opendns.com": "ConnectionRefusedError",
     "208.67.222.123": "OK"
@@ -15,25 +21,25 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 10.4
+        "ms_median": 10.8
       },
       "udp53": {
         "ok": 24,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 7.4
+        "ms_median": 5.7
       },
       "doh": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 8.7
+        "ms_median": 8.3
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 81.7
+        "ms_median": 81.4
       }
     },
     "cloudflare_family": {
@@ -41,7 +47,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 11.6
+        "ms_median": 11.1
       },
       "udp53": {
         "ok": 0,
@@ -53,13 +59,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 12.9
+        "ms_median": 14.1
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 83.8
+        "ms_median": 85.8
       }
     },
     "google_public": {
@@ -67,25 +73,25 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 61.5
+        "ms_median": 64.7
       },
       "udp53": {
-        "ok": 22,
-        "err": 2,
+        "ok": 24,
+        "err": 0,
         "tc_true": 0,
-        "ms_median": 7.2
+        "ms_median": 56.8
       },
       "doh": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 8.7
+        "ms_median": 10.0
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 58.0
+        "ms_median": 93.7
       }
     },
     "quad9_unfiltered": {
@@ -93,7 +99,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 9.2
+        "ms_median": 8.5
       },
       "udp53": {
         "ok": 0,
@@ -105,13 +111,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 6.0
+        "ms_median": 5.8
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 32.9
+        "ms_median": 32.3
       }
     },
     "quad9_secure": {
@@ -119,7 +125,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 11.5
+        "ms_median": 11.6
       },
       "udp53": {
         "ok": 24,
@@ -131,13 +137,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 6.4
+        "ms_median": 5.6
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 33.5
+        "ms_median": 30.9
       }
     },
     "adguard_unfiltered": {
@@ -145,7 +151,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 105.9
+        "ms_median": 103.9
       },
       "udp53": {
         "ok": 0,
@@ -157,13 +163,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 120.1
+        "ms_median": 54.3
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 279.3
+        "ms_median": 274.8
       }
     },
     "adguard_family": {
@@ -171,7 +177,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 106.2
+        "ms_median": 103.6
       },
       "udp53": {
         "ok": 0,
@@ -183,13 +189,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 53.4
+        "ms_median": 54.9
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 275.1
+        "ms_median": 273.2
       }
     },
     "cleanbrowsing_family": {
@@ -197,7 +203,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 104.4
+        "ms_median": 103.2
       },
       "udp53": {
         "ok": 0,
@@ -209,13 +215,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 53.9
+        "ms_median": 54.0
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 226.7
+        "ms_median": 231.0
       }
     },
     "controld_family": {
@@ -223,7 +229,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 8.9
+        "ms_median": 9.5
       },
       "udp53": {
         "ok": 0,
@@ -235,13 +241,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 6.2
+        "ms_median": 6.8
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 28.6
+        "ms_median": 35.2
       }
     },
     "opendns_family": {
@@ -249,7 +255,7 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 114.1
+        "ms_median": 108.3
       },
       "udp53": {
         "ok": 0,
@@ -261,7 +267,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 144.7
+        "ms_median": 54.4
+      },
+      "dot853": {
+        "ok": 96,
+        "err": 0,
+        "tc_true": 0,
+        "ms_median": 238.8
       }
     },
     "mullvad_family": {
@@ -269,13 +281,13 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 128.2
+        "ms_median": 127.1
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 520.5
+        "ms_median": 520.8
       }
     },
     "dns4eu_child": {
@@ -283,20 +295,20 @@
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 420.9
+        "ms_median": 426.8
       },
       "dot853": {
         "ok": 96,
         "err": 0,
         "tc_true": 0,
-        "ms_median": 909.5
+        "ms_median": 911.5
       }
     }
   },
   "transport_parity": {
     "udp53_vs_tcp53": {
-      "compared": 70,
-      "matched": 70,
+      "compared": 72,
+      "matched": 72,
       "mismatch_count": 0,
       "mismatches": []
     },
@@ -307,14 +319,14 @@
       "mismatches": []
     },
     "tcp53_vs_dot853": {
-      "compared": 864,
-      "matched": 864,
+      "compared": 960,
+      "matched": 960,
       "mismatch_count": 0,
       "mismatches": []
     },
     "doh_vs_dot853": {
-      "compared": 1056,
-      "matched": 1056,
+      "compared": 1152,
+      "matched": 1152,
       "mismatch_count": 0,
       "mismatches": []
     }
@@ -340,8 +352,7 @@
     },
     "cloudflare_family": {
       "adultos": {
-        "bloqueo": 10,
-        "resolucion": 2
+        "bloqueo": 12
       },
       "apuestas": {
         "resolucion": 12
@@ -432,8 +443,7 @@
     },
     "adguard_family": {
       "adultos": {
-        "bloqueo": 10,
-        "resolucion": 2
+        "bloqueo": 12
       },
       "apuestas": {
         "resolucion": 12
@@ -469,8 +479,25 @@
     },
     "controld_family": {
       "adultos": {
-        "bloqueo": 10,
-        "resolucion": 2
+        "bloqueo": 12
+      },
+      "apuestas": {
+        "resolucion": 12
+      },
+      "armas": {
+        "resolucion": 8
+      },
+      "educativo": {
+        "resolucion": 8
+      },
+      "control_tecnico": {
+        "resolucion": 6,
+        "nxdomain": 2
+      }
+    },
+    "opendns_family": {
+      "adultos": {
+        "bloqueo": 12
       },
       "apuestas": {
         "resolucion": 12
@@ -488,8 +515,7 @@
     },
     "mullvad_family": {
       "adultos": {
-        "nxdomain": 10,
-        "resolucion": 2
+        "nxdomain": 12
       },
       "apuestas": {
         "nxdomain": 8,
@@ -526,5 +552,5 @@
       }
     }
   },
-  "elapsed_total_s": 165.7
+  "elapsed_total_s": 176.0
 }

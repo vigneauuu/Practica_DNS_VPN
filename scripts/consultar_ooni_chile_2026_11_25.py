@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Consulta exhaustiva a la API pública de OONI Explorer para Chile (CL) sobre dominios parentales reales."""
+"""Consulta a la API pública de OONI Explorer para Chile (CL) sobre los 84 dominios documentados del estudio."""
 from __future__ import annotations
 
 import asyncio
@@ -91,7 +91,8 @@ async def main() -> None:
     out = {
         "fecha_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "probe_cc": "CL",
-        "window_historical": "2024-01-01..2026-11-26",
+        "window_queried": "2026-09-01..2026-11-26",
+        "limit_per_url": 50,
         "cl_web_connectivity_aggregation_sep_nov_2026": cl_agg,
         "total_domains_queried": len(targets),
         "domains_with_any_cl_records_2024_2026": len(with_hits),

@@ -1,15 +1,16 @@
 {
-  "fecha_utc": "2026-11-26T01:52:58.205305+00:00",
+  "fecha_utc": "2026-11-26T04:04:22.431359+00:00",
   "probe_cc": "CL",
-  "window_historical": "2024-01-01..2026-11-26",
+  "window_queried": "2026-09-01..2026-11-26",
+  "limit_per_url": 50,
   "cl_web_connectivity_aggregation_sep_nov_2026": {
     "v": 0,
     "dimension_count": 0,
     "db_stats": {
       "row_count": 171639805,
-      "bytes": 575475942,
+      "bytes": 575476862,
       "total_row_count": 171639805,
-      "elapsed_seconds": 0.16686081886291504
+      "elapsed_seconds": 0.13866233825683594
     },
     "result": {
       "anomaly_count": 5579,
