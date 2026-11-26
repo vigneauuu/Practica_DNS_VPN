@@ -14,6 +14,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import matplotlib.ticker as mticker
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -160,19 +161,21 @@ def fig5_cobertura_pares_reclasificado() -> None:
 
 
 def fig6_benchmark_9_proveedores() -> None:
-    """Comparación unificada de los 9 proveedores (8 perfiles parentales + Quad9 Seguro) sobre 443 dominios (DoH, A)."""
-    ev = json.loads((EV_DIR / "benchmark-pdns-2026-11-25.json").read_text())
+    """Comparación unificada de nueve perfiles de ocho proveedores (8 parentales + Quad9 Seguro) sobre el conjunto insesgado A-Z (DoH, A)."""
+    ev = json.loads((EV_DIR / "benchmark-pdns-2026-11-26.json").read_text())
+    live_g = ev["live_by_group_cf_std_A"]
+    cnt_g = ev["group_counts"]
     profiles = [
         "dns4eu_child", "mullvad_family", "adguard_family", "cloudflare_family",
         "opendns_family", "cleanbrowsing_adult", "cleanbrowsing_family", "controld_family", "quad9_secure",
     ]
     groups = [
-        ("adultos_reg", "Adulto reg.\n(UE/Ofcom, n=22)"),
-        ("adultos_cand", "Adulto cand.\n(n=100; 90 act.)"),
-        ("apuestas_subtel", "Apuestas Subtel\n(Chile, n=42)"),
-        ("apuestas_cand", "Apuestas cand.\n(n=100; 85 act.)"),
-        ("armas_verif", "Armas oficiales\n(n=13)"),
-        ("educativo_verif", "Educativo\n(CRUCH/IPEDS, n=166)"),
+        ("adultos_reg", f"Adulto reg.\n(UE/Ofcom, n={cnt_g['adultos_reg']})"),
+        ("adultos_cand", f"Adulto UT1 A-Z\n(n={cnt_g['adultos_cand']}; {live_g.get('adultos_cand', 0)} act.)"),
+        ("apuestas_subtel", f"Apuestas Subtel\n(Chile, n={cnt_g['apuestas_subtel']})"),
+        ("apuestas_cand", f"Apuestas SB A-Z\n(n={cnt_g['apuestas_cand']}; {live_g.get('apuestas_cand', 0)} act.)"),
+        ("armas_verif", f"Armas oficiales\n(n={cnt_g['armas_verif']})"),
+        ("educativo_verif", f"Educativo\n(CRUCH/IPEDS, n={cnt_g['educativo_verif']})"),
     ]
     mat = np.zeros((len(profiles), len(groups)))
     ann = [["" for _ in groups] for _ in profiles]
@@ -219,7 +222,7 @@ def fig6_benchmark_9_proveedores() -> None:
 
 def fig7_matrices_kappa_jaccard() -> None:
     """Matrices pareadas de Cohen's Kappa (triángulo superior) y Jaccard (triángulo inferior) separadas por categoría."""
-    ev = json.loads((EV_DIR / "benchmark-pdns-2026-11-25.json").read_text())
+    ev = json.loads((EV_DIR / "benchmark-pdns-2026-11-26.json").read_text())
     parental = [
         "cloudflare_family", "adguard_family", "cleanbrowsing_adult", "cleanbrowsing_family",
         "controld_family", "opendns_family", "mullvad_family", "dns4eu_child",
@@ -230,8 +233,8 @@ def fig7_matrices_kappa_jaccard() -> None:
 
     fig, axes = plt.subplots(1, 2, figsize=(8.5, 4.0))
     panels = [
-        ("adultos_all", "Contenido adulto (reg. + cand., A)"),
-        ("apuestas_all", "Apuestas (Subtel + cand., A)"),
+        ("adultos_all", "Contenido adulto (reg. + UT1 A-Z, A)"),
+        ("apuestas_all", "Apuestas (Subtel + SB A-Z, A)"),
     ]
 
     for ax, (skey, title) in zip(axes, panels):
@@ -277,7 +280,9 @@ def fig7_matrices_kappa_jaccard() -> None:
     axes[0].set_xlabel("Triáng. sup.: Kappa (κ) | Triáng. inf.: Jaccard (J)")
     axes[1].set_xlabel("Triáng. sup.: Kappa (κ) | Triáng. inf.: Jaccard (J)")
     cbar = fig.colorbar(im, ax=axes.ravel().tolist(), fraction=0.02, pad=0.025)
-    cbar.set_label("Valor del índice (escala 0 a 1; valores < 0 al mínimo)", fontsize=7.6)
+    cbar.set_ticks([0.0, 0.2, 0.4, 0.6, 0.8, 1.0])
+    cbar.ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, pos: fmt_es(x, 1)))
+    cbar.set_label("Valor del índice (escala 0,0 a 1,0; valores < 0 al mínimo)", fontsize=7.6)
     fig.savefig(FIG_DIR / "fig7_matrices_kappa_jaccard.pdf", bbox_inches="tight")
     plt.close(fig)
 
@@ -352,10 +357,10 @@ def fig8_transportes_4_capas() -> None:
 
     # Panel B: Cross-transport blocking/response parity bar chart
     pair_items = [
-        ("udp53_vs_tcp53", "UDP/53 frente a TCP/53"),
-        ("tcp53_vs_doh", "TCP/53 frente a DoH"),
-        ("tcp53_vs_dot853", "TCP/53 frente a DoT/853"),
-        ("doh_vs_dot853", "DoH frente a DoT/853"),
+        ("udp53_vs_tcp53", "UDP/53 vs. TCP/53\n(3 perfiles sin filtro parental)"),
+        ("tcp53_vs_doh", "TCP/53 frente a DoH\n(10 perfiles)"),
+        ("tcp53_vs_dot853", "TCP/53 frente a DoT/853\n(10 perfiles)"),
+        ("doh_vs_dot853", "DoH frente a DoT/853\n(12 perfiles)"),
     ]
     yp = np.arange(len(pair_items))
     vals = []
@@ -439,16 +444,10 @@ def fig9_vpn_proxy_laboratorio() -> None:
 
 
 def fig10_vpn_proxies_externos() -> None:
-    """Figura unificada de VPNs externas (WARP, AdGuard VPN, RiseupVPN) y proxies SOCKS5 (WARP, AdGuard, Tor)."""
-    warp = json.loads((EV_DIR / "warp-2026-11-18.json").read_text())
-    adg = json.loads((EV_DIR / "adguard-vpn-2026-11-20.json").read_text())
-    rise = json.loads((EV_DIR / "riseup-2026-11-19.json").read_text())
-
-    fig = plt.figure(figsize=(8.6, 5.7))
-    gs = fig.add_gridspec(2, 1, height_ratios=[1.25, 1.0], hspace=0.62)
-
-    # Panel A: Túneles VPN externos — consultas DNS A en categorías evaluadas (Bloqueo vs Resolución)
-    ax1 = fig.add_subplot(gs[0])
+    """Figura limpia y legible de túneles VPN externos (WARP, AdGuard VPN, RiseupVPN).
+    La matriz HTTPS HEAD sobre proxies SOCKS5 se presenta como tabla nativa LaTeX para máxima legibilidad impresa.
+    """
+    fig, ax1 = plt.subplots(figsize=(8.2, 3.35))
     rows_a = [
         ("WARP · túnel sin filtro (15 dom.)", 0, 30, 0),
         ("WARP · túnel familiar (15 dom.)", 8, 22, 0),
@@ -469,61 +468,21 @@ def fig10_vpn_proxies_externos() -> None:
 
     for i in range(len(rows_a)):
         if blk[i] > 0:
-            ax1.text(blk[i] / 2, y1[i], f"{blk[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=7.6)
+            ax1.text(blk[i] / 2, y1[i], f"{blk[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=8.0)
         if alw[i] > 0:
-            ax1.text(blk[i] + alw[i] / 2, y1[i], f"{alw[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=7.6)
+            ax1.text(blk[i] + alw[i] / 2, y1[i], f"{alw[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=8.0)
         if err[i] > 0:
-            ax1.text(blk[i] + alw[i] + err[i] + 0.7, y1[i], "1 err.", ha="left", va="center", color=C_ERR, fontweight="bold", fontsize=7.0)
+            ax1.text(blk[i] + alw[i] + err[i] + 0.7, y1[i], "1 err.", ha="left", va="center", color=C_ERR, fontweight="bold", fontsize=7.6)
 
     ax1.set_yticks(y1)
-    ax1.set_yticklabels([r[0] for r in rows_a], fontsize=7.8)
+    ax1.set_yticklabels([r[0] for r in rows_a], fontsize=8.2)
     ax1.set_xlabel("Consultas DNS (registro A, 2 rondas por dominio; excluye controles técnicos)")
-    ax1.set_title("A. Efecto del filtrado DNS en túneles VPN externos (WARP, AdGuard VPN y RiseupVPN)", pad=6)
     ax1.set_xlim(0, 46)
     ax1.grid(axis="x", linestyle=":", alpha=0.5)
     ax1.invert_yaxis()
-    ax1.legend(loc="upper center", bbox_to_anchor=(0.48, -0.22), ncol=3, frameon=False, fontsize=7.3)
+    ax1.legend(loc="upper center", bbox_to_anchor=(0.45, -0.22), ncol=2, frameon=False, fontsize=7.8)
 
-    # Panel B: Clean visual matrix for SOCKS5 proxies (WARP filtro activo, AdGuard VPN, Tor) on 4 HTTPS HEAD controls
-    ax2 = fig.add_subplot(gs[1])
-    ax2.axis("off")
-    ax2.set_title("B. Solicitudes HTTPS HEAD por ruta directa frente a proxy SOCKS5 (resolución remota socks5h, 2 rondas)", pad=6)
-
-    cols = ["Control técnico HTTPS", "WARP Directa\n(fam. act.)", "WARP SOCKS5h\n(fam. act.)",
-            "AdGuard\nDirecta", "AdGuard\nSOCKS5h", "Tor\nDirecta", "Tor\nSOCKS5h"]
-    tbl_data = [
-        ["example.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
-        ["nudity.testcategory.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
-        ["malware.testcategory.com", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)", "HTTP 200 (2/2)"],
-        ["no-existe-pdns-lab.invalid", "curl 6 (2/2)", "curl 97 (2/2)", "curl 6 (2/2)", "curl 97 (2/2)", "curl 6 (2/2)", "curl 97 (2/2)"],
-    ]
-    cell_colors = []
-    for row in tbl_data:
-        rc = ["#F4F6F8"]
-        for cell in row[1:]:
-            rc.append("#DCECF6" if "HTTP 200" in cell else "#F5E2DF")
-        cell_colors.append(rc)
-
-    tbl = ax2.table(
-        cellText=tbl_data,
-        colLabels=cols,
-        cellColours=cell_colors,
-        colColours=["#244A64"] * len(cols),
-        colWidths=[0.26, 0.123, 0.127, 0.122, 0.124, 0.122, 0.122],
-        loc="center",
-        cellLoc="center",
-    )
-    tbl.auto_set_font_size(False)
-    tbl.set_fontsize(6.9)
-    tbl.scale(1.0, 1.55)
-    for (r, c), cell in tbl.get_celld().items():
-        cell.set_edgecolor("#CCCCCC")
-        cell.set_linewidth(0.6)
-        if r == 0:
-            cell.set_text_props(color="white", fontweight="bold")
-        elif c == 0:
-            cell.set_text_props(ha="left", fontweight="bold", color="#222222")
-
+    fig.tight_layout()
     fig.savefig(FIG_DIR / "fig10_vpn_proxies_externos.pdf", bbox_inches="tight")
     plt.close(fig)
 
@@ -532,7 +491,6 @@ def fig11_ooni_chile() -> None:
     """Contraste externo real de OONI Web Connectivity en Chile (7 ASNs chilenos, sep–nov 2026)."""
     ev = json.loads((EV_DIR / "ooni-chile-2026-11-25.json").read_text())
     hits = ev["hits_detail"]
-    # Order: Subtel gambling first, then adult platforms
     order_doms = ["juegalo.com", "pornhub.com", "xnxx.com", "xvideos.com"]
     hmap = {h["domain"]: h for h in hits}
     labels = [
@@ -549,8 +507,8 @@ def fig11_ooni_chile() -> None:
 
     fig, ax = plt.subplots(figsize=(7.6, 2.7))
     y = np.arange(len(order_doms))
-    ax.barh(y, anom_pct, height=0.56, color=C_OMIT, label="Anomalía de conectividad en ISP chileno")
-    ax.barh(y, ok_pct, left=anom_pct, height=0.56, color=C_ALLOW, label="Acceso normal observado en OONI")
+    ax.barh(y, anom_pct, height=0.56, color=C_OMIT, label="Anomalía reportada en OONI (7 ASN)")
+    ax.barh(y, ok_pct, left=anom_pct, height=0.56, color=C_ALLOW, label="Sin anomalía reportada en OONI")
 
     for i in range(len(order_doms)):
         if anom_pct[i] >= 12:

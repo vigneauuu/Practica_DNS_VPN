@@ -1,24 +1,149 @@
 {
-  "fecha_utc": "2026-11-26T02:11:58.883243+00:00",
-  "seed": 20261125,
+  "fecha_utc": "2026-11-26T21:07:02.259233+00:00",
+  "seed": 20261126,
   "rounds": 2,
   "qtypes": [
     "A",
     "AAAA"
   ],
-  "dataset_path": "dataset/benchmark-pdns-2026-11-25.csv",
-  "dataset_sha256": "3e613e750bf023b2bd2bbc3575aaee73a6d1a8e040e3d5f2cde8a3f9ffe66b7b",
-  "raw_sha256": "5948d5e1487d1b5e1540f5cb1b3331007c93896b7432ec8706009d040f0edcf8",
-  "total_domains_including_controls": 448,
-  "eval_domains_count": 443,
-  "live_in_cloudflare_standard_A": 418,
+  "dataset_path": "dataset/benchmark-pdns-2026-11-26.csv",
+  "dataset_sha256": "d70c38063ed0995b2d4d71cf25892155a0a545346d0954c3091285c8a96d9ba8",
+  "raw_sha256": "104bbec5a3bbf969ef940ba15e8579cbdeee1a538d158fde69a2f27cfe5e336c",
+  "sampling_meta": {
+    "seed": 20261126,
+    "ut1_adult": {
+      "source_url": "https://dsi.ut-capitole.fr/blacklists/download/adult.tar.gz",
+      "snapshot_date": "2026-11-26",
+      "tar_sha256": "12cbd26a554a6816b704466fe53f795c8af82059d6ca9cdbc76567ce68cf6cc7",
+      "raw_lines": 4599292,
+      "valid_unique": 4590350,
+      "eligible_after_exclusions": 4590336,
+      "sampled": 150,
+      "sample_distinct_first_chars": 27,
+      "sample_starts_with_digit": 2
+    },
+    "stevenblack_gambling": {
+      "source_url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
+      "snapshot_date": "2026-11-26",
+      "hosts_sha256": "71313fdcf66dd7a4b289607c7945d90a0029292cfae540bd36721322edfe9bdd",
+      "raw_entries": 6744,
+      "valid_unique": 6744,
+      "eligible_after_exclusions": 6727,
+      "sampled": 150,
+      "sample_distinct_first_chars": 28,
+      "sample_starts_with_digit": 6
+    },
+    "cross_overlap_excluded": 10
+  },
+  "profile_references": {
+    "cloudflare_standard": {
+      "ref": null,
+      "ref_type": null
+    },
+    "cloudflare_security": {
+      "ref": "cloudflare_standard",
+      "ref_type": "intra_provider"
+    },
+    "cloudflare_family": {
+      "ref": "cloudflare_standard",
+      "ref_type": "intra_provider"
+    },
+    "google_public": {
+      "ref": null,
+      "ref_type": null
+    },
+    "quad9_unfiltered": {
+      "ref": null,
+      "ref_type": null
+    },
+    "quad9_secure": {
+      "ref": "quad9_unfiltered",
+      "ref_type": "intra_provider"
+    },
+    "adguard_unfiltered": {
+      "ref": null,
+      "ref_type": null
+    },
+    "adguard_default": {
+      "ref": "adguard_unfiltered",
+      "ref_type": "intra_provider"
+    },
+    "adguard_family": {
+      "ref": "adguard_unfiltered",
+      "ref_type": "intra_provider"
+    },
+    "cleanbrowsing_adult": {
+      "ref": "cloudflare_standard",
+      "ref_type": "external_reference"
+    },
+    "cleanbrowsing_family": {
+      "ref": "cloudflare_standard",
+      "ref_type": "external_reference"
+    },
+    "controld_open": {
+      "ref": null,
+      "ref_type": null
+    },
+    "controld_family": {
+      "ref": "controld_open",
+      "ref_type": "intra_provider"
+    },
+    "opendns_standard": {
+      "ref": null,
+      "ref_type": null
+    },
+    "opendns_family": {
+      "ref": "opendns_standard",
+      "ref_type": "intra_provider"
+    },
+    "mullvad_open": {
+      "ref": null,
+      "ref_type": null
+    },
+    "mullvad_family": {
+      "ref": "mullvad_open",
+      "ref_type": "intra_provider"
+    },
+    "dns4eu_unfiltered": {
+      "ref": null,
+      "ref_type": null
+    },
+    "dns4eu_protective": {
+      "ref": "dns4eu_unfiltered",
+      "ref_type": "intra_provider"
+    },
+    "dns4eu_child": {
+      "ref": "dns4eu_unfiltered",
+      "ref_type": "intra_provider"
+    }
+  },
+  "total_domains_including_controls": 548,
+  "eval_domains_count": 543,
+  "live_in_cloudflare_standard_A": 499,
+  "live_in_cloudflare_standard_AAAA": 275,
+  "live_by_group_cf_std_A": {
+    "apuestas_subtel": 42,
+    "adultos_reg": 22,
+    "armas_verif": 13,
+    "educativo_verif": 166,
+    "adultos_cand": 129,
+    "apuestas_cand": 127
+  },
+  "live_by_group_cf_std_AAAA": {
+    "apuestas_subtel": 23,
+    "adultos_reg": 1,
+    "armas_verif": 3,
+    "educativo_verif": 42,
+    "adultos_cand": 120,
+    "apuestas_cand": 86
+  },
   "group_counts": {
     "apuestas_subtel": 42,
     "adultos_reg": 22,
     "armas_verif": 13,
     "educativo_verif": 166,
-    "adultos_cand": 100,
-    "apuestas_cand": 100,
+    "adultos_cand": 150,
+    "apuestas_cand": 150,
     "control_tecnico": 5
   },
   "dns4eu_warning_ips": {
@@ -33,355 +158,355 @@
     "cloudflare_standard": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.034607+00:00",
-          "end_utc": "2026-11-26T01:42:35.745754+00:00"
+          "start_utc": "2026-11-26T20:50:08.574122+00:00",
+          "end_utc": "2026-11-26T20:50:47.944332+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:37.748819+00:00",
-          "end_utc": "2026-11-26T01:43:15.127531+00:00"
+          "start_utc": "2026-11-26T20:50:49.947020+00:00",
+          "end_utc": "2026-11-26T20:51:21.279535+00:00"
         }
       },
-      "round1_duration_s": 35.71,
-      "inter_round_start_delta_s": 37.71,
+      "round1_duration_s": 39.37,
+      "inter_round_start_delta_s": 41.37,
       "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "cloudflare_security": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.044524+00:00",
-          "end_utc": "2026-11-26T01:42:36.822704+00:00"
+          "start_utc": "2026-11-26T20:50:08.584178+00:00",
+          "end_utc": "2026-11-26T20:50:48.071044+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:38.824671+00:00",
-          "end_utc": "2026-11-26T01:43:26.341078+00:00"
+          "start_utc": "2026-11-26T20:50:50.076108+00:00",
+          "end_utc": "2026-11-26T20:51:27.566510+00:00"
         }
       },
-      "round1_duration_s": 36.78,
-      "inter_round_start_delta_s": 38.78,
-      "inter_round_pause_s": 2.0,
+      "round1_duration_s": 39.49,
+      "inter_round_start_delta_s": 41.49,
+      "inter_round_pause_s": 2.01,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "cloudflare_family": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.054314+00:00",
-          "end_utc": "2026-11-26T01:42:33.653515+00:00"
+          "start_utc": "2026-11-26T20:50:08.595050+00:00",
+          "end_utc": "2026-11-26T20:50:52.855834+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:35.654424+00:00",
-          "end_utc": "2026-11-26T01:43:19.284559+00:00"
+          "start_utc": "2026-11-26T20:50:54.859197+00:00",
+          "end_utc": "2026-11-26T20:51:36.102849+00:00"
         }
       },
-      "round1_duration_s": 33.6,
-      "inter_round_start_delta_s": 35.6,
+      "round1_duration_s": 44.26,
+      "inter_round_start_delta_s": 46.26,
       "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "google_public": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.068291+00:00",
-          "end_utc": "2026-11-26T01:42:47.349398+00:00"
+          "start_utc": "2026-11-26T20:50:08.609564+00:00",
+          "end_utc": "2026-11-26T20:50:54.713355+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:49.357091+00:00",
-          "end_utc": "2026-11-26T01:43:37.320853+00:00"
+          "start_utc": "2026-11-26T20:50:56.719844+00:00",
+          "end_utc": "2026-11-26T20:51:37.584745+00:00"
         }
       },
-      "round1_duration_s": 47.28,
-      "inter_round_start_delta_s": 49.29,
+      "round1_duration_s": 46.1,
+      "inter_round_start_delta_s": 48.11,
       "inter_round_pause_s": 2.01,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "quad9_unfiltered": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.078181+00:00",
-          "end_utc": "2026-11-26T01:42:50.470938+00:00"
+          "start_utc": "2026-11-26T20:50:08.620749+00:00",
+          "end_utc": "2026-11-26T20:51:02.926031+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:52.482120+00:00",
-          "end_utc": "2026-11-26T01:43:27.678543+00:00"
+          "start_utc": "2026-11-26T20:51:04.931343+00:00",
+          "end_utc": "2026-11-26T20:51:31.234566+00:00"
         }
       },
-      "round1_duration_s": 50.39,
-      "inter_round_start_delta_s": 52.4,
+      "round1_duration_s": 54.31,
+      "inter_round_start_delta_s": 56.31,
       "inter_round_pause_s": 2.01,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "quad9_secure": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.087979+00:00",
-          "end_utc": "2026-11-26T01:42:50.476359+00:00"
+          "start_utc": "2026-11-26T20:50:08.631399+00:00",
+          "end_utc": "2026-11-26T20:51:00.759146+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:52.494689+00:00",
-          "end_utc": "2026-11-26T01:43:26.335472+00:00"
+          "start_utc": "2026-11-26T20:51:02.765489+00:00",
+          "end_utc": "2026-11-26T20:51:30.299350+00:00"
         }
       },
-      "round1_duration_s": 50.39,
-      "inter_round_start_delta_s": 52.41,
-      "inter_round_pause_s": 2.02,
+      "round1_duration_s": 52.13,
+      "inter_round_start_delta_s": 54.13,
+      "inter_round_pause_s": 2.01,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "adguard_unfiltered": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.098005+00:00",
-          "end_utc": "2026-11-26T01:43:09.106931+00:00"
+          "start_utc": "2026-11-26T20:50:08.644396+00:00",
+          "end_utc": "2026-11-26T20:51:24.406750+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:43:11.122854+00:00",
-          "end_utc": "2026-11-26T01:43:43.994396+00:00"
+          "start_utc": "2026-11-26T20:51:26.409653+00:00",
+          "end_utc": "2026-11-26T20:52:00.697091+00:00"
         }
       },
-      "round1_duration_s": 69.01,
-      "inter_round_start_delta_s": 71.02,
-      "inter_round_pause_s": 2.02,
+      "round1_duration_s": 75.76,
+      "inter_round_start_delta_s": 77.77,
+      "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "adguard_default": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.109822+00:00",
-          "end_utc": "2026-11-26T01:43:20.497262+00:00"
+          "start_utc": "2026-11-26T20:50:08.655520+00:00",
+          "end_utc": "2026-11-26T20:51:25.477832+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:43:22.502876+00:00",
-          "end_utc": "2026-11-26T01:44:08.891141+00:00"
+          "start_utc": "2026-11-26T20:51:27.484504+00:00",
+          "end_utc": "2026-11-26T20:52:00.658861+00:00"
         }
       },
-      "round1_duration_s": 80.39,
-      "inter_round_start_delta_s": 82.39,
+      "round1_duration_s": 76.82,
+      "inter_round_start_delta_s": 78.83,
       "inter_round_pause_s": 2.01,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "adguard_family": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.119795+00:00",
-          "end_utc": "2026-11-26T01:43:09.091897+00:00"
+          "start_utc": "2026-11-26T20:50:08.666049+00:00",
+          "end_utc": "2026-11-26T20:51:29.671929+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:43:11.103125+00:00",
-          "end_utc": "2026-11-26T01:43:44.687686+00:00"
+          "start_utc": "2026-11-26T20:51:31.672921+00:00",
+          "end_utc": "2026-11-26T20:52:03.502758+00:00"
         }
       },
-      "round1_duration_s": 68.97,
-      "inter_round_start_delta_s": 70.98,
-      "inter_round_pause_s": 2.01,
+      "round1_duration_s": 81.01,
+      "inter_round_start_delta_s": 83.01,
+      "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "cleanbrowsing_adult": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.129768+00:00",
-          "end_utc": "2026-11-26T01:42:45.327211+00:00"
+          "start_utc": "2026-11-26T20:50:08.538430+00:00",
+          "end_utc": "2026-11-26T20:52:01.969257+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:47.332614+00:00",
-          "end_utc": "2026-11-26T01:43:27.087878+00:00"
+          "start_utc": "2026-11-26T20:52:03.970252+00:00",
+          "end_utc": "2026-11-26T20:53:04.215438+00:00"
         }
       },
-      "round1_duration_s": 45.2,
-      "inter_round_start_delta_s": 47.2,
-      "inter_round_pause_s": 2.01,
-      "errors": 3,
-      "total_queries": 1792
+      "round1_duration_s": 113.43,
+      "inter_round_start_delta_s": 115.43,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
     },
     "cleanbrowsing_family": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:42:00.140565+00:00",
-          "end_utc": "2026-11-26T01:42:56.154542+00:00"
+          "start_utc": "2026-11-26T20:53:04.226132+00:00",
+          "end_utc": "2026-11-26T20:54:03.898137+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T01:42:58.166723+00:00",
-          "end_utc": "2026-11-26T01:43:49.590632+00:00"
+          "start_utc": "2026-11-26T20:54:05.898577+00:00",
+          "end_utc": "2026-11-26T20:55:03.701928+00:00"
         }
       },
-      "round1_duration_s": 56.01,
-      "inter_round_start_delta_s": 58.03,
-      "inter_round_pause_s": 2.01,
-      "errors": 5,
-      "total_queries": 1792
-    },
-    "controld_family": {
-      "round_times": {
-        "1": {
-          "start_utc": "2026-11-26T01:42:00.162308+00:00",
-          "end_utc": "2026-11-26T01:42:46.340747+00:00"
-        },
-        "2": {
-          "start_utc": "2026-11-26T01:42:48.346607+00:00",
-          "end_utc": "2026-11-26T01:43:25.523911+00:00"
-        }
-      },
-      "round1_duration_s": 46.18,
-      "inter_round_start_delta_s": 48.18,
-      "inter_round_pause_s": 2.01,
-      "errors": 1,
-      "total_queries": 1792
-    },
-    "opendns_standard": {
-      "round_times": {
-        "1": {
-          "start_utc": "2026-11-26T01:42:00.172282+00:00",
-          "end_utc": "2026-11-26T01:43:21.405347+00:00"
-        },
-        "2": {
-          "start_utc": "2026-11-26T01:43:23.416256+00:00",
-          "end_utc": "2026-11-26T01:43:45.787900+00:00"
-        }
-      },
-      "round1_duration_s": 81.23,
-      "inter_round_start_delta_s": 83.24,
-      "inter_round_pause_s": 2.01,
-      "errors": 0,
-      "total_queries": 1792
-    },
-    "opendns_family": {
-      "round_times": {
-        "1": {
-          "start_utc": "2026-11-26T01:42:00.181915+00:00",
-          "end_utc": "2026-11-26T01:43:31.968335+00:00"
-        },
-        "2": {
-          "start_utc": "2026-11-26T01:43:33.968756+00:00",
-          "end_utc": "2026-11-26T01:44:10.335084+00:00"
-        }
-      },
-      "round1_duration_s": 91.79,
-      "inter_round_start_delta_s": 93.79,
+      "round1_duration_s": 59.67,
+      "inter_round_start_delta_s": 61.67,
       "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
-    },
-    "mullvad_open": {
-      "round_times": {
-        "1": {
-          "start_utc": "2026-11-26T01:42:00.191838+00:00",
-          "end_utc": "2026-11-26T01:43:20.922778+00:00"
-        },
-        "2": {
-          "start_utc": "2026-11-26T01:43:22.931369+00:00",
-          "end_utc": "2026-11-26T01:44:23.222597+00:00"
-        }
-      },
-      "round1_duration_s": 80.73,
-      "inter_round_start_delta_s": 82.74,
-      "inter_round_pause_s": 2.01,
-      "errors": 0,
-      "total_queries": 1792
-    },
-    "mullvad_family": {
-      "round_times": {
-        "1": {
-          "start_utc": "2026-11-26T01:42:00.203708+00:00",
-          "end_utc": "2026-11-26T01:43:12.175607+00:00"
-        },
-        "2": {
-          "start_utc": "2026-11-26T01:43:14.187696+00:00",
-          "end_utc": "2026-11-26T01:44:00.570408+00:00"
-        }
-      },
-      "round1_duration_s": 71.97,
-      "inter_round_start_delta_s": 73.98,
-      "inter_round_pause_s": 2.01,
-      "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
     },
     "controld_open": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T01:59:49.752267+00:00",
-          "end_utc": "2026-11-26T02:00:59.749558+00:00"
+          "start_utc": "2026-11-26T20:50:08.548612+00:00",
+          "end_utc": "2026-11-26T20:52:46.787677+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T02:01:01.751855+00:00",
-          "end_utc": "2026-11-26T02:01:40.227762+00:00"
+          "start_utc": "2026-11-26T20:52:48.789518+00:00",
+          "end_utc": "2026-11-26T20:53:26.674971+00:00"
         }
       },
-      "round1_duration_s": 70.0,
-      "inter_round_start_delta_s": 72.0,
+      "round1_duration_s": 158.24,
+      "inter_round_start_delta_s": 160.24,
       "inter_round_pause_s": 2.0,
       "errors": 0,
-      "total_queries": 1792
+      "total_queries": 2192
+    },
+    "controld_family": {
+      "round_times": {
+        "1": {
+          "start_utc": "2026-11-26T20:53:26.689059+00:00",
+          "end_utc": "2026-11-26T20:54:00.167534+00:00"
+        },
+        "2": {
+          "start_utc": "2026-11-26T20:54:02.167966+00:00",
+          "end_utc": "2026-11-26T20:54:41.250858+00:00"
+        }
+      },
+      "round1_duration_s": 33.48,
+      "inter_round_start_delta_s": 35.48,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
+    },
+    "opendns_standard": {
+      "round_times": {
+        "1": {
+          "start_utc": "2026-11-26T20:50:08.731119+00:00",
+          "end_utc": "2026-11-26T20:51:54.513688+00:00"
+        },
+        "2": {
+          "start_utc": "2026-11-26T20:51:56.514566+00:00",
+          "end_utc": "2026-11-26T20:52:46.127700+00:00"
+        }
+      },
+      "round1_duration_s": 105.78,
+      "inter_round_start_delta_s": 107.78,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
+    },
+    "opendns_family": {
+      "round_times": {
+        "1": {
+          "start_utc": "2026-11-26T20:50:08.742332+00:00",
+          "end_utc": "2026-11-26T20:51:38.026963+00:00"
+        },
+        "2": {
+          "start_utc": "2026-11-26T20:51:40.029911+00:00",
+          "end_utc": "2026-11-26T20:52:16.681343+00:00"
+        }
+      },
+      "round1_duration_s": 89.28,
+      "inter_round_start_delta_s": 91.29,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
+    },
+    "mullvad_open": {
+      "round_times": {
+        "1": {
+          "start_utc": "2026-11-26T20:50:08.758218+00:00",
+          "end_utc": "2026-11-26T20:51:32.162656+00:00"
+        },
+        "2": {
+          "start_utc": "2026-11-26T20:51:34.163512+00:00",
+          "end_utc": "2026-11-26T20:52:32.280634+00:00"
+        }
+      },
+      "round1_duration_s": 83.4,
+      "inter_round_start_delta_s": 85.41,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
+    },
+    "mullvad_family": {
+      "round_times": {
+        "1": {
+          "start_utc": "2026-11-26T20:50:08.768392+00:00",
+          "end_utc": "2026-11-26T20:51:30.342269+00:00"
+        },
+        "2": {
+          "start_utc": "2026-11-26T20:51:32.343401+00:00",
+          "end_utc": "2026-11-26T20:52:30.879665+00:00"
+        }
+      },
+      "round1_duration_s": 81.57,
+      "inter_round_start_delta_s": 83.58,
+      "inter_round_pause_s": 2.0,
+      "errors": 0,
+      "total_queries": 2192
     },
     "dns4eu_unfiltered": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T02:01:40.249505+00:00",
-          "end_utc": "2026-11-26T02:03:17.560328+00:00"
+          "start_utc": "2026-11-26T20:50:08.563006+00:00",
+          "end_utc": "2026-11-26T20:52:58.447043+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T02:03:19.563095+00:00",
-          "end_utc": "2026-11-26T02:04:56.316602+00:00"
+          "start_utc": "2026-11-26T20:53:00.447933+00:00",
+          "end_utc": "2026-11-26T20:55:44.036417+00:00"
         }
       },
-      "round1_duration_s": 97.31,
-      "inter_round_start_delta_s": 99.31,
+      "round1_duration_s": 169.88,
+      "inter_round_start_delta_s": 171.88,
       "inter_round_pause_s": 2.0,
-      "errors": 1,
-      "total_queries": 1792
+      "errors": 2,
+      "total_queries": 2192
     },
     "dns4eu_protective": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T02:04:56.332207+00:00",
-          "end_utc": "2026-11-26T02:06:36.768080+00:00"
+          "start_utc": "2026-11-26T20:55:44.052239+00:00",
+          "end_utc": "2026-11-26T20:58:36.704956+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T02:06:38.770959+00:00",
-          "end_utc": "2026-11-26T02:08:19.971224+00:00"
+          "start_utc": "2026-11-26T20:58:38.707658+00:00",
+          "end_utc": "2026-11-26T21:01:24.751217+00:00"
         }
       },
-      "round1_duration_s": 100.44,
-      "inter_round_start_delta_s": 102.44,
+      "round1_duration_s": 172.65,
+      "inter_round_start_delta_s": 174.66,
       "inter_round_pause_s": 2.0,
-      "errors": 2,
-      "total_queries": 1792
+      "errors": 1,
+      "total_queries": 2192
     },
     "dns4eu_child": {
       "round_times": {
         "1": {
-          "start_utc": "2026-11-26T02:08:19.981498+00:00",
-          "end_utc": "2026-11-26T02:10:07.926441+00:00"
+          "start_utc": "2026-11-26T21:01:24.762826+00:00",
+          "end_utc": "2026-11-26T21:04:10.808281+00:00"
         },
         "2": {
-          "start_utc": "2026-11-26T02:10:09.928969+00:00",
-          "end_utc": "2026-11-26T02:11:58.276119+00:00"
+          "start_utc": "2026-11-26T21:04:12.811209+00:00",
+          "end_utc": "2026-11-26T21:07:00.836790+00:00"
         }
       },
-      "round1_duration_s": 107.94,
-      "inter_round_start_delta_s": 109.95,
+      "round1_duration_s": 166.05,
+      "inter_round_start_delta_s": 168.05,
       "inter_round_pause_s": 2.0,
       "errors": 1,
-      "total_queries": 1792
+      "total_queries": 2192
     }
   },
   "consistency_summary": {
     "cloudflare_standard": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -390,14 +515,14 @@
     },
     "cloudflare_security": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -406,30 +531,30 @@
     },
     "cloudflare_family": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       }
     },
     "google_public": {
       "A": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -438,14 +563,14 @@
     },
     "quad9_unfiltered": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -454,14 +579,14 @@
     },
     "quad9_secure": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -470,94 +595,94 @@
     },
     "adguard_unfiltered": {
       "A": {
-        "consistente": 442,
-        "inconsistente": 1,
+        "consistente": 543,
+        "inconsistente": 0,
         "error_red": 0,
-        "rate_over_completed": 0.9977,
-        "rate_over_all": 0.9977
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 442,
-        "inconsistente": 1,
+        "consistente": 543,
+        "inconsistente": 0,
         "error_red": 0,
-        "rate_over_completed": 0.9977,
-        "rate_over_all": 0.9977
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
       }
     },
     "adguard_default": {
       "A": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 541,
+        "inconsistente": 2,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9963,
+        "rate_over_all": 0.9963
       },
       "AAAA": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       }
     },
     "adguard_family": {
       "A": {
-        "consistente": 440,
-        "inconsistente": 3,
-        "error_red": 0,
-        "rate_over_completed": 0.9932,
-        "rate_over_all": 0.9932
-      },
-      "AAAA": {
-        "consistente": 442,
+        "consistente": 542,
         "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 0.9977,
-        "rate_over_all": 0.9977
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
+      },
+      "AAAA": {
+        "consistente": 543,
+        "inconsistente": 0,
+        "error_red": 0,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
       }
     },
     "cleanbrowsing_adult": {
       "A": {
-        "consistente": 442,
-        "inconsistente": 0,
-        "error_red": 1,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 0.9977
-      },
-      "AAAA": {
-        "consistente": 441,
-        "inconsistente": 0,
-        "error_red": 2,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 0.9955
-      }
-    },
-    "cleanbrowsing_family": {
-      "A": {
-        "consistente": 441,
-        "inconsistente": 0,
-        "error_red": 2,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 0.9955
-      },
-      "AAAA": {
-        "consistente": 440,
-        "inconsistente": 0,
-        "error_red": 3,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 0.9932
-      }
-    },
-    "controld_open": {
-      "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
+        "inconsistente": 0,
+        "error_red": 0,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
+      }
+    },
+    "cleanbrowsing_family": {
+      "A": {
+        "consistente": 543,
+        "inconsistente": 0,
+        "error_red": 0,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
+      },
+      "AAAA": {
+        "consistente": 543,
+        "inconsistente": 0,
+        "error_red": 0,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
+      }
+    },
+    "controld_open": {
+      "A": {
+        "consistente": 543,
+        "inconsistente": 0,
+        "error_red": 0,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 1.0
+      },
+      "AAAA": {
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -566,62 +691,62 @@
     },
     "controld_family": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 442,
+        "consistente": 543,
         "inconsistente": 0,
-        "error_red": 1,
+        "error_red": 0,
         "rate_over_completed": 1.0,
-        "rate_over_all": 0.9977
+        "rate_over_all": 1.0
       }
     },
     "opendns_standard": {
       "A": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       },
       "AAAA": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       }
     },
     "opendns_family": {
       "A": {
-        "consistente": 442,
+        "consistente": 542,
         "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 0.9977,
-        "rate_over_all": 0.9977
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       },
       "AAAA": {
-        "consistente": 442,
+        "consistente": 542,
         "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 0.9977,
-        "rate_over_all": 0.9977
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       }
     },
     "mullvad_open": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -630,30 +755,30 @@
     },
     "mullvad_family": {
       "A": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
       },
       "AAAA": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       }
     },
     "dns4eu_unfiltered": {
       "A": {
-        "consistente": 442,
+        "consistente": 542,
         "inconsistente": 0,
         "error_red": 1,
         "rate_over_completed": 1.0,
-        "rate_over_all": 0.9977
+        "rate_over_all": 0.9982
       },
       "AAAA": {
-        "consistente": 443,
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
@@ -662,34 +787,34 @@
     },
     "dns4eu_protective": {
       "A": {
-        "consistente": 443,
-        "inconsistente": 0,
+        "consistente": 542,
+        "inconsistente": 1,
         "error_red": 0,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 1.0
+        "rate_over_completed": 0.9982,
+        "rate_over_all": 0.9982
       },
       "AAAA": {
-        "consistente": 441,
+        "consistente": 542,
         "inconsistente": 0,
-        "error_red": 2,
+        "error_red": 1,
         "rate_over_completed": 1.0,
-        "rate_over_all": 0.9955
+        "rate_over_all": 0.9982
       }
     },
     "dns4eu_child": {
       "A": {
-        "consistente": 443,
+        "consistente": 542,
+        "inconsistente": 0,
+        "error_red": 1,
+        "rate_over_completed": 1.0,
+        "rate_over_all": 0.9982
+      },
+      "AAAA": {
+        "consistente": 543,
         "inconsistente": 0,
         "error_red": 0,
         "rate_over_completed": 1.0,
         "rate_over_all": 1.0
-      },
-      "AAAA": {
-        "consistente": 442,
-        "inconsistente": 0,
-        "error_red": 1,
-        "rate_over_completed": 1.0,
-        "rate_over_all": 0.9977
       }
     }
   },
@@ -737,27 +862,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           }
         }
       },
@@ -811,27 +936,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -879,29 +1004,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 89,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 129,
+            "indeterminado": 19,
+            "bloqueo_senalizado": 2
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 89,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 129
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 84,
-            "indeterminado": 14,
-            "bloqueo_senalizado": 2
-          },
-          "n_ref_comparable": 85,
-          "states_ref_comparable": {
-            "resolucion_observada": 84,
+            "resolucion_observada": 127,
+            "indeterminado": 22,
             "bloqueo_senalizado": 1
+          },
+          "n_ref_comparable": 127,
+          "states_ref_comparable": {
+            "resolucion_observada": 127
           }
         }
       },
@@ -951,28 +1074,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 17,
-            "resolucion_observada": 82,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 120,
+            "indeterminado": 28,
+            "bloqueo_senalizado": 2
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 82
+            "resolucion_observada": 120
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 47,
-            "resolucion_observada": 51,
-            "bloqueo_senalizado": 2
-          },
-          "n_ref_comparable": 52,
-          "states_ref_comparable": {
-            "resolucion_observada": 51,
+            "resolucion_observada": 86,
+            "indeterminado": 63,
             "bloqueo_senalizado": 1
+          },
+          "n_ref_comparable": 86,
+          "states_ref_comparable": {
+            "resolucion_observada": 86
           }
         }
       }
@@ -1020,29 +1142,31 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 66,
-            "bloqueo_senalizado": 24
+            "bloqueo_senalizado": 14,
+            "resolucion_observada": 117,
+            "indeterminado": 19
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 66,
-            "bloqueo_senalizado": 24
+            "bloqueo_senalizado": 12,
+            "resolucion_observada": 117
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 83,
-            "indeterminado": 13,
-            "bloqueo_senalizado": 4
+            "resolucion_observada": 124,
+            "bloqueo_senalizado": 3,
+            "indeterminado": 22,
+            "anomalia": 1
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "resolucion_observada": 83,
-            "bloqueo_senalizado": 2
+            "resolucion_observada": 124,
+            "bloqueo_senalizado": 2,
+            "anomalia": 1
           }
         }
       },
@@ -1091,29 +1215,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 13,
-            "bloqueo_senalizado": 24,
-            "resolucion_observada": 63
+            "bloqueo_senalizado": 14,
+            "resolucion_observada": 110,
+            "indeterminado": 26
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 19,
-            "resolucion_observada": 63
+            "bloqueo_senalizado": 10,
+            "resolucion_observada": 110
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 46,
-            "resolucion_observada": 50,
-            "bloqueo_senalizado": 4
+            "resolucion_observada": 86,
+            "indeterminado": 60,
+            "bloqueo_senalizado": 3,
+            "inconsistente": 1
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 50,
-            "bloqueo_senalizado": 2
+            "resolucion_observada": 86
           }
         }
       }
@@ -1161,27 +1285,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 126,
+            "indeterminado": 23,
+            "inconsistente": 1
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 126,
+            "indeterminado": 23,
+            "inconsistente": 1
           }
         }
       },
@@ -1235,27 +1361,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -1303,27 +1429,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 128,
+            "indeterminado": 22
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 128,
+            "indeterminado": 22
           }
         }
       },
@@ -1367,37 +1493,37 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 125,
-            "resolucion_observada": 41
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "indeterminado": 125,
-            "resolucion_observada": 41
+            "indeterminado": 124,
+            "resolucion_observada": 42
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -1445,25 +1571,25 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 90
+            "resolucion_observada": 129
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 128,
+            "indeterminado": 22
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 128,
           "states_ref_comparable": {
-            "resolucion_observada": 85
+            "resolucion_observada": 128
           }
         }
       },
@@ -1504,34 +1630,34 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 125,
-            "resolucion_observada": 41
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
-          "n_ref_comparable": 41,
+          "n_ref_comparable": 42,
           "states_ref_comparable": {
-            "resolucion_observada": 41
+            "resolucion_observada": 42
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 82
+            "resolucion_observada": 120
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 52
+            "resolucion_observada": 86
           }
         }
       }
@@ -1571,37 +1697,35 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "resolucion_observada": 165,
-            "inconsistente": 1
+            "resolucion_observada": 166
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "resolucion_observada": 165,
-            "inconsistente": 1
+            "resolucion_observada": 166
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           }
         }
       },
@@ -1645,39 +1769,37 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 123,
-            "resolucion_observada": 42,
-            "inconsistente": 1
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "indeterminado": 123,
-            "resolucion_observada": 42,
-            "inconsistente": 1
+            "indeterminado": 124,
+            "resolucion_observada": 42
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -1720,31 +1842,34 @@
             "resolucion_observada": 165,
             "indeterminado": 1
           },
-          "n_ref_comparable": 165,
+          "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "resolucion_observada": 165
+            "resolucion_observada": 165,
+            "indeterminado": 1
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 90
+            "resolucion_observada": 129
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 126,
+            "indeterminado": 22,
+            "inconsistente": 2
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "resolucion_observada": 85
+            "resolucion_observada": 126,
+            "inconsistente": 1
           }
         }
       },
@@ -1795,25 +1920,26 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 82
+            "resolucion_observada": 120
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 63,
+            "inconsistente": 1
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 52
+            "resolucion_observada": 86
           }
         }
       }
@@ -1855,40 +1981,36 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "resolucion_observada": 164,
-            "inconsistente": 2
+            "resolucion_observada": 165,
+            "inconsistente": 1
           },
-          "n_ref_comparable": 165,
+          "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "resolucion_observada": 164,
+            "resolucion_observada": 165,
             "inconsistente": 1
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 95,
-            "resolucion_observada": 3,
-            "inconsistente": 1,
-            "indeterminado": 1
+            "resolucion_observada": 1,
+            "bloqueo_senalizado": 149
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 87,
-            "resolucion_observada": 3
+            "resolucion_observada": 1,
+            "bloqueo_senalizado": 128
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 83,
-            "indeterminado": 15,
-            "bloqueo_senalizado": 2
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "resolucion_observada": 83,
-            "bloqueo_senalizado": 2
+            "resolucion_observada": 127
           }
         }
       },
@@ -1929,9 +2051,8 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 123,
-            "resolucion_observada": 42,
-            "inconsistente": 1
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
           "n_ref_comparable": 42,
           "states_ref_comparable": {
@@ -1939,28 +2060,26 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 96,
-            "resolucion_observada": 3,
-            "indeterminado": 1
+            "resolucion_observada": 1,
+            "bloqueo_senalizado": 149
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 3,
-            "bloqueo_senalizado": 79
+            "resolucion_observada": 1,
+            "bloqueo_senalizado": 119
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 46,
-            "resolucion_observada": 52,
-            "bloqueo_senalizado": 2
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 52
+            "resolucion_observada": 86
           }
         }
       }
@@ -2012,28 +2131,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 84,
-            "bloqueo_senalizado": 6
+            "resolucion_observada": 120,
+            "indeterminado": 21,
+            "bloqueo_senalizado": 9
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 84,
-            "bloqueo_senalizado": 6
+            "resolucion_observada": 120,
+            "bloqueo_senalizado": 9
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 14,
-            "error_red": 1
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "resolucion_observada": 85
+            "resolucion_observada": 127
           }
         }
       },
@@ -2085,28 +2203,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 79,
+            "resolucion_observada": 117,
+            "indeterminado": 30,
             "bloqueo_senalizado": 3
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 79,
+            "resolucion_observada": 117,
             "bloqueo_senalizado": 3
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 46,
-            "resolucion_observada": 52,
-            "error_red": 2
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 52
+            "resolucion_observada": 86
           }
         }
       }
@@ -2116,15 +2233,13 @@
         "apuestas_subtel": {
           "n_total": 42,
           "states_all": {
-            "resolucion_observada": 40,
-            "bloqueo_senalizado": 1,
-            "error_red": 1
+            "resolucion_observada": 41,
+            "bloqueo_senalizado": 1
           },
           "n_ref_comparable": 42,
           "states_ref_comparable": {
-            "resolucion_observada": 40,
-            "bloqueo_senalizado": 1,
-            "error_red": 1
+            "resolucion_observada": 41,
+            "bloqueo_senalizado": 1
           }
         },
         "adultos_reg": {
@@ -2160,29 +2275,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 83,
-            "bloqueo_senalizado": 6,
-            "error_red": 1
+            "resolucion_observada": 120,
+            "indeterminado": 21,
+            "bloqueo_senalizado": 9
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 83,
-            "bloqueo_senalizado": 6,
-            "error_red": 1
+            "resolucion_observada": 120,
+            "bloqueo_senalizado": 9
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "resolucion_observada": 85
+            "resolucion_observada": 127
           }
         }
       },
@@ -2191,9 +2304,8 @@
           "n_total": 42,
           "states_all": {
             "resolucion_observada": 22,
-            "indeterminado": 18,
-            "bloqueo_senalizado": 1,
-            "error_red": 1
+            "indeterminado": 19,
+            "bloqueo_senalizado": 1
           },
           "n_ref_comparable": 23,
           "states_ref_comparable": {
@@ -2226,9 +2338,8 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 123,
-            "resolucion_observada": 42,
-            "error_red": 1
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
           "n_ref_comparable": 42,
           "states_ref_comparable": {
@@ -2236,29 +2347,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 78,
-            "bloqueo_senalizado": 3,
-            "error_red": 1
+            "resolucion_observada": 117,
+            "indeterminado": 30,
+            "bloqueo_senalizado": 3
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 78,
-            "bloqueo_senalizado": 3,
-            "error_red": 1
+            "resolucion_observada": 117,
+            "bloqueo_senalizado": 3
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 52
+            "resolucion_observada": 86
           }
         }
       }
@@ -2306,27 +2415,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           }
         }
       },
@@ -2380,27 +2489,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -2450,29 +2559,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 8,
-            "resolucion_observada": 89,
-            "bloqueo_senalizado": 3
+            "resolucion_observada": 128,
+            "indeterminado": 21,
+            "bloqueo_senalizado": 1
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 89,
+            "resolucion_observada": 128,
             "bloqueo_senalizado": 1
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 14,
-            "indeterminado": 15,
-            "resolucion_observada": 71
+            "resolucion_observada": 119,
+            "bloqueo_senalizado": 9,
+            "indeterminado": 22
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 14,
-            "resolucion_observada": 71
+            "resolucion_observada": 119,
+            "bloqueo_senalizado": 8
           }
         }
       },
@@ -2513,9 +2622,8 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 123,
-            "resolucion_observada": 42,
-            "error_red": 1
+            "indeterminado": 124,
+            "resolucion_observada": 42
           },
           "n_ref_comparable": 42,
           "states_ref_comparable": {
@@ -2523,28 +2631,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 15,
-            "resolucion_observada": 82,
-            "bloqueo_senalizado": 3
+            "resolucion_observada": 119,
+            "indeterminado": 30,
+            "bloqueo_senalizado": 1
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 82
+            "resolucion_observada": 119,
+            "bloqueo_senalizado": 1
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 47,
-            "resolucion_observada": 40,
-            "bloqueo_senalizado": 13
+            "resolucion_observada": 78,
+            "indeterminado": 63,
+            "bloqueo_senalizado": 9
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 40,
-            "bloqueo_senalizado": 12
+            "resolucion_observada": 78,
+            "bloqueo_senalizado": 8
           }
         }
       }
@@ -2584,35 +2693,37 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "resolucion_observada": 166
+            "resolucion_observada": 165,
+            "inconsistente": 1
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "resolucion_observada": 166
+            "resolucion_observada": 165,
+            "inconsistente": 1
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 126,
+            "indeterminado": 24
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 126,
+            "indeterminado": 24
           }
         }
       },
@@ -2656,37 +2767,39 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "indeterminado": 124,
-            "resolucion_observada": 42
+            "indeterminado": 123,
+            "resolucion_observada": 42,
+            "inconsistente": 1
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "indeterminado": 124,
-            "resolucion_observada": 42
+            "indeterminado": 123,
+            "resolucion_observada": 42,
+            "inconsistente": 1
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -2729,36 +2842,35 @@
             "resolucion_observada": 165,
             "inconsistente": 1
           },
-          "n_ref_comparable": 166,
+          "n_ref_comparable": 165,
           "states_ref_comparable": {
-            "resolucion_observada": 165,
-            "inconsistente": 1
+            "resolucion_observada": 165
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 8,
-            "resolucion_observada": 74,
-            "bloqueo_senalizado": 18
+            "bloqueo_senalizado": 26,
+            "resolucion_observada": 113,
+            "indeterminado": 11
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 74,
-            "bloqueo_senalizado": 16
+            "bloqueo_senalizado": 16,
+            "resolucion_observada": 113
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 84,
-            "indeterminado": 15,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 124,
+            "bloqueo_senalizado": 3,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 126,
           "states_ref_comparable": {
-            "resolucion_observada": 84,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 123,
+            "bloqueo_senalizado": 3
           }
         }
       },
@@ -2808,29 +2920,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 12,
-            "bloqueo_senalizado": 18,
-            "resolucion_observada": 70
+            "bloqueo_senalizado": 26,
+            "resolucion_observada": 111,
+            "indeterminado": 13
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 12,
-            "resolucion_observada": 70
+            "bloqueo_senalizado": 9,
+            "resolucion_observada": 111
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 51,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 83,
+            "indeterminado": 64,
+            "bloqueo_senalizado": 3
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 51,
-            "bloqueo_senalizado": 1
+            "resolucion_observada": 83,
+            "bloqueo_senalizado": 3
           }
         }
       }
@@ -2880,27 +2992,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 15
+            "resolucion_observada": 127,
+            "indeterminado": 23
           }
         }
       },
@@ -2954,27 +3066,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -3025,29 +3137,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 81,
-            "bloqueo_senalizado": 9
+            "resolucion_observada": 124,
+            "indeterminado": 21,
+            "bloqueo_senalizado": 5
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 81,
-            "bloqueo_senalizado": 9
+            "resolucion_observada": 124,
+            "bloqueo_senalizado": 5
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 83,
-            "indeterminado": 15,
-            "resolucion_observada": 2
+            "bloqueo_senalizado": 126,
+            "indeterminado": 23,
+            "resolucion_observada": 1
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 127,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 83,
-            "resolucion_observada": 2
+            "bloqueo_senalizado": 126,
+            "resolucion_observada": 1
           }
         }
       },
@@ -3099,27 +3211,30 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 78,
-            "bloqueo_senalizado": 4
+            "resolucion_observada": 115,
+            "indeterminado": 30,
+            "bloqueo_senalizado": 5
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 78,
-            "bloqueo_senalizado": 4
+            "resolucion_observada": 115,
+            "bloqueo_senalizado": 5
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "bloqueo_senalizado": 52
+            "bloqueo_senalizado": 85,
+            "indeterminado": 63,
+            "resolucion_observada": 1,
+            "inconsistente": 1
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 52
+            "bloqueo_senalizado": 85,
+            "resolucion_observada": 1
           }
         }
       }
@@ -3167,28 +3282,28 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 10,
-            "resolucion_observada": 90
+            "resolucion_observada": 129,
+            "indeterminado": 21
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "resolucion_observada": 85,
-            "indeterminado": 14,
+            "resolucion_observada": 128,
+            "indeterminado": 21,
             "error_red": 1
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "resolucion_observada": 85,
-            "indeterminado": 14,
+            "resolucion_observada": 128,
+            "indeterminado": 21,
             "error_red": 1
           }
         }
@@ -3243,27 +3358,27 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 18,
-            "resolucion_observada": 82
+            "resolucion_observada": 120,
+            "indeterminado": 30
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           },
-          "n_ref_comparable": 100,
+          "n_ref_comparable": 150,
           "states_ref_comparable": {
-            "indeterminado": 48,
-            "resolucion_observada": 52
+            "resolucion_observada": 86,
+            "indeterminado": 64
           }
         }
       }
@@ -3305,37 +3420,38 @@
         "educativo_verif": {
           "n_total": 166,
           "states_all": {
-            "resolucion_observada": 166
+            "resolucion_observada": 165,
+            "inconsistente": 1
           },
           "n_ref_comparable": 166,
           "states_ref_comparable": {
-            "resolucion_observada": 166
+            "resolucion_observada": 165,
+            "inconsistente": 1
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 13,
-            "indeterminado": 4,
-            "resolucion_observada": 83
+            "resolucion_observada": 129,
+            "bloqueo_senalizado": 1,
+            "indeterminado": 20
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "resolucion_observada": 83,
-            "bloqueo_senalizado": 7
+            "resolucion_observada": 129
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 29,
-            "indeterminado": 12,
-            "resolucion_observada": 59
+            "resolucion_observada": 107,
+            "bloqueo_senalizado": 24,
+            "indeterminado": 19
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 128,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 26,
-            "resolucion_observada": 59
+            "resolucion_observada": 107,
+            "bloqueo_senalizado": 21
           }
         }
       },
@@ -3387,30 +3503,29 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 11,
-            "indeterminado": 8,
-            "resolucion_observada": 79,
-            "error_red": 2
+            "resolucion_observada": 120,
+            "bloqueo_senalizado": 1,
+            "indeterminado": 29
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "resolucion_observada": 79,
-            "bloqueo_senalizado": 3
+            "resolucion_observada": 120
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 28,
-            "indeterminado": 35,
-            "resolucion_observada": 37
+            "resolucion_observada": 69,
+            "indeterminado": 56,
+            "bloqueo_senalizado": 24,
+            "error_red": 1
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "resolucion_observada": 37,
-            "bloqueo_senalizado": 15
+            "resolucion_observada": 69,
+            "bloqueo_senalizado": 17
           }
         }
       }
@@ -3460,25 +3575,26 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 100
+            "bloqueo_senalizado": 150
           },
-          "n_ref_comparable": 90,
+          "n_ref_comparable": 129,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 90
+            "bloqueo_senalizado": 129
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 99,
-            "resolucion_observada": 1
+            "bloqueo_senalizado": 148,
+            "indeterminado": 1,
+            "error_red": 1
           },
-          "n_ref_comparable": 85,
+          "n_ref_comparable": 128,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 84,
-            "resolucion_observada": 1
+            "bloqueo_senalizado": 127,
+            "indeterminado": 1
           }
         }
       },
@@ -3527,25 +3643,24 @@
           }
         },
         "adultos_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 99,
-            "error_red": 1
+            "bloqueo_senalizado": 150
           },
-          "n_ref_comparable": 82,
+          "n_ref_comparable": 120,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 82
+            "bloqueo_senalizado": 120
           }
         },
         "apuestas_cand": {
-          "n_total": 100,
+          "n_total": 150,
           "states_all": {
-            "bloqueo_senalizado": 99,
-            "indeterminado": 1
+            "bloqueo_senalizado": 149,
+            "resolucion_observada": 1
           },
-          "n_ref_comparable": 52,
+          "n_ref_comparable": 86,
           "states_ref_comparable": {
-            "bloqueo_senalizado": 52
+            "bloqueo_senalizado": 86
           }
         }
       }
@@ -3556,787 +3671,787 @@
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 416,
-        "c00": 298,
-        "c01": 70,
-        "c10": 5,
-        "c11": 43,
-        "agreement": 0.8197,
-        "kappa": 0.4441,
-        "jaccard": 0.3644,
-        "rate_a": 0.1154,
-        "rate_b": 0.2716
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "cleanbrowsing_adult",
-        "n": 417,
-        "c00": 364,
-        "c01": 5,
-        "c10": 24,
-        "c11": 24,
-        "agreement": 0.9305,
-        "kappa": 0.5876,
-        "jaccard": 0.4528,
-        "rate_a": 0.1151,
-        "rate_b": 0.0695
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "cleanbrowsing_family",
-        "n": 415,
-        "c00": 362,
-        "c01": 5,
-        "c10": 24,
-        "c11": 24,
-        "agreement": 0.9301,
-        "kappa": 0.5874,
-        "jaccard": 0.4528,
-        "rate_a": 0.1157,
-        "rate_b": 0.0699
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "controld_family",
-        "n": 418,
-        "c00": 355,
-        "c01": 15,
-        "c10": 25,
-        "c11": 23,
-        "agreement": 0.9043,
-        "kappa": 0.4824,
-        "jaccard": 0.3651,
-        "rate_a": 0.1148,
-        "rate_b": 0.0909
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "opendns_family",
-        "n": 417,
-        "c00": 363,
-        "c01": 6,
-        "c10": 15,
+        "n": 497,
+        "c00": 342,
+        "c01": 119,
+        "c10": 3,
         "c11": 33,
-        "agreement": 0.9496,
-        "kappa": 0.7308,
-        "jaccard": 0.6111,
-        "rate_a": 0.1151,
-        "rate_b": 0.0935
+        "agreement": 0.7545,
+        "kappa": 0.265,
+        "jaccard": 0.2129,
+        "rate_a": 0.0724,
+        "rate_b": 0.3058
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_adult",
+        "n": 497,
+        "c00": 455,
+        "c01": 6,
+        "c10": 10,
+        "c11": 26,
+        "agreement": 0.9678,
+        "kappa": 0.7475,
+        "jaccard": 0.619,
+        "rate_a": 0.0724,
+        "rate_b": 0.0644
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_family",
+        "n": 497,
+        "c00": 455,
+        "c01": 6,
+        "c10": 10,
+        "c11": 26,
+        "agreement": 0.9678,
+        "kappa": 0.7475,
+        "jaccard": 0.619,
+        "rate_a": 0.0724,
+        "rate_b": 0.0644
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "controld_family",
+        "n": 498,
+        "c00": 453,
+        "c01": 9,
+        "c10": 13,
+        "c11": 23,
+        "agreement": 0.9558,
+        "kappa": 0.6529,
+        "jaccard": 0.5111,
+        "rate_a": 0.0723,
+        "rate_b": 0.0643
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "opendns_family",
+        "n": 497,
+        "c00": 448,
+        "c01": 13,
+        "c10": 8,
+        "c11": 28,
+        "agreement": 0.9577,
+        "kappa": 0.7045,
+        "jaccard": 0.5714,
+        "rate_a": 0.0724,
+        "rate_b": 0.0825
       },
       {
         "a": "cloudflare_family",
         "b": "mullvad_family",
-        "n": 417,
-        "c00": 248,
-        "c01": 121,
-        "c10": 16,
-        "c11": 32,
-        "agreement": 0.6715,
-        "kappa": 0.1736,
-        "jaccard": 0.1893,
-        "rate_a": 0.1151,
-        "rate_b": 0.3669
+        "n": 497,
+        "c00": 298,
+        "c01": 163,
+        "c10": 8,
+        "c11": 28,
+        "agreement": 0.6559,
+        "kappa": 0.1421,
+        "jaccard": 0.1407,
+        "rate_a": 0.0724,
+        "rate_b": 0.3843
       },
       {
         "a": "cloudflare_family",
         "b": "dns4eu_child",
-        "n": 418,
-        "c00": 169,
-        "c01": 201,
+        "n": 497,
+        "c00": 168,
+        "c01": 293,
         "c10": 0,
-        "c11": 48,
-        "agreement": 0.5191,
-        "kappa": 0.1618,
-        "jaccard": 0.1928,
-        "rate_a": 0.1148,
-        "rate_b": 0.5957
+        "c11": 36,
+        "agreement": 0.4105,
+        "kappa": 0.0767,
+        "jaccard": 0.1094,
+        "rate_a": 0.0724,
+        "rate_b": 0.662
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 416,
-        "c00": 302,
+        "n": 497,
+        "c00": 344,
         "c01": 1,
-        "c10": 85,
-        "c11": 28,
-        "agreement": 0.7933,
-        "kappa": 0.3188,
-        "jaccard": 0.2456,
-        "rate_a": 0.2716,
-        "rate_b": 0.0697
+        "c10": 121,
+        "c11": 31,
+        "agreement": 0.7545,
+        "kappa": 0.258,
+        "jaccard": 0.2026,
+        "rate_a": 0.3058,
+        "rate_b": 0.0644
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 414,
-        "c00": 301,
+        "n": 497,
+        "c00": 344,
         "c01": 1,
-        "c10": 84,
-        "c11": 28,
-        "agreement": 0.7947,
-        "kappa": 0.3217,
-        "jaccard": 0.2478,
-        "rate_a": 0.2705,
-        "rate_b": 0.07
+        "c10": 121,
+        "c11": 31,
+        "agreement": 0.7545,
+        "kappa": 0.258,
+        "jaccard": 0.2026,
+        "rate_a": 0.3058,
+        "rate_b": 0.0644
       },
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 416,
-        "c00": 288,
-        "c01": 15,
-        "c10": 90,
+        "n": 497,
+        "c00": 336,
+        "c01": 9,
+        "c10": 129,
         "c11": 23,
-        "agreement": 0.7476,
-        "kappa": 0.1945,
-        "jaccard": 0.1797,
-        "rate_a": 0.2716,
-        "rate_b": 0.0913
+        "agreement": 0.7223,
+        "kappa": 0.1607,
+        "jaccard": 0.1429,
+        "rate_a": 0.3058,
+        "rate_b": 0.0644
       },
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 416,
-        "c00": 299,
+        "n": 497,
+        "c00": 341,
         "c01": 4,
-        "c10": 78,
-        "c11": 35,
-        "agreement": 0.8029,
-        "kappa": 0.3731,
-        "jaccard": 0.2991,
-        "rate_a": 0.2716,
-        "rate_b": 0.0938
+        "c10": 115,
+        "c11": 37,
+        "agreement": 0.7606,
+        "kappa": 0.2913,
+        "jaccard": 0.2372,
+        "rate_a": 0.3058,
+        "rate_b": 0.0825
       },
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 415,
-        "c00": 184,
-        "c01": 118,
-        "c10": 78,
-        "c11": 35,
-        "agreement": 0.5277,
-        "kappa": -0.0729,
-        "jaccard": 0.1515,
-        "rate_a": 0.2723,
-        "rate_b": 0.3687
+        "n": 496,
+        "c00": 182,
+        "c01": 162,
+        "c10": 123,
+        "c11": 29,
+        "agreement": 0.4254,
+        "kappa": -0.2614,
+        "jaccard": 0.0924,
+        "rate_a": 0.3065,
+        "rate_b": 0.3851
       },
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 416,
+        "n": 496,
         "c00": 167,
-        "c01": 136,
+        "c01": 177,
         "c10": 0,
-        "c11": 113,
-        "agreement": 0.6731,
-        "kappa": 0.4002,
-        "jaccard": 0.4538,
-        "rate_a": 0.2716,
-        "rate_b": 0.5986
+        "c11": 152,
+        "agreement": 0.6431,
+        "kappa": 0.3664,
+        "jaccard": 0.462,
+        "rate_a": 0.3065,
+        "rate_b": 0.6633
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 415,
-        "c00": 386,
+        "n": 498,
+        "c00": 466,
         "c01": 0,
         "c10": 0,
-        "c11": 29,
+        "c11": 32,
         "agreement": 1.0,
         "kappa": 1.0,
         "jaccard": 1.0,
-        "rate_a": 0.0699,
-        "rate_b": 0.0699
+        "rate_a": 0.0643,
+        "rate_b": 0.0643
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "controld_family",
-        "n": 417,
-        "c00": 372,
-        "c01": 16,
-        "c10": 7,
-        "c11": 22,
-        "agreement": 0.9448,
-        "kappa": 0.6273,
-        "jaccard": 0.4889,
-        "rate_a": 0.0695,
-        "rate_b": 0.0911
+        "n": 498,
+        "c00": 457,
+        "c01": 9,
+        "c10": 9,
+        "c11": 23,
+        "agreement": 0.9639,
+        "kappa": 0.6994,
+        "jaccard": 0.561,
+        "rate_a": 0.0643,
+        "rate_b": 0.0643
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "opendns_family",
-        "n": 417,
-        "c00": 375,
-        "c01": 13,
-        "c10": 3,
-        "c11": 26,
-        "agreement": 0.9616,
-        "kappa": 0.7443,
-        "jaccard": 0.619,
-        "rate_a": 0.0695,
-        "rate_b": 0.0935
+        "n": 498,
+        "c00": 455,
+        "c01": 11,
+        "c10": 2,
+        "c11": 30,
+        "agreement": 0.9739,
+        "kappa": 0.8081,
+        "jaccard": 0.6977,
+        "rate_a": 0.0643,
+        "rate_b": 0.0823
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "mullvad_family",
-        "n": 416,
-        "c00": 259,
-        "c01": 128,
-        "c10": 4,
+        "n": 497,
+        "c00": 298,
+        "c01": 167,
+        "c10": 7,
         "c11": 25,
-        "agreement": 0.6827,
-        "kappa": 0.1784,
-        "jaccard": 0.1592,
-        "rate_a": 0.0697,
-        "rate_b": 0.3678
+        "agreement": 0.6499,
+        "kappa": 0.1268,
+        "jaccard": 0.1256,
+        "rate_a": 0.0644,
+        "rate_b": 0.3863
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "dns4eu_child",
-        "n": 417,
-        "c00": 168,
-        "c01": 220,
+        "n": 497,
+        "c00": 167,
+        "c01": 298,
         "c10": 0,
-        "c11": 29,
-        "agreement": 0.4724,
-        "kappa": 0.096,
-        "jaccard": 0.1165,
-        "rate_a": 0.0695,
-        "rate_b": 0.5971
+        "c11": 32,
+        "agreement": 0.4004,
+        "kappa": 0.0673,
+        "jaccard": 0.097,
+        "rate_a": 0.0644,
+        "rate_b": 0.664
       },
       {
         "a": "cleanbrowsing_family",
         "b": "controld_family",
-        "n": 415,
-        "c00": 370,
-        "c01": 16,
+        "n": 498,
+        "c00": 457,
+        "c01": 9,
+        "c10": 9,
+        "c11": 23,
+        "agreement": 0.9639,
+        "kappa": 0.6994,
+        "jaccard": 0.561,
+        "rate_a": 0.0643,
+        "rate_b": 0.0643
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "opendns_family",
+        "n": 498,
+        "c00": 455,
+        "c01": 11,
+        "c10": 2,
+        "c11": 30,
+        "agreement": 0.9739,
+        "kappa": 0.8081,
+        "jaccard": 0.6977,
+        "rate_a": 0.0643,
+        "rate_b": 0.0823
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "mullvad_family",
+        "n": 497,
+        "c00": 298,
+        "c01": 167,
         "c10": 7,
-        "c11": 22,
-        "agreement": 0.9446,
-        "kappa": 0.6272,
-        "jaccard": 0.4889,
-        "rate_a": 0.0699,
-        "rate_b": 0.0916
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "opendns_family",
-        "n": 415,
-        "c00": 373,
-        "c01": 13,
-        "c10": 3,
-        "c11": 26,
-        "agreement": 0.9614,
-        "kappa": 0.7442,
-        "jaccard": 0.619,
-        "rate_a": 0.0699,
-        "rate_b": 0.094
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "mullvad_family",
-        "n": 414,
-        "c00": 258,
-        "c01": 127,
-        "c10": 4,
         "c11": 25,
-        "agreement": 0.6836,
-        "kappa": 0.1797,
-        "jaccard": 0.1603,
-        "rate_a": 0.07,
-        "rate_b": 0.3671
+        "agreement": 0.6499,
+        "kappa": 0.1268,
+        "jaccard": 0.1256,
+        "rate_a": 0.0644,
+        "rate_b": 0.3863
       },
       {
         "a": "cleanbrowsing_family",
         "b": "dns4eu_child",
-        "n": 415,
-        "c00": 168,
-        "c01": 218,
+        "n": 497,
+        "c00": 167,
+        "c01": 298,
         "c10": 0,
-        "c11": 29,
-        "agreement": 0.4747,
-        "kappa": 0.0972,
-        "jaccard": 0.1174,
-        "rate_a": 0.0699,
-        "rate_b": 0.5952
+        "c11": 32,
+        "agreement": 0.4004,
+        "kappa": 0.0673,
+        "jaccard": 0.097,
+        "rate_a": 0.0644,
+        "rate_b": 0.664
       },
       {
         "a": "controld_family",
         "b": "opendns_family",
-        "n": 417,
-        "c00": 362,
-        "c01": 17,
-        "c10": 16,
-        "c11": 22,
-        "agreement": 0.9209,
-        "kappa": 0.5278,
-        "jaccard": 0.4,
-        "rate_a": 0.0911,
-        "rate_b": 0.0935
+        "n": 498,
+        "c00": 451,
+        "c01": 15,
+        "c10": 6,
+        "c11": 26,
+        "agreement": 0.9578,
+        "kappa": 0.6899,
+        "jaccard": 0.5532,
+        "rate_a": 0.0643,
+        "rate_b": 0.0823
       },
       {
         "a": "controld_family",
         "b": "mullvad_family",
-        "n": 417,
-        "c00": 264,
-        "c01": 115,
-        "c10": 0,
-        "c11": 38,
-        "agreement": 0.7242,
-        "kappa": 0.295,
-        "jaccard": 0.2484,
-        "rate_a": 0.0911,
-        "rate_b": 0.3669
-      },
-      {
-        "a": "controld_family",
-        "b": "dns4eu_child",
-        "n": 418,
-        "c00": 169,
-        "c01": 211,
-        "c10": 0,
-        "c11": 38,
-        "agreement": 0.4952,
-        "kappa": 0.1271,
-        "jaccard": 0.1526,
-        "rate_a": 0.0909,
-        "rate_b": 0.5957
-      },
-      {
-        "a": "opendns_family",
-        "b": "mullvad_family",
-        "n": 416,
-        "c00": 255,
-        "c01": 122,
-        "c10": 8,
+        "n": 498,
+        "c00": 305,
+        "c01": 161,
+        "c10": 1,
         "c11": 31,
-        "agreement": 0.6875,
-        "kappa": 0.204,
-        "jaccard": 0.1925,
-        "rate_a": 0.0938,
-        "rate_b": 0.3678
+        "agreement": 0.6747,
+        "kappa": 0.1873,
+        "jaccard": 0.1606,
+        "rate_a": 0.0643,
+        "rate_b": 0.3855
+      },
+      {
+        "a": "controld_family",
+        "b": "dns4eu_child",
+        "n": 498,
+        "c00": 168,
+        "c01": 298,
+        "c10": 0,
+        "c11": 32,
+        "agreement": 0.4016,
+        "kappa": 0.0676,
+        "jaccard": 0.097,
+        "rate_a": 0.0643,
+        "rate_b": 0.6627
+      },
+      {
+        "a": "opendns_family",
+        "b": "mullvad_family",
+        "n": 497,
+        "c00": 292,
+        "c01": 164,
+        "c10": 13,
+        "c11": 28,
+        "agreement": 0.6439,
+        "kappa": 0.1208,
+        "jaccard": 0.1366,
+        "rate_a": 0.0825,
+        "rate_b": 0.3863
       },
       {
         "a": "opendns_family",
         "b": "dns4eu_child",
-        "n": 417,
-        "c00": 168,
-        "c01": 210,
+        "n": 497,
+        "c00": 167,
+        "c01": 289,
         "c10": 0,
-        "c11": 39,
-        "agreement": 0.4964,
-        "kappa": 0.1302,
-        "jaccard": 0.1566,
-        "rate_a": 0.0935,
-        "rate_b": 0.5971
+        "c11": 41,
+        "agreement": 0.4185,
+        "kappa": 0.087,
+        "jaccard": 0.1242,
+        "rate_a": 0.0825,
+        "rate_b": 0.664
       },
       {
         "a": "mullvad_family",
         "b": "dns4eu_child",
-        "n": 417,
-        "c00": 168,
-        "c01": 96,
+        "n": 497,
+        "c00": 167,
+        "c01": 139,
         "c10": 0,
-        "c11": 153,
-        "agreement": 0.7698,
-        "kappa": 0.5622,
-        "jaccard": 0.6145,
-        "rate_a": 0.3669,
-        "rate_b": 0.5971
+        "c11": 191,
+        "agreement": 0.7203,
+        "kappa": 0.4801,
+        "jaccard": 0.5788,
+        "rate_a": 0.3843,
+        "rate_b": 0.664
       }
     ],
     "adultos_all": [
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 66,
-        "c10": 3,
-        "c11": 43,
-        "agreement": 0.3839,
-        "kappa": -0.054,
-        "jaccard": 0.3839,
-        "rate_a": 0.4107,
-        "rate_b": 0.9732
+        "c01": 117,
+        "c10": 1,
+        "c11": 33,
+        "agreement": 0.2185,
+        "kappa": -0.0133,
+        "jaccard": 0.2185,
+        "rate_a": 0.2252,
+        "rate_b": 0.9934
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_adult",
-        "n": 112,
-        "c00": 62,
-        "c01": 4,
-        "c10": 22,
-        "c11": 24,
-        "agreement": 0.7679,
-        "kappa": 0.4902,
-        "jaccard": 0.48,
-        "rate_a": 0.4107,
-        "rate_b": 0.25
+        "n": 151,
+        "c00": 112,
+        "c01": 5,
+        "c10": 8,
+        "c11": 26,
+        "agreement": 0.9139,
+        "kappa": 0.7453,
+        "jaccard": 0.6667,
+        "rate_a": 0.2252,
+        "rate_b": 0.2053
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_family",
-        "n": 111,
-        "c00": 61,
-        "c01": 4,
-        "c10": 22,
-        "c11": 24,
-        "agreement": 0.7658,
-        "kappa": 0.4881,
-        "jaccard": 0.48,
-        "rate_a": 0.4144,
-        "rate_b": 0.2523
+        "n": 151,
+        "c00": 112,
+        "c01": 5,
+        "c10": 8,
+        "c11": 26,
+        "agreement": 0.9139,
+        "kappa": 0.7453,
+        "jaccard": 0.6667,
+        "rate_a": 0.2252,
+        "rate_b": 0.2053
       },
       {
         "a": "cloudflare_family",
         "b": "controld_family",
-        "n": 112,
-        "c00": 65,
-        "c01": 1,
-        "c10": 24,
-        "c11": 22,
-        "agreement": 0.7768,
-        "kappa": 0.5011,
-        "jaccard": 0.4681,
-        "rate_a": 0.4107,
-        "rate_b": 0.2054
+        "n": 151,
+        "c00": 117,
+        "c01": 0,
+        "c10": 11,
+        "c11": 23,
+        "agreement": 0.9272,
+        "kappa": 0.7642,
+        "jaccard": 0.6765,
+        "rate_a": 0.2252,
+        "rate_b": 0.1523
       },
       {
         "a": "cloudflare_family",
         "b": "opendns_family",
-        "n": 112,
-        "c00": 61,
-        "c01": 5,
-        "c10": 13,
-        "c11": 33,
-        "agreement": 0.8393,
-        "kappa": 0.659,
-        "jaccard": 0.6471,
-        "rate_a": 0.4107,
-        "rate_b": 0.3393
+        "n": 151,
+        "c00": 107,
+        "c01": 10,
+        "c10": 6,
+        "c11": 28,
+        "agreement": 0.894,
+        "kappa": 0.7085,
+        "jaccard": 0.6364,
+        "rate_a": 0.2252,
+        "rate_b": 0.2517
       },
       {
         "a": "cloudflare_family",
         "b": "mullvad_family",
-        "n": 112,
-        "c00": 65,
+        "n": 151,
+        "c00": 116,
         "c01": 1,
-        "c10": 16,
-        "c11": 30,
-        "agreement": 0.8482,
-        "kappa": 0.6701,
-        "jaccard": 0.6383,
-        "rate_a": 0.4107,
-        "rate_b": 0.2768
+        "c10": 8,
+        "c11": 26,
+        "agreement": 0.9404,
+        "kappa": 0.8157,
+        "jaccard": 0.7429,
+        "rate_a": 0.2252,
+        "rate_b": 0.1788
       },
       {
         "a": "cloudflare_family",
         "b": "dns4eu_child",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 66,
+        "c01": 117,
         "c10": 0,
-        "c11": 46,
-        "agreement": 0.4107,
+        "c11": 34,
+        "agreement": 0.2252,
         "kappa": 0.0,
-        "jaccard": 0.4107,
-        "rate_a": 0.4107,
+        "jaccard": 0.2252,
+        "rate_a": 0.2252,
         "rate_b": 1.0
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 112,
-        "c00": 3,
+        "n": 151,
+        "c00": 1,
         "c01": 0,
-        "c10": 81,
-        "c11": 28,
-        "agreement": 0.2768,
-        "kappa": 0.0182,
-        "jaccard": 0.2569,
-        "rate_a": 0.9732,
-        "rate_b": 0.25
+        "c10": 119,
+        "c11": 31,
+        "agreement": 0.2119,
+        "kappa": 0.0034,
+        "jaccard": 0.2067,
+        "rate_a": 0.9934,
+        "rate_b": 0.2053
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 111,
-        "c00": 3,
+        "n": 151,
+        "c00": 1,
         "c01": 0,
-        "c10": 80,
-        "c11": 28,
-        "agreement": 0.2793,
-        "kappa": 0.0186,
-        "jaccard": 0.2593,
-        "rate_a": 0.973,
-        "rate_b": 0.2523
+        "c10": 119,
+        "c11": 31,
+        "agreement": 0.2119,
+        "kappa": 0.0034,
+        "jaccard": 0.2067,
+        "rate_a": 0.9934,
+        "rate_b": 0.2053
       },
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 112,
-        "c00": 3,
+        "n": 151,
+        "c00": 1,
         "c01": 0,
-        "c10": 86,
+        "c10": 127,
         "c11": 23,
-        "agreement": 0.2321,
-        "kappa": 0.0141,
-        "jaccard": 0.211,
-        "rate_a": 0.9732,
-        "rate_b": 0.2054
+        "agreement": 0.1589,
+        "kappa": 0.0024,
+        "jaccard": 0.1533,
+        "rate_a": 0.9934,
+        "rate_b": 0.1523
       },
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 3,
-        "c10": 74,
-        "c11": 35,
-        "agreement": 0.3125,
-        "kappa": -0.0543,
-        "jaccard": 0.3125,
-        "rate_a": 0.9732,
-        "rate_b": 0.3393
+        "c01": 1,
+        "c10": 113,
+        "c11": 37,
+        "agreement": 0.245,
+        "kappa": -0.0133,
+        "jaccard": 0.245,
+        "rate_a": 0.9934,
+        "rate_b": 0.2517
       },
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 112,
-        "c00": 3,
+        "n": 151,
+        "c00": 1,
         "c01": 0,
-        "c10": 78,
-        "c11": 31,
-        "agreement": 0.3036,
-        "kappa": 0.0208,
-        "jaccard": 0.2844,
-        "rate_a": 0.9732,
-        "rate_b": 0.2768
+        "c10": 123,
+        "c11": 27,
+        "agreement": 0.1854,
+        "kappa": 0.0029,
+        "jaccard": 0.18,
+        "rate_a": 0.9934,
+        "rate_b": 0.1788
       },
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 3,
+        "c01": 1,
         "c10": 0,
-        "c11": 109,
-        "agreement": 0.9732,
+        "c11": 150,
+        "agreement": 0.9934,
         "kappa": 0.0,
-        "jaccard": 0.9732,
-        "rate_a": 0.9732,
+        "jaccard": 0.9934,
+        "rate_a": 0.9934,
         "rate_b": 1.0
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 111,
-        "c00": 83,
+        "n": 151,
+        "c00": 120,
         "c01": 0,
         "c10": 0,
-        "c11": 28,
+        "c11": 31,
         "agreement": 1.0,
         "kappa": 1.0,
         "jaccard": 1.0,
-        "rate_a": 0.2523,
-        "rate_b": 0.2523
+        "rate_a": 0.2053,
+        "rate_b": 0.2053
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "controld_family",
-        "n": 112,
-        "c00": 83,
-        "c01": 1,
-        "c10": 6,
-        "c11": 22,
-        "agreement": 0.9375,
-        "kappa": 0.8228,
-        "jaccard": 0.7586,
-        "rate_a": 0.25,
-        "rate_b": 0.2054
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "opendns_family",
-        "n": 112,
-        "c00": 72,
-        "c01": 12,
-        "c10": 2,
-        "c11": 26,
-        "agreement": 0.875,
-        "kappa": 0.7021,
-        "jaccard": 0.65,
-        "rate_a": 0.25,
-        "rate_b": 0.3393
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "mullvad_family",
-        "n": 112,
-        "c00": 77,
-        "c01": 7,
-        "c10": 4,
-        "c11": 24,
-        "agreement": 0.9018,
-        "kappa": 0.7471,
-        "jaccard": 0.6857,
-        "rate_a": 0.25,
-        "rate_b": 0.2768
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "dns4eu_child",
-        "n": 112,
-        "c00": 0,
-        "c01": 84,
-        "c10": 0,
-        "c11": 28,
-        "agreement": 0.25,
-        "kappa": 0.0,
-        "jaccard": 0.25,
-        "rate_a": 0.25,
-        "rate_b": 1.0
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "controld_family",
-        "n": 111,
-        "c00": 82,
-        "c01": 1,
-        "c10": 6,
-        "c11": 22,
-        "agreement": 0.9369,
-        "kappa": 0.8223,
-        "jaccard": 0.7586,
-        "rate_a": 0.2523,
-        "rate_b": 0.2072
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "opendns_family",
-        "n": 111,
-        "c00": 71,
-        "c01": 12,
-        "c10": 2,
-        "c11": 26,
-        "agreement": 0.8739,
-        "kappa": 0.701,
-        "jaccard": 0.65,
-        "rate_a": 0.2523,
-        "rate_b": 0.3423
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "mullvad_family",
-        "n": 111,
-        "c00": 76,
-        "c01": 7,
-        "c10": 4,
-        "c11": 24,
-        "agreement": 0.9009,
-        "kappa": 0.7463,
-        "jaccard": 0.6857,
-        "rate_a": 0.2523,
-        "rate_b": 0.2793
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "dns4eu_child",
-        "n": 111,
-        "c00": 0,
-        "c01": 83,
-        "c10": 0,
-        "c11": 28,
-        "agreement": 0.2523,
-        "kappa": 0.0,
-        "jaccard": 0.2523,
-        "rate_a": 0.2523,
-        "rate_b": 1.0
-      },
-      {
-        "a": "controld_family",
-        "b": "opendns_family",
-        "n": 112,
-        "c00": 73,
-        "c01": 16,
-        "c10": 1,
-        "c11": 22,
-        "agreement": 0.8482,
-        "kappa": 0.6255,
-        "jaccard": 0.5641,
-        "rate_a": 0.2054,
-        "rate_b": 0.3393
-      },
-      {
-        "a": "controld_family",
-        "b": "mullvad_family",
-        "n": 112,
-        "c00": 81,
-        "c01": 8,
-        "c10": 0,
-        "c11": 23,
-        "agreement": 0.9286,
-        "kappa": 0.8061,
-        "jaccard": 0.7419,
-        "rate_a": 0.2054,
-        "rate_b": 0.2768
-      },
-      {
-        "a": "controld_family",
-        "b": "dns4eu_child",
-        "n": 112,
-        "c00": 0,
-        "c01": 89,
-        "c10": 0,
-        "c11": 23,
-        "agreement": 0.2054,
-        "kappa": 0.0,
-        "jaccard": 0.2054,
-        "rate_a": 0.2054,
-        "rate_b": 1.0
-      },
-      {
-        "a": "opendns_family",
-        "b": "mullvad_family",
-        "n": 112,
-        "c00": 73,
-        "c01": 1,
+        "n": 151,
+        "c00": 120,
+        "c01": 0,
         "c10": 8,
+        "c11": 23,
+        "agreement": 0.947,
+        "kappa": 0.8205,
+        "jaccard": 0.7419,
+        "rate_a": 0.2053,
+        "rate_b": 0.1523
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "opendns_family",
+        "n": 151,
+        "c00": 112,
+        "c01": 8,
+        "c10": 1,
         "c11": 30,
-        "agreement": 0.9196,
-        "kappa": 0.8124,
+        "agreement": 0.9404,
+        "kappa": 0.8315,
         "jaccard": 0.7692,
-        "rate_a": 0.3393,
-        "rate_b": 0.2768
+        "rate_a": 0.2053,
+        "rate_b": 0.2517
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "mullvad_family",
+        "n": 151,
+        "c00": 117,
+        "c01": 3,
+        "c10": 7,
+        "c11": 24,
+        "agreement": 0.9338,
+        "kappa": 0.7868,
+        "jaccard": 0.7059,
+        "rate_a": 0.2053,
+        "rate_b": 0.1788
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "dns4eu_child",
+        "n": 151,
+        "c00": 0,
+        "c01": 120,
+        "c10": 0,
+        "c11": 31,
+        "agreement": 0.2053,
+        "kappa": 0.0,
+        "jaccard": 0.2053,
+        "rate_a": 0.2053,
+        "rate_b": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "controld_family",
+        "n": 151,
+        "c00": 120,
+        "c01": 0,
+        "c10": 8,
+        "c11": 23,
+        "agreement": 0.947,
+        "kappa": 0.8205,
+        "jaccard": 0.7419,
+        "rate_a": 0.2053,
+        "rate_b": 0.1523
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "opendns_family",
+        "n": 151,
+        "c00": 112,
+        "c01": 8,
+        "c10": 1,
+        "c11": 30,
+        "agreement": 0.9404,
+        "kappa": 0.8315,
+        "jaccard": 0.7692,
+        "rate_a": 0.2053,
+        "rate_b": 0.2517
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "mullvad_family",
+        "n": 151,
+        "c00": 117,
+        "c01": 3,
+        "c10": 7,
+        "c11": 24,
+        "agreement": 0.9338,
+        "kappa": 0.7868,
+        "jaccard": 0.7059,
+        "rate_a": 0.2053,
+        "rate_b": 0.1788
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "dns4eu_child",
+        "n": 151,
+        "c00": 0,
+        "c01": 120,
+        "c10": 0,
+        "c11": 31,
+        "agreement": 0.2053,
+        "kappa": 0.0,
+        "jaccard": 0.2053,
+        "rate_a": 0.2053,
+        "rate_b": 1.0
+      },
+      {
+        "a": "controld_family",
+        "b": "opendns_family",
+        "n": 151,
+        "c00": 113,
+        "c01": 15,
+        "c10": 0,
+        "c11": 23,
+        "agreement": 0.9007,
+        "kappa": 0.6965,
+        "jaccard": 0.6053,
+        "rate_a": 0.1523,
+        "rate_b": 0.2517
+      },
+      {
+        "a": "controld_family",
+        "b": "mullvad_family",
+        "n": 151,
+        "c00": 124,
+        "c01": 4,
+        "c10": 0,
+        "c11": 23,
+        "agreement": 0.9735,
+        "kappa": 0.9042,
+        "jaccard": 0.8519,
+        "rate_a": 0.1523,
+        "rate_b": 0.1788
+      },
+      {
+        "a": "controld_family",
+        "b": "dns4eu_child",
+        "n": 151,
+        "c00": 0,
+        "c01": 128,
+        "c10": 0,
+        "c11": 23,
+        "agreement": 0.1523,
+        "kappa": 0.0,
+        "jaccard": 0.1523,
+        "rate_a": 0.1523,
+        "rate_b": 1.0
+      },
+      {
+        "a": "opendns_family",
+        "b": "mullvad_family",
+        "n": 151,
+        "c00": 111,
+        "c01": 2,
+        "c10": 13,
+        "c11": 25,
+        "agreement": 0.9007,
+        "kappa": 0.7082,
+        "jaccard": 0.625,
+        "rate_a": 0.2517,
+        "rate_b": 0.1788
       },
       {
         "a": "opendns_family",
         "b": "dns4eu_child",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 74,
+        "c01": 113,
         "c10": 0,
         "c11": 38,
-        "agreement": 0.3393,
+        "agreement": 0.2517,
         "kappa": 0.0,
-        "jaccard": 0.3393,
-        "rate_a": 0.3393,
+        "jaccard": 0.2517,
+        "rate_a": 0.2517,
         "rate_b": 1.0
       },
       {
         "a": "mullvad_family",
         "b": "dns4eu_child",
-        "n": 112,
+        "n": 151,
         "c00": 0,
-        "c01": 81,
+        "c01": 124,
         "c10": 0,
-        "c11": 31,
-        "agreement": 0.2768,
+        "c11": 27,
+        "agreement": 0.1788,
         "kappa": 0.0,
-        "jaccard": 0.2768,
-        "rate_a": 0.2768,
+        "jaccard": 0.1788,
+        "rate_a": 0.1788,
         "rate_b": 1.0
       }
     ],
@@ -4738,393 +4853,393 @@
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 66,
-        "c10": 3,
-        "c11": 21,
-        "agreement": 0.2333,
-        "kappa": -0.0681,
-        "jaccard": 0.2333,
-        "rate_a": 0.2667,
-        "rate_b": 0.9667
+        "c01": 117,
+        "c10": 1,
+        "c11": 11,
+        "agreement": 0.0853,
+        "kappa": -0.0156,
+        "jaccard": 0.0853,
+        "rate_a": 0.093,
+        "rate_b": 0.9922
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_adult",
-        "n": 90,
-        "c00": 62,
-        "c01": 4,
-        "c10": 22,
-        "c11": 2,
-        "agreement": 0.7111,
-        "kappa": 0.0299,
-        "jaccard": 0.0714,
-        "rate_a": 0.2667,
-        "rate_b": 0.0667
+        "n": 129,
+        "c00": 112,
+        "c01": 5,
+        "c10": 8,
+        "c11": 4,
+        "agreement": 0.8992,
+        "kappa": 0.3273,
+        "jaccard": 0.2353,
+        "rate_a": 0.093,
+        "rate_b": 0.0698
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_family",
-        "n": 89,
-        "c00": 61,
-        "c01": 4,
-        "c10": 22,
-        "c11": 2,
-        "agreement": 0.7079,
-        "kappa": 0.0285,
-        "jaccard": 0.0714,
-        "rate_a": 0.2697,
-        "rate_b": 0.0674
+        "n": 129,
+        "c00": 112,
+        "c01": 5,
+        "c10": 8,
+        "c11": 4,
+        "agreement": 0.8992,
+        "kappa": 0.3273,
+        "jaccard": 0.2353,
+        "rate_a": 0.093,
+        "rate_b": 0.0698
       },
       {
         "a": "cloudflare_family",
         "b": "controld_family",
-        "n": 90,
-        "c00": 65,
-        "c01": 1,
-        "c10": 24,
-        "c11": 0,
-        "agreement": 0.7222,
-        "kappa": -0.0218,
-        "jaccard": 0.0,
-        "rate_a": 0.2667,
-        "rate_b": 0.0111
+        "n": 129,
+        "c00": 117,
+        "c01": 0,
+        "c10": 11,
+        "c11": 1,
+        "agreement": 0.9147,
+        "kappa": 0.1416,
+        "jaccard": 0.0833,
+        "rate_a": 0.093,
+        "rate_b": 0.0078
       },
       {
         "a": "cloudflare_family",
         "b": "opendns_family",
-        "n": 90,
-        "c00": 61,
-        "c01": 5,
-        "c10": 13,
-        "c11": 11,
-        "agreement": 0.8,
-        "kappa": 0.428,
-        "jaccard": 0.3793,
-        "rate_a": 0.2667,
-        "rate_b": 0.1778
+        "n": 129,
+        "c00": 107,
+        "c01": 10,
+        "c10": 6,
+        "c11": 6,
+        "agreement": 0.876,
+        "kappa": 0.3606,
+        "jaccard": 0.2727,
+        "rate_a": 0.093,
+        "rate_b": 0.124
       },
       {
         "a": "cloudflare_family",
         "b": "mullvad_family",
-        "n": 90,
-        "c00": 65,
+        "n": 129,
+        "c00": 116,
         "c01": 1,
-        "c10": 16,
-        "c11": 8,
-        "agreement": 0.8111,
-        "kappa": 0.3972,
-        "jaccard": 0.32,
-        "rate_a": 0.2667,
-        "rate_b": 0.1
+        "c10": 8,
+        "c11": 4,
+        "agreement": 0.9302,
+        "kappa": 0.4399,
+        "jaccard": 0.3077,
+        "rate_a": 0.093,
+        "rate_b": 0.0388
       },
       {
         "a": "cloudflare_family",
         "b": "dns4eu_child",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 66,
+        "c01": 117,
         "c10": 0,
-        "c11": 24,
-        "agreement": 0.2667,
+        "c11": 12,
+        "agreement": 0.093,
         "kappa": 0.0,
-        "jaccard": 0.2667,
-        "rate_a": 0.2667,
+        "jaccard": 0.093,
+        "rate_a": 0.093,
         "rate_b": 1.0
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 90,
-        "c00": 3,
+        "n": 129,
+        "c00": 1,
         "c01": 0,
-        "c10": 81,
-        "c11": 6,
-        "agreement": 0.1,
-        "kappa": 0.0049,
-        "jaccard": 0.069,
-        "rate_a": 0.9667,
-        "rate_b": 0.0667
+        "c10": 119,
+        "c11": 9,
+        "agreement": 0.0775,
+        "kappa": 0.0012,
+        "jaccard": 0.0703,
+        "rate_a": 0.9922,
+        "rate_b": 0.0698
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 89,
-        "c00": 3,
+        "n": 129,
+        "c00": 1,
         "c01": 0,
-        "c10": 80,
-        "c11": 6,
-        "agreement": 0.1011,
-        "kappa": 0.005,
-        "jaccard": 0.0698,
-        "rate_a": 0.9663,
-        "rate_b": 0.0674
+        "c10": 119,
+        "c11": 9,
+        "agreement": 0.0775,
+        "kappa": 0.0012,
+        "jaccard": 0.0703,
+        "rate_a": 0.9922,
+        "rate_b": 0.0698
       },
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 90,
-        "c00": 3,
+        "n": 129,
+        "c00": 1,
         "c01": 0,
-        "c10": 86,
+        "c10": 127,
         "c11": 1,
-        "agreement": 0.0444,
-        "kappa": 0.0008,
-        "jaccard": 0.0115,
-        "rate_a": 0.9667,
-        "rate_b": 0.0111
+        "agreement": 0.0155,
+        "kappa": 0.0001,
+        "jaccard": 0.0078,
+        "rate_a": 0.9922,
+        "rate_b": 0.0078
       },
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 3,
-        "c10": 74,
-        "c11": 13,
-        "agreement": 0.1444,
-        "kappa": -0.0685,
-        "jaccard": 0.1444,
-        "rate_a": 0.9667,
-        "rate_b": 0.1778
+        "c01": 1,
+        "c10": 113,
+        "c11": 15,
+        "agreement": 0.1163,
+        "kappa": -0.0156,
+        "jaccard": 0.1163,
+        "rate_a": 0.9922,
+        "rate_b": 0.124
       },
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 90,
-        "c00": 3,
+        "n": 129,
+        "c00": 1,
         "c01": 0,
-        "c10": 78,
-        "c11": 9,
-        "agreement": 0.1333,
-        "kappa": 0.0076,
-        "jaccard": 0.1034,
-        "rate_a": 0.9667,
-        "rate_b": 0.1
+        "c10": 123,
+        "c11": 5,
+        "agreement": 0.0465,
+        "kappa": 0.0006,
+        "jaccard": 0.0391,
+        "rate_a": 0.9922,
+        "rate_b": 0.0388
       },
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 3,
+        "c01": 1,
         "c10": 0,
-        "c11": 87,
-        "agreement": 0.9667,
+        "c11": 128,
+        "agreement": 0.9922,
         "kappa": 0.0,
-        "jaccard": 0.9667,
-        "rate_a": 0.9667,
+        "jaccard": 0.9922,
+        "rate_a": 0.9922,
         "rate_b": 1.0
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 89,
-        "c00": 83,
+        "n": 129,
+        "c00": 120,
         "c01": 0,
         "c10": 0,
-        "c11": 6,
+        "c11": 9,
         "agreement": 1.0,
         "kappa": 1.0,
         "jaccard": 1.0,
-        "rate_a": 0.0674,
-        "rate_b": 0.0674
+        "rate_a": 0.0698,
+        "rate_b": 0.0698
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "controld_family",
-        "n": 90,
-        "c00": 83,
-        "c01": 1,
-        "c10": 6,
-        "c11": 0,
-        "agreement": 0.9222,
-        "kappa": -0.0194,
-        "jaccard": 0.0,
-        "rate_a": 0.0667,
-        "rate_b": 0.0111
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "opendns_family",
-        "n": 90,
-        "c00": 72,
-        "c01": 12,
-        "c10": 2,
-        "c11": 4,
-        "agreement": 0.8444,
-        "kappa": 0.2953,
-        "jaccard": 0.2222,
-        "rate_a": 0.0667,
-        "rate_b": 0.1778
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "mullvad_family",
-        "n": 90,
-        "c00": 77,
-        "c01": 7,
-        "c10": 4,
-        "c11": 2,
-        "agreement": 0.8778,
-        "kappa": 0.2029,
-        "jaccard": 0.1538,
-        "rate_a": 0.0667,
-        "rate_b": 0.1
-      },
-      {
-        "a": "cleanbrowsing_adult",
-        "b": "dns4eu_child",
-        "n": 90,
-        "c00": 0,
-        "c01": 84,
-        "c10": 0,
-        "c11": 6,
-        "agreement": 0.0667,
-        "kappa": 0.0,
-        "jaccard": 0.0667,
-        "rate_a": 0.0667,
-        "rate_b": 1.0
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "controld_family",
-        "n": 89,
-        "c00": 82,
-        "c01": 1,
-        "c10": 6,
-        "c11": 0,
-        "agreement": 0.9213,
-        "kappa": -0.0196,
-        "jaccard": 0.0,
-        "rate_a": 0.0674,
-        "rate_b": 0.0112
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "opendns_family",
-        "n": 89,
-        "c00": 71,
-        "c01": 12,
-        "c10": 2,
-        "c11": 4,
-        "agreement": 0.8427,
-        "kappa": 0.2945,
-        "jaccard": 0.2222,
-        "rate_a": 0.0674,
-        "rate_b": 0.1798
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "mullvad_family",
-        "n": 89,
-        "c00": 76,
-        "c01": 7,
-        "c10": 4,
-        "c11": 2,
-        "agreement": 0.8764,
-        "kappa": 0.2021,
-        "jaccard": 0.1538,
-        "rate_a": 0.0674,
-        "rate_b": 0.1011
-      },
-      {
-        "a": "cleanbrowsing_family",
-        "b": "dns4eu_child",
-        "n": 89,
-        "c00": 0,
-        "c01": 83,
-        "c10": 0,
-        "c11": 6,
-        "agreement": 0.0674,
-        "kappa": 0.0,
-        "jaccard": 0.0674,
-        "rate_a": 0.0674,
-        "rate_b": 1.0
-      },
-      {
-        "a": "controld_family",
-        "b": "opendns_family",
-        "n": 90,
-        "c00": 73,
-        "c01": 16,
-        "c10": 1,
-        "c11": 0,
-        "agreement": 0.8111,
-        "kappa": -0.0214,
-        "jaccard": 0.0,
-        "rate_a": 0.0111,
-        "rate_b": 0.1778
-      },
-      {
-        "a": "controld_family",
-        "b": "mullvad_family",
-        "n": 90,
-        "c00": 81,
-        "c01": 8,
-        "c10": 0,
-        "c11": 1,
-        "agreement": 0.9111,
-        "kappa": 0.1837,
-        "jaccard": 0.1111,
-        "rate_a": 0.0111,
-        "rate_b": 0.1
-      },
-      {
-        "a": "controld_family",
-        "b": "dns4eu_child",
-        "n": 90,
-        "c00": 0,
-        "c01": 89,
-        "c10": 0,
-        "c11": 1,
-        "agreement": 0.0111,
-        "kappa": 0.0,
-        "jaccard": 0.0111,
-        "rate_a": 0.0111,
-        "rate_b": 1.0
-      },
-      {
-        "a": "opendns_family",
-        "b": "mullvad_family",
-        "n": 90,
-        "c00": 73,
-        "c01": 1,
+        "n": 129,
+        "c00": 120,
+        "c01": 0,
         "c10": 8,
+        "c11": 1,
+        "agreement": 0.938,
+        "kappa": 0.1887,
+        "jaccard": 0.1111,
+        "rate_a": 0.0698,
+        "rate_b": 0.0078
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "opendns_family",
+        "n": 129,
+        "c00": 112,
+        "c01": 8,
+        "c10": 1,
         "c11": 8,
-        "agreement": 0.9,
-        "kappa": 0.5872,
+        "agreement": 0.9302,
+        "kappa": 0.6047,
         "jaccard": 0.4706,
-        "rate_a": 0.1778,
-        "rate_b": 0.1
+        "rate_a": 0.0698,
+        "rate_b": 0.124
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "mullvad_family",
+        "n": 129,
+        "c00": 117,
+        "c01": 3,
+        "c10": 7,
+        "c11": 2,
+        "agreement": 0.9225,
+        "kappa": 0.2483,
+        "jaccard": 0.1667,
+        "rate_a": 0.0698,
+        "rate_b": 0.0388
+      },
+      {
+        "a": "cleanbrowsing_adult",
+        "b": "dns4eu_child",
+        "n": 129,
+        "c00": 0,
+        "c01": 120,
+        "c10": 0,
+        "c11": 9,
+        "agreement": 0.0698,
+        "kappa": 0.0,
+        "jaccard": 0.0698,
+        "rate_a": 0.0698,
+        "rate_b": 1.0
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "controld_family",
+        "n": 129,
+        "c00": 120,
+        "c01": 0,
+        "c10": 8,
+        "c11": 1,
+        "agreement": 0.938,
+        "kappa": 0.1887,
+        "jaccard": 0.1111,
+        "rate_a": 0.0698,
+        "rate_b": 0.0078
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "opendns_family",
+        "n": 129,
+        "c00": 112,
+        "c01": 8,
+        "c10": 1,
+        "c11": 8,
+        "agreement": 0.9302,
+        "kappa": 0.6047,
+        "jaccard": 0.4706,
+        "rate_a": 0.0698,
+        "rate_b": 0.124
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "mullvad_family",
+        "n": 129,
+        "c00": 117,
+        "c01": 3,
+        "c10": 7,
+        "c11": 2,
+        "agreement": 0.9225,
+        "kappa": 0.2483,
+        "jaccard": 0.1667,
+        "rate_a": 0.0698,
+        "rate_b": 0.0388
+      },
+      {
+        "a": "cleanbrowsing_family",
+        "b": "dns4eu_child",
+        "n": 129,
+        "c00": 0,
+        "c01": 120,
+        "c10": 0,
+        "c11": 9,
+        "agreement": 0.0698,
+        "kappa": 0.0,
+        "jaccard": 0.0698,
+        "rate_a": 0.0698,
+        "rate_b": 1.0
+      },
+      {
+        "a": "controld_family",
+        "b": "opendns_family",
+        "n": 129,
+        "c00": 113,
+        "c01": 15,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 0.8837,
+        "kappa": 0.1046,
+        "jaccard": 0.0625,
+        "rate_a": 0.0078,
+        "rate_b": 0.124
+      },
+      {
+        "a": "controld_family",
+        "b": "mullvad_family",
+        "n": 129,
+        "c00": 124,
+        "c01": 4,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 0.969,
+        "kappa": 0.3246,
+        "jaccard": 0.2,
+        "rate_a": 0.0078,
+        "rate_b": 0.0388
+      },
+      {
+        "a": "controld_family",
+        "b": "dns4eu_child",
+        "n": 129,
+        "c00": 0,
+        "c01": 128,
+        "c10": 0,
+        "c11": 1,
+        "agreement": 0.0078,
+        "kappa": 0.0,
+        "jaccard": 0.0078,
+        "rate_a": 0.0078,
+        "rate_b": 1.0
+      },
+      {
+        "a": "opendns_family",
+        "b": "mullvad_family",
+        "n": 129,
+        "c00": 111,
+        "c01": 2,
+        "c10": 13,
+        "c11": 3,
+        "agreement": 0.8837,
+        "kappa": 0.2409,
+        "jaccard": 0.1667,
+        "rate_a": 0.124,
+        "rate_b": 0.0388
       },
       {
         "a": "opendns_family",
         "b": "dns4eu_child",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 74,
+        "c01": 113,
         "c10": 0,
         "c11": 16,
-        "agreement": 0.1778,
+        "agreement": 0.124,
         "kappa": 0.0,
-        "jaccard": 0.1778,
-        "rate_a": 0.1778,
+        "jaccard": 0.124,
+        "rate_a": 0.124,
         "rate_b": 1.0
       },
       {
         "a": "mullvad_family",
         "b": "dns4eu_child",
-        "n": 90,
+        "n": 129,
         "c00": 0,
-        "c01": 81,
+        "c01": 124,
         "c10": 0,
-        "c11": 9,
-        "agreement": 0.1,
+        "c11": 5,
+        "agreement": 0.0388,
         "kappa": 0.0,
-        "jaccard": 0.1,
-        "rate_a": 0.1,
+        "jaccard": 0.0388,
+        "rate_a": 0.0388,
         "rate_b": 1.0
       }
     ],
@@ -5132,394 +5247,394 @@
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 127,
-        "c00": 121,
-        "c01": 4,
-        "c10": 2,
-        "c11": 0,
-        "agreement": 0.9528,
-        "kappa": -0.0214,
-        "jaccard": 0.0,
-        "rate_a": 0.0157,
-        "rate_b": 0.0315
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "cleanbrowsing_adult",
-        "n": 127,
-        "c00": 124,
-        "c01": 1,
-        "c10": 2,
-        "c11": 0,
-        "agreement": 0.9764,
-        "kappa": -0.0106,
-        "jaccard": 0.0,
-        "rate_a": 0.0157,
-        "rate_b": 0.0079
-      },
-      {
-        "a": "cloudflare_family",
-        "b": "cleanbrowsing_family",
-        "n": 126,
-        "c00": 123,
-        "c01": 1,
+        "n": 168,
+        "c00": 164,
+        "c01": 2,
         "c10": 2,
         "c11": 0,
         "agreement": 0.9762,
-        "kappa": -0.0107,
+        "kappa": -0.012,
         "jaccard": 0.0,
-        "rate_a": 0.0159,
-        "rate_b": 0.0079
+        "rate_a": 0.0119,
+        "rate_b": 0.0119
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_adult",
+        "n": 168,
+        "c00": 165,
+        "c01": 1,
+        "c10": 2,
+        "c11": 0,
+        "agreement": 0.9821,
+        "kappa": -0.008,
+        "jaccard": 0.0,
+        "rate_a": 0.0119,
+        "rate_b": 0.006
+      },
+      {
+        "a": "cloudflare_family",
+        "b": "cleanbrowsing_family",
+        "n": 168,
+        "c00": 165,
+        "c01": 1,
+        "c10": 2,
+        "c11": 0,
+        "agreement": 0.9821,
+        "kappa": -0.008,
+        "jaccard": 0.0,
+        "rate_a": 0.0119,
+        "rate_b": 0.006
       },
       {
         "a": "cloudflare_family",
         "b": "controld_family",
-        "n": 127,
-        "c00": 111,
-        "c01": 14,
-        "c10": 1,
-        "c11": 1,
-        "agreement": 0.8819,
-        "kappa": 0.0924,
-        "jaccard": 0.0625,
-        "rate_a": 0.0157,
-        "rate_b": 0.1181
+        "n": 168,
+        "c00": 157,
+        "c01": 9,
+        "c10": 2,
+        "c11": 0,
+        "agreement": 0.9345,
+        "kappa": -0.0199,
+        "jaccard": 0.0,
+        "rate_a": 0.0119,
+        "rate_b": 0.0536
       },
       {
         "a": "cloudflare_family",
         "b": "opendns_family",
-        "n": 127,
-        "c00": 124,
-        "c01": 1,
+        "n": 168,
+        "c00": 163,
+        "c01": 3,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9764,
-        "kappa": -0.0106,
+        "agreement": 0.9702,
+        "kappa": -0.0145,
         "jaccard": 0.0,
-        "rate_a": 0.0157,
-        "rate_b": 0.0079
+        "rate_a": 0.0119,
+        "rate_b": 0.0179
       },
       {
         "a": "cloudflare_family",
         "b": "mullvad_family",
-        "n": 127,
-        "c00": 5,
-        "c01": 120,
+        "n": 168,
+        "c00": 4,
+        "c01": 162,
         "c10": 0,
         "c11": 2,
-        "agreement": 0.0551,
-        "kappa": 0.0013,
-        "jaccard": 0.0164,
-        "rate_a": 0.0157,
-        "rate_b": 0.9606
+        "agreement": 0.0357,
+        "kappa": 0.0006,
+        "jaccard": 0.0122,
+        "rate_a": 0.0119,
+        "rate_b": 0.9762
       },
       {
         "a": "cloudflare_family",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
-        "c01": 122,
+        "n": 167,
+        "c00": 2,
+        "c01": 163,
         "c10": 0,
         "c11": 2,
-        "agreement": 0.0394,
-        "kappa": 0.0008,
-        "jaccard": 0.0161,
-        "rate_a": 0.0157,
-        "rate_b": 0.9764
+        "agreement": 0.024,
+        "kappa": 0.0003,
+        "jaccard": 0.0121,
+        "rate_a": 0.012,
+        "rate_b": 0.988
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 127,
-        "c00": 122,
+        "n": 168,
+        "c00": 165,
         "c01": 1,
-        "c10": 4,
+        "c10": 2,
         "c11": 0,
-        "agreement": 0.9606,
-        "kappa": -0.0128,
+        "agreement": 0.9821,
+        "kappa": -0.008,
         "jaccard": 0.0,
-        "rate_a": 0.0315,
-        "rate_b": 0.0079
+        "rate_a": 0.0119,
+        "rate_b": 0.006
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 126,
-        "c00": 121,
+        "n": 168,
+        "c00": 165,
         "c01": 1,
-        "c10": 4,
+        "c10": 2,
         "c11": 0,
-        "agreement": 0.9603,
-        "kappa": -0.0129,
+        "agreement": 0.9821,
+        "kappa": -0.008,
         "jaccard": 0.0,
-        "rate_a": 0.0317,
-        "rate_b": 0.0079
+        "rate_a": 0.0119,
+        "rate_b": 0.006
       },
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 127,
-        "c00": 108,
-        "c01": 15,
-        "c10": 4,
+        "n": 168,
+        "c00": 157,
+        "c01": 9,
+        "c10": 2,
         "c11": 0,
-        "agreement": 0.8504,
-        "kappa": -0.0523,
+        "agreement": 0.9345,
+        "kappa": -0.0199,
         "jaccard": 0.0,
-        "rate_a": 0.0315,
-        "rate_b": 0.1181
+        "rate_a": 0.0119,
+        "rate_b": 0.0536
       },
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 127,
-        "c00": 122,
-        "c01": 1,
-        "c10": 4,
+        "n": 168,
+        "c00": 163,
+        "c01": 3,
+        "c10": 2,
         "c11": 0,
-        "agreement": 0.9606,
-        "kappa": -0.0128,
+        "agreement": 0.9702,
+        "kappa": -0.0145,
         "jaccard": 0.0,
-        "rate_a": 0.0315,
-        "rate_b": 0.0079
+        "rate_a": 0.0119,
+        "rate_b": 0.0179
       },
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 127,
-        "c00": 5,
-        "c01": 118,
+        "n": 168,
+        "c00": 4,
+        "c01": 162,
         "c10": 0,
-        "c11": 4,
-        "agreement": 0.0709,
-        "kappa": 0.0027,
-        "jaccard": 0.0328,
-        "rate_a": 0.0315,
-        "rate_b": 0.9606
+        "c11": 2,
+        "agreement": 0.0357,
+        "kappa": 0.0006,
+        "jaccard": 0.0122,
+        "rate_a": 0.0119,
+        "rate_b": 0.9762
       },
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
-        "c01": 120,
+        "n": 167,
+        "c00": 2,
+        "c01": 163,
         "c10": 0,
-        "c11": 4,
-        "agreement": 0.0551,
-        "kappa": 0.0016,
-        "jaccard": 0.0323,
-        "rate_a": 0.0315,
-        "rate_b": 0.9764
+        "c11": 2,
+        "agreement": 0.024,
+        "kappa": 0.0003,
+        "jaccard": 0.0121,
+        "rate_a": 0.012,
+        "rate_b": 0.988
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 126,
-        "c00": 125,
+        "n": 169,
+        "c00": 168,
         "c01": 0,
         "c10": 0,
         "c11": 1,
         "agreement": 1.0,
         "kappa": 1.0,
         "jaccard": 1.0,
-        "rate_a": 0.0079,
-        "rate_b": 0.0079
+        "rate_a": 0.0059,
+        "rate_b": 0.0059
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "controld_family",
-        "n": 127,
-        "c00": 111,
-        "c01": 15,
+        "n": 169,
+        "c00": 159,
+        "c01": 9,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.874,
-        "kappa": -0.015,
+        "agreement": 0.9408,
+        "kappa": -0.0108,
         "jaccard": 0.0,
-        "rate_a": 0.0079,
-        "rate_b": 0.1181
+        "rate_a": 0.0059,
+        "rate_b": 0.0533
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "opendns_family",
-        "n": 127,
-        "c00": 125,
-        "c01": 1,
+        "n": 169,
+        "c00": 165,
+        "c01": 3,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.9843,
-        "kappa": -0.0079,
+        "agreement": 0.9763,
+        "kappa": -0.009,
         "jaccard": 0.0,
-        "rate_a": 0.0079,
-        "rate_b": 0.0079
+        "rate_a": 0.0059,
+        "rate_b": 0.0178
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "mullvad_family",
-        "n": 127,
-        "c00": 5,
-        "c01": 121,
+        "n": 169,
+        "c00": 4,
+        "c01": 164,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0472,
-        "kappa": 0.0007,
-        "jaccard": 0.0082,
-        "rate_a": 0.0079,
-        "rate_b": 0.9606
+        "agreement": 0.0296,
+        "kappa": 0.0003,
+        "jaccard": 0.0061,
+        "rate_a": 0.0059,
+        "rate_b": 0.9763
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
-        "c01": 123,
+        "n": 168,
+        "c00": 2,
+        "c01": 165,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0315,
-        "kappa": 0.0004,
-        "jaccard": 0.0081,
-        "rate_a": 0.0079,
-        "rate_b": 0.9764
+        "agreement": 0.0179,
+        "kappa": 0.0001,
+        "jaccard": 0.006,
+        "rate_a": 0.006,
+        "rate_b": 0.9881
       },
       {
         "a": "cleanbrowsing_family",
         "b": "controld_family",
-        "n": 126,
-        "c00": 110,
-        "c01": 15,
+        "n": 169,
+        "c00": 159,
+        "c01": 9,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.873,
-        "kappa": -0.0151,
+        "agreement": 0.9408,
+        "kappa": -0.0108,
         "jaccard": 0.0,
-        "rate_a": 0.0079,
-        "rate_b": 0.119
+        "rate_a": 0.0059,
+        "rate_b": 0.0533
       },
       {
         "a": "cleanbrowsing_family",
         "b": "opendns_family",
-        "n": 126,
-        "c00": 124,
-        "c01": 1,
+        "n": 169,
+        "c00": 165,
+        "c01": 3,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.9841,
-        "kappa": -0.008,
+        "agreement": 0.9763,
+        "kappa": -0.009,
         "jaccard": 0.0,
-        "rate_a": 0.0079,
-        "rate_b": 0.0079
+        "rate_a": 0.0059,
+        "rate_b": 0.0178
       },
       {
         "a": "cleanbrowsing_family",
         "b": "mullvad_family",
-        "n": 126,
-        "c00": 5,
-        "c01": 120,
+        "n": 169,
+        "c00": 4,
+        "c01": 164,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0476,
-        "kappa": 0.0007,
-        "jaccard": 0.0083,
-        "rate_a": 0.0079,
-        "rate_b": 0.9603
+        "agreement": 0.0296,
+        "kappa": 0.0003,
+        "jaccard": 0.0061,
+        "rate_a": 0.0059,
+        "rate_b": 0.9763
       },
       {
         "a": "cleanbrowsing_family",
         "b": "dns4eu_child",
-        "n": 126,
-        "c00": 3,
-        "c01": 122,
+        "n": 168,
+        "c00": 2,
+        "c01": 165,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0317,
-        "kappa": 0.0004,
-        "jaccard": 0.0081,
-        "rate_a": 0.0079,
-        "rate_b": 0.9762
+        "agreement": 0.0179,
+        "kappa": 0.0001,
+        "jaccard": 0.006,
+        "rate_a": 0.006,
+        "rate_b": 0.9881
       },
       {
         "a": "controld_family",
         "b": "opendns_family",
-        "n": 127,
-        "c00": 111,
-        "c01": 1,
-        "c10": 15,
-        "c11": 0,
-        "agreement": 0.874,
-        "kappa": -0.015,
-        "jaccard": 0.0,
-        "rate_a": 0.1181,
-        "rate_b": 0.0079
+        "n": 169,
+        "c00": 160,
+        "c01": 0,
+        "c10": 6,
+        "c11": 3,
+        "agreement": 0.9645,
+        "kappa": 0.4863,
+        "jaccard": 0.3333,
+        "rate_a": 0.0533,
+        "rate_b": 0.0178
       },
       {
         "a": "controld_family",
         "b": "mullvad_family",
-        "n": 127,
-        "c00": 5,
-        "c01": 107,
-        "c10": 0,
-        "c11": 15,
-        "agreement": 0.1575,
-        "kappa": 0.0109,
-        "jaccard": 0.123,
-        "rate_a": 0.1181,
-        "rate_b": 0.9606
+        "n": 169,
+        "c00": 3,
+        "c01": 157,
+        "c10": 1,
+        "c11": 8,
+        "agreement": 0.0651,
+        "kappa": -0.0101,
+        "jaccard": 0.0482,
+        "rate_a": 0.0533,
+        "rate_b": 0.9763
       },
       {
         "a": "controld_family",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
-        "c01": 109,
+        "n": 168,
+        "c00": 2,
+        "c01": 157,
         "c10": 0,
-        "c11": 15,
-        "agreement": 0.1417,
-        "kappa": 0.0065,
-        "jaccard": 0.121,
-        "rate_a": 0.1181,
-        "rate_b": 0.9764
+        "c11": 9,
+        "agreement": 0.0655,
+        "kappa": 0.0014,
+        "jaccard": 0.0542,
+        "rate_a": 0.0536,
+        "rate_b": 0.9881
       },
       {
         "a": "opendns_family",
         "b": "mullvad_family",
-        "n": 127,
-        "c00": 5,
-        "c01": 121,
+        "n": 169,
+        "c00": 4,
+        "c01": 162,
         "c10": 0,
-        "c11": 1,
-        "agreement": 0.0472,
-        "kappa": 0.0007,
-        "jaccard": 0.0082,
-        "rate_a": 0.0079,
-        "rate_b": 0.9606
+        "c11": 3,
+        "agreement": 0.0414,
+        "kappa": 0.0009,
+        "jaccard": 0.0182,
+        "rate_a": 0.0178,
+        "rate_b": 0.9763
       },
       {
         "a": "opendns_family",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
-        "c01": 123,
+        "n": 168,
+        "c00": 2,
+        "c01": 163,
         "c10": 0,
-        "c11": 1,
-        "agreement": 0.0315,
+        "c11": 3,
+        "agreement": 0.0298,
         "kappa": 0.0004,
-        "jaccard": 0.0081,
-        "rate_a": 0.0079,
-        "rate_b": 0.9764
+        "jaccard": 0.0181,
+        "rate_a": 0.0179,
+        "rate_b": 0.9881
       },
       {
         "a": "mullvad_family",
         "b": "dns4eu_child",
-        "n": 127,
-        "c00": 3,
+        "n": 168,
+        "c00": 2,
         "c01": 2,
         "c10": 0,
-        "c11": 122,
-        "agreement": 0.9843,
-        "kappa": 0.7424,
-        "jaccard": 0.9839,
-        "rate_a": 0.9606,
-        "rate_b": 0.9764
+        "c11": 164,
+        "agreement": 0.9881,
+        "kappa": 0.6613,
+        "jaccard": 0.988,
+        "rate_a": 0.9762,
+        "rate_b": 0.9881
       }
     ],
     "apuestas_subtel": [
@@ -5554,16 +5669,16 @@
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_family",
-        "n": 41,
-        "c00": 40,
+        "n": 42,
+        "c00": 41,
         "c01": 1,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.9756,
+        "agreement": 0.9762,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.0244
+        "rate_b": 0.0238
       },
       {
         "a": "cloudflare_family",
@@ -5638,16 +5753,16 @@
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 41,
-        "c00": 38,
+        "n": 42,
+        "c00": 39,
         "c01": 1,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9268,
-        "kappa": -0.0336,
+        "agreement": 0.9286,
+        "kappa": -0.0328,
         "jaccard": 0.0,
-        "rate_a": 0.0488,
-        "rate_b": 0.0244
+        "rate_a": 0.0476,
+        "rate_b": 0.0238
       },
       {
         "a": "adguard_family",
@@ -5708,16 +5823,16 @@
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 41,
-        "c00": 40,
+        "n": 42,
+        "c00": 41,
         "c01": 0,
         "c10": 0,
         "c11": 1,
         "agreement": 1.0,
         "kappa": 1.0,
         "jaccard": 1.0,
-        "rate_a": 0.0244,
-        "rate_b": 0.0244
+        "rate_a": 0.0238,
+        "rate_b": 0.0238
       },
       {
         "a": "cleanbrowsing_adult",
@@ -5778,58 +5893,58 @@
       {
         "a": "cleanbrowsing_family",
         "b": "controld_family",
-        "n": 41,
-        "c00": 39,
+        "n": 42,
+        "c00": 40,
         "c01": 1,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.9512,
-        "kappa": -0.025,
+        "agreement": 0.9524,
+        "kappa": -0.0244,
         "jaccard": 0.0,
-        "rate_a": 0.0244,
-        "rate_b": 0.0244
+        "rate_a": 0.0238,
+        "rate_b": 0.0238
       },
       {
         "a": "cleanbrowsing_family",
         "b": "opendns_family",
-        "n": 41,
-        "c00": 40,
+        "n": 42,
+        "c00": 41,
         "c01": 0,
         "c10": 1,
         "c11": 0,
-        "agreement": 0.9756,
+        "agreement": 0.9762,
         "kappa": 0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0244,
+        "rate_a": 0.0238,
         "rate_b": 0.0
       },
       {
         "a": "cleanbrowsing_family",
         "b": "mullvad_family",
-        "n": 41,
+        "n": 42,
         "c00": 3,
-        "c01": 37,
+        "c01": 38,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0976,
-        "kappa": 0.0039,
-        "jaccard": 0.0263,
-        "rate_a": 0.0244,
-        "rate_b": 0.9268
+        "agreement": 0.0952,
+        "kappa": 0.0037,
+        "jaccard": 0.0256,
+        "rate_a": 0.0238,
+        "rate_b": 0.9286
       },
       {
         "a": "cleanbrowsing_family",
         "b": "dns4eu_child",
-        "n": 41,
+        "n": 42,
         "c00": 2,
-        "c01": 38,
+        "c01": 39,
         "c10": 0,
         "c11": 1,
-        "agreement": 0.0732,
-        "kappa": 0.0026,
-        "jaccard": 0.0256,
-        "rate_a": 0.0244,
-        "rate_b": 0.9512
+        "agreement": 0.0714,
+        "kappa": 0.0024,
+        "jaccard": 0.025,
+        "rate_a": 0.0238,
+        "rate_b": 0.9524
       },
       {
         "a": "controld_family",
@@ -5920,190 +6035,190 @@
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 85,
-        "c00": 81,
-        "c01": 2,
+        "n": 126,
+        "c00": 124,
+        "c01": 0,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9529,
-        "kappa": -0.0241,
+        "agreement": 0.9841,
+        "kappa": -0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
-        "rate_b": 0.0235
+        "rate_a": 0.0159,
+        "rate_b": 0.0
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_adult",
-        "n": 85,
-        "c00": 83,
+        "n": 126,
+        "c00": 124,
         "c01": 0,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9765,
-        "kappa": 0.0,
+        "agreement": 0.9841,
+        "kappa": -0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
+        "rate_a": 0.0159,
         "rate_b": 0.0
       },
       {
         "a": "cloudflare_family",
         "b": "cleanbrowsing_family",
-        "n": 85,
-        "c00": 83,
+        "n": 126,
+        "c00": 124,
         "c01": 0,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9765,
-        "kappa": 0.0,
+        "agreement": 0.9841,
+        "kappa": -0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
+        "rate_a": 0.0159,
         "rate_b": 0.0
       },
       {
         "a": "cloudflare_family",
         "b": "controld_family",
-        "n": 85,
-        "c00": 70,
-        "c01": 13,
-        "c10": 1,
-        "c11": 1,
-        "agreement": 0.8353,
-        "kappa": 0.0874,
-        "jaccard": 0.0667,
-        "rate_a": 0.0235,
-        "rate_b": 0.1647
+        "n": 126,
+        "c00": 116,
+        "c01": 8,
+        "c10": 2,
+        "c11": 0,
+        "agreement": 0.9206,
+        "kappa": -0.0261,
+        "jaccard": 0.0,
+        "rate_a": 0.0159,
+        "rate_b": 0.0635
       },
       {
         "a": "cloudflare_family",
         "b": "opendns_family",
-        "n": 85,
-        "c00": 82,
-        "c01": 1,
+        "n": 126,
+        "c00": 121,
+        "c01": 3,
         "c10": 2,
         "c11": 0,
-        "agreement": 0.9647,
-        "kappa": -0.0159,
+        "agreement": 0.9603,
+        "kappa": -0.0194,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
-        "rate_b": 0.0118
+        "rate_a": 0.0159,
+        "rate_b": 0.0238
       },
       {
         "a": "cloudflare_family",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 81,
+        "n": 126,
+        "c00": 1,
+        "c01": 123,
         "c10": 0,
         "c11": 2,
-        "agreement": 0.0471,
-        "kappa": 0.0012,
-        "jaccard": 0.0241,
-        "rate_a": 0.0235,
-        "rate_b": 0.9765
+        "agreement": 0.0238,
+        "kappa": 0.0003,
+        "jaccard": 0.016,
+        "rate_a": 0.0159,
+        "rate_b": 0.9921
       },
       {
         "a": "cloudflare_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 82,
+        "n": 125,
+        "c00": 0,
+        "c01": 123,
         "c10": 0,
         "c11": 2,
-        "agreement": 0.0353,
-        "kappa": 0.0006,
-        "jaccard": 0.0238,
-        "rate_a": 0.0235,
-        "rate_b": 0.9882
+        "agreement": 0.016,
+        "kappa": 0.0,
+        "jaccard": 0.016,
+        "rate_a": 0.016,
+        "rate_b": 1.0
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 85,
-        "c00": 83,
+        "n": 126,
+        "c00": 126,
         "c01": 0,
-        "c10": 2,
+        "c10": 0,
         "c11": 0,
-        "agreement": 0.9765,
-        "kappa": 0.0,
-        "jaccard": 0.0,
-        "rate_a": 0.0235,
+        "agreement": 1.0,
+        "kappa": null,
+        "jaccard": null,
+        "rate_a": 0.0,
         "rate_b": 0.0
       },
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 85,
-        "c00": 83,
+        "n": 126,
+        "c00": 126,
         "c01": 0,
-        "c10": 2,
+        "c10": 0,
         "c11": 0,
-        "agreement": 0.9765,
-        "kappa": 0.0,
-        "jaccard": 0.0,
-        "rate_a": 0.0235,
+        "agreement": 1.0,
+        "kappa": null,
+        "jaccard": null,
+        "rate_a": 0.0,
         "rate_b": 0.0
       },
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 85,
-        "c00": 69,
-        "c01": 14,
-        "c10": 2,
+        "n": 126,
+        "c00": 118,
+        "c01": 8,
+        "c10": 0,
         "c11": 0,
-        "agreement": 0.8118,
-        "kappa": -0.0429,
+        "agreement": 0.9365,
+        "kappa": 0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
-        "rate_b": 0.1647
+        "rate_a": 0.0,
+        "rate_b": 0.0635
       },
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 85,
-        "c00": 82,
-        "c01": 1,
-        "c10": 2,
+        "n": 126,
+        "c00": 123,
+        "c01": 3,
+        "c10": 0,
         "c11": 0,
-        "agreement": 0.9647,
-        "kappa": -0.0159,
+        "agreement": 0.9762,
+        "kappa": 0.0,
         "jaccard": 0.0,
-        "rate_a": 0.0235,
-        "rate_b": 0.0118
+        "rate_a": 0.0,
+        "rate_b": 0.0238
       },
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 81,
+        "n": 126,
+        "c00": 1,
+        "c01": 125,
         "c10": 0,
-        "c11": 2,
-        "agreement": 0.0471,
-        "kappa": 0.0012,
-        "jaccard": 0.0241,
-        "rate_a": 0.0235,
-        "rate_b": 0.9765
+        "c11": 0,
+        "agreement": 0.0079,
+        "kappa": 0.0,
+        "jaccard": 0.0,
+        "rate_a": 0.0,
+        "rate_b": 0.9921
       },
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 82,
+        "n": 125,
+        "c00": 0,
+        "c01": 125,
         "c10": 0,
-        "c11": 2,
-        "agreement": 0.0353,
-        "kappa": 0.0006,
-        "jaccard": 0.0238,
-        "rate_a": 0.0235,
-        "rate_b": 0.9882
+        "c11": 0,
+        "agreement": 0.0,
+        "kappa": 0.0,
+        "jaccard": 0.0,
+        "rate_a": 0.0,
+        "rate_b": 1.0
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "cleanbrowsing_family",
-        "n": 85,
-        "c00": 85,
+        "n": 127,
+        "c00": 127,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6116,198 +6231,198 @@
       {
         "a": "cleanbrowsing_adult",
         "b": "controld_family",
-        "n": 85,
-        "c00": 71,
-        "c01": 14,
+        "n": 127,
+        "c00": 119,
+        "c01": 8,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.8353,
+        "agreement": 0.937,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.1647
+        "rate_b": 0.063
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "opendns_family",
-        "n": 85,
-        "c00": 84,
-        "c01": 1,
+        "n": 127,
+        "c00": 124,
+        "c01": 3,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.9882,
+        "agreement": 0.9764,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.0118
+        "rate_b": 0.0236
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 83,
+        "n": 127,
+        "c00": 1,
+        "c01": 126,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.0235,
-        "kappa": -0.0,
+        "agreement": 0.0079,
+        "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.9765
+        "rate_b": 0.9921
       },
       {
         "a": "cleanbrowsing_adult",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 84,
+        "n": 126,
+        "c00": 0,
+        "c01": 126,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.0118,
+        "agreement": 0.0,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.9882
+        "rate_b": 1.0
       },
       {
         "a": "cleanbrowsing_family",
         "b": "controld_family",
-        "n": 85,
-        "c00": 71,
-        "c01": 14,
+        "n": 127,
+        "c00": 119,
+        "c01": 8,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.8353,
+        "agreement": 0.937,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.1647
+        "rate_b": 0.063
       },
       {
         "a": "cleanbrowsing_family",
         "b": "opendns_family",
-        "n": 85,
-        "c00": 84,
-        "c01": 1,
+        "n": 127,
+        "c00": 124,
+        "c01": 3,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.9882,
+        "agreement": 0.9764,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.0118
+        "rate_b": 0.0236
       },
       {
         "a": "cleanbrowsing_family",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 83,
+        "n": 127,
+        "c00": 1,
+        "c01": 126,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.0235,
-        "kappa": -0.0,
+        "agreement": 0.0079,
+        "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.9765
+        "rate_b": 0.9921
       },
       {
         "a": "cleanbrowsing_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 84,
+        "n": 126,
+        "c00": 0,
+        "c01": 126,
         "c10": 0,
         "c11": 0,
-        "agreement": 0.0118,
+        "agreement": 0.0,
         "kappa": 0.0,
         "jaccard": 0.0,
         "rate_a": 0.0,
-        "rate_b": 0.9882
+        "rate_b": 1.0
       },
       {
         "a": "controld_family",
         "b": "opendns_family",
-        "n": 85,
-        "c00": 70,
-        "c01": 1,
-        "c10": 14,
-        "c11": 0,
-        "agreement": 0.8235,
-        "kappa": -0.0225,
-        "jaccard": 0.0,
-        "rate_a": 0.1647,
-        "rate_b": 0.0118
+        "n": 127,
+        "c00": 119,
+        "c01": 0,
+        "c10": 5,
+        "c11": 3,
+        "agreement": 0.9606,
+        "kappa": 0.5293,
+        "jaccard": 0.375,
+        "rate_a": 0.063,
+        "rate_b": 0.0236
       },
       {
         "a": "controld_family",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 69,
-        "c10": 0,
-        "c11": 14,
-        "agreement": 0.1882,
-        "kappa": 0.0095,
-        "jaccard": 0.1687,
-        "rate_a": 0.1647,
-        "rate_b": 0.9765
+        "n": 127,
+        "c00": 0,
+        "c01": 119,
+        "c10": 1,
+        "c11": 7,
+        "agreement": 0.0551,
+        "kappa": -0.0159,
+        "jaccard": 0.0551,
+        "rate_a": 0.063,
+        "rate_b": 0.9921
       },
       {
         "a": "controld_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 70,
+        "n": 126,
+        "c00": 0,
+        "c01": 118,
         "c10": 0,
-        "c11": 14,
-        "agreement": 0.1765,
-        "kappa": 0.0047,
-        "jaccard": 0.1667,
-        "rate_a": 0.1647,
-        "rate_b": 0.9882
+        "c11": 8,
+        "agreement": 0.0635,
+        "kappa": 0.0,
+        "jaccard": 0.0635,
+        "rate_a": 0.0635,
+        "rate_b": 1.0
       },
       {
         "a": "opendns_family",
         "b": "mullvad_family",
-        "n": 85,
-        "c00": 2,
-        "c01": 82,
+        "n": 127,
+        "c00": 1,
+        "c01": 123,
         "c10": 0,
-        "c11": 1,
-        "agreement": 0.0353,
-        "kappa": 0.0006,
-        "jaccard": 0.012,
-        "rate_a": 0.0118,
-        "rate_b": 0.9765
+        "c11": 3,
+        "agreement": 0.0315,
+        "kappa": 0.0004,
+        "jaccard": 0.0238,
+        "rate_a": 0.0236,
+        "rate_b": 0.9921
       },
       {
         "a": "opendns_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
-        "c01": 83,
+        "n": 126,
+        "c00": 0,
+        "c01": 123,
         "c10": 0,
-        "c11": 1,
-        "agreement": 0.0235,
-        "kappa": 0.0003,
-        "jaccard": 0.0119,
-        "rate_a": 0.0118,
-        "rate_b": 0.9882
+        "c11": 3,
+        "agreement": 0.0238,
+        "kappa": 0.0,
+        "jaccard": 0.0238,
+        "rate_a": 0.0238,
+        "rate_b": 1.0
       },
       {
         "a": "mullvad_family",
         "b": "dns4eu_child",
-        "n": 85,
-        "c00": 1,
+        "n": 126,
+        "c00": 0,
         "c01": 1,
         "c10": 0,
-        "c11": 83,
-        "agreement": 0.9882,
-        "kappa": 0.6614,
-        "jaccard": 0.9881,
-        "rate_a": 0.9765,
-        "rate_b": 0.9882
+        "c11": 125,
+        "agreement": 0.9921,
+        "kappa": 0.0,
+        "jaccard": 0.9921,
+        "rate_a": 0.9921,
+        "rate_b": 1.0
       }
     ],
     "armas_verif": [
@@ -6708,8 +6823,8 @@
       {
         "a": "cloudflare_family",
         "b": "adguard_family",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6806,8 +6921,8 @@
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_adult",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6820,8 +6935,8 @@
       {
         "a": "adguard_family",
         "b": "cleanbrowsing_family",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6834,8 +6949,8 @@
       {
         "a": "adguard_family",
         "b": "controld_family",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6848,8 +6963,8 @@
       {
         "a": "adguard_family",
         "b": "opendns_family",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6862,8 +6977,8 @@
       {
         "a": "adguard_family",
         "b": "mullvad_family",
-        "n": 163,
-        "c00": 163,
+        "n": 164,
+        "c00": 164,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -6876,8 +6991,8 @@
       {
         "a": "adguard_family",
         "b": "dns4eu_child",
-        "n": 164,
-        "c00": 164,
+        "n": 165,
+        "c00": 165,
         "c01": 0,
         "c10": 0,
         "c11": 0,
@@ -7117,10 +7232,27 @@
       ]
     },
     "adultos_cand": {
-      "count": 90,
+      "count": 128,
       "examples": [
         {
-          "domain": "0-syxela.tumblr.com",
+          "domain": "0.0.0.006.free.fr",
+          "blocked_by_declaring": [
+            "cloudflare_family",
+            "opendns_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "adguard_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 3,
+          "n_allowed": 5
+        },
+        {
+          "domain": "10livejasmin.blogspot.fr",
           "blocked_by_declaring": [
             "adguard_family",
             "dns4eu_child"
@@ -7137,14 +7269,354 @@
           "n_allowed": 6
         },
         {
-          "domain": "0.0.0.0.0.0.0.0.0z1.free.fr",
+          "domain": "adultcamfriend.blogspot.co.id",
           "blocked_by_declaring": [
             "cloudflare_family",
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 3,
+          "n_allowed": 5
+        },
+        {
+          "domain": "akitemgatas.blogspot.co.uk",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "allhotpornstar.blogspot.pe",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "americadirectoryi9.blogspot.ca",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "ananyassharma.blogspot.ro",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "angelasknights.blogspot.com.mt",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "annonces-femmes-coquines.blogspot.my",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "ashanti-pic.blogspot.it",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "asian-porn-movies-resources.blogspot.am",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "asiancelebs.win",
+          "blocked_by_declaring": [
+            "cloudflare_family",
+            "adguard_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 5,
+          "n_allowed": 3
+        },
+        {
+          "domain": "asianyjfuckyjparty.blogspot.ru",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "beautifulgenitalia.tumblr.com",
+          "blocked_by_declaring": [
+            "cloudflare_family",
+            "adguard_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
             "opendns_family",
             "dns4eu_child"
           ],
           "allowed_by_declaring": [
+            "controld_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 6,
+          "n_allowed": 2
+        },
+        {
+          "domain": "bensexy.blogspot.tw",
+          "blocked_by_declaring": [
             "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "beuretteprostitue.blogspot.ae",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "biryuchkovakana.blogspot.com",
+          "blocked_by_declaring": [
+            "cloudflare_family",
+            "adguard_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "opendns_family",
+            "mullvad_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "controld_family"
+          ],
+          "n_blocked": 7,
+          "n_allowed": 1
+        },
+        {
+          "domain": "bodereknude.blogspot.nl",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "bondage-orgy-2013.blogspot.hu",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "brazzers4hd.blogspot.it",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "brennanvalbmb.blogspot.is",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "buffiejimmy.blogspot.sg",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "candiceoxenvk.blogspot.lt",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "opendns_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
             "cleanbrowsing_adult",
             "cleanbrowsing_family",
             "controld_family",
@@ -7154,14 +7626,14 @@
           "n_allowed": 5
         },
         {
-          "domain": "0.0.0.0.09.free.fr",
+          "domain": "carmenreye.blogspot.lu",
           "blocked_by_declaring": [
-            "cloudflare_family",
+            "adguard_family",
             "opendns_family",
             "dns4eu_child"
           ],
           "allowed_by_declaring": [
-            "adguard_family",
+            "cloudflare_family",
             "cleanbrowsing_adult",
             "cleanbrowsing_family",
             "controld_family",
@@ -7171,14 +7643,31 @@
           "n_allowed": 5
         },
         {
-          "domain": "0.0.0.008.free.fr",
+          "domain": "celeb-scandal-gallery.blogspot.sn",
           "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
             "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "chaude-fellation-petasse.kekette.com",
+          "blocked_by_declaring": [
+            "adguard_family",
             "opendns_family",
             "dns4eu_child"
           ],
           "allowed_by_declaring": [
-            "adguard_family",
+            "cloudflare_family",
             "cleanbrowsing_adult",
             "cleanbrowsing_family",
             "controld_family",
@@ -7188,7 +7677,194 @@
           "n_allowed": 5
         },
         {
-          "domain": "0.011.free.fr",
+          "domain": "cherrygoesglobal.blogspot.rs",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "chezsarahh.blogspot.ie",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "chicas-cams.blogspot.ae",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "chilitwist.blogspot.hk",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "chubbylov.blogspot.am",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "cougar-xxx.blogspot.sk",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "dasputatay.blogspot.lu",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "dehaomana.blogspot.ae",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "desi-indian-maal.blogspot.pt",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "dhvpark.blogspot.bg",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "diarioqualunque.blogspot.in",
+          "blocked_by_declaring": [
+            "adguard_family",
+            "dns4eu_child"
+          ],
+          "allowed_by_declaring": [
+            "cloudflare_family",
+            "cleanbrowsing_adult",
+            "cleanbrowsing_family",
+            "controld_family",
+            "opendns_family",
+            "mullvad_family"
+          ],
+          "n_blocked": 2,
+          "n_allowed": 6
+        },
+        {
+          "domain": "dirtyindianx.net",
           "blocked_by_declaring": [
             "cloudflare_family",
             "adguard_family",
@@ -7205,24 +7881,7 @@
           "n_allowed": 3
         },
         {
-          "domain": "0.22.free.fr",
-          "blocked_by_declaring": [
-            "cloudflare_family",
-            "adguard_family",
-            "opendns_family",
-            "mullvad_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family"
-          ],
-          "n_blocked": 5,
-          "n_allowed": 3
-        },
-        {
-          "domain": "0.hungrysagnesi.workers.dev",
+          "domain": "dp-discretoprazer.blogspot.ro",
           "blocked_by_declaring": [
             "adguard_family",
             "dns4eu_child"
@@ -7239,295 +7898,7 @@
           "n_allowed": 6
         },
         {
-          "domain": "00-44.com",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "opendns_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "controld_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 5,
-          "n_allowed": 3
-        },
-        {
-          "domain": "00-44.net",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.ba",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.com.by",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.com.ee",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.com.mt",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.is",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 5
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.pe",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.pt",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.qa",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.ru",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "000-sex-you-tube.blogspot.tw",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "00000000a.blogspot.ch",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "00000000a.blogspot.co.ke",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "00000000a.blogspot.co.uk",
-          "blocked_by_declaring": [
-            "cloudflare_family",
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 3,
-          "n_allowed": 5
-        },
-        {
-          "domain": "00000000a.blogspot.com",
-          "blocked_by_declaring": [
-            "cloudflare_family",
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 3,
-          "n_allowed": 5
-        },
-        {
-          "domain": "00000000a.blogspot.com.by",
-          "blocked_by_declaring": [
-            "adguard_family",
-            "dns4eu_child"
-          ],
-          "allowed_by_declaring": [
-            "cloudflare_family",
-            "cleanbrowsing_adult",
-            "cleanbrowsing_family",
-            "controld_family",
-            "opendns_family",
-            "mullvad_family"
-          ],
-          "n_blocked": 2,
-          "n_allowed": 6
-        },
-        {
-          "domain": "00000000a.blogspot.cz",
+          "domain": "emmyrossumporn.blogspot.co.at",
           "blocked_by_declaring": [
             "adguard_family",
             "dns4eu_child"
@@ -7549,7 +7920,7 @@
       "count": 1,
       "examples": [
         {
-          "domain": "9e3c.com",
+          "domain": "rik.vip",
           "blocked_by_declaring": [
             "dns4eu_child"
           ],
@@ -8575,5 +8946,5 @@
       }
     }
   },
-  "elapsed_total_s": 729.5
+  "elapsed_total_s": 1066.3
 }
