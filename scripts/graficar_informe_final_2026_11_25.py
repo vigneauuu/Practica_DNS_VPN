@@ -171,10 +171,10 @@ def fig6_benchmark_9_proveedores() -> None:
     ]
     groups = [
         ("adultos_reg", f"Adulto reg.\n(UE/Ofcom, n={cnt_g['adultos_reg']})"),
-        ("adultos_cand", f"Adulto UT1 A–Z\n(n={cnt_g['adultos_cand']}; {live_g.get('adultos_cand', 0)} act.)"),
+        ("adultos_cand", f"Adulto UT1 A–Z\n({live_g.get('adultos_cand', 0)}/{cnt_g['adultos_cand']} act.)"),
         ("apuestas_subtel", f"Apuestas Subtel\n(Chile, n={cnt_g['apuestas_subtel']})"),
-        ("apuestas_cand", f"Apuestas SB A–Z\n(n={cnt_g['apuestas_cand']}; {live_g.get('apuestas_cand', 0)} act.)"),
-        ("armas_verif", f"Armas oficiales\n(n={cnt_g['armas_verif']})"),
+        ("apuestas_cand", f"Apuestas SB A–Z\n({live_g.get('apuestas_cand', 0)}/{cnt_g['apuestas_cand']} act.)"),
+        ("armas_verif", f"Fabr. de armas\n(oficiales, n={cnt_g['armas_verif']})"),
         ("educativo_verif", f"Educativo\n(CRUCH/IPEDS, n={cnt_g['educativo_verif']})"),
     ]
     mat = np.zeros((len(profiles), len(groups)))
@@ -191,20 +191,20 @@ def fig6_benchmark_9_proveedores() -> None:
             mat[i, j] = pct
             ann[i][j] = f"{fmt_es(pct, 1)} %\n({blk}/{denom})" if denom > 0 else "s/ref"
 
-    fig, ax = plt.subplots(figsize=(8.4, 4.4))
+    fig, ax = plt.subplots(figsize=(9.3, 4.7))
     im = ax.imshow(mat, cmap="PuBu", vmin=0, vmax=100, aspect="auto")
 
     for i in range(len(profiles)):
         for j in range(len(groups)):
             val = mat[i, j]
             txt_color = "white" if val >= 55 else "#111111"
-            ax.text(j, i, ann[i][j], ha="center", va="center", fontsize=7.3,
+            ax.text(j, i, ann[i][j], ha="center", va="center", fontsize=8.0,
                     fontweight="bold" if val > 0 else "normal", color=txt_color)
 
     ax.set_xticks(np.arange(len(groups)))
     ax.set_xticklabels([g[1] for g in groups], fontsize=7.8)
     ax.set_yticks(np.arange(len(profiles)))
-    ax.set_yticklabels([LABELS_PROFILE[p] for p in profiles], fontsize=8.0)
+    ax.set_yticklabels([LABELS_PROFILE[p] for p in profiles], fontsize=8.4)
     # Thin white grid lines between cells
     ax.set_xticks(np.arange(-0.5, len(groups), 1), minor=True)
     ax.set_yticks(np.arange(-0.5, len(profiles), 1), minor=True)
@@ -231,7 +231,7 @@ def fig7_matrices_kappa_jaccard() -> None:
     n = len(parental)
     idx = {p: i for i, p in enumerate(parental)}
 
-    fig, axes = plt.subplots(1, 2, figsize=(8.5, 4.0))
+    fig, axes = plt.subplots(1, 2, figsize=(8.9, 4.3))
     panels = [
         ("adultos_all", "Contenido adulto (reg. + UT1 A–Z, A)"),
         ("apuestas_all", "Apuestas (Subtel + SB A–Z, A)"),
@@ -255,21 +255,21 @@ def fig7_matrices_kappa_jaccard() -> None:
         for r in range(n):
             for c in range(n):
                 if r == c:
-                    ax.text(c, r, "—", ha="center", va="center", fontsize=8.0, color="#666666")
+                    ax.text(c, r, "—", ha="center", va="center", fontsize=8.4, color="#666666")
                 else:
                     v = mat[r, c]
                     if np.isnan(v):
-                        ax.text(c, r, "n/d", ha="center", va="center", fontsize=6.8, color="#777777")
+                        ax.text(c, r, "n/d", ha="center", va="center", fontsize=7.2, color="#777777")
                     else:
                         txt_c = "white" if v >= 0.58 else "#111111"
-                        ax.text(c, r, fmt_es(v, 2), ha="center", va="center", fontsize=7.0,
+                        ax.text(c, r, fmt_es(v, 2), ha="center", va="center", fontsize=7.6,
                                 fontweight="bold" if v >= 0.5 else "normal", color=txt_c)
 
-        ax.set_title(title, pad=8)
+        ax.set_title(title, pad=8, fontsize=9.2)
         ax.set_xticks(range(n))
-        ax.set_xticklabels(short, rotation=38, ha="right", fontsize=7.6)
+        ax.set_xticklabels(short, rotation=38, ha="right", fontsize=8.2)
         ax.set_yticks(range(n))
-        ax.set_yticklabels(short, fontsize=7.6)
+        ax.set_yticklabels(short, fontsize=8.2)
         ax.set_xticks(np.arange(-0.5, n, 1), minor=True)
         ax.set_yticks(np.arange(-0.5, n, 1), minor=True)
         ax.grid(which="minor", color="white", linewidth=1.0)
@@ -444,40 +444,46 @@ def fig9_vpn_proxy_laboratorio() -> None:
 
 
 def fig10_vpn_proxies_externos() -> None:
-    """Figura limpia y legible de túneles VPN externos (WARP, AdGuard VPN, RiseupVPN).
-    La matriz HTTPS HEAD sobre proxies SOCKS5 se presenta como tabla nativa LaTeX para máxima legibilidad impresa.
-    """
-    fig, ax1 = plt.subplots(figsize=(8.2, 3.35))
+    """Figura normalizada a 100 % (con conteo y porcentaje) de túneles VPN externos (WARP, AdGuard VPN, RiseupVPN)."""
+    fig, ax1 = plt.subplots(figsize=(8.4, 3.45))
     rows_a = [
-        ("WARP · túnel sin filtro (15 dom.)", 0, 30, 0),
-        ("WARP · túnel familiar (15 dom.)", 8, 22, 0),
-        ("AdGuard VPN · túnel sin filtro (21 dom.)", 0, 41, 1),
-        ("AdGuard VPN · túnel familiar (21 dom.)", 8, 34, 0),
-        ("RiseupVPN · DNS interno UDP (21 dom.)", 0, 42, 0),
-        ("RiseupVPN · DNS4EU Sin filtro DoH (21 dom.)", 0, 42, 0),
-        ("RiseupVPN · DNS4EU Infantil DoH (21 dom.)", 34, 8, 0),
+        ("WARP · túnel sin filtro (15 dom., n=30)", 0, 30, 0),
+        ("WARP · túnel familiar (15 dom., n=30)", 8, 22, 0),
+        ("AdGuard VPN · túnel sin filtro (21 dom., n=42)", 0, 41, 1),
+        ("AdGuard VPN · túnel familiar (21 dom., n=42)", 8, 34, 0),
+        ("RiseupVPN · DNS interno UDP (21 dom., n=42)", 0, 42, 0),
+        ("RiseupVPN · DNS4EU Sin filtro DoH (21 dom., n=42)", 0, 42, 0),
+        ("RiseupVPN · DNS4EU Infantil DoH (21 dom., n=42)", 34, 8, 0),
     ]
     y1 = np.arange(len(rows_a))
-    blk = np.array([r[1] for r in rows_a])
-    alw = np.array([r[2] for r in rows_a])
-    err = np.array([r[3] for r in rows_a])
+    blk = np.array([r[1] for r in rows_a], dtype=float)
+    alw = np.array([r[2] for r in rows_a], dtype=float)
+    err = np.array([r[3] for r in rows_a], dtype=float)
+    tot = blk + alw + err
+    blk_p = blk / tot * 100.0
+    alw_p = alw / tot * 100.0
+    err_p = err / tot * 100.0
 
-    ax1.barh(y1, blk, height=0.62, color=C_BLOCK, label="Bloqueo señalizado (adulto / política DNS4EU)")
-    ax1.barh(y1, alw, left=blk, height=0.62, color=C_ALLOW, label="Resolución observada (permitido o sin filtro)")
-    ax1.barh(y1, err, left=blk + alw, height=0.62, color=C_ERR, label="Error de red (espera agotada)")
+    ax1.barh(y1, blk_p, height=0.62, color=C_BLOCK, label="Bloqueo señalizado (adulto / política DNS4EU)")
+    ax1.barh(y1, alw_p, left=blk_p, height=0.62, color=C_ALLOW, label="Resolución observada (permitido o sin filtro)")
+    ax1.barh(y1, err_p, left=blk_p + alw_p, height=0.62, color=C_ERR, label="Error de red (espera agotada)")
 
     for i in range(len(rows_a)):
         if blk[i] > 0:
-            ax1.text(blk[i] / 2, y1[i], f"{blk[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=8.0)
+            ax1.text(blk_p[i] / 2, y1[i], f"{int(blk[i])} ({fmt_es(blk_p[i], 1)} %)",
+                     ha="center", va="center", color="white", fontweight="bold", fontsize=7.8)
         if alw[i] > 0:
-            ax1.text(blk[i] + alw[i] / 2, y1[i], f"{alw[i]}", ha="center", va="center", color="white", fontweight="bold", fontsize=8.0)
+            ax1.text(blk_p[i] + alw_p[i] / 2, y1[i], f"{int(alw[i])} ({fmt_es(alw_p[i], 1)} %)",
+                     ha="center", va="center", color="white", fontweight="bold", fontsize=7.8)
         if err[i] > 0:
-            ax1.text(blk[i] + alw[i] + err[i] + 0.7, y1[i], "1 err.", ha="left", va="center", color=C_ERR, fontweight="bold", fontsize=7.6)
+            ax1.text(101.2, y1[i], f"{int(err[i])} err. ({fmt_es(err_p[i], 1)} %)",
+                     ha="left", va="center", color=C_ERR, fontweight="bold", fontsize=7.5)
 
     ax1.set_yticks(y1)
-    ax1.set_yticklabels([r[0] for r in rows_a], fontsize=8.2)
-    ax1.set_xlabel("Consultas DNS (registro A, 2 rondas por dominio; excluye controles técnicos)")
-    ax1.set_xlim(0, 46)
+    ax1.set_yticklabels([r[0] for r in rows_a], fontsize=8.1)
+    ax1.set_xlabel("Proporción de consultas DNS en registro A (%, 2 rondas por dominio; excluye controles técnicos)")
+    ax1.set_xlim(0, 114)
+    ax1.set_xticks([0, 20, 40, 60, 80, 100])
     ax1.grid(axis="x", linestyle=":", alpha=0.5)
     ax1.invert_yaxis()
     ax1.legend(loc="upper center", bbox_to_anchor=(0.45, -0.22), ncol=2, frameon=False, fontsize=7.8)
@@ -508,7 +514,7 @@ def fig11_ooni_chile() -> None:
     fig, ax = plt.subplots(figsize=(7.6, 2.7))
     y = np.arange(len(order_doms))
     ax.barh(y, anom_pct, height=0.56, color=C_OMIT, label="Anomalía reportada en OONI (7 ASN)")
-    ax.barh(y, ok_pct, left=anom_pct, height=0.56, color=C_ALLOW, label="Sin anomalía reportada en OONI")
+    ax.barh(y, ok_pct, left=anom_pct, height=0.56, color=C_ALLOW, label="Sin anomalía (ok, 0 fallos en OONI)")
 
     for i in range(len(order_doms)):
         if anom_pct[i] >= 12:
