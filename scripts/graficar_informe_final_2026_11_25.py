@@ -171,9 +171,9 @@ def fig6_benchmark_9_proveedores() -> None:
     ]
     groups = [
         ("adultos_reg", f"Adulto reg.\n(UE/Ofcom, n={cnt_g['adultos_reg']})"),
-        ("adultos_cand", f"Adulto UT1 A-Z\n(n={cnt_g['adultos_cand']}; {live_g.get('adultos_cand', 0)} act.)"),
+        ("adultos_cand", f"Adulto UT1 A–Z\n(n={cnt_g['adultos_cand']}; {live_g.get('adultos_cand', 0)} act.)"),
         ("apuestas_subtel", f"Apuestas Subtel\n(Chile, n={cnt_g['apuestas_subtel']})"),
-        ("apuestas_cand", f"Apuestas SB A-Z\n(n={cnt_g['apuestas_cand']}; {live_g.get('apuestas_cand', 0)} act.)"),
+        ("apuestas_cand", f"Apuestas SB A–Z\n(n={cnt_g['apuestas_cand']}; {live_g.get('apuestas_cand', 0)} act.)"),
         ("armas_verif", f"Armas oficiales\n(n={cnt_g['armas_verif']})"),
         ("educativo_verif", f"Educativo\n(CRUCH/IPEDS, n={cnt_g['educativo_verif']})"),
     ]
@@ -233,8 +233,8 @@ def fig7_matrices_kappa_jaccard() -> None:
 
     fig, axes = plt.subplots(1, 2, figsize=(8.5, 4.0))
     panels = [
-        ("adultos_all", "Contenido adulto (reg. + UT1 A-Z, A)"),
-        ("apuestas_all", "Apuestas (Subtel + SB A-Z, A)"),
+        ("adultos_all", "Contenido adulto (reg. + UT1 A–Z, A)"),
+        ("apuestas_all", "Apuestas (Subtel + SB A–Z, A)"),
     ]
 
     for ax, (skey, title) in zip(axes, panels):
@@ -454,8 +454,8 @@ def fig10_vpn_proxies_externos() -> None:
         ("AdGuard VPN · túnel sin filtro (21 dom.)", 0, 41, 1),
         ("AdGuard VPN · túnel familiar (21 dom.)", 8, 34, 0),
         ("RiseupVPN · DNS interno UDP (21 dom.)", 0, 42, 0),
-        ("RiseupVPN · DNS4EU sin filtro DoH (21 dom.)", 0, 42, 0),
-        ("RiseupVPN · DNS4EU infantil DoH (21 dom.)", 34, 8, 0),
+        ("RiseupVPN · DNS4EU Sin filtro DoH (21 dom.)", 0, 42, 0),
+        ("RiseupVPN · DNS4EU Infantil DoH (21 dom.)", 34, 8, 0),
     ]
     y1 = np.arange(len(rows_a))
     blk = np.array([r[1] for r in rows_a])
